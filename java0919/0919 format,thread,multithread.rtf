@@ -1,0 +1,1888 @@
+{\rtf1\ansi\ansicpg949\cocoartf1671\cocoasubrtf600
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset129 AppleSDGothicNeo-Regular;\f2\fnil\fcharset0 Menlo-Bold;
+\f3\fnil\fcharset0 Menlo-Regular;\f4\fnil\fcharset0 Menlo-BoldItalic;\f5\fnil\fcharset0 Menlo-Italic;
+}
+{\colortbl;\red255\green255\blue255;\red127\green0\blue85;\red106\green62\blue62;\red63\green127\blue95;
+\red42\green0\blue255;\red0\green0\blue192;\red251\green0\blue7;\red100\green100\blue100;}
+{\*\expandedcolortbl;;\csgenericrgb\c49804\c0\c33333;\csgenericrgb\c41569\c24314\c24314;\csgenericrgb\c24706\c49804\c37255;
+\csgenericrgb\c16471\c0\c100000;\csgenericrgb\c0\c0\c75294;\cssrgb\c100000\c12195\c0;\csgenericrgb\c39216\c39216\c39216;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww15740\viewh19400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs36 \cf0 ---
+\f1 \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'b9\'ae\'c0\'da\'bf\'ad\'b7\'ce \'b8\'b8\'b5\'e9\'be\'ee\'c1\'d6\'b4\'c2 format \'b0\'fc\'b7\'c3 \'c5\'ac\'b7\'a1\'bd\'ba - java.text \'c6\'d0\'c5\'b0\'c1\'f6\
+1.Date \'c5\'ac\'b7\'a1\'bd\'ba\'c0\'c7 \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'bf\'f8\'c7\'cf\'b4\'c2 \'c6\'f7\'b8\'cb\'c0\'c7 \'b9\'ae\'c0\'da\'bf\'ad\'b7\'ce \'b8\'b8\'b5\'e9\'be\'ee\'c1\'d6\'b4\'c2 \'c5\'ac\'b7\'a1\'bd\'ba\
+=>java.text.SimleDateFormat\
+\'b0\'b4\'c3\'bc\'b8\'a6 \'bb\'fd\'bc\'ba\'c7\'d2 \'b6\'a7 new SimpleDateFormat("\'b3\'af\'c2\'a5 \'bc\'ad\'bd\'c4")\
+\'b9\'ae\'c0\'da\'bf\'ad\'b7\'ce \'b8\'b8\'b5\'e9 \'b6\'a7\'b4\'c2 format(Date \'b0\'b4\'c3\'bc)\
+\'b9\'ae\'c0\'da\'bf\'ad\'c0\'bb \'b0\'a1\'c1\'f6\'b0\'ed Date \'b0\'b4\'c3\'bc\'b8\'a6 \'b8\'b8\'b5\'e9 \'b6\'a7\'b4\'c2 parse(\'b9\'ae\'c0\'da\'bf\'ad)\'b8\'a6 \'bb\'e7\'bf\'eb\
+\
+\
+=>\'bc\'ad\'bd\'c4\'bf\'a1 \'c0\'cc\'bf\'eb\'c7\'cf\'b4\'c2 \'b9\'ae\'c0\'da\
+G : \'b1\'e2\'bf\'f8\
+M : \'b4\'de\
+W : \'b4\'de\'bf\'a1\'bc\'ad\'c0\'c7 \'c1\'d6\
+y : \'b3\'e2\'b5\'b5\
+E : \'bf\'e4\'c0\'cf\
+d : \'b4\'de\'bf\'a1\'bc\'ad\'c0\'c7 \'c0\'cf\
+h : \'bd\'c3\'b0\'a3(24\'bd\'c3\'b0\'a3)\
+k : \'bd\'c3\'b0\'a3(0-11\'bd\'c3)\
+a : \'bf\'c0\'c0\'fc/\'bf\'c0\'c8\'c4\
+m : \'ba\'d0\
+s : \'c3\'ca\
+\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f2\b\fs24 \cf2 package
+\f3\b0 \cf0  format;\
+\
+
+\f2\b \cf2 import
+\f3\b0 \cf0  java.text.SimpleDateFormat;\
+
+\f2\b \cf2 import
+\f3\b0 \cf0  java.util.Calendar;\
+
+\f2\b \cf2 import
+\f3\b0 \cf0  java.util.Date;\
+
+\f2\b \cf2 import
+\f3\b0 \cf0  java.util.GregorianCalendar;\
+\
+
+\f2\b \cf2 public
+\f3\b0 \cf0  
+\f2\b \cf2 class
+\f3\b0 \cf0  DateFormatMain \{\
+\
+	
+\f2\b \cf2 public
+\f3\b0 \cf0  
+\f2\b \cf2 static
+\f3\b0 \cf0  
+\f2\b \cf2 void
+\f3\b0 \cf0  main(String[] \cf3 args\cf0 ) \{\
+		\cf4 //java 
+\f1 \'be\'c8\'bf\'a1\'bc\'ad
+\f3  
+\f1 \'b3\'af\'c2\'a5\'b8\'a6
+\f3  
+\f1 \'b8\'b8\'b5\'e9
+\f3  
+\f1 \'b6\'a7\'b4\'c2
+\f3  Calendar 
+\f1 \'c5\'ac\'b7\'a1\'bd\'ba\'b8\'a6
+\f3  
+\f1 \'c0\'cc\'bf\'eb\'c7\'d8\'bc\'ad
+\f3 \cf0 \
+		\cf4 //
+\f1 \'b3\'af\'c2\'a5\'b8\'a6
+\f3  
+\f1 \'b8\'b8\'b5\'e7
+\f3  
+\f1 \'c8\'c4
+\f3  Date 
+\f1 \'c5\'ac\'b7\'a1\'bd\'ba\'c0\'c7
+\f3  
+\f1 \'b0\'b4\'c3\'bc\'b7\'ce
+\f3  
+\f1 \'ba\'af\'c8\'af
+\f3 \cf0 \
+		\
+		\cf4 //1992
+\f1 \'b3\'e2
+\f3  3
+\f1 \'bf\'f9
+\f3  17
+\f1 \'c0\'cf
+\f3  Date 
+\f1 \'b0\'b4\'c3\'bc\'b7\'ce
+\f3  
+\f1 \'b8\'b8\'b5\'e9\'b1\'e2
+\f3 \cf0 \
+		Calendar \cf3 cal\cf0  = 
+\f2\b \cf2 new
+\f3\b0 \cf0  GregorianCalendar(1992, 2, 17, 13 , 15, 3);\
+		Date \cf3 date\cf0  = 
+\f2\b \cf2 new
+\f3\b0 \cf0  Date(\cf3 cal\cf0 .getTimeInMillis());\
+		\cf4 //
+\f1 \'bf\'f8\'c7\'cf\'b4\'c2
+\f3  
+\f1 \'c6\'f7\'b8\'cb\'c0\'c7
+\f3  
+\f1 \'b9\'ae\'c0\'da\'bf\'ad\'b7\'ce
+\f3  
+\f1 \'b8\'b8\'b5\'e9\'b1\'e2
+\f3 \cf0 \
+		\cf4 //
+\f1 \'b3\'e2\'b5\'b5
+\f3 4
+\f1 \'c0\'da\'b8\'ae
+\f3  
+\f1 \'bf\'f9
+\f3 2
+\f1 \'c0\'da\'b8\'ae
+\f3  
+\f1 \'c0\'cf
+\f3 2
+\f1 \'c0\'da\'b8\'ae
+\f3  
+\f1 \'bf\'e4\'c0\'cf
+\f3  
+\f1 \'bf\'c0\'c0\'fc\'bf\'c0\'c8\'c4
+\f3  
+\f1 \'bd\'c3\'b0\'a3
+\f3  
+\f1 \'ba\'d0
+\f3  
+\f1 \'c3\'ca
+\f3 \cf0 \
+		SimpleDateFormat \cf3 sdf\cf0  = 
+\f2\b \cf2 new
+\f3\b0 \cf0  SimpleDateFormat(\cf5 "yyyy MM dd EEE a hh mm ss"\cf0 );\
+		String \cf3 result\cf0  = \cf3 sdf\cf0 .format(\cf3 date\cf0 );\
+		System.
+\f4\i\b \cf6 out
+\f3\i0\b0 \cf0 .printf(\cf5 "%s\\n"\cf0 , \cf3 result\cf0 );\
+		\
+	\}\
+\
+\}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f1\fs36 \cf0 \
+\
+2.java.text.DecimalFormat\
+=>\'bc\'fd\'c0\'da\'b8\'a6 \'bf\'f8\'c7\'cf\'b4\'c2 \'c6\'f7\'b8\'cb\'c0\'c7 \'b9\'ae\'c0\'da\'bf\'ad\'b7\'ce \'b8\'b8\'b5\'e9\'be\'ee\'c1\'d6\'b4\'c2 \'c5\'ac\'b7\'a1\'bd\'ba\
+=>\'bb\'e7\'bf\'eb\'b9\'e6\'b9\'fd\'c0\'ba SimpleDateFormat \'b0\'fa \'c0\'af\'bb\'e7\
+\
+\
+\'c0\'da\'b8\'b4\'bc\'f6\'b8\'a6 \'b8\'c2\'c3\'df\'b1\'e2 \'c0\'a7\'c7\'d1 \'bc\'ad\'bd\'c4\
+0 : \'be\'f8\'c0\'b8\'b8\'e9 0\'c0\'bb \'c3\'e2\'b7\'c2\
+# : \'c0\'d6\'c0\'b8\'b8\'e9 \'c3\'e2\'b7\'c2\'c7\'cf\'c1\'f6\'b8\'b8 \'be\'f8\'c0\'b8\'b8\'e9 \'c3\'e2\'b7\'c2\'c7\'cf\'c1\'f6 \'be\'ca\'c0\'bd\
+, : \'c3\'b5\'b4\'dc\'c0\'a7 \'b1\'b8\'ba\'d0\'b1\'e2\'c8\'a3\
+% : \'b9\'e9\'ba\'d0\'c0\'b2\
+\\u00A4 : \'c5\'eb\'c8\'ad\'b1\'e2\'c8\'a3 - \'bf\'ee\'bf\'b5\'c3\'bc\'c1\'a6\'c0\'c7 \'bc\'b3\'c1\'a4\'bf\'a1 \'b5\'fb\'b6\'f3 \'b4\'d9\'b8\'a3\'b0\'d4 \'c7\'a5\'bd\'c3\
+\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f3\fs24 \cf0 		DecimalFormat \cf3 df\cf0  = 
+\f2\b \cf2 new
+\f3\b0 \cf0  DecimalFormat(\cf5 "\\u00A4 0,000.00"\cf0 );\
+		
+\f2\b \cf2 double
+\f3\b0 \cf0  \cf3 n\cf0  =1898.99;\
+		String \cf3 r\cf0  =\cf3 df\cf0 .format(\cf3 n\cf0 );\
+		System.
+\f4\i\b \cf6 out
+\f3\i0\b0 \cf0 .printf(\cf5 "%s\\n"\cf0 , \cf3 r\cf0 );\
+		
+\f1\fs36 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\
+3.java.text.ChoiceFormat\
+=>double \'b9\'e8\'bf\'ad\'b0\'fa String \'b9\'e8\'bf\'ad\'c0\'bb \'b8\'c5\'c7\'ce\'bd\'c3\'c4\'d1\'bc\'ad \'bc\'fd\'c0\'da \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'c1\'d6\'b8\'e9 \'b8\'c5\'c7\'ce\'b5\'c7\'b4\'c2 \'b9\'ae\'c0\'da\'bf\'ad\'c0\'bb \'b8\'ae\'c5\'cf\'c7\'d8\'c1\'d6\'b4\'c2 \'c5\'ac\'b7\'a1\'bd\'ba\
+=>double \'b9\'e8\'bf\'ad\'c0\'ba \'b9\'dd\'b5\'e5\'bd\'c3 \'bf\'c0\'b8\'a7\'c2\'f7\'bc\'f8 \'c1\'a4\'b7\'c4\'b5\'c7\'be\'ee \'c0\'d6\'be\'ee\'be\'df \'c7\'d5\'b4\'cf\'b4\'d9.\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f3\fs24 \cf0 	
+\f2\b \cf2 double
+\f3\b0 \cf0  [] \cf3 scores\cf0  = \{0, 63, 75, 81, 97\};\
+		String [] \cf3 grades\cf0  = \{\cf5 "F"\cf0 , \cf5 "D"\cf0 , \cf5 "C"\cf0 , \cf5 "B"\cf0 , \cf5 "A"\cf0 \};\
+		\ul ChoiceFormat\ulnone  \cf3 cf\cf0  = 
+\f2\b \cf2 new
+\f3\b0 \cf0  \ul ChoiceFormat\ulnone (\cf3 scores\cf0 , \cf3 grades\cf0 );\
+		\cf3 r\cf0 =\cf3 cf\cf0 .format(81); \cf4 // B\cf0 \
+		System.
+\f4\i\b \cf6 out
+\f3\i0\b0 \cf0 .printf(\cf5 "%s\\n"\cf0 , \cf3 r\cf0 );\
+	
+\f1\fs36 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+4.java.text.MessageFormat\
+=>\'bb\'f0\'c0\'d4\'b5\'c9 \'b5\'a5\'c0\'cc\'c5\'cd \'c0\'da\'b8\'ae\'b8\'a6 \{\}\'b7\'ce \'b8\'b8\'b5\'e9\'be\'ee\'b5\'ce\'b0\'ed \'b3\'aa\'c1\'df\'bf\'a1 \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'b3\'a2\'bf\'f6\'b3\'d6\'b4\'c2 \'c5\'ac\'b7\'a1\'bd\'ba\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f3\fs24 \cf0 		\cf3 r\cf0 =\cf5 "
+\f1 \'c0\'cc\'b8\'a7
+\f3 :\{0\} 
+\f1 \'c0\'fc\'c8\'ad\'b9\'f8\'c8\'a3
+\f3 :\{1\}"\cf0 ;\
+		Object [] \cf3 person\cf0  = \{\cf5 "
+\f1 \'b9\'ae\'c5\'c2\'bf\'b5
+\f3 "\cf0 , \cf5 "01049506450"\cf0 \};\
+		\cf3 result\cf0  = MessageFormat.
+\f5\i format
+\f3\i0 (\cf3 r\cf0 , \cf3 person\cf0 );\
+		System.
+\f4\i\b \cf6 out
+\f3\i0\b0 \cf0 .printf(\cf5 "%s\\n"\cf0 , \cf3 result\cf0 );\
+		
+\f1\fs36 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\
+---java.util.Scanner\
+=>\'bd\'ba\'c6\'ae\'b8\'b2\'c0\'b8\'b7\'ce\'ba\'ce\'c5\'cd \'c0\'d4\'b7\'c2\'b9\'de\'b1\'e2 \'c0\'a7\'c7\'d1 \'c5\'ac\'b7\'a1\'bd\'ba\
+1.\'bb\'fd\'bc\'ba\'c0\'da\
+Scanner(File file) : \'c6\'c4\'c0\'cf\'b7\'ce\'ba\'ce\'c5\'cd \'c0\'d0\'be\'ee\'bf\'c0\'b0\'ed\'c0\'da \'c7\'d2 \'b6\'a7 \'bb\'e7\'bf\'eb\
+Scanner(InputStream stream) : \'bd\'ba\'c6\'ae\'b8\'b2\'c0\'b8\'b7\'ce\'ba\'ce\'c5\'cd \'c0\'d0\'be\'ee\'bf\'c0\'b1\'e2 - System.in(\'c7\'a5\'c1\'d8 \'c0\'d4\'b7\'c2 \'bd\'ba\'c6\'ae\'b8\'b2 - \'c5\'b0\'ba\'b8\'b5\'e5)\
+Scanner(String source) : \'b9\'ae\'c0\'da\'bf\'ad\'bf\'a1\'bc\'ad \'c0\'d0\'be\'ee\'bf\'c0\'b1\'e2\
+\
+\
+2.\'c0\'d0\'be\'ee\'bf\'c0\'b4\'c2 \'b8\'de\'bc\'d2\'b5\'e5\
+String next() : \'b0\'f8\'b9\'e9\'b9\'ae\'c0\'da(\'bf\'a3\'c5\'cd, \'c5\'c7, \'b0\'f8\'b9\'e9 \'b5\'ee)\'b1\'ee\'c1\'f6 \'c0\'d0\'be\'ee\'bc\'ad \'b9\'ae\'c0\'da\'bf\'ad\'b7\'ce \'b8\'ae\'c5\'cf\
+String nextLine() : \'bf\'a3\'c5\'cd\'b1\'ee\'c1\'f6 \'c0\'d0\'be\'ee\'bc\'ad \'b9\'ae\'c0\'da\'bf\'ad\'b7\'ce \'b8\'ae\'c5\'cf\
+int nextInt()\
+double nextDouble()\
+boolean nextBoolean()\
+\
+\
+3.\'c4\'c4\'c7\'bb\'c5\'cd\'b0\'a1 \'c5\'b0\'ba\'b8\'b5\'e5\'b7\'ce\'ba\'ce\'c5\'cd \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'c0\'d0\'be\'ee\'bf\'c0\'b4\'c2 \'b9\'e6\'b9\'fd\
+\cf7 =>\'c5\'b0\'ba\'b8\'b5\'e5\'b7\'ce \'c0\'d4\'b7\'c2\'c0\'bb \'c7\'cf\'b8\'e9 \'c4\'c4\'c7\'bb\'c5\'cd\'b4\'c2 \'c0\'d4\'b7\'c2\'c7\'d1 \'b3\'bb\'bf\'eb\'c0\'bb \'b9\'f6\'c6\'db\'bf\'a1 \'c0\'fa\'c0\'e5\'c7\'cf\'b0\'ed \'c0\'d0\'be\'ee\'bf\'c0\'b4\'c2 \'b8\'de\'bc\'d2\'b5\'e5\'bf\'a1 \'b5\'fb\'b6\'f3 \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'b3\'d1\'b0\'dc\'c1\'dd\'b4\'cf\'b4\'d9.\cf0 \
+=>\'bc\'fd\'c0\'da \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'c0\'d4\'b7\'c2\'b9\'de\'b0\'ed \'b1\'d7 \'b4\'d9\'c0\'bd\'bf\'a1 \'b9\'ae\'c0\'da\'b8\'a6 \'c0\'d4\'b7\'c2\'b9\'de\'b0\'ed\'c0\'da \'c7\'cf\'b4\'c2 \'b0\'e6\'bf\'ec \'b9\'ae\'c1\'a6\'b0\'a1 \'b9\'df\'bb\'fd\'c7\'d2 \'bc\'f6 \'c0\'d6\'bd\'c0\'b4\'cf\'b4\'d9.\
+\'bc\'fd\'c0\'da \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'c0\'d4\'b7\'c2\'c7\'d2 \'b6\'a7\'b4\'c2 \'bc\'fd\'c0\'da\'b8\'a6 \'c0\'d4\'b7\'c2\'c7\'cf\'b0\'ed \'bf\'a3\'c5\'cd\'b8\'a6 \'c4\'a1\'b0\'ed \'b4\'d9\'c0\'bd \'b9\'ae\'c0\'da\'bf\'ad\'c0\'bb \'c0\'d4\'b7\'c2\'c7\'d5\'b4\'cf\'b4\'d9.\
+\'b9\'f6\'c6\'db\'bf\'a1\'b4\'c2 \'bc\'fd\'c0\'da->\'bf\'a3\'c5\'cd->\'b4\'d9\'c0\'bd\'c0\'d4\'b7\'c2\'c7\'d1\'b9\'ae\'c0\'da\'bf\'ad \'bc\'f8\'c0\'b8\'b7\'ce \'c0\'fa\'c0\'e5\'c0\'cc \'b5\'cb\'b4\'cf\'b4\'d9.\
+nextInt\'b8\'a6 \'c7\'cf\'b8\'e9 \'bc\'fd\'c0\'da\'b8\'b8 \'b0\'a1\'c1\'ae\'b0\'a1\'b0\'ed \'bf\'a3\'c5\'cd\'bf\'cd \'b9\'ae\'c0\'da\'bf\'ad\'c0\'cc \'b3\'b2\'bd\'c0\'b4\'cf\'b4\'d9.\
+nextLine\'c0\'bb \'c8\'a3\'c3\'e2\'c7\'cf\'b8\'e9 \'bf\'a3\'c5\'cd\'b8\'a6 \'b0\'a1\'c1\'ae\'b0\'a9\'b4\'cf\'b4\'d9.\
+\'bc\'fd\'c0\'da\'b8\'a6 \'c0\'d4\'b7\'c2\'b9\'de\'b0\'ed \'b4\'d9\'c0\'bd\'bf\'a1 \'b9\'ae\'c0\'da\'bf\'ad\'c0\'bb \'c0\'d4\'b7\'c2\'b9\'de\'b0\'ed\'c0\'da \'c7\'d2 \'b6\'a7\'b4\'c2 nextInt->nextLine->nextLine \'c0\'c7 \'c7\'fc\'c5\'c2(\'b5\'ce\'b9\'f8\'c8\'a3\'c3\'e2)\'b7\'ce \'c8\'a3\'c3\'e2\'c7\'d8\'be\'df\'c7\'d5\'b4\'cf\'b4\'d9.\
+\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f2\b\fs24 \cf2 package
+\f3\b0 \cf0  util;\
+\
+
+\f2\b \cf2 import
+\f3\b0 \cf0  java.util.Scanner;\
+\
+
+\f2\b \cf2 public
+\f3\b0 \cf0  
+\f2\b \cf2 class
+\f3\b0 \cf0  ScannerMain \{\
+\
+	
+\f2\b \cf2 public
+\f3\b0 \cf0  
+\f2\b \cf2 static
+\f3\b0 \cf0  
+\f2\b \cf2 void
+\f3\b0 \cf0  main(String[] \cf3 args\cf0 ) \{\
+		Scanner \cf3 sc\cf0  = 
+\f2\b \cf2 new
+\f3\b0 \cf0  Scanner(System.
+\f4\i\b \cf6 in
+\f3\i0\b0 \cf0 );\
+		\cf4 //
+\f1 \'b9\'f8\'c8\'a3\'bf\'cd
+\f3  
+\f1 \'c0\'cc\'b8\'a7\'c0\'bb
+\f3  
+\f1 \'c0\'d4\'b7\'c2\'b9\'de\'b1\'e2
+\f3  : 
+\f1 \'b9\'f8\'c8\'a3\'b4\'c2
+\f3  
+\f1 \'c1\'a4\'bc\'f6
+\f3  
+\f1 \'c0\'cc\'b8\'a7\'c0\'ba
+\f3  
+\f1 \'b9\'ae\'c0\'da\'bf\'ad
+\f3 \cf0 \
+		System.
+\f4\i\b \cf6 out
+\f3\i0\b0 \cf0 .printf(\cf5 "
+\f1 \'b9\'f8\'c8\'a3
+\f3 :\\n"\cf0 );\
+		
+\f2\b \cf2 int
+\f3\b0 \cf0  \cf3 num\cf0  = \cf3 sc\cf0 .nextInt();\
+		\
+		\cf4 //
+\f1 \'be\'d5\'bf\'a1
+\f3  
+\f1 \'c1\'a4\'bc\'f6\'b8\'a6
+\f3  
+\f1 \'c0\'d4\'b7\'c2\'b9\'de\'c0\'ba
+\f3  
+\f1 \'c8\'c4\'bf\'a1
+\f3  
+\f1 \'b9\'ae\'c0\'da\'bf\'ad\'c0\'bb
+\f3  
+\f1 \'c0\'d4\'b7\'c2\'b9\'de\'c0\'b8\'b7\'c1\'b0\'ed
+\f3  
+\f1 \'c7\'cf\'b8\'e9
+\f3 \cf0 \
+		\cf4 //
+\f1 \'c0\'d4\'b7\'c2\'b9\'de\'b4\'c2
+\f3  
+\f1 \'b9\'ae\'c0\'e5\'c0\'cc
+\f3  
+\f1 \'bd\'c7\'c7\'e0\'c0\'cc
+\f3  
+\f1 \'be\'c8\'b5\'c9
+\f3  
+\f1 \'bc\'f6
+\f3  
+\f1 \'c0\'d6\'bd\'c0\'b4\'cf\'b4\'d9
+\f3 .\cf0 \
+		\cf3 sc\cf0 .nextLine(); \cf4 //
+\f1 \'bf\'a3\'c5\'cd\'b8\'a6
+\f3  
+\f1 \'b9\'f6\'c6\'db\'bf\'a1\'bc\'ad
+\f3  
+\f1 \'c1\'f6\'bf\'ec\'b1\'e2
+\f3  
+\f1 \'c0\'a7\'c7\'d8\'bc\'ad
+\f3  
+\f1 \'bb\'e7\'bf\'eb
+\f3 \cf0 \
+		System.
+\f4\i\b \cf6 out
+\f3\i0\b0 \cf0 .printf(\cf5 "
+\f1 \'c0\'cc\'b8\'a7
+\f3  :\\n"\cf0 );\
+		String \cf3 name\cf0  = \cf3 sc\cf0 .nextLine();\
+		System.
+\f4\i\b \cf6 out
+\f3\i0\b0 \cf0 .printf(\cf5 "
+\f1 \'c0\'cc\'b8\'a7
+\f3  : %d ,
+\f1 \'b9\'f8\'c8\'a3
+\f3  : %s\\n"\cf0 , \cf3 num\cf0 , \cf3 name\cf0 );\
+		\
+		\
+		\
+		\
+		\cf3 sc\cf0 .close();\
+\
+	\}\
+\
+\}\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f1\fs36 \cf0 \
+\
+---program, process, thread\
+=>task : process \'bf\'cd thread \'b8\'a6 \'c7\'d5\'c3\'c4\'bc\'ad \'ba\'ce\'b8\'a3\'b4\'c2 \'bf\'eb\'be\'ee\
+=>program : \'b5\'bf\'c0\'cf\'c7\'d1 \'c0\'db\'be\'f7\'c0\'bb \'c7\'cf\'b1\'e2 \'c0\'a7\'c7\'d8 \'b8\'f0\'c0\'ce \'c6\'c4\'c0\'cf\'c0\'c7 \'c1\'fd\'c7\'d5\
+=>process : \'bd\'c7\'c7\'e0 \'c1\'df\'c0\'ce \'c7\'c1\'b7\'ce\'b1\'d7\'b7\'a5, \'c0\'da\'bd\'c5\'c0\'c7 \'c0\'db\'be\'f7\'c0\'cc \'c1\'be\'b7\'e1\'b5\'c9 \'b6\'a7\'b1\'ee\'c1\'f6 \'b4\'d9\'b8\'a5 process\'bf\'a1\'b0\'d4 \'c1\'a6\'be\'ee\'b1\'c7\'c0\'bb \'b3\'d1\'b1\'e2\'c1\'f6 \'be\'ca\'bd\'c0\'b4\'cf\'b4\'d9. \'bd\'c7\'c7\'e0 \'c1\'df\'c0\'cc \'b5\'bf\'be\'c8\'bf\'a1\'b4\'c2 \'b4\'d9\'b8\'a5 \'c7\'c1\'b7\'ce\'bc\'bc\'bd\'ba\'c0\'c7 \'c0\'db\'be\'f7\'c0\'bb \'c7\'d2 \'bc\'f6 \'be\'f8\'bd\'c0\'b4\'cf\'b4\'d9.\
+\'b4\'d9\'b8\'a5 \'c7\'c1\'b7\'ce\'bc\'bc\'bd\'ba\'b8\'a6 \'bd\'c7\'c7\'e0\'c7\'cf\'b7\'c1\'b8\'e9 \'c7\'c1\'b7\'ce\'bc\'bc\'bc\'ad\'b0\'a1 2\'b0\'b3 \'c0\'cc\'bb\'f3 \'c0\'d6\'be\'ee\'be\'df \'c7\'d5\'b4\'cf\'b4\'d9.\
+2\'b0\'b3 \'c0\'cc\'bb\'f3\'c0\'c7 \'c7\'c1\'b7\'ce\'bc\'bc\'bc\'ad(CPU)\'b8\'a6 \'b0\'a1\'c1\'f6\'b0\'ed \'bf\'a9\'b7\'af \'b0\'b3\'c0\'c7 \'c7\'c1\'b7\'ce\'bc\'bc\'bd\'ba\'b8\'a6 \'bd\'c7\'c7\'e0\'c7\'cf\'b4\'c2 \'b0\'cd\'c0\'bb \'ba\'b4\'b7\'c4 \'c3\'b3\'b8\'ae\'b6\'f3\'b0\'ed \'c7\'d5\'b4\'cf\'b4\'d9.\
+=>thread : process \'be\'c8\'bf\'a1 \'c1\'b8\'c0\'e7\'c7\'cf\'b4\'c2 \'c0\'db\'be\'f7\'c0\'c7 \'b4\'dc\'c0\'a7\
+process \'c0\'c7 \'c0\'db\'be\'f7\'c0\'bb \'ba\'d0\'c7\'d2\'c7\'d8\'bc\'ad \'c0\'da\'bd\'c5\'c0\'c7 \'c0\'db\'be\'f7\'c0\'bb \'bc\'f6\'c7\'e0\'c7\'cf\'b4\'c2 \'b5\'b5\'c1\'df\'bf\'a1 \'bd\'ac\'b4\'c2 \'bd\'c3\'b0\'a3\'c0\'cc \'bb\'fd\'b1\'e2\'b8\'e9 \'b6\'c7\'b4\'c2 \'c0\'cf\'c1\'a4\'c7\'d1 \'bd\'c3\'b0\'a1\'b4\'dc\'c0\'a7\'b7\'ce \'b4\'d9\'b8\'a5 thread\'c0\'c7 \'c0\'db\'be\'f7\'c0\'bb \'bc\'f6\'c7\'e0\'c7\'d2 \'bc\'f6 \'c0\'d6\'bd\'c0\'b4\'cf\'b4\'d9.\
+\'b8\'b6\'c4\'a1 \'bf\'a9\'b7\'af\'b0\'b3\'c0\'c7 \'c0\'db\'be\'f7\'c0\'bb \'b5\'bf\'bd\'c3\'bf\'a1 \'c3\'b3\'b8\'ae\'c7\'cf\'b4\'c2 \'b0\'cd\'c3\'b3\'b7\'b3 \'ba\'b8\'bf\'a9\'c1\'f6\'b1\'e2\'b5\'b5 \'c7\'d5\'b4\'cf\'b4\'d9.\
+\'c0\'cf\'b9\'dd \'b8\'de\'bc\'d2\'b5\'e5 \'c8\'a3\'c3\'e2\'c0\'ba process \'c7\'fc\'c5\'c2\'b7\'ce \'b5\'bf\'c0\'db\'c7\'d5\'b4\'cf\'b4\'d9.\
+\
+--\'b8\'de\'c0\'ce\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f2\b\fs24 \cf2 package
+\f3\b0 \cf0  thread;\
+\
+
+\f2\b \cf2 public
+\f3\b0 \cf0  
+\f2\b \cf2 class
+\f3\b0 \cf0  ThreadMain1 \{\
+\
+	
+\f2\b \cf2 public
+\f3\b0 \cf0  
+\f2\b \cf2 static
+\f3\b0 \cf0  
+\f2\b \cf2 void
+\f3\b0 \cf0  main(String[] \cf3 args\cf0 ) \{\
+		ThreadEx \cf3 th1\cf0  = 
+\f2\b \cf2 new
+\f3\b0 \cf0  ThreadEx();\
+		\cf4 //th1.run(); //
+\f1 \'c7\'c1\'b7\'ce\'bc\'bc\'bd\'ba
+\f3  
+\f1 \'c7\'fc\'c5\'c2\'b7\'ce
+\f3  
+\f1 \'bd\'c7\'c7\'e0
+\f3 \cf0 \
+		\cf4 //
+\f1 \'c0\'cc
+\f3  
+\f1 \'b8\'de\'bc\'d2\'b5\'e5\'c0\'c7
+\f3  
+\f1 \'bc\'f6\'c7\'e0\'c0\'cc
+\f3  
+\f1 \'c1\'be\'b7\'e1\'b5\'c9
+\f3  
+\f1 \'b6\'a7\'b1\'ee\'c1\'f6
+\f3  
+\f1 \'b4\'d9\'b8\'a5
+\f3  
+\f1 \'b8\'de\'bc\'d2\'b5\'e5
+\f3  
+\f1 \'c8\'a3\'c3\'e2\'c0\'ba
+\f3  
+\f1 \'be\'c8\'b5\'ca
+\f3 \cf0 \
+		\
+		\cf3 th1\cf0 .start();\cf4 //
+\f1 \'bd\'ba\'b7\'b9\'b5\'e5\'b7\'ce
+\f3  
+\f1 \'bc\'f6\'c7\'e0
+\f3 \cf0 \
+		\cf4 //
+\f1 \'bd\'c7\'c7\'e0
+\f3  
+\f1 \'b5\'b5\'c1\'df\'bf\'a1
+\f3  
+\f1 \'bd\'ac\'b4\'c2
+\f3  
+\f1 \'bd\'c3\'b0\'a3\'c0\'cc
+\f3  
+\f1 \'bb\'fd\'b1\'e2\'b0\'c5\'b3\'aa
+\f3  CPU
+\f1 \'b0\'a1
+\f3  
+\f1 \'c7\'ca\'bf\'e4\'be\'f8\'b4\'c2
+\f3  
+\f1 \'c0\'db\'be\'f7\'c0\'cc
+\f3  
+\f1 \'bb\'fd\'b1\'e2\'b8\'e9
+\f3 \cf0 \
+		\cf4 //
+\f1 \'b4\'d9\'b8\'a5
+\f3  
+\f1 \'bd\'ba\'b7\'b9\'b5\'e5\'b8\'a6
+\f3  
+\f1 \'bd\'c7\'c7\'e0\'c7\'d2
+\f3  
+\f1 \'bc\'f6
+\f3  
+\f1 \'c0\'d6\'bd\'c0\'b4\'cf\'b4\'d9
+\f3 .\cf0 \
+		\
+		ThreadEx \cf3 th2\cf0  = 
+\f2\b \cf2 new
+\f3\b0 \cf0  ThreadEx();\
+		\cf4 //th2.run();\cf0 \
+		\cf3 th2\cf0 .start();\
+\
+	\}\
+\
+\}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f1\fs36 \cf0 \
+\
+--\'c5\'ac\'b7\'a1\'bd\'ba\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f2\b\fs24 \cf2 package
+\f3\b0 \cf0  thread;\
+\
+\cf4 //Thread 
+\f1 \'c5\'ac\'b7\'a1\'bd\'ba\'b8\'a6
+\f3  
+\f1 \'bb\'f3\'bc\'d3\'b9\'de\'c0\'ba
+\f3  
+\f1 \'c5\'ac\'b7\'a1\'bd\'ba
+\f3 \cf0 \
+
+\f2\b \cf2 public
+\f3\b0 \cf0  
+\f2\b \cf2 class
+\f3\b0 \cf0  ThreadEx 
+\f2\b \cf2 extends
+\f3\b0 \cf0  Thread \{\
+	\cf4 //1
+\f1 \'c3\'ca\'be\'bf
+\f3  
+\f1 \'bd\'ac\'b8\'e9\'bc\'ad
+\f3  0-9
+\f1 \'b1\'ee\'c1\'f6
+\f3  
+\f1 \'c3\'e2\'b7\'c2
+\f3 \cf0 \
+	
+\f2\b \cf2 public
+\f3\b0 \cf0  
+\f2\b \cf2 void
+\f3\b0 \cf0  run() \{\
+		
+\f2\b \cf2 for
+\f3\b0 \cf0 (
+\f2\b \cf2 int
+\f3\b0 \cf0  \cf3 i\cf0 =0;\cf3 i\cf0 <10;\cf3 i\cf0 =\cf3 i\cf0 +1) \{\
+			System.
+\f4\i\b \cf6 out
+\f3\i0\b0 \cf0 .printf(\cf5 "%d\\n"\cf0 , \cf3 i\cf0 );\
+			
+\f2\b \cf2 try
+\f3\b0 \cf0  \{\
+				Thread.
+\f5\i sleep
+\f3\i0 (1000);\
+			\} 
+\f2\b \cf2 catch
+\f3\b0 \cf0  (InterruptedException \cf3 e\cf0 ) \{\
+				System.
+\f4\i\b \cf6 out
+\f3\i0\b0 \cf0 .printf(\cf5 "%s\\n"\cf0 , \cf3 e\cf0 .getMessage());\
+			\}\
+			\
+		\}\
+	\}\
+\}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f1\fs36 \cf0 \
+\
+1.java\'bf\'a1\'bc\'ad Thread\'b8\'a6 \'bb\'fd\'bc\'ba\'c7\'cf\'b4\'c2 \'b9\'e6\'b9\'fd\
+1)Thread \'c5\'ac\'b7\'a1\'bd\'ba\'b8\'a6 \'bb\'f3\'bc\'d3\'b9\'de\'b4\'c2 \'b9\'e6\'b9\'fd\
+=>Thread \'c5\'ac\'b7\'a1\'bd\'ba\'b8\'a6 \'bb\'f3\'bc\'d3\'b9\'de\'b4\'c2 \'c5\'ac\'b7\'a1\'bd\'ba\'b8\'a6 \'bb\'fd\'bc\'ba\'c7\'cf\'b0\'ed run \'b8\'de\'bc\'d2\'b5\'e5\'bf\'a1 \'bd\'ba\'b7\'b9\'b5\'e5\'b7\'ce \'bc\'f6\'c7\'e0\'c7\'d2 \'b3\'bb\'bf\'eb\'c0\'bb \'c0\'db\'bc\'ba\
+=>\'b0\'b4\'c3\'bc\'b8\'a6 \'bb\'fd\'bc\'ba\'c7\'cf\'b0\'ed start()\'b8\'a6 \'c8\'a3\'c3\'e2\
+\
+\
+2)Runnable \'c0\'ce\'c5\'cd\'c6\'e4\'c0\'cc\'bd\'ba\'b8\'a6 \'b1\'b8\'c7\'f6\'c7\'cf\'b4\'c2 \'b9\'e6\'b9\'fd\
+=>Runnable \'c0\'ce\'c5\'cd\'c6\'e4\'c0\'cc\'bd\'ba\'b8\'a6 \'b1\'b8\'c7\'f6\'c7\'d1 \'c5\'ac\'b7\'a1\'bd\'ba\'b8\'a6 \'b8\'b8\'b5\'e9\'b0\'ed run \'b8\'de\'bc\'d2\'b5\'e5\'bf\'a1 \'bd\'ba\'b7\'b9\'b5\'e5\'b7\'ce \'bc\'f6\'c7\'e0\'c7\'d2 \'b3\'bb\'bf\'eb\'c0\'bb \'c0\'db\'bc\'ba\
+=>\'b0\'b4\'c3\'bc\'b8\'a6 \'bb\'fd\'bc\'ba\
+=>Thread \'c5\'ac\'b7\'a1\'bd\'ba\'c0\'c7 \'b0\'b4\'c3\'bc\'b8\'a6 \'b8\'b8\'b5\'e5\'b4\'c2\'b5\'a5 \'c0\'cc \'b6\'a7 \'be\'d5\'bf\'a1\'bc\'ad \'b8\'b8\'b5\'e7 \'b0\'b4\'c3\'bc\'b8\'a6 \'bb\'fd\'bc\'ba\'c0\'da\'bf\'a1 \'b4\'eb\'c0\'d4\
+=>Thread \'c5\'ac\'b7\'a1\'bd\'ba\'c0\'c7 \'b0\'b4\'c3\'bc\'b0\'a1 stars()\'b8\'a6 \'c8\'a3\'c3\'e2\
+\
+\
+3)\'ba\'b8\'c5\'eb\'c0\'ba Thread \'c5\'ac\'b7\'a1\'bd\'ba\'b8\'a6 \'bb\'f3\'bc\'d3\'b9\'de\'c1\'f6\'b8\'b8 \'c0\'cc \'c5\'ac\'b7\'a1\'bd\'ba\'b0\'a1 \'b4\'d9\'b8\'a5 \'c5\'ac\'b7\'a1\'bd\'ba\'b8\'a6 \'bb\'f3\'bc\'d3\'c7\'cf\'b4\'c2 \'b0\'e6\'bf\'ec\'bf\'a1\'b4\'c2 Runnable\'c0\'ce\'c5\'cd\'c6\'e4\'c0\'cc\'bd\'ba \'b1\'b8\'c7\'f6\
+java\'b4\'c2 \'b4\'d9\'c1\'df\'bb\'f3\'bc\'d3\'c0\'cc \'be\'c8\'b5\'ca\
+\
+\
+2.Thread \'c5\'ac\'b7\'a1\'bd\'ba\
+1)\'bb\'fd\'bc\'ba\'c0\'da\
+Thread() : \'c0\'cc\'b8\'a7\'c0\'bb \'bd\'c3\'bd\'ba\'c5\'db\'c0\'cc \'bb\'fd\'bc\'ba\
+\
+Thread(Runnable target) : Runnable \'c0\'ce\'c5\'cd\'c6\'e4\'c0\'cc\'bd\'ba \'b0\'b4\'c3\'bc\'b8\'a6 \'b0\'a1\'c1\'f6\'b0\'ed \'bd\'ba\'b7\'b9\'b5\'e5\'b8\'a6 \'bb\'fd\'bc\'ba\
+\
+Thread(Runnable target, String name) : \'bd\'ba\'b7\'b9\'b5\'e5 \'c0\'cc\'b8\'a7\'b1\'ee\'c1\'f6 \'b0\'b0\'c0\'cc \'b9\'de\'be\'c6\'bc\'ad \'b8\'b8\'b5\'e5\'b4\'c2 \'bb\'fd\'bc\'ba\
+\
+Thread(String name) :\
+\
+\
+2)\'b8\'de\'bc\'d2\'b5\'e5\
+interrupt() : \'bd\'ba\'b7\'b9\'b5\'e5\'bf\'a1 \'c0\'ce\'c5\'cd\'b7\'b4\'c6\'ae \'b8\'de\'bc\'bc\'c1\'f6\'b8\'a6 \'c0\'fc\'bc\'db\
+\
+setDaemon(boolean daemon) : \'b5\'a5\'b8\'f3 \'bd\'ba\'b7\'b9\'b5\'e5 \'bc\'b3\'c1\'a4\'c0\'bb \'c0\'a7\'c7\'d1 \'b8\'de\'bc\'d2\'b5\'e5\
+\
+start() : \'bd\'ba\'b7\'b9\'b5\'e5\'b8\'a6 \'bd\'c3\'c0\'db\
+\
+run() : \'bd\'ba\'b7\'b9\'b5\'e5\'b7\'ce \'bc\'f6\'c7\'e0\'c7\'d2 \'b3\'bb\'bf\'eb\'c0\'bb \'b0\'a1\'c1\'f6\'b4\'c2 \'b8\'de\'bc\'d2\'b5\'e5\
+\
+static sleep(int millisecond) : \'bd\'ba\'b7\'b9\'b5\'e5\'c0\'c7 \'c0\'db\'be\'f7\'c0\'bb \'c0\'cf\'bd\'c3 \'c1\'df\'c1\'f6\
+\
+\
+\
+3.\'bb\'f3\'bc\'d3\'b9\'e6\'b9\'fd\
+1)\'bb\'f3\'bc\'d3\'b9\'de\'b4\'c2 \'c5\'ac\'b7\'a1\'bd\'ba\'b8\'a6 \'b8\'b8\'b5\'e9\'b0\'ed \'b0\'b4\'c3\'bc\'b8\'a6 \'bb\'fd\'bc\'ba - \'b5\'bf\'c0\'cf\'c7\'d1 \'b3\'bb\'bf\'eb\'c0\'bb \'b0\'ae\'b4\'c2 \'b0\'b4\'c3\'bc\'b8\'a6 \'bf\'a9\'b7\'af\'b0\'b3 \'bb\'fd\'bc\'ba\'b0\'a1\'b4\'c9\
+class \'c5\'ac\'b7\'a1\'bd\'ba\'c0\'cc\'b8\'a7 extends \'bb\'f3\'c0\'a7\'c5\'ac\'b7\'a1\'bd\'ba\'c0\'cc\'b8\'a7\{\
+\
+\
+\} \
+\
+\'c5\'ac\'b7\'a1\'bd\'ba\'c0\'cc\'b8\'a7 \'ba\'af\'bc\'f6 = new \'c5\'ac\'b7\'a1\'bd\'ba\'c0\'cc\'b8\'a7();\
+\
+2)\'b0\'b4\'c3\'bc\'b8\'a6 \'b9\'d9\'b7\'ce \'bb\'fd\'bc\'ba - \'b5\'bf\'c0\'cf\'c7\'d1 \'b3\'bb\'bf\'eb\'c0\'bb \'b0\'ae\'b4\'c2 \'b0\'b4\'c3\'bc\'b8\'a6 1\'b0\'b3\'b8\'b8 \'bb\'fd\'bc\'ba\
+\'bb\'f3\'c0\'a7\'c5\'ac\'b7\'a1\'bd\'ba\'c0\'cc\'b8\'a7 \'ba\'af\'bc\'f6 = new \'bb\'f3\'c0\'a7\'c5\'ac\'b7\'a1\'bd\'ba\'c0\'cc\'b8\'a7()\{\
+\
+\}\
+\
+---main\
+\pard\pardeftab720\partightenfactor0
+
+\f2\b\fs24 \cf2 package
+\f3\b0 \cf0  thread;\
+\
+
+\f2\b \cf2 public
+\f3\b0 \cf0  
+\f2\b \cf2 class
+\f3\b0 \cf0  ThreadMain2 \{\
+\
+	
+\f2\b \cf2 public
+\f3\b0 \cf0  
+\f2\b \cf2 static
+\f3\b0 \cf0  
+\f2\b \cf2 void
+\f3\b0 \cf0  main(String[] \cf3 args\cf0 ) \{\
+		\cf4 //Thread 
+\f1 \'c5\'ac\'b7\'a1\'bd\'ba\'b7\'ce
+\f3  
+\f1 \'ba\'ce\'c5\'cd
+\f3  
+\f1 \'bb\'f3\'bc\'d3\'b9\'de\'c0\'ba
+\f3  
+\f1 \'c5\'ac\'b7\'a1\'bd\'ba\'c0\'c7
+\f3  
+\f1 \'b0\'b4\'c3\'bc\'b8\'a6
+\f3  
+\f1 \'bb\'fd\'bc\'ba
+\f3 \cf0 \
+		ThreadTemp \cf3 th1\cf0  = 
+\f2\b \cf2 new
+\f3\b0 \cf0  ThreadTemp();\
+		\cf4 //
+\f1 \'bd\'ba\'b7\'b9\'b5\'e5
+\f3  
+\f1 \'bd\'c3\'c0\'db
+\f3 \cf0 \
+		\cf3 th1\cf0 .start();\
+		\
+		\cf4 //anonymous class 
+\f1 \'b8\'a6
+\f3  
+\f1 \'c0\'cc\'bf\'eb\'c7\'cf\'b4\'c2
+\f3  
+\f1 \'b9\'e6\'b9\'fd
+\f3 \cf0 \
+		Thread \cf3 th2\cf0  = 
+\f2\b \cf2 new
+\f3\b0 \cf0  Thread() \{\
+			
+\f2\b \cf2 public
+\f3\b0 \cf0  
+\f2\b \cf2 void
+\f3\b0 \cf0  run() \{\
+				
+\f2\b \cf2 for
+\f3\b0 \cf0 (
+\f2\b \cf2 int
+\f3\b0 \cf0  \cf3 i\cf0 =0;\cf3 i\cf0 <5;\cf3 i\cf0 =\cf3 i\cf0 +1) \{\
+					System.
+\f4\i\b \cf6 out
+\f3\i0\b0 \cf0 .printf(\cf5 "Hello Java\\n"\cf0 );\
+					
+\f2\b \cf2 try
+\f3\b0 \cf0  \{\
+						Thread.
+\f5\i sleep
+\f3\i0 (1000);\
+					\}
+\f2\b \cf2 catch
+\f3\b0 \cf0 (Exception \cf3 e\cf0 ) \{\
+						System.
+\f4\i\b \cf6 out
+\f3\i0\b0 \cf0 .printf(\cf5 "%s\\n"\cf0 , \cf3 e\cf0 .getMessage());\
+					\}\
+				\}\
+			\}\
+		\};\
+		\cf3 th2\cf0 .start();\
+		\
+		\cf4 //Runnable 
+\f1 \'c0\'ce\'c5\'cd\'c6\'e4\'c0\'cc\'bd\'ba\'b8\'a6
+\f3  
+\f1 \'c0\'cc\'bf\'eb\'c7\'cf\'b4\'c2
+\f3  
+\f1 \'b9\'e6\'b9\'fd
+\f3 \cf0 \
+		Runnable \cf3 r\cf0  =
+\f2\b \cf2 new
+\f3\b0 \cf0  Runnable() \{\
+\
+			\cf8 @Override\cf0 \
+			
+\f2\b \cf2 public
+\f3\b0 \cf0  
+\f2\b \cf2 void
+\f3\b0 \cf0  run() \{\
+				
+\f2\b \cf2 for
+\f3\b0 \cf0 (
+\f2\b \cf2 int
+\f3\b0 \cf0  \cf3 i\cf0 =0;\cf3 i\cf0 <5;\cf3 i\cf0 =\cf3 i\cf0 +1) \{\
+					
+\f2\b \cf2 try
+\f3\b0 \cf0  \{\
+						System.
+\f4\i\b \cf6 out
+\f3\i0\b0 \cf0 .printf(\cf5 "Runnable\\n"\cf0 );\
+						Thread.
+\f5\i sleep
+\f3\i0 (1000);\
+					\}
+\f2\b \cf2 catch
+\f3\b0 \cf0 (Exception \cf3 e\cf0 ) \{\
+						System.
+\f4\i\b \cf6 out
+\f3\i0\b0 \cf0 .printf(\cf5 "%s\\n"\cf0 , \cf3 e\cf0 .getMessage());\
+					\}\
+				\}\
+				\
+			\}\
+			\
+		\};\
+		\cf4 //Runnable 
+\f1 \'c0\'ce\'c5\'cd\'c6\'e4\'c0\'cc\'bd\'ba\'b8\'a6
+\f3  
+\f1 \'c0\'cc\'bf\'eb\'c7\'cf\'b4\'c2
+\f3  
+\f1 \'b0\'e6\'bf\'ec\'bf\'a1\'b4\'c2
+\f3  \cf0 \
+		\cf4 //Thread 
+\f1 \'c5\'ac\'b7\'a1\'bd\'ba\'c0\'c7
+\f3  
+\f1 \'b0\'b4\'c3\'bc\'b8\'a6
+\f3  
+\f1 \'b8\'b8\'b5\'e9\'b0\'ed
+\f3  
+\f1 \'b1\'d7
+\f3  
+\f1 \'b0\'b4\'c3\'bc\'b8\'a6
+\f3  
+\f1 \'b0\'a1\'c1\'f6\'b0\'ed
+\f3  start\cf0 \
+		Thread \cf3 th3\cf0  =
+\f2\b \cf2 new
+\f3\b0 \cf0  Thread(\cf3 r\cf0 );\
+		\cf3 th3\cf0 .start();\
+		\
+		\
+		Thread \cf3 th4\cf0  = 
+\f2\b \cf2 new
+\f3\b0 \cf0  Thread() \{\
+			\cf4 //10
+\f1 \'c3\'ca
+\f3  
+\f1 \'b5\'bf\'be\'c8
+\f3  1
+\f1 \'c3\'ca\'be\'bf
+\f3  
+\f1 \'bd\'ac\'b8\'e9\'bc\'ad
+\f3  Daemon
+\f1 \'c0\'cc\'b6\'f3\'b4\'c2
+\f3  
+\f1 \'b9\'ae\'c0\'da\'bf\'ad\'c0\'bb
+\f3  
+\f1 \'c3\'e2\'b7\'c2
+\f3 \cf0 \
+			\cf8 @Override\cf0 \
+			
+\f2\b \cf2 public
+\f3\b0 \cf0  
+\f2\b \cf2 void
+\f3\b0 \cf0  run() \{\
+				
+\f2\b \cf2 for
+\f3\b0 \cf0 (
+\f2\b \cf2 int
+\f3\b0 \cf0  \cf3 i\cf0 =0;\cf3 i\cf0 <10;\cf3 i\cf0 =\cf3 i\cf0 +1) \{\
+					
+\f2\b \cf2 try
+\f3\b0 \cf0  \{\
+						System.
+\f4\i\b \cf6 out
+\f3\i0\b0 \cf0 .printf(\cf5 "Daemon\\n"\cf0 );\
+						Thread.
+\f5\i sleep
+\f3\i0 (1000);\
+					\}
+\f2\b \cf2 catch
+\f3\b0 \cf0 (Exception \cf3 e\cf0 ) \{\
+						System.
+\f4\i\b \cf6 out
+\f3\i0\b0 \cf0 .printf(\cf5 "%s\\n"\cf0 , \cf3 e\cf0 .getMessage());\
+					\}\
+				\}\
+				\
+			\}\
+		\};\
+		\cf4 //
+\f1 \'b5\'a5\'b8\'f3
+\f3  
+\f1 \'bd\'ba\'b7\'b9\'b5\'e5\'b7\'ce
+\f3  
+\f1 \'bc\'b3\'c1\'a4
+\f3  - 
+\f1 \'b4\'d9\'b8\'a5
+\f3  
+\f1 \'bd\'ba\'b7\'b9\'b5\'e5\'b5\'e9\'c0\'cc
+\f3  
+\f1 \'c0\'db\'be\'f7\'c0\'bb
+\f3  
+\f1 \'c7\'cf\'b4\'c2
+\f3  
+\f1 \'b5\'bf\'be\'c8\'b8\'b8
+\f3  
+\f1 \'c0\'cc
+\f3  
+\f1 \'bd\'ba\'b7\'b9\'b5\'e5\'b4\'c2
+\f3  
+\f1 \'b5\'bf\'c0\'db\'c7\'d5\'b4\'cf\'b4\'d9
+\f3 .\cf0 \
+		\cf4 //
+\f1 \'b5\'a5\'b8\'f3\'bc\'b3\'c1\'a4\'c0\'cc
+\f3  
+\f1 \'bd\'c3\'c0\'db\'c7\'cf\'b4\'c2
+\f3  
+\f1 \'b0\'cd\'ba\'b8\'b4\'d9
+\f3  
+\f1 \'b8\'d5\'c0\'fa
+\f3  
+\f1 \'b3\'aa\'bf\'cd\'be\'df
+\f3  
+\f1 \'c7\'d5\'b4\'cf\'b4\'d9
+\f3 .\cf0 \
+		\cf3 th4\cf0 .setDaemon(
+\f2\b \cf2 true
+\f3\b0 \cf0 );\
+		\cf3 th4\cf0 .start();\
+	\}\
+\
+\}
+\f1\fs36 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+--class\
+\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f2\b\fs24 \cf2 package
+\f3\b0 \cf0  thread;\
+\
+
+\f2\b \cf2 public
+\f3\b0 \cf0  
+\f2\b \cf2 class
+\f3\b0 \cf0  ThreadTemp 
+\f2\b \cf2 extends
+\f3\b0 \cf0  Thread \{\
+	\cf4 //
+\f1 \'bd\'ba\'b7\'b9\'b5\'e5\'b7\'ce
+\f3  
+\f1 \'bc\'f6\'c7\'e0\'c7\'d2
+\f3  
+\f1 \'b3\'bb\'bf\'eb\'c0\'bb
+\f3  
+\f1 \'b0\'a1\'c1\'f6\'b4\'c2
+\f3  
+\f1 \'b8\'de\'bc\'d2\'b5\'e5
+\f3 \cf0 \
+	\cf8 @Override\cf0 \
+	
+\f2\b \cf2 public
+\f3\b0 \cf0  
+\f2\b \cf2 void
+\f3\b0 \cf0  run() \{\
+		
+\f2\b \cf2 for
+\f3\b0 \cf0 (
+\f2\b \cf2 int
+\f3\b0 \cf0  \cf3 i\cf0 =0;\cf3 i\cf0 <5;\cf3 i\cf0 =\cf3 i\cf0 +1) \{\
+			\cf4 //1
+\f1 \'c3\'ca\'b8\'b6\'b4\'d9
+\f3  
+\f1 \'bd\'ac\'b8\'e9\'bc\'ad
+\f3  Hello Java
+\f1 \'b8\'a6
+\f3  5
+\f1 \'b9\'f8
+\f3  
+\f1 \'c3\'e2\'b7\'c2
+\f3 \cf0 \
+			System.
+\f4\i\b \cf6 out
+\f3\i0\b0 \cf0 .printf(\cf5 "Hello Java!\\n"\cf0 );\
+			
+\f2\b \cf2 try
+\f3\b0 \cf0  \{\
+				Thread.
+\f5\i sleep
+\f3\i0 (1000);\
+			\} 
+\f2\b \cf2 catch
+\f3\b0 \cf0  (InterruptedException \cf3 e\cf0 ) \{\
+				System.
+\f4\i\b \cf6 out
+\f3\i0\b0 \cf0 .printf(\cf5 "%s\\n"\cf0 , \cf3 e\cf0 .getMessage());\
+			\}\
+			\
+		\}\
+	\}\
+\}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f1\fs36 \cf0 \
+\
+\
+4.daemon thread\
+=>\'bd\'ba\'b7\'b9\'b5\'e5\'b8\'a6 \'ba\'d0\'b7\'f9\'c7\'cf\'b4\'c2 \'b9\'e6\'b9\'fd \'c1\'df\'bf\'a1 worker thread \'bf\'cd daemon thread \'b7\'ce \'ba\'d0\'b7\'f9\'c7\'cf\'b4\'c2 \'b0\'e6\'bf\'ec\'b5\'b5 \'c0\'d6\'bd\'c0\'b4\'cf\'b4\'d9.\
+=>worker thread \'b4\'c2 \'c0\'da\'bd\'c5\'c0\'c7 \'c0\'db\'be\'f7\'c0\'cc \'c1\'be\'b7\'e1\'b5\'c9 \'b6\'a7 \'b1\'ee\'c1\'f6 \'b9\'ab\'c1\'b6\'b0\'c7 \'bc\'f6\'c7\'e0\'c0\'bb \'b0\'e8\'bc\'d3\'c7\'d5\'b4\'cf\'b4\'d9.\
+daemon thread \'b4\'c2 \'b4\'d9\'b8\'a5 worker thread \'b0\'a1 \'be\'f8\'c0\'b8\'b8\'e9 \'c0\'da\'b5\'bf\'c0\'b8\'b7\'ce \'c0\'db\'be\'f7\'c0\'bb \'c1\'df\'c1\'f6\'c7\'d5\'b4\'cf\'b4\'d9.\
+=>\'c1\'df\'bf\'e4\'c7\'cf\'c1\'f6 \'be\'ca\'c0\'ba \'c0\'db\'be\'f7\'c0\'cc\'b3\'aa \'b9\'e9\'b1\'d7\'b6\'f3\'bf\'ee\'b5\'e5\'bf\'a1\'bc\'ad \'bc\'f6\'c7\'e0\'c7\'d8\'be\'df \'c7\'cf\'b4\'c2 \'c0\'db\'be\'f7\'b5\'e9\'c0\'bb daemon\'c0\'b8\'b7\'ce \'b8\'b8\'b5\'e9\'b8\'e9 \'b4\'d9\'b8\'a5 \'bd\'ba\'b7\'b9\'b5\'e5\'b0\'a1 \'be\'f8\'c0\'b8\'b8\'e9 \'c0\'da\'b5\'bf\'c0\'b8\'b7\'ce \'c1\'df\'c1\'f6 \'b5\'c7\'b9\'c7\'b7\'ce \'c6\'ed\'b8\'ae\'c7\'d5\'b4\'cf\'b4\'d9.\
+=>\'bf\'c0\'b7\'a3\'bd\'c3\'b0\'a3\'c0\'cc \'b0\'c9\'b8\'ae\'b4\'c2 \'b4\'d9\'bf\'ee\'b7\'ce\'b5\'e5 \'c0\'db\'be\'f7 \'b0\'b0\'c0\'ba \'b0\'e6\'bf\'ec worker thread\'b7\'ce \'b8\'b8\'b5\'e9\'b8\'e9 \'b4\'d9\'bf\'ee\'b7\'ce\'b5\'e5\'b0\'a1 \'b3\'a1\'b3\'af \'b6\'a7\'b1\'ee\'c1\'f6 \'c7\'c1\'b7\'ce\'bc\'bc\'bd\'ba\'b4\'c2 \'b0\'e8\'bc\'d3 \'b5\'bf\'c0\'db\'c7\'d8\'be\'df \'c7\'d5\'b4\'cf\'b4\'d9.\
+\'c0\'cc\'b7\'b1 \'c0\'db\'be\'f7\'c0\'bb daemon thread\'b7\'ce \'b8\'b8\'b5\'e9\'b8\'e9 \'b4\'d9\'b8\'a5 \'c0\'db\'be\'f7\'c0\'cc \'c1\'df\'c1\'f6\'b5\'c7\'b8\'e9 \'c0\'da\'b5\'bf\'c0\'b8\'b7\'ce \'c1\'df\'c1\'f6\'b5\'cb\'b4\'cf\'b4\'d9.\
+=>daemon \'bd\'ba\'b7\'b9\'b5\'e5\'b8\'a6 \'b8\'b8\'b5\'e5\'b4\'c2 \'b9\'e6\'b9\'fd\'c0\'ba start()\'b8\'a6 \'c8\'a3\'c3\'e2\'c7\'cf\'b1\'e2 \'c0\'fc\'bf\'a1 setDaemon \'b8\'de\'bc\'d2\'b5\'e5\'bf\'a1 true\'b8\'a6 \'b4\'eb\'c0\'d4\'c7\'cf\'b8\'e9 \'b5\'cb\'b4\'cf\'b4\'d9.\
+=>\'bc\'ad\'b9\'f6\'bf\'cd \'c5\'eb\'bd\'c5\'c7\'cf\'b4\'c2 \'ba\'ce\'ba\'d0\'b5\'e9\'c0\'bb \'b5\'a5\'b8\'f3\'c0\'b8\'b7\'ce \'b8\'b8\'b5\'e5\'b4\'c2 \'b0\'e6\'bf\'ec\'b0\'a1 \'b8\'b9\'bd\'c0\'b4\'cf\'b4\'d9.\
+\'b4\'d9\'c0\'bd\'bf\'a1 \'bb\'e7\'bf\'eb\'c7\'d2 \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'b4\'d9\'bf\'ee\'b7\'ce\'b5\'e5 \'b9\'de\'b4\'c2 \'ba\'ce\'ba\'d0\'c0\'bb \'b5\'a5\'b8\'f3\'c0\'b8\'b7\'ce \'b8\'b8\'b5\'e9\'b8\'e9 \'c0\'cf\'c0\'bb \'c7\'cf\'b4\'d9\'b0\'a1 \'b8\'d8\'c3\'df\'b8\'e9 \'c0\'da\'b5\'bf\'c0\'b8\'b7\'ce \'b4\'d9\'bf\'ee\'b7\'ce\'b5\'e5\'b0\'a1 \'c1\'df\'c1\'f6\'b5\'cb\'b4\'cf\'b4\'d9.\
+\'b5\'a5\'b8\'f3\'c0\'b8\'b7\'ce \'b8\'b8\'b5\'e9\'c1\'f6 \'be\'ca\'c0\'b8\'b8\'e9 \'c7\'c1\'b7\'ce\'b1\'d7\'b7\'a5\'c0\'bb \'c1\'be\'b7\'e1\'c7\'d2 \'b6\'a7 \'c0\'cf\'c0\'cf\'c0\'cc \'bd\'ba\'b7\'b9\'b5\'e5\'b8\'a6 \'c0\'fc\'ba\'ce \'c1\'be\'b7\'e1\'bd\'c3\'c4\'d1\'be\'df \'c7\'d5\'b4\'cf\'b4\'d9.\
+\'b9\'d9\'b7\'ce \'bb\'e7\'bf\'eb\'c7\'d8\'be\'df \'c7\'cf\'b4\'c2 \'b5\'a5\'c0\'cc\'c5\'cd\'b0\'a1 \'be\'c6\'b4\'d1 \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'b4\'d9\'bf\'ee\'b7\'ce\'b5\'e5 \'b9\'de\'c0\'bb \'b6\'a7\'b4\'c2 \'b5\'a5\'b8\'f3 \'bd\'ba\'b7\'b9\'b5\'e5\'b7\'ce \'b8\'b8\'b5\'e5\'b4\'c2 \'b0\'cd\'c0\'cc \'c1\'c1\'bd\'c0\'b4\'cf\'b4\'d9.\
+\
+\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f3\fs24 \cf0 		Thread \cf3 th4\cf0  = 
+\f2\b \cf2 new
+\f3\b0 \cf0  Thread() \{\
+			\cf4 //10
+\f1 \'c3\'ca
+\f3  
+\f1 \'b5\'bf\'be\'c8
+\f3  1
+\f1 \'c3\'ca\'be\'bf
+\f3  
+\f1 \'bd\'ac\'b8\'e9\'bc\'ad
+\f3  Daemon
+\f1 \'c0\'cc\'b6\'f3\'b4\'c2
+\f3  
+\f1 \'b9\'ae\'c0\'da\'bf\'ad\'c0\'bb
+\f3  
+\f1 \'c3\'e2\'b7\'c2
+\f3 \cf0 \
+			\cf8 @Override\cf0 \
+			
+\f2\b \cf2 public
+\f3\b0 \cf0  
+\f2\b \cf2 void
+\f3\b0 \cf0  run() \{\
+				
+\f2\b \cf2 for
+\f3\b0 \cf0 (
+\f2\b \cf2 int
+\f3\b0 \cf0  \cf3 i\cf0 =0;\cf3 i\cf0 <10;\cf3 i\cf0 =\cf3 i\cf0 +1) \{\
+					
+\f2\b \cf2 try
+\f3\b0 \cf0  \{\
+						System.
+\f4\i\b \cf6 out
+\f3\i0\b0 \cf0 .printf(\cf5 "Daemon\\n"\cf0 );\
+						Thread.
+\f5\i sleep
+\f3\i0 (1000);\
+					\}
+\f2\b \cf2 catch
+\f3\b0 \cf0 (Exception \cf3 e\cf0 ) \{\
+						System.
+\f4\i\b \cf6 out
+\f3\i0\b0 \cf0 .printf(\cf5 "%s\\n"\cf0 , \cf3 e\cf0 .getMessage());\
+					\}\
+				\}\
+				\
+			\}\
+		\};\
+		\cf4 //
+\f1 \'b5\'a5\'b8\'f3
+\f3  
+\f1 \'bd\'ba\'b7\'b9\'b5\'e5\'b7\'ce
+\f3  
+\f1 \'bc\'b3\'c1\'a4
+\f3  - 
+\f1 \'b4\'d9\'b8\'a5
+\f3  
+\f1 \'bd\'ba\'b7\'b9\'b5\'e5\'b5\'e9\'c0\'cc
+\f3  
+\f1 \'c0\'db\'be\'f7\'c0\'bb
+\f3  
+\f1 \'c7\'cf\'b4\'c2
+\f3  
+\f1 \'b5\'bf\'be\'c8\'b8\'b8
+\f3  
+\f1 \'c0\'cc
+\f3  
+\f1 \'bd\'ba\'b7\'b9\'b5\'e5\'b4\'c2
+\f3  
+\f1 \'b5\'bf\'c0\'db\'c7\'d5\'b4\'cf\'b4\'d9
+\f3 .\cf0 \
+		\cf4 //
+\f1 \'b5\'a5\'b8\'f3\'bc\'b3\'c1\'a4\'c0\'cc
+\f3  
+\f1 \'bd\'c3\'c0\'db\'c7\'cf\'b4\'c2
+\f3  
+\f1 \'b0\'cd\'ba\'b8\'b4\'d9
+\f3  
+\f1 \'b8\'d5\'c0\'fa
+\f3  
+\f1 \'b3\'aa\'bf\'cd\'be\'df
+\f3  
+\f1 \'c7\'d5\'b4\'cf\'b4\'d9
+\f3 .\cf0 \
+		\cf3 th4\cf0 .setDaemon(
+\f2\b \cf2 true
+\f3\b0 \cf0 );\
+		\cf3 th4\cf0 .start();
+\f1\fs36 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\
+\
+5.\'bd\'ba\'b7\'b9\'b5\'e5\'c0\'c7 \'bf\'ec\'bc\'b1 \'bc\'f8\'c0\'a7\
+=>\'bd\'ba\'b7\'b9\'b5\'e5\'b5\'e9 \'bb\'e7\'c0\'cc\'c0\'c7 \'bf\'ec\'bc\'b1\'bc\'f8\'c0\'a7\'b8\'a6 \'bc\'b3\'c1\'a4\'c7\'d8\'bc\'ad \'c6\'af\'c1\'a4 \'bd\'ba\'b7\'b9\'b5\'e5\'b0\'a1 \'c0\'da\'c1\'d6 \'b6\'c7\'b4\'c2 \'b8\'d5\'c0\'fa \'bc\'f6\'c7\'e0\'c7\'cf\'b5\'b5\'b7\'cf \'c7\'d2 \'bc\'f6 \'c0\'d6\'bd\'c0\'b4\'cf\'b4\'d9.\
+=>\'bf\'ec\'bc\'b1 \'bc\'f8\'c0\'a7 \'bc\'b3\'c1\'a4\'b0\'fa \'c8\'ae\'c0\'ce\'c0\'ba setPriority \'bf\'cd getPriority \'b8\'de\'bc\'d2\'b5\'e5\'b8\'a6 \'c0\'cc\'bf\'eb\
+=>\'bc\'b3\'c1\'a4\'c0\'ba \'c1\'a4\'bc\'f6\'b7\'ce \'c7\'cf\'b4\'c2\'b5\'a5 Thread \'c5\'ac\'b7\'a1\'bd\'ba\'c0\'c7 static final \'bb\'f3\'bc\'f6\'b8\'a6 \'c0\'cc\'bf\'eb\'c7\'cf\'b4\'c2\'b0\'d4 \'c1\'c1\'bd\'c0\'b4\'cf\'b4\'d9.\
+MAX_PRIORITY\
+MIN_PRIORITY\
+NORM_PRIORITY\
+=>windows\'b4\'c2 \'bf\'ec\'bc\'b1\'bc\'f8\'c0\'a7\'b0\'a1 1-10\'b1\'ee\'c1\'f6\'c0\'ce\'b5\'a5 Linux\'b4\'c2 1-7\'b1\'ee\'c1\'f6\'c0\'d4\'b4\'cf\'b4\'d9.\
+\'bf\'ec\'bc\'b1\'bc\'f8\'c0\'a7\'b8\'a6 \'c1\'a4\'bc\'f6\'b8\'a6 \'c0\'cc\'bf\'eb\'c7\'d8\'bc\'ad \'c1\'f7\'c1\'a210\'c0\'cc\'b6\'f3\'b0\'ed \'bc\'b3\'c1\'a4\'c7\'cf\'b8\'e9 windows\'bf\'a1\'bc\'ad\'b4\'c2 \'c1\'a6\'b4\'eb\'b7\'ce \'c0\'ce\'bd\'c4\'c0\'bb \'c7\'cf\'c1\'f6\'b8\'b8 Linux\'bf\'a1\'bc\'ad\'b4\'c2 \'c0\'ce\'bd\'c4\'c0\'bb \'c7\'cf\'c1\'f6 \'b8\'f8\'c7\'d5\'b4\'cf\'b4\'d9.\
+Thread.MAXPRIORITY \'b7\'ce \'bc\'b3\'c1\'a4\'c7\'cf\'b8\'e9 windows \'bf\'a1\'bc\'ad\'b4\'c2 10 Linux\'bf\'a1\'bc\'ad\'b4\'c2 7\'b7\'ce \'bc\'b3\'c1\'a4\'c0\'cc \'b5\'cb\'b4\'cf\'b4\'d9.\
+=>\'b8\'c5\'b0\'b3\'ba\'af\'bc\'f6\'b0\'a1 int\'b6\'f3\'b0\'ed \'be\'c6\'b9\'ab \'c1\'a4\'bc\'f6\'b3\'aa \'b4\'eb\'c0\'d4\'c7\'cf\'b8\'e9 \'be\'c8\'b5\'cb\'b4\'cf\'b4\'d9.\
+\'bf\'c9\'bc\'c8\'c0\'cf \'b6\'a7\'b4\'c2 \'c5\'ac\'b7\'a1\'bd\'ba\'bf\'a1 \'c0\'fb\'bf\'eb\'c7\'d2 final field\'b0\'a1 \'c0\'d6\'b4\'c2\'c1\'f6 \'c8\'ae\'c0\'ce\'c7\'d8\'be\'df \'c7\'d5\'b4\'cf\'b4\'d9.\
+=>\'bf\'ec\'bc\'b1\'bc\'f8\'c0\'a7\'b0\'a1 \'b3\'f4\'b4\'d9\'b0\'ed \'b9\'ab\'c1\'b6\'b0\'c7 \'b8\'d5\'c0\'fa \'b5\'c7\'b0\'c5\'b3\'aa \'c0\'da\'c1\'d6 \'bc\'f6\'c7\'e0\'b5\'c7\'c1\'f6\'b4\'c2 \'be\'ca\'bd\'c0\'b4\'cf\'b4\'d9.\
+\'b8\'d5\'c0\'fa \'b5\'c7\'b0\'c5\'b3\'aa \'c0\'da\'c1\'d6 \'bc\'f6\'c7\'e0\'b5\'c9 \'b0\'a1\'b4\'c9\'bc\'ba\'c0\'cc \'b3\'f4\'be\'c6\'c1\'f6\'b4\'c2 \'b0\'cd\'c0\'cc\'c1\'f6 \'c0\'fd\'b4\'eb\'c0\'fb\'c0\'ce \'b0\'b3\'b3\'e4\'c0\'ba \'be\'c6\'b4\'d5\'b4\'cf\'b4\'d9.\
+\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f3\fs24 \cf0 		\cf4 //
+\f1 \'bd\'ba\'b7\'b9\'b5\'e5\'c0\'c7
+\f3  
+\f1 \'bf\'ec\'bc\'b1
+\f3  
+\f1 \'bc\'f8\'c0\'a7
+\f3  
+\f1 \'bc\'b3\'c1\'a4
+\f3 \cf0 \
+		\cf4 //
+\f1 \'b1\'e4
+\f3  
+\f1 \'bd\'c3\'b0\'a3\'b5\'bf\'be\'c8
+\f3  
+\f1 \'b5\'bf\'c0\'db\'c7\'cf\'b4\'c2
+\f3  
+\f1 \'bd\'ba\'b7\'b9\'b5\'e5\'c0\'cf
+\f3  
+\f1 \'b6\'a7
+\f3  
+\f1 \'bf\'ec\'bc\'b1\'bc\'f8\'c0\'a7\'c0\'c7
+\f3  
+\f1 \'bf\'b5\'c7\'e2\'c0\'bb
+\f3  
+\f1 \'b9\'de\'c0\'bd\
+
+\f3 \cf0 		\cf3 th1\cf0 .setPriority(Thread.
+\f4\i\b \cf6 MIN_PRIORITY
+\f3\i0\b0 \cf0 );\
+		\cf3 th2\cf0 .setPriority(Thread.
+\f4\i\b \cf6 MAX_PRIORITY
+\f3\i0\b0 \cf0 );\
+		\cf3 th3\cf0 .setPriority(Thread.
+\f4\i\b \cf6 MAX_PRIORITY
+\f3\i0\b0 \cf0 );
+\f1\fs36 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\
+\
+\
+\
+6.Thread \'c0\'c7 \'c1\'be\'b7\'e1\
+1)daemon \'bd\'ba\'b7\'b9\'b5\'e5\'c0\'c7 \'b0\'e6\'bf\'ec\'b4\'c2 \'b4\'d9\'b8\'a5 worker \'bd\'ba\'b7\'b9\'b5\'e5\'b0\'a1 \'be\'f8\'c0\'b8\'b8\'e9 \'c1\'be\'b7\'e1\
+2)run \'b8\'de\'bc\'d2\'b5\'e5\'c0\'c7 \'b3\'bb\'bf\'eb\'c0\'bb \'c0\'fc\'ba\'ce \'bc\'f6\'c7\'e0\'c7\'d8\'bc\'ad return \'c7\'cf\'b4\'c2 \'b0\'e6\'bf\'ec\
+3)\'b0\'ad\'c1\'a6\'c1\'be\'b7\'e1\'b8\'a6 \'bd\'c3\'c5\'b0\'b0\'ed\'c0\'da\'c7\'d2 \'b6\'a7\'b4\'c2 run \'b8\'de\'bc\'d2\'b5\'e5 \'be\'c8\'bf\'a1 \'bf\'b9\'bf\'dc\'c3\'b3\'b8\'ae \'b1\'b8\'b9\'ae\'c0\'bb \'b8\'b8\'b5\'e9\'b0\'ed InterruptedException\'c0\'cc \'b9\'df\'bb\'fd\'c7\'cf\'b8\'e9 return \'c7\'cf\'b5\'b5\'b7\'cf \'c4\'da\'b5\'e5\'b8\'a6 \'c0\'db\'bc\'ba\
+\'bd\'ba\'b7\'b9\'b5\'e5 \'b0\'b4\'c3\'bc\'b0\'a1 interrupt()\'b8\'a6 \'c8\'a3\'c3\'e2\'c7\'cf\'b8\'e9 \'bd\'ba\'b7\'b9\'b5\'e5\'b0\'a1 \'b0\'ad\'c1\'a6\'b7\'ce \'c1\'be\'b7\'e1\'b5\'cb\'b4\'cf\'b4\'d9.\
+\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f3\fs24 \cf0 		\cf4 //Runnable 
+\f1 \'c0\'ce\'c5\'cd\'c6\'e4\'c0\'cc\'bd\'ba\'b8\'a6
+\f3  
+\f1 \'c0\'cc\'bf\'eb\'c7\'cf\'b4\'c2
+\f3  
+\f1 \'b9\'e6\'b9\'fd
+\f3 \cf0 \
+		Runnable \cf3 r\cf0  =
+\f2\b \cf2 new
+\f3\b0 \cf0  Runnable() \{\
+\
+			\cf8 @Override\cf0 \
+			
+\f2\b \cf2 public
+\f3\b0 \cf0  
+\f2\b \cf2 void
+\f3\b0 \cf0  run() \{\
+				
+\f2\b \cf2 for
+\f3\b0 \cf0 (
+\f2\b \cf2 int
+\f3\b0 \cf0  \cf3 i\cf0 =0;\cf3 i\cf0 <5;\cf3 i\cf0 =\cf3 i\cf0 +1) \{\
+					
+\f2\b \cf2 try
+\f3\b0 \cf0  \{\
+						System.
+\f4\i\b \cf6 out
+\f3\i0\b0 \cf0 .printf(\cf5 "Runnable\\n"\cf0 );\
+						Thread.
+\f5\i sleep
+\f3\i0 (1000);\
+					\}\
+					\cf4 //
+\f1 \'bd\'ba\'b7\'b9\'b5\'e5\'b8\'a6
+\f3  
+\f1 \'b0\'ad\'c1\'a6\'b7\'ce
+\f3  
+\f1 \'c1\'be\'b7\'e1\'c7\'d2
+\f3  
+\f1 \'bc\'f6
+\f3  
+\f1 \'c0\'d6\'b5\'b5\'b7\'cf
+\f3  
+\f1 \'b8\'b8\'b5\'e9\'b0\'ed\'c0\'da
+\f3  
+\f1 \'c7\'d2
+\f3  
+\f1 \'b6\'a7
+\f3 \cf0 \
+					\cf4 //InterruptedException
+\f1 \'c0\'cc
+\f3  
+\f1 \'b9\'df\'bb\'fd\'c7\'cf\'b8\'e9
+\f3 \cf0 \
+					\cf4 //return 
+\f1 \'c7\'cf\'b5\'b5\'b7\'cf
+\f3  
+\f1 \'c4\'da\'b5\'e5\'b8\'a6
+\f3  
+\f1 \'c0\'db\'bc\'ba
+\f3 \cf0 \
+					
+\f2\b \cf2 catch
+\f3\b0 \cf0 (InterruptedException \cf3 e\cf0 ) \{\
+						
+\f2\b \cf2 return
+\f3\b0 \cf0 ;\
+					\}\
+				\}\
+				\
+			\}\
+			\
+		\};\
+		\cf4 //Runnable 
+\f1 \'c0\'ce\'c5\'cd\'c6\'e4\'c0\'cc\'bd\'ba\'b8\'a6
+\f3  
+\f1 \'c0\'cc\'bf\'eb\'c7\'cf\'b4\'c2
+\f3  
+\f1 \'b0\'e6\'bf\'ec\'bf\'a1\'b4\'c2
+\f3  \cf0 \
+		\cf4 //Thread 
+\f1 \'c5\'ac\'b7\'a1\'bd\'ba\'c0\'c7
+\f3  
+\f1 \'b0\'b4\'c3\'bc\'b8\'a6
+\f3  
+\f1 \'b8\'b8\'b5\'e9\'b0\'ed
+\f3  
+\f1 \'b1\'d7
+\f3  
+\f1 \'b0\'b4\'c3\'bc\'b8\'a6
+\f3  
+\f1 \'b0\'a1\'c1\'f6\'b0\'ed
+\f3  start\cf0 \
+		Thread \cf3 th3\cf0  =
+\f2\b \cf2 new
+\f3\b0 \cf0  Thread(\cf3 r\cf0 );\
+		\cf3 th3\cf0 .start();
+\f1\fs36 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\
+\
+7.Thread\'c0\'c7 \'bd\'c7\'c7\'e0 \'c1\'a6\'be\'ee\
+join(\'b9\'d0\'b8\'ae\'c3\'ca-1/1000, \'b3\'aa\'b3\'eb\'c3\'ca-1/1000000000) : \'bc\'b3\'c1\'a4\'c7\'d1 \'bd\'c3\'b0\'a3\'b5\'bf\'be\'c8 \'bd\'ba\'b7\'b9\'b5\'e5\'b8\'a6 \'bc\'f6\'c7\'e0\
+=>pc\'bf\'eb \'bf\'ee\'bf\'b5\'c3\'bc\'c1\'a6\'b4\'c2 1/50\'c3\'ca \'c1\'a4\'b5\'b5\'b1\'ee\'c1\'f6 \'b9\'db\'bf\'a1 \'c0\'ce\'bd\'c4\'c0\'bb \'c7\'cf\'c1\'f6 \'b8\'f8\'c7\'d5\'b4\'cf\'b4\'d9.\
+\
+\
+suspend() : \'bd\'ba\'b7\'b9\'b5\'e5\'b8\'a6 \'c0\'cf\'bd\'c3 \'c1\'df\'c1\'f6\
+\
+\
+resume() : suspend \'b5\'c8 \'bd\'ba\'b7\'b9\'b5\'e5\'b8\'a6 \'b5\'bf\'c0\'db\
+\
+\
+yield() : \'b4\'d9\'b8\'a5 \'bd\'ba\'b7\'b9\'b5\'e5\'bf\'a1\'b0\'d4 \'bd\'c7\'c7\'e0 \'bb\'f3\'c5\'c2\'b8\'a6 \'be\'e7\'ba\'b8\'c7\'cf\'b0\'ed \'c0\'da\'bd\'c5\'c0\'ba \'c1\'d8\'ba\'f1 \'bb\'f3\'c5\'c2\'b7\'ce \'ba\'af\'b0\'e6\
+\
+\
+=>\'c0\'a7\'bf\'cd \'b0\'b0\'c0\'ba \'b8\'de\'bc\'d2\'b5\'e5\'b5\'e9\'c0\'ba \'bd\'c3\'ba\'d0\'c7\'d2(\'c0\'cf\'c1\'a4\'c7\'d1 \'bd\'c3\'b0\'a3\'b4\'dc\'c0\'a7\'b7\'ce \'ba\'d0\'c7\'d2\'c7\'d8\'bc\'ad \'c0\'db\'be\'f7\'c0\'bb \'bc\'f6\'c7\'e0) \'c7\'c1\'b7\'ce\'b1\'d7\'b7\'a1\'b9\'d6\'bf\'a1\'bc\'ad \'c0\'cc\'bf\'eb\
+\'b0\'f8\'c0\'e5\'c0\'da\'b5\'bf\'c8\'ad \'c1\'a6\'be\'ee \'b0\'b0\'c0\'ba \'ba\'d0\'be\'df\'b0\'a1 \'bd\'c3\'ba\'d0\'c7\'d2\'c0\'c7 \'b4\'eb\'c7\'a5\'c0\'fb\'c0\'ce \'bb\'e7\'b7\'ca\
+\
+\cf7 \'bd\'ba\'b7\'b9\'b5\'e5 \'bb\'fd\'bc\'ba\'b0\'fa \'bd\'c3\'c0\'db \'b1\'d7\'b8\'ae\'b0\'ed daemon\'c0\'cc \'c1\'df\'bf\'e4\cf0 \
+\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f2\b\fs24 \cf2 package
+\f3\b0 \cf0  thread;\
+\
+
+\f2\b \cf2 public
+\f3\b0 \cf0  
+\f2\b \cf2 class
+\f3\b0 \cf0  ThreadMain3 \{\
+\
+	
+\f2\b \cf2 public
+\f3\b0 \cf0  
+\f2\b \cf2 static
+\f3\b0 \cf0  
+\f2\b \cf2 void
+\f3\b0 \cf0  main(String[] \cf3 args\cf0 ) \{\
+		Thread \cf3 th1\cf0  = 
+\f2\b \cf2 new
+\f3\b0 \cf0  Thread() \{\
+			
+\f2\b \cf2 public
+\f3\b0 \cf0  
+\f2\b \cf2 void
+\f3\b0 \cf0  run() \{\
+				
+\f2\b \cf2 for
+\f3\b0 \cf0  (
+\f2\b \cf2 int
+\f3\b0 \cf0  \cf3 i\cf0  = 0;; \cf3 i\cf0  = \cf3 i\cf0  + 1) \{\
+					System.
+\f4\i\b \cf6 out
+\f3\i0\b0 \cf0 .printf(\cf5 "1\\n"\cf0 );\
+				\}\
+			\}\
+		\};\
+		Thread \cf3 th2\cf0  = 
+\f2\b \cf2 new
+\f3\b0 \cf0  Thread() \{\
+			
+\f2\b \cf2 public
+\f3\b0 \cf0  
+\f2\b \cf2 void
+\f3\b0 \cf0  run() \{\
+				
+\f2\b \cf2 for
+\f3\b0 \cf0  (
+\f2\b \cf2 int
+\f3\b0 \cf0  \cf3 i\cf0  = 0;; \cf3 i\cf0  = \cf3 i\cf0  + 1) \{\
+					System.
+\f4\i\b \cf6 out
+\f3\i0\b0 \cf0 .printf(\cf5 "2\\n"\cf0 );\
+				\}\
+			\}\
+		\};\
+\
+		\cf3 th1\cf0 .start();\
+		\cf3 th2\cf0 .start();\
+\
+		
+\f2\b \cf2 try
+\f3\b0 \cf0  \{\cf4 // th1 
+\f1 \'b0\'fa
+\f3  th2 
+\f1 \'b0\'a1
+\f3  1
+\f1 \'c3\'ca\'be\'bf
+\f3  
+\f1 \'b9\'f8\'b0\'a5\'be\'c6
+\f3  
+\f1 \'b0\'a1\'b8\'e9\'bc\'ad
+\f3  
+\f1 \'bd\'c7\'c7\'e0
+\f3 \cf0 \
+			\cf4 // 1
+\f1 \'c3\'ca
+\f3  
+\f1 \'b5\'bf\'be\'c8
+\f3  
+\f1 \'c0\'cf\'c7\'cf\'b0\'ed
+\f3  
+\f1 \'b4\'d9\'b8\'a5
+\f3  
+\f1 \'bd\'ba\'b7\'b9\'b5\'e5
+\f3  
+\f1 \'bd\'c7\'c7\'e0
+\f3 \cf0 \
+			\cf3 th1\cf0 .join(1000);\
+			\cf4 // 1
+\f1 \'c3\'ca
+\f3  
+\f1 \'b5\'bf\'be\'c8
+\f3  
+\f1 \'c0\'cf\'c7\'cf\'b0\'ed
+\f3  
+\f1 \'b4\'d9\'b8\'a5
+\f3  
+\f1 \'bd\'ba\'b7\'b9\'b5\'e5
+\f3  
+\f1 \'bd\'c7\'c7\'e0
+\f3 \cf0 \
+			\cf3 th2\cf0 .join(1000);\
+		\} 
+\f2\b \cf2 catch
+\f3\b0 \cf0  (Exception \cf3 e\cf0 ) \{\
+		\}\
+\
+	\}\
+\
+\}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f1\fs36 \cf0 \
+\
+\
+\
+8.Multi Thread\
+=>2\'b0\'b3 \'c0\'cc\'bb\'f3\'c0\'c7 \'bd\'ba\'b7\'b9\'b5\'e5\'b0\'a1 \'b5\'bf\'c0\'db \'c1\'df\'c0\'ce \'b0\'e6\'bf\'ec\
+=>\'c3\'d6\'c0\'fb\'c0\'c7 \'b0\'b3\'bc\'f6\'b8\'a6 \'b0\'ed\'b7\'c1\'c7\'d8\'be\'df \'c7\'d5\'b4\'cf\'b4\'d9.\
+\'bd\'ba\'b7\'b9\'b5\'e5\'b0\'a1 \'c0\'da\'bd\'c5\'c0\'c7 \'c0\'db\'be\'f7\'c0\'bb \'bc\'f6\'c7\'e0\'c7\'cf\'b4\'d9\'b0\'a1 \'c1\'a6\'be\'ee\'b1\'c7\'c0\'bb \'b4\'d9\'b8\'a5 \'bd\'ba\'b7\'b9\'b5\'e5\'b7\'ce \'b3\'d1\'b1\'e2\'b4\'c2 \'b0\'e6\'bf\'ec \'c7\'f6\'c0\'e7\'b1\'ee\'c1\'f6 \'c0\'db\'be\'f7\'c7\'d1 \'b3\'bb\'bf\'aa\'c0\'bb \'c0\'fa\'c0\'e5\'c7\'cf\'b0\'ed \'b4\'d9\'b8\'a5 \'bd\'ba\'b7\'b9\'b5\'e5\'c0\'c7 \'c0\'db\'be\'f7\'c7\'d1 \'b3\'bb\'bf\'eb\'c0\'bb \'c0\'d0\'be\'ee\'bc\'ad \'bd\'c7\'c7\'e0\'c7\'d5\'b4\'cf\'b4\'d9.\
+\'bd\'ba\'b7\'b9\'b5\'e5\'b0\'a1 \'c0\'da\'bd\'c5\'c0\'c7 \'c0\'db\'be\'f7\'c0\'bb \'bf\'cf\'b7\'e1\'c7\'cf\'c1\'f6 \'be\'ca\'c0\'ba \'bb\'f3\'c5\'c2\'bf\'a1\'bc\'ad \'b4\'d9\'b8\'a5 \'bd\'ba\'b7\'b9\'b5\'e5\'b8\'a6 \'bd\'c7\'c7\'e0\'c7\'cf\'b7\'c1\'b0\'ed \'c7\'cf\'b8\'e9 \'bf\'c0\'b9\'f6\'c7\'ec\'b5\'e5(\'bd\'c7\'c1\'a6 \'c0\'db\'be\'f7\'c7\'d1 \'ba\'ce\'ba\'d0\'c0\'bb \'c1\'a6\'bf\'dc\'c7\'d1 \'b0\'cd)\'b0\'a1 \'b9\'df\'bb\'fd\
+\
+=>Mutual Exclusion(\'bb\'f3\'c8\'a3\'b9\'e8\'c1\'a6)\
+\'c7\'cf\'b3\'aa\'c0\'c7 \'bd\'ba\'b7\'b9\'b5\'e5\'b0\'a1 \'bc\'f6\'c1\'a4\'c7\'d2 \'b8\'f1\'c0\'fb\'c0\'b8\'b7\'ce \'bb\'e7\'bf\'eb \'c1\'df\'c0\'ce \'b0\'f8\'c0\'af \'b5\'a5\'c0\'cc\'c5\'cd\'b4\'c2 \'b4\'d9\'b8\'a5 \'bd\'ba\'b7\'b9\'b5\'e5\'b0\'a1 \'bc\'f6\'c1\'a4\'c7\'d2 \'bc\'f6 \'be\'f8\'b5\'b5\'b7\'cf \'c7\'d8\'be\'df \'c7\'d5\'b4\'cf\'b4\'d9.\
+\
+=>\'bb\'fd\'bb\'ea\'c0\'da\'bf\'cd \'bc\'d2\'ba\'f1\'c0\'da \'b9\'ae\'c1\'a6\
+\'c0\'da\'bf\'f8\'c0\'bb \'bb\'fd\'bc\'ba\'c7\'cf\'b4\'c2 \'bd\'ba\'b7\'b9\'b5\'e5\'bf\'cd \'bc\'d2\'ba\'f1\'c7\'cf\'b4\'c2 \'bd\'ba\'b7\'b9\'b5\'e5\'b0\'a1 \'b5\'bf\'bd\'c3\'bf\'a1 \'b5\'bf\'c0\'db\'c7\'cf\'b4\'c2 \'b0\'e6\'bf\'ec \'bc\'d2\'ba\'f1\'c7\'cf\'b4\'c2 \'bd\'ba\'b7\'b9\'b5\'e5\'b4\'c2 \'bb\'fd\'bb\'ea\'c7\'cf\'b4\'c2 \'bd\'ba\'b7\'b9\'b5\'e5\'b0\'a1 \'c0\'da\'bf\'f8\'c0\'bb \'b8\'b8\'b5\'e7 \'c8\'c4\'bf\'a1 \'b5\'bf\'c0\'db\'c7\'d8\'be\'df \'c7\'d5\'b4\'cf\'b4\'d9.\
+\
+=>Dead Lock(\'b1\'b3\'c2\'f8 \'bb\'f3\'c5\'c2)\
+\'bd\'ba\'b7\'b9\'b5\'e5\'b5\'e9\'c0\'cc \'bc\'ad\'b7\'ce \'c0\'da\'bd\'c5\'c0\'c7 \'c0\'da\'bf\'f8\'c0\'bb \'b0\'a1\'c1\'f8 \'bb\'f3\'c5\'c2\'bf\'a1\'bc\'ad \'b4\'d9\'b8\'a5 \'bd\'ba\'b7\'b9\'b5\'e5\'bf\'a1\'b0\'d4 \'c0\'da\'bf\'f8\'c0\'bb \'bf\'e4\'c3\'bb\'c7\'cf\'b4\'c2 \'b0\'e6\'bf\'ec\'b0\'a1 \'b9\'df\'bb\'fd\'c7\'cf\'b8\'e9 \'c0\'db\'be\'f7\'c0\'c7 \'bc\'f6\'c7\'e0\'c0\'cc \'c0\'cc\'b7\'e7\'be\'ee\'c1\'f6\'c1\'f6 \'be\'ca\'b0\'ed \'b9\'ab\'c7\'d1\'b4\'eb\'b1\'e2 \'bb\'f3\'c5\'c2\'b0\'a1 \'b5\'c9 \'bc\'f6 \'c0\'d6\'bd\'c0\'b4\'cf\'b4\'d9.\
+\'c0\'cc\'b7\'af\'c7\'d1 \'bb\'f3\'c5\'c2\'b8\'a6 \'b1\'b3\'c2\'f8 \'bb\'f3\'c5\'c2\'b6\'f3\'b0\'ed \'c7\'d5\'b4\'cf\'b4\'d9.\
+\
+\
+9.\'bb\'f3\'c8\'a3\'b9\'e8\'c1\'a6\
+1)32bit \'bd\'c3\'bd\'ba\'c5\'db\'bf\'a1\'bc\'ad 64bit \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'bb\'e7\'bf\'eb\'c7\'d2 \'b6\'a7 \'b9\'df\'bb\'fd\'c7\'d2 \'bc\'f6 \'c0\'d6\'b4\'c2 \'b9\'ae\'c1\'a6\'b8\'a6 \'c7\'d8\'b0\'e1\'c7\'d2 \'b6\'a7\'b4\'c2 \'ba\'af\'bc\'f6 \'be\'d5\'bf\'a1 volatile\'c0\'bb \'c0\'fb\'bf\'eb\
+\
+64bit \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'bc\'f6\'c1\'a4\'c7\'d2 \'b6\'a7 32bit\'be\'bf \'b3\'aa\'b4\'a9\'be\'ee\'bc\'ad 2\'b9\'f8\'bf\'a1 \'b0\'c9\'c3\'c4\'bc\'ad \'bc\'f6\'c1\'a4\'c7\'cf\'b4\'c2\'b5\'a5 \'c0\'cc \'b6\'a7 \'c0\'cf\'ba\'ce\'ba\'d0\'b8\'b8 \'bc\'f6\'c1\'a4\'c7\'d1 \'bb\'f3\'c5\'c2\'bf\'a1\'bc\'ad \'b4\'d9\'b8\'a5 \'bd\'ba\'b7\'b9\'b5\'e5\'b0\'a1 \'c0\'cc \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'bb\'e7\'bf\'eb\'c7\'cf\'b0\'d4 \'b5\'c7\'b8\'e9 \'c0\'df\'b8\'f8\'b5\'c8 \'b0\'e1\'b0\'fa\'b8\'a6 \'bb\'e7\'bf\'eb\'c7\'d2 \'bc\'f6 \'c0\'d6\'bd\'c0\'b4\'cf\'b4\'d9.\
+volatile\'c0\'bb \'ba\'d9\'c0\'cc\'b8\'e9 \'c0\'cc \'b5\'a5\'c0\'cc\'c5\'cd\'c0\'c7 \'bc\'f6\'c1\'a4\'c0\'ba \'b9\'ab\'c1\'b6\'b0\'c7 \'c7\'d1\'b9\'f8\'bf\'a1 \'bc\'f6\'c7\'e0\'c0\'bb \'c7\'cf\'b0\'d4 \'b5\'cb\'b4\'cf\'b4\'d9.\
+\'c0\'cf\'ba\'ce\'ba\'d0\'b8\'b8 \'bc\'f6\'c1\'a4\'b5\'c8 \'bb\'f3\'c5\'c2\'bf\'a1\'bc\'ad \'c0\'cc \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'bb\'e7\'bf\'eb\'c7\'d2 \'bc\'f6 \'be\'f8\'b5\'b5\'b7\'cf \'c7\'d5\'b4\'cf\'b4\'d9.\
+long \'c7\'fc \'b5\'a5\'c0\'cc\'c5\'cd\'bf\'a1 \'c0\'cc\'bf\'eb\
+\
+\
+2)Synchronized \'b8\'de\'bc\'d2\'b5\'e5\
+=>\'b8\'de\'bc\'d2\'b5\'e5\'c0\'c7 \'b0\'e1\'b0\'fa\'c7\'fc \'be\'d5\'bf\'a1 synchronized\'b8\'a6 \'ba\'d9\'c0\'cc\'b8\'e9 \'c0\'cc \'b8\'de\'bc\'d2\'b5\'e5\'b4\'c2 \'bc\'f6\'c7\'e0\'c0\'c7 \'bf\'f8\'c0\'da\'bc\'ba\'c0\'bb \'ba\'b8\'c0\'e5\'c7\'d5\'b4\'cf\'b4\'d9.\
+\'c0\'cc \'b8\'de\'bc\'d2\'b5\'e5 \'bc\'f6\'c7\'e0 \'c1\'df\'bf\'a1\'b4\'c2 \'b4\'d9\'b8\'a5 \'bd\'ba\'b7\'b9\'b5\'e5\'b0\'a1 \'c0\'cc \'b8\'de\'bc\'d2\'b5\'e5\'b0\'a1 \'bb\'e7\'bf\'eb \'c1\'df\'c0\'ce \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'bb\'e7\'bf\'eb\'c7\'d2 \'bc\'f6 \'be\'f8\'bd\'c0\'b4\'cf\'b4\'d9.\
+\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f3\fs24 \cf0 	
+\f2\b \cf2 private
+\f3\b0 \cf0  
+\f2\b \cf2 synchronized
+\f3\b0 \cf0  
+\f2\b \cf2 void
+\f3\b0 \cf0  sum() \{\
+		
+\f2\b \cf2 for
+\f3\b0 \cf0 (
+\f2\b \cf2 int
+\f3\b0 \cf0  \cf3 i\cf0 =0;\cf3 i\cf0 <3333;\cf3 i\cf0 =\cf3 i\cf0 +1) \{\
+			
+\f2\b \cf2 try
+\f3\b0 \cf0  \{\
+				\cf6 idx\cf0 =\cf6 idx\cf0 +1;\
+				Thread.
+\f5\i sleep
+\f3\i0 (1);\
+				\cf6 result\cf0 =\cf6 result\cf0 +\cf6 idx\cf0 ;\
+			\}
+\f2\b \cf2 catch
+\f3\b0 \cf0 (Exception \cf3 e\cf0 ) \{\}\
+		\}\
+	\}\
+	
+\f1\fs36 \
+\
+\
+3)Synchronized \'ba\'ed\'b7\'b0\
+synchronized(\'b0\'f8\'c0\'af\'b0\'b4\'c3\'bc)\{\
+	\'c4\'da\'b5\'e5\
+\}\
+=>\'ba\'ed\'b7\'b0 \'b3\'bb\'bf\'a1\'bc\'ad \'b0\'f8\'c0\'af\'b0\'b4\'c3\'bc\'b8\'a6 \'bb\'e7\'bf\'eb \'c1\'df\'c0\'cc\'b8\'e9 \'b4\'d9\'b8\'a5 \'bd\'ba\'b7\'b9\'b5\'e5\'b0\'a1 \'b0\'f8\'c0\'af\'b0\'b4\'c3\'bc\'b8\'a6 \'bc\'f6\'c1\'a4\'c7\'d2 \'bc\'f6 \'be\'f8\'b5\'b5\'b7\'ce \'c7\'d5\'b4\'cf\'b4\'d9.\
+=>\'b8\'de\'bc\'d2\'b5\'e5\'bf\'a1 synchronized\'b8\'a6 \'b8\'b8\'b5\'e9\'b8\'e9 \'b0\'f8\'c0\'af\'b5\'b5\'b0\'a1 \'b6\'b3\'be\'ee\'c1\'fd\'b4\'cf\'b4\'d9.\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\pard\pardeftab720\partightenfactor0
+
+\f3\fs24 \cf0 	
+\f2\b \cf2 private
+\f3\b0 \cf0  
+\f2\b \cf2 void
+\f3\b0 \cf0  sum() \{\
+		
+\f2\b \cf2 for
+\f3\b0 \cf0 (
+\f2\b \cf2 int
+\f3\b0 \cf0  \cf3 i\cf0 =0;\cf3 i\cf0 <3333;\cf3 i\cf0 =\cf3 i\cf0 +1) \{\
+			
+\f2\b \cf2 try
+\f3\b0 \cf0  \{\
+				\cf4 //
+\f1 \'c0\'cc
+\f3  
+\f1 \'bf\'b5\'bf\'aa\'bf\'a1\'bc\'ad
+\f3  
+\f1 \'bb\'e7\'bf\'eb\'c1\'df\'c0\'ce
+\f3  
+\f1 \'b5\'a5\'c0\'cc\'c5\'cd\'b4\'c2
+\f3  
+\f1 \'b4\'d9\'b8\'a5
+\f3  
+\f1 \'b0\'f7\'bf\'a1\'bc\'ad
+\f3  
+\f1 \'bc\'f6\'c1\'a4\'c7\'d2
+\f3  
+\f1 \'bc\'f6
+\f3  
+\f1 \'be\'f8\'b5\'b5\'b7\'cf
+\f3  
+\f1 \'c7\'d5\'b4\'cf\'b4\'d9
+\f3 .\cf0 \
+				
+\f2\b \cf2 synchronized
+\f3\b0 \cf0 (
+\f2\b \cf2 this
+\f3\b0 \cf0 ) \{\
+					\cf6 idx\cf0 =\cf6 idx\cf0 +1;\
+					Thread.
+\f5\i sleep
+\f3\i0 (1);\
+					\cf6 result\cf0 =\cf6 result\cf0 +\cf6 idx\cf0 ;\
+				\}\
+			\}
+\f2\b \cf2 catch
+\f3\b0 \cf0 (Exception \cf3 e\cf0 ) \{\}\
+		\}\
+	\}
+\f1\fs36 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\
+\
+\
+---\'b8\'de\'c0\'ce\
+\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f2\b\fs24 \cf2 package
+\f3\b0 \cf0  thread;\
+\
+
+\f2\b \cf2 public
+\f3\b0 \cf0  
+\f2\b \cf2 class
+\f3\b0 \cf0  ThreadMain4 \{\
+\
+	
+\f2\b \cf2 public
+\f3\b0 \cf0  
+\f2\b \cf2 static
+\f3\b0 \cf0  
+\f2\b \cf2 void
+\f3\b0 \cf0  main(String[] \cf3 args\cf0 ) \{\
+		\cf4 //ShareData 
+\f1 \'b0\'b4\'c3\'bc
+\f3  
+\f1 \'bb\'fd\'bc\'ba
+\f3 \cf0 \
+		ShareData \cf3 sd\cf0  = 
+\f2\b \cf2 new
+\f3\b0 \cf0  ShareData();\
+		\cf4 //
+\f1 \'bd\'ba\'b7\'b9\'b5\'e5\'b8\'a3\'b8\'a3
+\f3  
+\f1 \'bb\'fd\'bc\'ba\'c7\'d8\'bc\'ad
+\f3  
+\f1 \'bd\'c3\'c0\'db
+\f3 \cf0 \
+		Thread \cf3 th1\cf0  = 
+\f2\b \cf2 new
+\f3\b0 \cf0  Thread(\cf3 sd\cf0 );\
+		\cf3 th1\cf0 .start();\
+		Thread \cf3 th2\cf0  = 
+\f2\b \cf2 new
+\f3\b0 \cf0  Thread(\cf3 sd\cf0 );\
+		\cf3 th2\cf0 .start();\
+		\
+		\
+		\
+		
+\f2\b \cf2 try
+\f3\b0 \cf0  \{\
+			Thread.
+\f5\i sleep
+\f3\i0 (20000);\
+		\}
+\f2\b \cf2 catch
+\f3\b0 \cf0 (Exception \cf3 e\cf0 ) \{\}\
+\
+		\cf4 //
+\f1 \'b0\'e1\'b0\'fa
+\f3  
+\f1 \'c3\'e2\'b7\'c2
+\f3 \cf0 \
+		System.
+\f4\i\b \cf6 out
+\f3\i0\b0 \cf0 .printf(\cf5 "%d\\n"\cf0 , \cf3 sd\cf0 .getResult());\
+		\
+		\
+	\}\
+\
+\}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f1\fs36 \cf0 \
+\
+----\'c5\'ac\'b7\'a1\'bd\'ba\
+\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f2\b\fs24 \cf2 package
+\f3\b0 \cf0  thread;\
+\
+
+\f2\b \cf2 public
+\f3\b0 \cf0  
+\f2\b \cf2 class
+\f3\b0 \cf0  ShareData 
+\f2\b \cf2 implements
+\f3\b0 \cf0  Runnable \{\
+	\cf4 //
+\f1 \'c7\'d5\'b0\'e8\'b8\'a6
+\f3  
+\f1 \'c0\'fa\'c0\'e5\'c7\'d2
+\f3  
+\f1 \'ba\'af\'bc\'f6
+\f3 \cf0 \
+	
+\f2\b \cf2 private
+\f3\b0 \cf0  
+\f2\b \cf2 int
+\f3\b0 \cf0  \cf6 result\cf0 ;\
+	\cf4 //
+\f1 \'c0\'ce\'b5\'a6\'bd\'ba
+\f3  
+\f1 \'ba\'af\'bc\'f6
+\f3 \cf0 \
+	
+\f2\b \cf2 private
+\f3\b0 \cf0  
+\f2\b \cf2 int
+\f3\b0 \cf0  \cf6 idx\cf0 ;\
+	\
+	\cf4 //\cf4 \ul \ulc4 idx
+\f1 \cf4 \ulnone \'b8\'a6
+\f3  1000
+\f1 \'b9\'f8
+\f3  
+\f1 \'c1\'a4\'b5\'b5
+\f3  
+\f1 \'c1\'f5\'b0\'a1\'bd\'c3\'c5\'b0\'b8\'e9\'bc\'ad
+\f3  result
+\f1 \'bf\'a1
+\f3  
+\f1 \'b4\'f5\'c7\'cf\'b4\'c2
+\f3  
+\f1 \'b8\'de\'bc\'d2\'b5\'e5
+\f3 \cf0 \
+	\cf4 //synchronized 
+\f1 \'b0\'a1
+\f3  
+\f1 \'ba\'d9\'c0\'ba
+\f3  
+\f1 \'b8\'de\'bc\'d2\'b5\'e5\'b4\'c2
+\f3  
+\f1 \'c0\'da\'bd\'c5\'c0\'c7
+\f3  
+\f1 \'c0\'db\'be\'f7\'c0\'cc
+\f3  
+\f1 \'bf\'cf\'b7\'e1\'b5\'c7\'b1\'e2
+\f3  
+\f1 \'c0\'fc\'bf\'a1\'b4\'c2
+\f3 \cf0 \
+	\cf4 //
+\f1 \'b4\'d9\'b8\'a5
+\f3  
+\f1 \'c0\'db\'be\'f7\'c7\'d2
+\f3  
+\f1 \'bc\'f6
+\f3  
+\f1 \'be\'f8\'b5\'b5\'b7\'cf
+\f3  
+\f1 \'c7\'d5\'b4\'cf\'b4\'d9
+\f3 .\cf0 \
+	
+\f2\b \cf2 private
+\f3\b0 \cf0  
+\f2\b \cf2 void
+\f3\b0 \cf0  sum() \{\
+		
+\f2\b \cf2 for
+\f3\b0 \cf0 (
+\f2\b \cf2 int
+\f3\b0 \cf0  \cf3 i\cf0 =0;\cf3 i\cf0 <3333;\cf3 i\cf0 =\cf3 i\cf0 +1) \{\
+			
+\f2\b \cf2 try
+\f3\b0 \cf0  \{\
+				\cf4 //
+\f1 \'c0\'cc
+\f3  
+\f1 \'bf\'b5\'bf\'aa\'bf\'a1\'bc\'ad
+\f3  
+\f1 \'bb\'e7\'bf\'eb\'c1\'df\'c0\'ce
+\f3  
+\f1 \'b5\'a5\'c0\'cc\'c5\'cd\'b4\'c2
+\f3  
+\f1 \'b4\'d9\'b8\'a5
+\f3  
+\f1 \'b0\'f7\'bf\'a1\'bc\'ad
+\f3  
+\f1 \'bc\'f6\'c1\'a4\'c7\'d2
+\f3  
+\f1 \'bc\'f6
+\f3  
+\f1 \'be\'f8\'b5\'b5\'b7\'cf
+\f3  
+\f1 \'c7\'d5\'b4\'cf\'b4\'d9
+\f3 .\cf0 \
+				
+\f2\b \cf2 synchronized
+\f3\b0 \cf0 (
+\f2\b \cf2 this
+\f3\b0 \cf0 ) \{\
+					\cf6 idx\cf0 =\cf6 idx\cf0 +1;\
+					Thread.
+\f5\i sleep
+\f3\i0 (1);\
+					\cf6 result\cf0 =\cf6 result\cf0 +\cf6 idx\cf0 ;\
+				\}\
+			\}
+\f2\b \cf2 catch
+\f3\b0 \cf0 (Exception \cf3 e\cf0 ) \{\}\
+		\}\
+	\}\
+	\
+	\cf4 //
+\f1 \'bd\'ba\'b7\'b9\'b5\'e5\'b7\'ce
+\f3  
+\f1 \'b5\'bf\'c0\'db\'c7\'d2
+\f3  
+\f1 \'b3\'bb\'bf\'eb\'c0\'bb
+\f3  
+\f1 \'b0\'a1\'c1\'f8
+\f3  
+\f1 \'b8\'de\'bc\'d2\'b5\'e5
+\f3 \cf0 \
+	\cf8 @Override\cf0 \
+	
+\f2\b \cf2 public
+\f3\b0 \cf0  
+\f2\b \cf2 void
+\f3\b0 \cf0  run() \{\
+		sum();\
+	\}\
+	\
+	\cf4 //result
+\f1 \'b8\'a6
+\f3  
+\f1 \'b8\'ae\'c5\'cf\'c7\'cf\'b4\'c2
+\f3  
+\f1 \'b8\'de\'bc\'d2\'b5\'e5
+\f3 \cf0 \
+	
+\f2\b \cf2 public
+\f3\b0 \cf0  
+\f2\b \cf2 int
+\f3\b0 \cf0  getResult() \{\
+		
+\f2\b \cf2 return
+\f3\b0 \cf0  \cf6 result\cf0 ;\
+	\}\
+\}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f1\fs36 \cf0 \
+\
+\
+4)\'b0\'f8\'c0\'af \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'bc\'f6\'c1\'a4\'c7\'cf\'b4\'c2 \'ba\'ce\'ba\'d0\'c0\'bb \'b8\'d6\'c6\'bc \'bd\'ba\'b7\'b9\'b5\'e5 \'c8\'af\'b0\'e6\'bf\'a1\'bc\'ad \'bb\'e7\'bf\'eb\'c7\'d2 \'b6\'a7\'b4\'c2 \'c7\'d1\'b9\'f8\'bf\'a1 \'c0\'db\'be\'f7\'c0\'cc \'c0\'cc\'b7\'e7\'be\'ee\'c1\'ae\'be\'df \'c7\'cf\'b4\'c2 \'bf\'b5\'bf\'aa\'c0\'bb \'c3\'a3\'be\'c6\'bc\'ad synchronized \'b7\'ce \'b9\'ad\'be\'ee \'c1\'d6\'be\'ee\'be\'df \'c7\'d5\'b4\'cf\'b4\'d9.\
+\
+\
+\
+10.\'bb\'fd\'bb\'ea\'c0\'da\'bf\'cd \'bc\'d2\'ba\'f1\'c0\'da \'b9\'ae\'c1\'a6\
+=>\'c7\'cf\'b3\'aa\'c0\'c7 \'bd\'ba\'b7\'b9\'b5\'e5\'b4\'c2 \'b0\'f8\'c0\'af \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'b8\'b8\'b5\'e9\'be\'ee \'b3\'bb\'b0\'ed \'b4\'d9\'b8\'a5 \'bd\'ba\'b7\'b9\'b5\'e5\'b4\'c2 \'b0\'f8\'c0\'af \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'bb\'e7\'bf\'eb\'c7\'cf\'b4\'c2 \'b0\'e6\'bf\'ec \'b0\'f8\'c0\'af \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'b8\'b8\'b5\'e9\'be\'ee \'b3\'bb\'b4\'c2 \'bd\'ba\'b7\'b9\'b5\'e5\'b0\'a1 \'b0\'f8\'c0\'af \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'b8\'b8\'b5\'e9\'c1\'f6 \'be\'ca\'be\'d2\'b4\'c2\'b5\'a5 \'b4\'d9\'b8\'a5 \'bd\'ba\'b7\'b9\'b5\'e5\'b0\'a1 \'b0\'f8\'c0\'af \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'bb\'e7\'bf\'eb\'c7\'cf\'b7\'c1\'b0\'ed \'c7\'cf\'b8\'e9 \'b9\'ae\'c1\'a6\'b0\'a1 \'b9\'df\'bb\'fd\'c7\'d5\'b4\'cf\'b4\'d9.\
+=>\'b0\'f8\'c0\'e5 \'c0\'da\'b5\'bf\'c8\'ad\'bf\'a1\'bc\'ad \'b4\'dc\'b0\'e8\'ba\'b0\'b7\'ce \'c0\'db\'be\'f7\'c0\'bb \'ba\'d0\'c7\'d2\'c7\'d8\'bc\'ad \'bc\'f6\'c7\'e0\'c7\'cf\'b4\'c2 \'b0\'e6\'bf\'ec\'b0\'a1 \'c0\'d6\'bd\'c0\'b4\'cf\'b4\'d9.\
+\'c0\'db\'be\'f7\'b4\'eb\'b4\'c2 \'bc\'ad\'b7\'ce \'b0\'f8\'c0\'af\'c7\'d2 \'bc\'f6 \'c0\'d6\'b4\'c2\'b5\'a5 \'c0\'cc \'b6\'a7 \'be\'d5 \'b0\'f8\'c1\'a4\'bf\'a1\'bc\'ad \'b9\'b0\'b0\'c7\'c0\'bb \'b3\'d1\'b0\'dc\'c1\'d6\'c1\'f6 \'be\'ca\'be\'d2\'b4\'c2\'b5\'a5 \'b5\'da \'b0\'f8\'c1\'a4\'bf\'a1\'bc\'ad \'c0\'db\'be\'f7\'c0\'bb \'c1\'f8\'c7\'e0\'c7\'cf\'b7\'c1\'b0\'ed \'c7\'cf\'b8\'e9 \'bf\'a1\'b7\'af\'b0\'a1 \'b9\'df\'bb\'fd\
+=>\'b0\'f8\'c0\'af \'b5\'a5\'c0\'cc\'c5\'cd\'b0\'a1 \'be\'f8\'c0\'bb \'b6\'a7\'b4\'c2 \'bc\'d2\'ba\'f1\'c0\'da \'bd\'ba\'b7\'b9\'b5\'e5\'b4\'c2 \'b4\'eb\'b1\'e2\'c7\'cf\'b0\'ed \'c0\'d6\'b4\'d9\'b0\'a1 \'bb\'fd\'bb\'ea\'c0\'da \'bd\'ba\'b7\'b9\'b5\'e5\'b0\'a1 \'b0\'f8\'c0\'af \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'b8\'b8\'b5\'e9\'b0\'ed \'bd\'c3\'b1\'d7\'b3\'ce\'c0\'bb \'ba\'b8\'b3\'bb\'b8\'e9 \'c0\'db\'be\'f7\'c0\'bb \'c1\'f8\'c7\'e0\'c7\'cf\'b8\'e9 \'b5\'cb\'b4\'cf\'b4\'d9.\
+\'c0\'cc \'b6\'a7 \'bb\'e7\'bf\'eb\'b5\'c7\'b4\'c2 \'b8\'de\'bc\'d2\'b5\'e5\'b0\'a1 Object \'c5\'ac\'b7\'a1\'bd\'ba\'bf\'a1 \'c0\'d6\'b4\'c2 wait\'bf\'cd notify, notifyAll \'b8\'de\'bc\'d2\'b5\'e5 \'c0\'d4\'b4\'cf\'b4\'d9.\
+\
+\
+\'b0\'f8\'c0\'af \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'bc\'d2\'c0\'af\'c7\'d1 \'c5\'ac\'b7\'a1\'bd\'ba(Product)\
+\'bb\'fd\'bb\'ea\'c0\'da \'bd\'ba\'b7\'b9\'b5\'e5 \'c5\'ac\'b7\'a1\'bd\'ba(Producer) : Thread \'bb\'f3\'bc\'d3\
+\'bc\'d2\'ba\'f1\'c0\'da \'bd\'ba\'b7\'b9\'b5\'e5 \'c5\'ac\'b7\'a1\'bd\'ba(Consumer) : Thread \'bb\'f3\'bc\'d3\
+\'b8\'de\'c0\'ce \'c5\'ac\'b7\'a1\'bd\'ba(ThreadMain5)\
+\
+=>\'bf\'b9\'bf\'dc\'b0\'a1 \'b9\'df\'bb\'fd\'c7\'d8\'bc\'ad \'bf\'b9\'bf\'dc \'c4\'da\'b5\'e5\'b8\'a6 \'bf\'aa\'c3\'df\'c0\'fb\'c7\'cf\'b4\'c2 \'ba\'ce\'ba\'d0\'c0\'cc \'c3\'e2\'b7\'c2\'b5\'c7\'b8\'e9 \'bf\'b9\'bf\'dc \'c3\'df\'c0\'fb \'c4\'da\'b5\'e5 \'c1\'df\'bf\'a1\'bc\'ad \'c0\'da\'bd\'c5\'c0\'cc \'b8\'b8\'b5\'e7 \'c5\'ac\'b7\'a1\'bd\'ba\'b0\'a1 \'b3\'aa\'bf\'c0\'b4\'c2 \'b0\'a1\'c0\'e5 \'c0\'ad\'ba\'ce\'ba\'d0\'c0\'b8\'b7\'ce \'c0\'cc\'b5\'bf\
+\
+=>NullPointerException\'c0\'cc \'b9\'df\'bb\'fd\'c7\'cf\'b8\'e9 \'b8\'de\'bc\'d2\'b5\'e5\'b8\'a6 \'c8\'a3\'c3\'e2\'c7\'d1 \'b0\'b4\'c3\'bc\'b0\'a1 Null\'c0\'cc\'b6\'f3\'b4\'c2 \'b0\'cd\'c0\'d4\'b4\'cf\'b4\'d9.\
+\'b0\'b4\'c3\'bc.\'b8\'de\'bc\'d2\'b5\'e5\'c0\'cc\'b8\'a7() \'c0\'cc\'b6\'f3\'b8\'e9 \'b0\'b4\'c3\'bc\'b0\'a1 Null \'c0\'d4\'b4\'cf\'b4\'d9.\
+\
+=>\'bb\'fd\'bb\'ea\'c0\'da\'bf\'cd \'bc\'d2\'ba\'f1\'c0\'da \'b9\'ae\'c1\'a6 \'c7\'d8\'b0\'e1\
+\'bc\'d2\'ba\'f1\'c0\'da \'bd\'ba\'b7\'b9\'b5\'e5\'bf\'a1\'bc\'ad\'b4\'c2 \'b0\'f8\'c0\'af \'c0\'da\'bf\'f8\'c0\'cc \'be\'f8\'c0\'b8\'b8\'e9 \'b4\'eb\'b1\'e2(wait)\'b8\'a6 \'c7\'d8\'be\'df \'c7\'d5\'b4\'cf\'b4\'d9.\
+\'bb\'fd\'bb\'ea\'c0\'da \'bd\'ba\'b7\'b9\'b5\'e5\'b4\'c2 \'b0\'f8\'c0\'af \'c0\'da\'bf\'f8\'c0\'bb \'b8\'b8\'b5\'e9\'be\'fa\'c0\'b8\'b8\'e9 \'bc\'d2\'ba\'f1\'c0\'da \'bd\'ba\'b7\'b9\'b5\'e5\'bf\'a1\'b0\'d4 \'c0\'cc\'b8\'a6 \'be\'cb\'b7\'c1 \'c1\'d6\'be\'ee\'be\'df(notify) \'c7\'d5\'b4\'cf\'b4\'d9.\
+\
+wait \'b8\'de\'bc\'d2\'b5\'e5\'bf\'cd notify \'b8\'de\'bc\'d2\'b5\'e5\'b4\'c2 synchronized \'bf\'a1\'bc\'ad\'b8\'b8 \'bb\'e7\'bf\'eb\'c0\'cc \'b0\'a1\'b4\'c9\
+\
+=>\'bc\'d2\'ba\'f1\'c0\'da \'bd\'ba\'b7\'b9\'b5\'e5\'b7\'ce \'b5\'bf\'c0\'db\'c7\'d8\'be\'df \'c7\'cf\'b4\'c2 \'b8\'de\'bc\'d2\'b5\'e5\'b4\'c2 \'bb\'e7\'bf\'eb\'c7\'d2 \'b5\'a5\'c0\'cc\'c5\'cd\'b0\'a1 \'c0\'d6\'b4\'c2\'c1\'f6 \'c8\'ae\'c0\'ce\'c7\'cf\'b0\'ed \'be\'f8\'c0\'b8\'b8\'e9 \'b4\'eb\'b1\'e2 \
+\'bb\'fd\'bb\'ea\'c0\'da \'bd\'ba\'b7\'b9\'b5\'e5\'b7\'ce \'b5\'bf\'c0\'db\'c7\'d8\'be\'df \'c7\'cf\'b4\'c2 \'b8\'de\'bc\'d2\'b5\'e5\'b4\'c2 \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'bb\'fd\'bc\'ba\'c7\'cf\'b0\'ed \'b3\'aa\'b8\'e9 \'be\'cb\'b6\'f7(notify)\'c0\'bb \'c1\'d6\'be\'ee\'be\'df \'c7\'d5\'b4\'cf\'b4\'d9.\
+\
+\'c0\'da\'bf\'f8\'c0\'bb \'c1\'a6\'c7\'d1\'c0\'fb\'c0\'ce \'bd\'c3\'bd\'ba\'c5\'db\'bf\'a1\'bc\'ad \'bb\'fd\'bb\'ea\'c0\'bb \'c7\'d2 \'b6\'a7\'b4\'c2 \'c0\'cf\'c1\'a4\'c7\'d1 \'b0\'b3\'bc\'f6\'b0\'a1 \'b5\'c7\'b8\'e9 \'b4\'f5 \'c0\'cc\'bb\'f3 \'bb\'fd\'bb\'ea\'c0\'bb \'c7\'cf\'c1\'f6 \'be\'ca\'b5\'b5\'b7\'cf \'c7\'d8\'c1\'d6\'be\'ee\'be\'df \'c7\'d5\'b4\'cf\'b4\'d9.\
+\'b9\'ab\'c7\'d1\'c1\'a4 \'bb\'fd\'bb\'ea\'c0\'bb \'c7\'cf\'b4\'d9\'ba\'b8\'b8\'e9 \'c0\'da\'bf\'f8\'c0\'c7 \'c1\'a6\'be\'e0\'c0\'b8\'b7\'ce \'c0\'ce\'c7\'d8\'bc\'ad \'bd\'c3\'bd\'ba\'c5\'db\'c0\'cc \'b3\'ca\'b9\'ab \'b4\'c0\'b7\'c1\'c1\'f6\'b1\'e2 \'b6\'a7\'b9\'ae\'c0\'d4\'b4\'cf\'b4\'d9.\
+\'c0\'cc \'b0\'e6\'bf\'ec\'b4\'c2 \'c0\'a7\'bf\'cd \'b9\'dd\'b4\'eb\'b7\'ce \'bc\'d2\'ba\'f1\'c7\'cf\'b4\'c2 \'c2\'ca\'bf\'a1\'bc\'ad\'b5\'b5 \'be\'cb\'b8\'b2\'c0\'bb \'c1\'d6\'be\'ee\'bc\'ad \'bc\'d2\'ba\'f1\'b0\'a1 \'b5\'c7\'be\'fa\'c0\'b8\'b8\'e9 \'bb\'fd\'bb\'ea\'c0\'bb \'c7\'cf\'b5\'b5\'b7\'cf \'c7\'d8\'be\'df \'c7\'d5\'b4\'cf\'b4\'d9.\
+\
+11.Dead Lock\
+=>\'b9\'ab\'c7\'d1 \'b4\'eb\'b1\'e2 \'bb\'f3\'c5\'c2\'bf\'a1 \'ba\'fc\'c1\'f6\'b4\'c2 \'b0\'e6\'bf\'ec\
+=>wait\'b8\'a6 \'c8\'a3\'c3\'e2\'c7\'cf\'b0\'ed notify\'b8\'a6 \'c8\'a3\'c3\'e2\'c7\'cf\'c1\'f6 \'be\'ca\'b4\'c2 \'b0\'e6\'bf\'ec\'bf\'a1 \'b9\'df\'bb\'fd\'c7\'d2 \'bc\'f6 \'c0\'d6\'bd\'c0\'b4\'cf\'b4\'d9.\
+=>\'c0\'da\'bd\'c5\'c0\'cc \'c0\'da\'bf\'f8\'c0\'bb \'bc\'d2\'c0\'af\'c7\'d1 \'bb\'f3\'c5\'c2\'bf\'a1\'bc\'ad \'b4\'d9\'b8\'a5 \'c0\'da\'bf\'f8\'c0\'bb \'bf\'e4\'c3\'bb\'c7\'cf\'b4\'c2\'b5\'a5 \'b4\'d9\'b8\'a5 \'c2\'ca\'bf\'a1\'bc\'ad \'b1\'d7 \'c0\'da\'bf\'f8\'c0\'bb \'b9\'ad\'be\'ee\'b3\'f5\'b0\'ed \'b3\'aa\'c0\'c7 \'c0\'da\'bf\'f8\'c0\'bb \'bf\'e4\'c3\'bb\'c7\'cf\'b4\'c2 \'b0\'e6\'bf\'ec\
+\
+synchronized(x)\{\
+	y\'b8\'a6 \'bb\'e7\'bf\'eb;\
+\}\
+\
+synchronized(y)\{\
+	x\'b8\'a6 \'bb\'e7\'bf\'eb;\
+\}\
+\
+=>\'c0\'cc \'b9\'ae\'c1\'a6\'b8\'a6 \'bf\'b9\'b9\'e6\'c7\'cf\'b1\'e2 \'c0\'a7\'c7\'d8\'bc\'ad\'b4\'c2 synchronized \'ba\'ed\'b7\'b0 \'be\'c8\'bf\'a1\'bc\'ad\'b4\'c2 \'b4\'d9\'b8\'a5 synchronized \'ba\'ed\'b7\'b0 \'be\'c8\'bf\'a1 \'c0\'d6\'b4\'c2 \'c0\'da\'bf\'f8\'c0\'bb \'bb\'e7\'bf\'eb\'c7\'cf\'c1\'f6 \'be\'ca\'b5\'b5\'b7\'cf \'c7\'d8\'be\'df \'c7\'d5\'b4\'cf\'b4\'d9.\
+=>\'c7\'c1\'b7\'ce\'b1\'d7\'b7\'a5\'c0\'bb \'b8\'b8\'b5\'e9\'b6\'a7 \'bd\'ba\'b7\'b9\'b5\'e5\'b8\'a6 \'bb\'e7\'bf\'eb\'c7\'cf\'b4\'c2 \'c7\'c1\'b7\'ce\'b1\'d7\'b7\'a5\'c0\'bb \'b8\'b8\'b5\'e5\'b4\'c2 \'b0\'e6\'bf\'ec\'bf\'a1 synchronized \'b5\'c7\'be\'ee \'c0\'d6\'b4\'c2 \'bf\'b5\'bf\'aa\'c0\'bb \'b4\'d9\'b8\'a5 \'bf\'b5\'bf\'aa\'ba\'b8\'b4\'d9 \'c4\'da\'b5\'e5\'b8\'a6 \'c1\'d6\'c0\'c7 \'b1\'ed\'b0\'d4 \'bb\'ec\'c6\'ec\'ba\'c1\'be\'df \'c7\'d5\'b4\'cf\'b4\'d9.\
+\'b9\'ae\'b9\'fd\'c0\'fb\'c0\'ce \'bf\'c0\'b7\'f9\'b0\'a1 \'be\'f8\'b0\'ed \'bf\'b9\'bf\'dc\'b5\'b5 \'b9\'df\'bb\'fd\'c7\'cf\'c1\'f6 \'be\'ca\'b1\'e2 \'b6\'a7\'b9\'ae\'bf\'a1 \'bf\'a1\'b7\'af\'b8\'a6 \'c3\'a3\'b1\'e2 \'be\'ee\'b7\'c6\'b1\'e2 \'b6\'a7\'b9\'ae\'c0\'d4\'b4\'cf\'b4\'d9.\
+\
+\
+12.ThreadPool\
+=>\'bd\'ba\'b7\'b9\'b5\'e5\'b8\'a6 \'b9\'cc\'b8\'ae \'b8\'b8\'b5\'e9\'be\'ee\'b5\'ce\'b0\'ed \'bb\'e7\'bf\'eb\'c7\'cf\'b4\'c2 \'b0\'b3\'b3\'e4\
+=>ThreadGroup \'c5\'ac\'b7\'a1\'bd\'ba\'b4\'c2 \'bf\'a9\'b7\'af \'b0\'b3\'c0\'c7 \'bd\'ba\'b7\'b9\'b5\'e5\'b8\'a6 \'c7\'cf\'b3\'aa\'b7\'ce \'b9\'ad\'be\'ee\'bc\'ad \'bb\'e7\'bf\'eb\'c7\'cf\'b1\'e2 \'c0\'a7\'c7\'d1 \'b0\'b3\'b3\'e4\'c0\'ce\'b5\'a5 \'c0\'a9\'b5\'b5\'bf\'ec\'c1\'ee\'bf\'a1\'bc\'ad \'bf\'a1\'b7\'af\'b0\'a1 \'b8\'b9\'c0\'cc \'b3\'aa\'bc\'ad \'bd\'c7\'c1\'a6 \'bb\'e7\'bf\'eb\'c0\'ba \'b0\'c5\'c0\'c7 \'c7\'cf\'c1\'f6 \'be\'ca\'bd\'c0\'b4\'cf\'b4\'d9.\
+=>ThreadPool\'c0\'bb \'bd\'b1\'b0\'d4 \'b8\'b8\'b5\'e9\'be\'ee\'bc\'ad \'bb\'e7\'bf\'eb\'c7\'cf\'b5\'b5\'b7\'cf \'c7\'cf\'b4\'c2 \'c6\'d0\'c5\'b0\'c1\'f6\'b0\'a1 java.util.concurrent \'c6\'d0\'c5\'b0\'c1\'f6 \'c0\'d4\'b4\'cf\'b4\'d9.\
+=>java.util.concurrent \'c6\'d0\'c5\'b0\'c1\'f6\'c0\'c7 ExcutorService \'b6\'f3\'b4\'c2 \'c0\'ce\'c5\'cd\'c6\'e4\'c0\'cc\'bd\'ba\'bf\'cd Excutors \'b6\'f3\'b4\'c2 \'c5\'ac\'b7\'a1\'bd\'ba\'b0\'a1 \'b1\'e2\'b4\'c9\'c0\'bb \'c1\'a6\'b0\'f8\'c7\'d5\'b4\'cf\'b4\'d9.\
+1)Excutors \'c5\'ac\'b7\'a1\'bd\'ba\'c0\'c7 \'b8\'de\'bc\'d2\'b5\'e5\
+newFixedThreadPool(int cnt) : cnt \'b8\'b8\'c5\'ad \'bd\'ba\'b7\'b9\'b5\'e5\'b8\'a6 \'b0\'a1\'c1\'fa \'bc\'f6 \'c0\'d6\'b4\'c2 pool\'c0\'bb \'bb\'fd\'bc\'ba\
+newCashedThreadPool() : \'c0\'e7\'bb\'e7\'bf\'eb \'b0\'a1\'b4\'c9\'c7\'d1 \'bd\'ba\'b7\'b9\'b5\'e5 pool\'c0\'bb \'b8\'b8\'b5\'e9\'be\'ee\'c1\'d6\'b0\'ed 60\'c3\'ca \'b5\'bf\'be\'c8 \'be\'c6\'b9\'ab\'c0\'cf\'b5\'b5 \'c7\'cf\'c1\'f6 \'be\'ca\'c0\'b8\'b8\'e9 \'be\'cb\'be\'c6\'bc\'ad \'c1\'a6\'b0\'c5\'c7\'d5\'b4\'cf\'b4\'d9.\
+\
+new ThreadPoolExecutor(\'c4\'da\'be\'ee \'bd\'ba\'b7\'b9\'b5\'e5 \'b0\'b3\'bc\'f6, \'c3\'d6\'b4\'eb \'bd\'ba\'b7\'b9\'b5\'e5 \'b0\'b3\'bc\'f6, \'b4\'eb\'b1\'e2\'bd\'c3\'b0\'a3, \'bd\'c3\'b0\'a3\'b4\'dc\'c0\'a7, \'c0\'db\'be\'f7 \'c5\'a5)\'b8\'a6 \'c8\'a3\'c3\'e2\'c7\'d8\'bc\'ad \'bb\'fd\'bc\'ba\'b5\'b5 \'b0\'a1\'b4\'c9\
+\
+2)\'c0\'da\'b1\'e2 CPU\'c0\'c7 \'c4\'da\'be\'ee \'b0\'b3\'bc\'f6 \'c8\'ae\'c0\'ce\
+RunTime \'c5\'ac\'b7\'a1\'bd\'ba\'c0\'c7 availableProcessors()\'b8\'a6 \'c8\'a3\'c3\'e2\'c7\'cf\'b8\'e9 \'c4\'da\'be\'ee(\'bf\'ac\'bb\'ea\'c0\'e5\'c4\'a1)\'b0\'b3\'bc\'f6\'b8\'a6 \'c8\'ae\'c0\'ce\'c7\'d2 \'bc\'f6 \'c0\'d6\'bd\'c0\'b4\'cf\'b4\'d9.\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f3\fs24 \cf0 		\cf4 //
+\f1 \'bf\'ac\'bb\'ea\'c0\'db\'be\'f7\'c0\'bb
+\f3  
+\f1 \'c7\'cf\'b4\'c2
+\f3  
+\f1 \'bd\'ba\'b7\'b9\'b5\'e5\'b8\'a6
+\f3  
+\f1 \'bf\'a9\'b7\'af\'b0\'b3
+\f3  
+\f1 \'bd\'c7\'c7\'e0\'bd\'c3\'c5\'b0\'b0\'ed\'c0\'da
+\f3  
+\f1 \'c7\'cf\'b8\'e9
+\f3  
+\f1 \'c3\'d6\'c0\'fb\'c0\'c7
+\f3  
+\f1 \'b0\'b3\'bc\'f6\'b4\'c2
+\f3 \cf0 \
+		\cf4 //
+\f1 \'c4\'da\'be\'ee\'c0\'c7
+\f3  
+\f1 \'b0\'b3\'bc\'f6\'c0\'d4\'b4\'cf\'b4\'d9
+\f3 .
+\f1\fs36 \cf0 \
+
+\f3\fs24 		System.
+\f4\i\b \cf6 out
+\f3\i0\b0 \cf0 .printf(\cf5 "
+\f1 \'c4\'da\'be\'ee\'b0\'b3\'bc\'f6
+\f3 :%s\\n"\cf0 , Runtime.
+\f5\i getRuntime
+\f3\i0 ().availableProcessors());
+\f1\fs36 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\
+3)\'bd\'ba\'b7\'b9\'b5\'e5 \'c3\'df\'b0\'a1\
+=>1)\'b9\'f8\'c0\'c7 \'b8\'de\'bc\'d2\'b5\'e5\'b7\'ce \'bb\'fd\'bc\'ba\'c7\'d1 ExcutorService \'b0\'b4\'c3\'bc\'bf\'a1 submit(Thread\'b0\'b4\'c3\'bc) \'c0\'cc\'bf\'eb\
+\
+\
+4)\'bd\'ba\'b7\'b9\'b5\'e5 \'c7\'ae \'bb\'e7\'bf\'eb \'c1\'df\'c1\'f6\
+shutdown() \'c8\'a3\'c3\'e2\
+\
+\
+13.Semaphore\
+=>\'b0\'f8\'c0\'af\'c0\'da\'bf\'f8\'c0\'cc \'bf\'a9\'b7\'af\'b0\'b3 \'c0\'cf \'b6\'a7 \'bb\'f3\'c8\'a3\'b9\'e8\'c1\'a6(\'b5\'bf\'bd\'c3\'bf\'a1 \'bc\'f6\'c1\'a4\'c0\'bb \'b8\'f8\'c7\'cf\'b5\'b5\'b7\'cf \'c7\'cf\'b4\'c2 \'b0\'cd)\'b8\'a6 \'bc\'f6\'c7\'e0\'c7\'d8\'bc\'ad \'b5\'bf\'bd\'c3\'bf\'a1 \'bc\'f6\'c7\'e0\'c7\'d2 \'bd\'ba\'b7\'b9\'b5\'e5\'c0\'c7 \'b0\'b3\'bc\'f6\'b8\'a6 \'c1\'a4\'c7\'d2 \'bc\'f6 \'c0\'d6\'b4\'c2 \'c5\'ac\'b7\'a1\'bd\'ba\
+=>ThreadPool\'c0\'ba \'bb\'f3\'c8\'a3\'b9\'e8\'c1\'a6\'b8\'a6 \'c7\'d8\'c1\'d6\'c1\'f6\'b4\'c2 \'be\'ca\'bd\'c0\'b4\'cf\'b4\'d9.\
+=>\'b0\'b4\'c3\'bc\'b8\'a6 \'bb\'fd\'bc\'ba\'c7\'d2 \'b6\'a7 \'b0\'f8\'c0\'af\'c0\'da\'bf\'f8\'c0\'c7 \'b0\'b3\'bc\'f6\'b8\'a6 \'c1\'f6\'c1\'a4\'c7\'d8\'bc\'ad \'b8\'b8\'b5\'ec\'b4\'cf\'b4\'d9.\
+Semaphore semaphore = new Semaphore(\'b0\'f8\'c0\'af\'c7\'d2 \'bc\'f6 \'c0\'d6\'b4\'c2 \'c0\'da\'bf\'f8\'c0\'c7 \'b0\'b3\'bc\'f6);\
+\
+=>\'bd\'ba\'b7\'b9\'b5\'e5\'b7\'ce \'bc\'f6\'c7\'e0\'c7\'d2 \'b8\'de\'bc\'d2\'b5\'e5 \'b3\'bb\'ba\'ce\'bf\'a1\'bc\'ad semaphore \'b0\'a1 \'b0\'f8\'c0\'af\'c0\'da\'bf\'f8\'c0\'bb \'bb\'e7\'bf\'eb\'c7\'cf\'b1\'e2 \'c0\'fc\'bf\'a1 acquire()\'b8\'a6 \'c8\'a3\'c3\'e2\'c7\'d5\'b4\'cf\'b4\'d9.\
+\'b8\'de\'bc\'d2\'b5\'e5\'b8\'a6 \'c8\'a3\'c3\'e2\'c7\'cf\'b8\'e9 Lock\'c0\'cc \'b8\'b8\'b5\'e9\'be\'ee \'c1\'fd\'b4\'cf\'b4\'d9.\
+\'b0\'f8\'c0\'af\'c0\'da\'bf\'f8\'c0\'bb \'c0\'fc\'ba\'ce \'bb\'e7\'bf\'eb\'c7\'cf\'b0\'ed \'b3\'aa\'b8\'e9 release()\'b8\'a6 \'c8\'a3\'c3\'e2\'c7\'d8\'bc\'ad Lock\'b8\'a6 \'c7\'d8\'c1\'a6\'c7\'d5\'b4\'cf\'b4\'d9.\
+\
+\
+=>\'be\'d5\'bf\'a1\'bc\'ad \'bb\'e7\'bf\'eb\'c7\'df\'b4\'f8 synchronized\'b4\'c2 \'c0\'da\'bf\'f8 1\'b0\'b3\'bf\'a1 \'b4\'eb\'c7\'d1 \'bb\'f3\'c8\'a3\'b9\'e8\'c1\'a6\'b8\'b8 \'c7\'d8\'c1\'dd\'b4\'cf\'b4\'d9.\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+}
