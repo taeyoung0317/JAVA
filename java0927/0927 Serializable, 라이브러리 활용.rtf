@@ -1,0 +1,322 @@
+{\rtf1\ansi\ansicpg949\cocoartf1671\cocoasubrtf600
+{\fonttbl\f0\fnil\fcharset129 AppleSDGothicNeo-Regular;}
+{\colortbl;\red255\green255\blue255;\red251\green0\blue7;}
+{\*\expandedcolortbl;;\cssrgb\c100000\c12195\c0;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww15740\viewh19380\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs36 \cf2 --\'b0\'b4\'c3\'bc \'c1\'f7\'b7\'c4\'c8\'ad - Serializable\cf0 \
+=>\'b0\'b4\'c3\'bc \'b4\'dc\'c0\'a7\'b7\'ce \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'c0\'fc\'bc\'db\
+=>Serializable \'c0\'ce\'c5\'cd\'c6\'e4\'c0\'cc\'bd\'ba\'b8\'a6 implements \'c7\'d1 \'c5\'ac\'b7\'a1\'bd\'ba\'c0\'c7 \'b0\'b4\'c3\'bc\'b4\'c2 ObjectOutputStream, ObjectInputSTream\'c5\'ac\'b7\'a1\'bd\'ba\'b8\'a6 \'c0\'cc\'bf\'eb\'c7\'d8\'bc\'ad \'c0\'fc\'bc\'db\'c0\'cc \'b0\'a1\'b4\'c9\'c7\'d5\'b4\'cf\'b4\'d9.\
+=>ObjectInputStream \'b0\'fa ObjectOutputStream\'c0\'ba \'b4\'d9\'b8\'a5 Stream \'b0\'b4\'c3\'bc\'b8\'a6 \'b8\'c5\'b0\'b3\'ba\'af\'bc\'f6\'b7\'ce \'b9\'de\'be\'c6\'bc\'ad \'b0\'b4\'c3\'bc\'b8\'a6 \'bb\'fd\'bc\'ba\
+\
+\
+--RandomAccessFile\
+=>\'c0\'d4\'b7\'c2\'b0\'fa \'c3\'e2\'b7\'c2\'c0\'bb \'b8\'f0\'b5\'ce \'c7\'d2 \'bc\'f6 \'c0\'d6\'b4\'c2 \'bd\'ba\'c6\'ae\'b8\'b2\
+=>\'c0\'d0\'be\'fa\'b4\'f8 \'b3\'bb\'bf\'eb\'c0\'bb \'b4\'d9\'bd\'c3 \'c0\'d0\'c0\'bb \'bc\'f6 \'c0\'d6\'b4\'c2 \'bd\'ba\'c6\'ae\'b8\'b2\
+1.\'bb\'fd\'bc\'ba\'c0\'da\
+RandomAccessFile(File \'b6\'c7\'b4\'c2 String, String mode)\
+=>mode\'b4\'c2 r(\'c0\'d0\'b1\'e2), rw(\'c0\'d0\'b0\'ed \'be\'b2\'b1\'e2), rws(synchronized - \'b5\'bf\'b1\'e2\'c8\'ad : \'b5\'bf\'bd\'c3\'bf\'a1 \'b1\'e2\'b7\'cf\'c0\'bb \'b8\'f8\'c7\'d4), rwd(\'c0\'d0\'b0\'ed \'be\'b2\'b0\'ed \'c6\'c4\'c0\'cf\'c0\'c7 \'bb\'f3\'c5\'c2\'b8\'a6 \'b9\'d9\'b7\'ce \'ba\'af\'b0\'e6)\
+=>\'c6\'c4\'c0\'cf\'c0\'c7 \'b3\'bb\'bf\'eb\'c0\'bb \'c0\'d0\'b0\'c5\'b3\'aa \'ba\'af\'b0\'e6\'c7\'d2 \'b6\'a7 close()\'b8\'a6 \'c7\'cf\'b1\'e2 \'c0\'fc\'b1\'ee\'c1\'f6\'b4\'c2 \'c6\'c4\'c0\'cf\'c0\'c7 \'c1\'a4\'ba\'b8\'b4\'c2 \'b0\'bb\'bd\'c5\'b5\'c7\'c1\'f6 \'be\'ca\'bd\'c0\'b4\'cf\'b4\'d9.\
+rwd\'b8\'a6 \'c7\'cf\'b8\'e9 \'b9\'d9\'b7\'ce \'c6\'c4\'c0\'cf\'c0\'c7 \'c1\'a4\'ba\'b8\'b0\'a1 \'b0\'bb\'bd\'c5\'b5\'cb\'b4\'cf\'b4\'d9.\
+\
+\
+2.\'b8\'de\'bc\'d2\'b5\'e5\
+void seek(long pos) : \'c0\'d0\'c0\'bb \'c0\'a7\'c4\'a1\'b8\'a6 \'c0\'cc\'b5\'bf\'bd\'c3\'c4\'d1\'c1\'d6\'b4\'c2 \'b8\'de\'bc\'d2\'b5\'e5\
+void write(\'b9\'e8\'bf\'ad) : \'c6\'c4\'c0\'cf\'bf\'a1 \'b1\'e2\'b7\'cf\
+int read(\'b9\'e8\'bf\'ad) : \'c7\'f6\'c0\'e7 \'c0\'a7\'c4\'a1\'ba\'ce\'c5\'cd \'b9\'e8\'bf\'ad\'c0\'c7 \'c5\'a9\'b1\'e2\'b8\'b8\'c5\'ad \'c0\'d0\'be\'ee\'bc\'ad \'c0\'d0\'c0\'ba \'b0\'b3\'bc\'f6\'b8\'a6 \'b8\'ae\'c5\'cf, \'c0\'d0\'c0\'ba\'b0\'d4 \'be\'f8\'c0\'b8\'b8\'e9 \'c0\'bd\'bc\'f6\'b8\'a6 \'b8\'ae\'c5\'cf\
+long getFilePointer() : \'c7\'f6\'c0\'e7 \'c0\'a7\'c4\'a1\'b8\'a6 \'b8\'ae\'c5\'cf\
+long length() : \'c6\'c4\'c0\'cf\'c0\'c7 \'c5\'a9\'b1\'e2\'b8\'a6 \'b8\'ae\'c5\'cf\
+String readLine() : \'c7\'d1 \'c1\'d9\'c0\'c7 \'c5\'d8\'bd\'ba\'c6\'ae\'b8\'a6 \'c0\'d0\'be\'ee\'bc\'ad \'b8\'ae\'c5\'cf\
+\
+=>\'b4\'d9\'b8\'a5 \'be\'f0\'be\'ee\'b4\'c2 \'b4\'eb\'ba\'ce\'ba\'d0 \'c0\'cc \'b9\'e6\'bd\'c4\'c0\'bb \'c0\'cc\'bf\'eb\'c7\'d8\'bc\'ad \'c6\'c4\'c0\'cf\'c0\'c7 \'b3\'bb\'bf\'eb\'c0\'bb \'c0\'d0\'b0\'c5\'b3\'aa \'b1\'e2\'b7\'cf\'c7\'d5\'b4\'cf\'b4\'d9.\
+\
+\
+\
+--AutoCloseable\
+=>\'c0\'da\'b5\'bf\'c0\'b8\'b7\'ce close()\'b8\'de\'bc\'d2\'b5\'e5\'b8\'a6 \'c8\'a3\'c3\'e2\'c7\'d8\'c1\'d6\'b4\'c2 \'c0\'ce\'c5\'cd\'c6\'e4\'c0\'cc\'bd\'ba\
+=>java 1.7 \'b9\'f6\'c0\'fc \'c0\'cc\'bb\'f3\'bf\'a1\'bc\'ad try() \'be\'c8\'bf\'a1\'bc\'ad AutoCloseable \'c0\'ce\'c5\'cd\'c6\'e4\'c0\'cc\'bd\'ba\'b8\'a6 \'b1\'b8\'c7\'f6\'c7\'d1 \'c5\'ac\'b7\'a1\'bd\'ba\'c0\'c7 \'b0\'b4\'c3\'bc\'b8\'a6 \'bb\'fd\'bc\'ba\'c7\'cf\'b8\'e9 try\'b1\'b8\'b9\'ae \'be\'c8\'bf\'a1\'bc\'ad \'bf\'b9\'bf\'dc \'b9\'df\'bb\'fd\'bf\'a9\'ba\'ce\'bf\'a1 \'bb\'f3\'b0\'fc\'be\'f8\'c0\'cc \'b8\'b6\'c1\'f6\'b8\'b7 close\'b8\'a6 \'c8\'a3\'c3\'e2\'c7\'d8 \'c1\'dd\'b4\'cf\'b4\'d9.\
+try - resource \'b1\'b8\'b9\'ae\'c0\'cc\'b6\'f3\'b0\'ed \'c7\'d5\'b4\'cf\'b4\'d9.\
+=> \'c0\'cc \'b1\'b8\'b9\'ae\'c0\'bb \'bb\'e7\'bf\'eb\'c7\'d2 \'b6\'a7 \'c1\'b6\'bd\'c9\'c7\'d2 \'c1\'a1\'c0\'ba \'c7\'c1\'b7\'ce\'c1\'a7\'c6\'ae\'b8\'a6 \'b4\'d9\'b8\'a5 \'b0\'f7\'bf\'a1\'bc\'ad \'bf\'ad \'b6\'a7 \'c0\'d4\'b4\'cf\'b4\'d9.\
+Eclipse \'b9\'f6\'c0\'fc\'bf\'a1 \'b5\'fb\'b6\'f3\'bc\'ad \'c7\'c1\'b7\'ce\'c1\'a7\'c6\'ae\'b8\'a6 import \'c7\'cf\'b8\'e9 \'bc\'b3\'c1\'a4\'b5\'c7\'b4\'c2 \'c0\'da\'b9\'d9 \'b9\'f6\'c0\'fc\'c0\'cc \'b4\'d9\'b8\'a8\'b4\'cf\'b4\'d9.\
+1.7 \'be\'c6\'b7\'a1 \'b9\'f6\'c0\'fc\'c0\'b8\'b7\'ce \'bc\'b3\'c1\'a4\'c0\'cc \'b5\'c7\'b8\'e9 \'bf\'a1\'b7\'af\'b0\'a1 \'b9\'df\'bb\'fd\'c7\'d5\'b4\'cf\'b4\'d9.\
+\
+\
+--\'c7\'c1\'b7\'ce\'c1\'a7\'c6\'ae\'bf\'a1 \'bb\'e7\'bf\'eb\'c7\'cf\'b4\'c2 \'c0\'da\'b9\'d9 \'b9\'f6\'c0\'fc \'ba\'af\'b0\'e6\
+=>\'c7\'c1\'b7\'ce\'c1\'a7\'c6\'ae\'b8\'a6 \'bc\'b1\'c5\'c3\'c7\'cf\'b0\'ed \'b8\'b6\'bf\'ec\'bd\'ba \'bf\'c0\'b8\'a5\'c2\'ca\'c0\'bb \'c5\'ac\'b8\'af\'c7\'d8\'bc\'ad [Build Path] - [Configure Build Path]\'b8\'a6 \'bc\'b1\'c5\'c3\'c7\'cf\'b0\'ed Libraries \'c5\'c7\'bf\'a1\'bc\'ad edit\'b8\'a6 \'b4\'ad\'b7\'af\'bc\'ad \'ba\'af\'b0\'e6\
+=>\
+1.2 : \'c0\'da\'b9\'d9\'c0\'c7 \'c8\'ae\'c0\'e5 \'c5\'ac\'b7\'a1\'bd\'ba\'b5\'e9\'c0\'cc \'c3\'df\'b0\'a1 - java2\
+1.5 : Generic \'c0\'fb\'bf\'eb - \'c0\'a5 \'c7\'c1\'b7\'ce\'b1\'d7\'b7\'a1\'b9\'d6\'bf\'a1\'bc\'ad\'b4\'c2 \'c0\'cc \'b9\'f6\'c0\'fc \'c0\'cc\'bb\'f3\'c0\'b8\'b7\'ce \'c0\'db\'be\'f7\
+1.8 : \'b6\'f7\'b4\'d9\'bf\'cd \'bd\'ba\'c6\'ae\'b8\'b2\'c0\'cc \'c3\'df\'b0\'a1, \'c7\'f6\'c0\'e7 \'be\'c8\'b5\'e5\'b7\'ce\'c0\'cc\'b5\'e5\'bf\'a1 \'c0\'da\'b9\'d9 \'b9\'f6\'c0\'fc\
+1.12 : \'b0\'a1\'c0\'e5 \'c3\'d6\'b1\'d9 \'b9\'f6\'c0\'fc\'c0\'ce\'b5\'a5 AWT Deprecated\
+AWT\'b8\'a6 \'c7\'d2 \'b6\'a7\'b4\'c2 1.8\'b9\'f6\'c0\'fc \'c0\'cc\'c7\'cf\'b7\'ce \'bc\'b3\'c1\'a4\'c7\'d8\'be\'df \'c7\'d5\'b4\'cf\'b4\'d9.\
+\
+\
+--\'c7\'a5\'c1\'d8 \'c0\'d4\'c3\'e2\'b7\'c2 \'bd\'ba\'c6\'ae\'b8\'b2\
+System.in : \'c7\'a5\'c1\'d8 \'c0\'d4\'b7\'c2 \'bd\'ba\'c6\'ae\'b8\'b2 - \'b9\'d9\'c0\'cc\'c6\'ae \'bd\'ba\'c6\'ae\'b8\'b2\
+=>\'c5\'b0\'ba\'b8\'b5\'e5\'b7\'ce \'ba\'ce\'c5\'cd \'b9\'ae\'c0\'da\'bf\'ad \'b4\'dc\'c0\'a7\'b7\'ce \'c0\'d4\'b7\'c2\'c0\'bb \'b9\'de\'b0\'ed\'c0\'da \'c7\'d2 \'b6\'a7\'b4\'c2 \'c0\'cc \'bd\'ba\'c6\'ae\'b8\'b2\'c0\'bb Scanner \'b6\'c7\'b4\'c2 BufferedReader\'b8\'a6 \'b8\'c5\'b0\'b3\'ba\'af\'bc\'f6\'b7\'ce \'b4\'eb\'c0\'d4\'c7\'d8\'bc\'ad \'c0\'d4\'b7\'c2\'b9\'de\'bd\'c0\'b4\'cf\'b4\'d9.\
+Scanner sc = new Scanner(System.in);\
+\'ba\'af\'bc\'f6 = sc.next\'c0\'da\'b7\'e1\'c7\'fc();\
+\
+\
+BufferedReader br = new BufferedReader(new InputStreamReader(System.in);\
+String input = br.readLine();\
+\
+Scanner \'b4\'c2 \'c1\'a4\'bc\'f6\'b3\'aa \'bd\'c7\'bc\'f6 \'b6\'c7\'b4\'c2 boolean \'c0\'bb \'c0\'d4\'b7\'c2\'b9\'de\'b4\'c2 \'b8\'de\'bc\'d2\'b5\'e5\'b5\'b5 \'c1\'b8\'c0\'e7\'c7\'cf\'c1\'f6\'b8\'b8 BufferedReader\'b4\'c2 \'b9\'ae\'c0\'da\'bf\'ad\'b8\'b8 \'c0\'d4\'b7\'c2\'b9\'de\'c0\'bb \'bc\'f6 \'c0\'d6\'bd\'c0\'b4\'cf\'b4\'d9.\
+\
+\'c5\'b0\'ba\'b8\'b5\'e5 \'c0\'d4\'b7\'c2\'c0\'ba \'b0\'c5\'c0\'c7 \'b4\'eb\'ba\'ce\'ba\'d0 \'b9\'ae\'c0\'da\'bf\'ad\'b7\'ce \'c0\'d4\'b7\'c2\'b9\'de\'bd\'c0\'b4\'cf\'b4\'d9.\
+Scanner \'c0\'c7 nextInt \'b8\'a6 \'c0\'cc\'bf\'eb\'c7\'d8\'bc\'ad \'c1\'a4\'bc\'f6\'b8\'a6 \'c0\'d4\'b7\'c2\'b9\'de\'c0\'b8\'b7\'c1\'b0\'ed \'c7\'cf\'b8\'e9 \'c1\'a4\'bc\'f6\'b8\'a6 \'c0\'d4\'b7\'c2\'c7\'cf\'b8\'e9 \'b1\'a6\'c2\'fa\'c1\'f6\'b8\'b8 \'b9\'ae\'c0\'da\'b8\'a6 \'c0\'d4\'b7\'c2\'c7\'cf\'b8\'e9 \'bf\'b9\'bf\'dc\'b0\'a1 \'b9\'df\'bb\'fd\'c7\'d5\'b4\'cf\'b4\'d9.\
+\'b9\'ae\'c0\'da\'bf\'ad\'b7\'ce \'c0\'d4\'b7\'c2\'b9\'de\'c0\'ba \'c8\'c4\'bf\'a1 Integer.parseInt\'bf\'cd \'b0\'b0\'c0\'ba \'b8\'de\'bc\'d2\'b5\'e5\'b8\'a6 \'c0\'cc\'bf\'eb\'c7\'d8\'bc\'ad \'c1\'a4\'bc\'f6\'b7\'ce \'ba\'af\'b0\'e6\'c7\'cf\'b4\'c2\'b0\'d4 \'c1\'c1\'bd\'c0\'b4\'cf\'b4\'d9.\
+\'c0\'d4\'b7\'c2\'c0\'bb \'b9\'de\'c0\'b8\'b8\'e9 \'c0\'af\'c8\'bf\'bc\'ba \'b0\'cb\'bb\'e7\'b8\'a6 \'c7\'d8\'bc\'ad \'bb\'e7\'bf\'eb\'c7\'cf\'b4\'c2 \'b0\'cd\'c0\'cc \'c1\'c1\'bd\'c0\'b4\'cf\'b4\'d9.\
+\
+\
+\cf2 \'bb\'e7\'bf\'eb\'b9\'fd \'c0\'fb\'bf\'eb\'b9\'fd \'b1\'e2\'be\'ef\
+BufferedInputStream, BufferedOutputStream(PrintStream)\
+BufferedReader, BufferedWriter(PrintWriter)\
+ObjectInputStream, ObjectOutputStream\
+FileInputStream, FileOutputStream\
+\
+\
+\cf0 2.\'c7\'a5\'c1\'d8 \'c3\'e2\'b7\'c2 \'bd\'ba\'c6\'ae\'b8\'b2\
+System.out\
+=>\'c7\'a5\'c1\'d8 \'c3\'e2\'b7\'c2 \'c0\'e5\'c4\'a1\'bf\'a1 \'b3\'bb\'bf\'eb\'c0\'bb \'c3\'e2\'b7\'c2\'c7\'d8\'c1\'d6\'b4\'c2 \'bd\'ba\'c6\'ae\'b8\'b2 - \'b8\'f0\'b4\'cf\'c5\'cd\
+\
+\
+System.err\
+=>\'c7\'a5\'c1\'d8 \'c3\'e2\'b7\'c2 \'c0\'e5\'c4\'a1\'bf\'a1 \'b3\'bb\'bf\'eb\'c0\'bb \'c3\'e2\'b7\'c2\'c7\'d8\'c1\'d6\'b4\'c2 \'bd\'ba\'c6\'ae\'b8\'b2 - \'b8\'f0\'b4\'cf\'c5\'cd\
+=>\'c5\'d8\'bd\'ba\'c6\'ae\'b0\'a1 \'bb\'a1\'b0\'a3\'bb\'f6\'c0\'b8\'b7\'ce \'c3\'e2\'b7\'c2\
+=>\'c0\'cc\'c5\'ac\'b8\'b3\'bd\'ba\'bf\'a1\'bc\'ad \'bf\'a1\'b7\'af\'b3\'aa \'bf\'b9\'bf\'dc\'b8\'a6 \'b9\'df\'bb\'fd\'bd\'c3\'c5\'b3 \'b6\'a7 \'b3\'aa\'bf\'c0\'b4\'c2 \'c5\'d7\'bd\'ba\'c6\'ae\'b0\'a1 \'c0\'cc \'bd\'ba\'c6\'ae\'b8\'b2\'c0\'bb \'c0\'cc\'bf\'eb\
+\
+\
+3.\'bd\'ba\'c6\'ae\'b8\'b2\'c0\'c7 setIn \'b0\'fa setOut\'b8\'de\'bc\'d2\'b5\'e5\'b8\'a6 \'c0\'cc\'bf\'eb\'c7\'d8\'bc\'ad \'c0\'d4\'b7\'c2\'b0\'fa \'c3\'e2\'b7\'c2\'c0\'bb \'ba\'af\'b0\'e6\'c7\'cf\'b4\'c2 \'b0\'cd\'c0\'cc \'b0\'a1\'b4\'c9\
+\'bc\'ad\'b9\'f6 \'c7\'c1\'b7\'ce\'b1\'d7\'b7\'a1\'b9\'d6\'bf\'a1\'bc\'ad\'b4\'c2 \'bf\'b9\'bf\'dc\'b0\'a1 \'b9\'df\'bb\'fd\'c0\'bb \'c7\'cf\'b8\'e9 \'c6\'c4\'c0\'cf\'bf\'a1 \'b1\'e2\'b7\'cf\'c0\'bb \'c7\'d8\'b3\'f5\'b4\'c2 \'b0\'cd\'c0\'cc \'c0\'cf\'b9\'dd\'c0\'fb\'c0\'d4\'b4\'cf\'b4\'d9.\
+System.setOut(new PrintStream("\'c6\'c4\'c0\'cf \'b0\'e6\'b7\'ce"));\
+System.out.printf("%s:%s\\n, new Date(), e.getMessage());\
+\
+\
+\
+--wave, mid \'c6\'c4\'c0\'cf \'c0\'e7\'bb\'fd\
+Applet \'c5\'ac\'b7\'a1\'bd\'ba\'c0\'c7 static \'b8\'de\'bc\'d2\'b5\'e5\'c0\'ce newAudioClip(URL url) \'b8\'de\'bc\'d2\'b5\'e5\'b8\'a6 \'c0\'cc\'bf\'eb\'c7\'d8\'bc\'ad \'b0\'b4\'c3\'bc\'b8\'a6 \'bb\'fd\'bc\'ba\'c7\'cf\'b0\'ed play \'c8\'a3\'c3\'e2\
+\
+--www.mvnrepository.com\
+=>java \'b6\'f3\'c0\'cc\'ba\'ea\'b7\'af\'b8\'ae\'b8\'a6 \'b4\'d9\'bf\'ee\'b7\'ce\'b5\'e5 \'b9\'de\'c0\'bb \'bc\'f6 \'c0\'d6\'b0\'ed \'c0\'a7\'c4\'a1\'b8\'a6 \'b0\'a1\'c1\'ae\'b4\'d9\'b0\'a1 \'bb\'e7\'bf\'eb\'c7\'d2 \'bc\'f6 \'c0\'d6\'b5\'b5\'b7\'cf \'c7\'d8\'c1\'d6\'b4\'c2 \'bb\'e7\'c0\'cc\'c6\'ae\
+=>C&C++, C#\'ba\'b8\'b4\'d9 java \'b3\'aa python\'c0\'cc \'c1\'c1\'b4\'d9\'b0\'ed \'be\'ea\'b1\'e2\'c7\'cf\'b4\'c2 \'b0\'a1\'c0\'e5 \'c5\'ab \'c0\'cc\'c0\'af\'b4\'c2 \'c0\'cc\'b7\'b8\'b0\'d4 3rd party \'b0\'b3\'b9\'df\'c0\'da\'b0\'a1 \'b8\'b8\'b5\'e9\'be\'ee \'b3\'f5\'c0\'ba \'b6\'f3\'c0\'cc\'ba\'ea\'b7\'af\'b8\'ae\'b8\'a6 \'bb\'e7\'bf\'eb\'c7\'cf\'b1\'e2 \'bd\'b1\'b4\'d9\'b4\'c2 \'b0\'cd\'c0\'d4\'b4\'cf\'b4\'d9.\
+=>\'c0\'cc\'b7\'b1 \'b6\'f3\'c0\'cc\'ba\'ea\'b7\'af\'b8\'ae\'b8\'a6 \'c0\'cc\'bf\'eb\'c7\'cf\'b8\'e9 \'b0\'b3\'b9\'df\'bc\'d3\'b5\'b5\'b8\'a6 \'c7\'e2\'bb\'f3\'bd\'c3\'c5\'b3 \'bc\'f6 \'c0\'d6\'bd\'c0\'b4\'cf\'b4\'d9.\
+\
+--jar\
+=>java archive : \'c0\'da\'b9\'d9 \'be\'d0\'c3\'e0 \'c6\'c4\'c0\'cf\
+\'c0\'cc \'c7\'fc\'bd\'c4\'bf\'a1 \'c7\'d1\'c7\'d8\'bc\'ad\'b4\'c2 \'c0\'da\'b9\'d9 \'c7\'c1\'b7\'ce\'b1\'d7\'b7\'a5\'c0\'cc \'be\'cb\'be\'c6\'bc\'ad \'be\'d0\'c3\'e0\'c0\'bb \'c7\'ae\'be\'ee\'bc\'ad \'bb\'e7\'bf\'eb\'c7\'d5\'b4\'cf\'b4\'d9.\
+\
+=>war : \'c0\'da\'b9\'d9 \'c0\'a5 \'be\'d6\'c7\'c3\'b8\'ae\'c4\'c9\'c0\'cc\'bc\'c7 \'be\'d0\'c3\'e2\'c6\'c4\'c0\'cf\
+\'c0\'cc \'c7\'fc\'bd\'c4\'c0\'c7 \'c6\'c4\'c0\'cf\'c0\'ba java was\'b0\'a1 \'be\'d0\'c3\'e0\'c0\'bb \'c7\'d8\'c1\'a6\'c7\'d8\'bc\'ad \'bd\'c7\'c7\'e0\'c0\'bb \'bd\'c3\'c5\'b5\'b4\'cf\'b4\'d9.\
+\
+\
+--jar \'c6\'c4\'c0\'cf\'c0\'bb \'c7\'c1\'b7\'ce\'c1\'a7\'c6\'ae\'bf\'a1\'bc\'ad \'bb\'e7\'bf\'eb\'c7\'cf\'b4\'c2 \'b9\'e6\'b9\'fd\
+1.\'c7\'c1\'b7\'ce\'c1\'a7\'c6\'ae\'be\'c8\'bf\'a1 \'bb\'f0\'c0\'d4\'c7\'d1 \'b0\'e6\'bf\'ec\'bf\'a1\'b4\'c2 \'c6\'c4\'c0\'cf\'c0\'bb \'bc\'b1\'c5\'c3\'c7\'cf\'b0\'ed \'b8\'b6\'bf\'ec\'bd\'ba \'bf\'c0\'b8\'a5\'c2\'ca\'c0\'bb \'c5\'ac\'b8\'af\'c7\'d8\'bc\'ad add to build path \'b8\'de\'b4\'ba\'b8\'a6 \'bd\'c7\'c7\'e0\
+\
+2.\'c7\'c1\'b7\'ce\'c1\'a7\'c6\'ae \'bf\'dc\'ba\'ce\'bf\'a1 \'c0\'d6\'c0\'bb \'b6\'a7\'b4\'c2 configure build path \'b8\'de\'b4\'ba\'bf\'a1\'bc\'ad add external jars \'b8\'a6 \'c5\'ac\'b8\'af\'c7\'d8\'bc\'ad jar \'c6\'c4\'c0\'cf\'c0\'bb \'bc\'b1\'c5\'c3\
+\
+=>1\'b9\'f8\'c0\'bb \'b1\'c7\'c0\'e5\
+2\'b9\'f8\'c0\'b8\'b7\'ce \'c7\'cf\'b0\'d4\'b5\'c7\'b8\'e9 \'b4\'d9\'b8\'a5 \'c4\'c4\'c7\'bb\'c5\'cd\'bf\'a1\'bc\'ad\'b4\'c2 \'bd\'c7\'c7\'e0\'c0\'cc \'be\'c8\'b5\'c9 \'bc\'f6 \'c0\'d6\'bd\'c0\'b4\'cf\'b4\'d9.\
+\
+--mp3 \'c0\'e7\'bb\'fd\
+=>JLayer \'b6\'f3\'c0\'cc\'ba\'ea\'b7\'af\'b8\'ae\'b8\'a6 \'c0\'cc\'bf\'eb\'c7\'d8\'bc\'ad \'c0\'e7\'bb\'fd \'b0\'a1\'b4\'c9\
+=>JLayer \'b6\'f3\'b4\'c2 \'b6\'f3\'c0\'cc\'ba\'ea\'b7\'af\'b8\'ae\'b8\'a6 \'b4\'d9\'bf\'ee\'b7\'ce\'b5\'e5 \'b9\'de\'be\'c6\'bc\'ad \'bb\'e7\'bf\'eb\
+=>Player \'b0\'b4\'c3\'bc\'b8\'a6\
+java\'b4\'c2 Maven \'bb\'e7\'bf\'eb\
+\
+\
+\
+--\'b3\'d7\'c6\'ae\'bf\'f6\'c5\'a9 \'bf\'eb\'be\'ee\
+=>protocol : \'b5\'a5\'c0\'cc\'c5\'cd \'bc\'db\'bc\'f6\'bd\'c5\'c0\'bb \'c0\'a7\'c7\'d1 \'b1\'d4\'c4\'a2 \'b6\'c7\'b4\'c2 \'b1\'d4\'be\'e0\
+=>IP : \'c0\'ce\'c5\'cd\'b3\'dd\'bf\'a1\'bc\'ad \'b4\'dc\'b8\'bb\'b1\'e2\'b8\'a6 \'b1\'b8\'ba\'d0\'c7\'cf\'b1\'e2 \'c0\'a7\'c7\'d8\'bc\'ad \'ba\'ce\'bf\'a9\'c7\'d1 \'c1\'d6\'bc\'d2 \
+IPv4 : 32\'ba\'f1\'c6\'ae \'c1\'d6\'bc\'d2\
+IPv6 : 128\'ba\'f1\'c6\'ae \'c1\'d6\'bc\'d2\
+\'be\'c6\'c1\'f7\'b1\'ee\'c1\'f6\'b4\'c2 IPv6\'b8\'a6 IPv4 \'c7\'fc\'c5\'c2\'b7\'ce \'ba\'af\'b0\'e6\'c7\'d8\'bc\'ad \'c7\'a5\'bd\'c3\'c7\'cf\'b4\'c2 \'b0\'f7\'c0\'cc \'b8\'b9\'bd\'c0\'b4\'cf\'b4\'d9.\
+\
+IPv4\'b4\'c2 0.0.0.0 - 255.255.255.255\
+32\'ba\'f1\'c6\'ae\'b8\'a6 8\'ba\'f1\'c6\'ae\'be\'bf \'b3\'aa\'b4\'a9\'be\'ee\'bc\'ad 10\'c1\'f8\'bc\'f6\'b7\'ce \'c7\'a5\'c7\'f6\
+\
+\
+127.0.0.1 : \'b7\'e7\'c7\'c1\'b9\'e9 \'c1\'d6\'bc\'d2\'bf\'a9\'bc\'ad \'c0\'da\'bd\'c5\'c0\'bb \'c0\'c7\'b9\'cc\
+IPv6\'bf\'a1\'bc\'ad\'b4\'c2 0::0::0::0::0::0::0::1\
+=>\'bc\'ad\'b9\'f6 \'c7\'c1\'b7\'ce\'b1\'d7\'b7\'a5\'bf\'a1\'bc\'ad \'c0\'da\'bd\'c5\'c0\'c7 \'c4\'c4\'c7\'bb\'c5\'cd\'bf\'a1\'bc\'ad \'c1\'a2\'bc\'d3\'c7\'cf\'b8\'e9 \'c0\'a7\'c0\'c7 IP\'b0\'a1 \'ba\'b8\'c0\'d4\'b4\'cf\'b4\'d9.\
+\
+\
+10.x.x.x\
+172.16.x.x - 172.31.x.x\
+192.168.0.0 - 192.168.255.255\
+=>\'bd\'c7\'c1\'a6 IP\'b0\'a1 \'be\'c6\'b4\'cf\'b0\'ed \'bb\'e7\'bc\'b3 IP \'c1\'d6\'bc\'d2 \
+\'bf\'dc\'ba\'ce\'bf\'a1\'bc\'ad \'c1\'a2\'bc\'d3\'c7\'d2 \'bc\'f6 \'c0\'d6\'b4\'c2 IP\'b0\'a1 \'be\'c6\'b4\'cf\'b0\'ed \'b3\'bb\'ba\'ce\'bf\'a1\'bc\'ad \'b3\'bb\'ba\'ce\'b8\'c1\'bf\'a1\'bc\'ad\'b8\'b8 \'bb\'e7\'bf\'eb\'b0\'a1\'b4\'c9\'c7\'d1 IP\
+\
+\
+=>port \'b9\'f8\'c8\'a3 : \'bc\'ad\'ba\'f1\'bd\'ba \'b9\'f8\'c8\'a3\
+\'c7\'cf\'b3\'aa\'c0\'c7 IP\'b4\'c2 \'b9\'b0\'b8\'ae\'c0\'fb\'c0\'ce \'c0\'e5\'c4\'a1\'b8\'a6 \'b1\'b8\'ba\'b0\'c7\'cf\'b1\'e2 \'c0\'a7\'c7\'d1 \'b0\'cd\'c0\'cc\'b0\'ed \'c0\'e5\'c4\'a1 \'be\'c8\'bf\'a1\'bc\'ad \'bc\'ad\'b7\'ce \'b4\'d9\'b8\'a5 \'bf\'a9\'b7\'af \'b0\'b3\'c0\'c7 \'bc\'ad\'ba\'f1\'bd\'ba\'b0\'a1 \'b3\'d7\'c6\'ae\'bf\'f6\'c5\'a9\'b8\'a6 \'bb\'e7\'bf\'eb\'c7\'d2 \'b6\'a7 \'b1\'b8\'ba\'d0\'c7\'cf\'b1\'e2 \'c0\'a7\'c7\'d1 \'b9\'f8\'c8\'a3\
+0 - 65535\
+\
+\
+=>\'be\'ee\'b6\'b2 \'bc\'ad\'b9\'f6\'c0\'c7 \'c0\'c0\'bf\'eb\'c7\'c1\'b7\'ce\'b1\'d7\'b7\'a5\'bf\'a1 \'c1\'a2\'bc\'d3\'c7\'cf\'b1\'e2 \'c0\'a7\'c7\'d8\'bc\'ad\'b4\'c2 IP\'c1\'d6\'bc\'d2:\'c6\'f7\'c6\'ae\'b9\'f8\'c8\'a3 \'c7\'fc\'c5\'c2\'b7\'ce \'c1\'a2\'bc\'d3\'c0\'bb \'c7\'d8\'be\'df \'c7\'d5\'b4\'cf\'b4\'d9.\
+\'c6\'f7\'c6\'ae\'b9\'f8\'c8\'a3\'b8\'a6 \'bb\'fd\'b7\'ab\'c7\'cf\'b4\'c2 \'b0\'e6\'bf\'ec\'b4\'c2 \'b1\'e2\'ba\'bb \'c6\'f7\'c6\'ae \'b9\'f8\'c8\'a3\'b8\'a6 \'bb\'e7\'bf\'eb\'c7\'cf\'b4\'c2 \'c1\'df\'c0\'d4\'b4\'cf\'b4\'d9.\
+http:80, https443\
+oracle(1521, 8080), mysql(3306), mongodb(27017)\
+tomcat(8080)\
+\
+\
+=>0-1023\'b9\'f8\'b1\'ee\'c1\'f6\'b4\'c2 \'bf\'b9\'be\'e0\'b5\'c8 \'b9\'f8\'c8\'a3\'b0\'a1 \'b8\'b9\'bd\'c0\'b4\'cf\'b4\'d9.\
+\'c7\'c1\'b7\'ce\'b1\'d7\'b7\'a5\'c0\'bb \'b8\'b8\'b5\'e9 \'b6\'a7 0-1023\'b9\'f8\'b1\'ee\'c1\'f6\'b4\'c2 \'bb\'e7\'bf\'eb\'c7\'cf\'c1\'f6 \'be\'ca\'b4\'c2 \'b0\'cd\'c0\'cc \'c1\'c1\'b0\'ed \'b8\'b9\'c0\'cc \'bb\'e7\'bf\'eb\'c7\'cf\'b4\'c2 \'be\'d6\'c7\'c3\'b8\'ae\'c4\'c9\'c0\'cc\'bc\'c7\'c0\'c7 \'c6\'f7\'c6\'ae \'b9\'f8\'c8\'a3\'b5\'b5 \'bb\'e7\'bf\'eb\'c7\'cf\'c1\'f6 \'be\'ca\'b4\'c2 \'b0\'cd\'c0\'cc \'c1\'c1\'bd\'c0\'b4\'cf\'b4\'d9.\
+\
+\
+=>TCP/IP : \'c0\'ce\'c5\'cd\'b3\'dd \'c7\'c1\'b7\'ce\'c5\'e4\'c4\'dd\
+=>Domain : IP \'c1\'d6\'bc\'d2 \'b4\'eb\'bd\'c5\'bf\'a1 \'bb\'e7\'bf\'eb\'c7\'cf\'b4\'c2 \'b9\'ae\'c0\'da\'b7\'ce \'b5\'c8 \'ba\'b0\'b8\'ed\
+=>DNS(Domain Name Service) : \'b9\'ae\'c0\'da\'b7\'ce \'c0\'d4\'b7\'c2\'c7\'d1 Domain\'c0\'bb IP \'c1\'d6\'bc\'d2\'b7\'ce \'ba\'af\'c8\'af\'c7\'d8\'c1\'d6\'b0\'ed IP \'c1\'d6\'bc\'d2\'b8\'a6 Domain\'c0\'b8\'b7\'ce \'ba\'af\'c8\'af\'c7\'d8\'c1\'d6\'b4\'c2 \'bc\'ad\'ba\'f1\'bd\'ba\
+\
+=>\'b8\'ed\'b7\'c9\'be\'ee\
+ping ip\'c1\'d6\'bc\'d2 : \'bf\'a1\'c4\'da \'b8\'ed\'b7\'c9 - \'bb\'f3\'b4\'eb\'b9\'e6\'bf\'a1\'b0\'d4 \'bd\'c5\'c8\'a3\'b8\'a6 \'c0\'fc\'bc\'db\'c7\'cf\'b0\'ed \'b5\'b9\'b7\'c1\'b9\'de\'b4\'c2 \'b0\'cd\
+ipconfig(ifconfig) : \'c0\'da\'bd\'c5\'c0\'c7 \'c1\'d6\'bc\'d2 \'c1\'a4\'ba\'b8 \'c8\'ae\'c0\'ce\'c7\'cf\'b4\'c2 \'b8\'ed\'b7\'c9 /all \'c0\'bb \'c3\'df\'b0\'a1\'c7\'cf\'b8\'e9 \'c0\'da\'bc\'bc\'c7\'cf\'b0\'d4 \'c3\'e2\'b7\'c2\
+\
+\'c0\'ce\'c5\'cd\'b3\'dd \'c8\'ae\'c0\'ce\
+ping 127.0.0.1 : \'c0\'da\'bd\'c5\'c0\'c7 LAN \'c8\'ae\'c0\'ce\
+ping \'b6\'f3\'bf\'ec\'c5\'cd\'c1\'d6\'bc\'d2 : \'c0\'ce\'c5\'cd\'b3\'dd \'bc\'b1 \'bf\'ac\'b0\'e1 \'c0\'df\'b8\'f8\
+ping DNS\'c1\'d6\'bc\'d2 : \'c0\'ce\'c5\'cd\'b3\'dd \'b8\'c1 \'b9\'ae\'c1\'a6\
+\
+\
+---InetAddress\
+=>\'c4\'c4\'c7\'bb\'c5\'cd\'c0\'c7 IP \'c1\'a4\'ba\'b8\'b8\'a6 \'c0\'fa\'c0\'e5\'c7\'cf\'b4\'c2 \'c5\'ac\'b7\'a1\'bd\'ba\
+1.\'b0\'b4\'c3\'bc \'bb\'fd\'bc\'ba\
+InetAddress static getLocalHost()\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 InetAddress static getByName("IP \'c1\'d6\'bc\'d2\'b3\'aa \'b5\'b5\'b8\'de\'c0\'ce)\
+InetAddress static getAllByName("IP \'c1\'d6\'bc\'d2\'b3\'aa \'b5\'b5\'b8\'de\'c0\'ce)\
+=>\'c0\'df\'b8\'f8\'b5\'c8 \'c1\'d6\'bc\'d2\'b0\'a1 \'c0\'d4\'b7\'c2\'b5\'c7\'b8\'e9 UnknownHostException \'c0\'cc \'b9\'df\'bb\'fd\
+\
+\
+2.\'b8\'de\'bc\'d2\'b5\'e5\
+String getHostName()\
+byte [] getAddress()\
+String getHostAddress()\
+String toString()\
+\
+\
+--Socket\
+=>\'b3\'d7\'c6\'ae\'bf\'f6\'c5\'a9 \'c0\'ce\'c5\'cd\'c6\'e4\'c0\'cc\'bd\'ba \'c4\'ab\'b5\'e5 (NIC - LAN \'c4\'ab\'b5\'e5) \'b8\'a6 \'c7\'c1\'b7\'ce\'b1\'d7\'b7\'a5\'bf\'a1\'bc\'ad \'bb\'e7\'bf\'eb\'c7\'cf\'b1\'e2 \'c0\'a7\'c7\'d8 \'c3\'df\'bb\'f3\'c8\'ad \'c7\'d1 \'c5\'ac\'b7\'a1\'bd\'ba\
+=>\'bc\'d2\'c4\'cf\'c0\'c7 \'c1\'be\'b7\'f9\'b4\'c2 2\'b0\'a1\'c1\'f6 - Stream Socket \'b0\'fa Datagram Socket\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\
+1.Socket \'bb\'fd\'bc\'ba\'c0\'da\
+Socket()\
+Socket(InetAddress addr, int port)\
+Socket(String addr, int port)\
+Socket(InetAddress addr, int port, InetAddress localAddr, int localPort) : \'c1\'a2\'bc\'d3\'c7\'d2 \'c1\'d6\'bc\'d2\'bf\'cd \'c6\'f7\'c6\'ae\'b9\'f8\'c8\'a3\'b8\'a6 \'bc\'b3\'c1\'a4\'c7\'cf\'b0\'ed \'c0\'da\'bd\'c5\'c0\'c7 \'c1\'d6\'bc\'d2\'bf\'cd \'c6\'f7\'c6\'ae\'b9\'f6\'c8\'a3\'b8\'a6 \'bc\'b3\'c1\'a4 - \'c0\'da\'bd\'c5\'bf\'a1\'b0\'d4 \'c1\'d6\'bc\'d2\'b0\'a1 2\'b0\'b3 \'c0\'cc\'bb\'f3\'c0\'d6\'b4\'c2 \'b0\'e6\'bf\'ec\'bf\'a1\'b4\'c2 \'c0\'da\'bd\'c5\'c0\'c7 \'c1\'d6\'bc\'d2\'b8\'a6 \'bc\'b3\'c1\'a4\'c7\'d2 \'bc\'f6 \'c0\'d6\'bd\'c0\'b4\'cf\'b4\'d9.\
+=>\'c1\'d6\'bc\'d2\'b0\'a1 \'c0\'df\'b8\'f8\'b5\'c7\'b8\'e9 NullPointException \'c0\'cc \'b9\'df\'bb\'fd\'c7\'cf\'b0\'ed \'c6\'f7\'c6\'ae\'b9\'f8\'c8\'a3\'b0\'a1 \'c0\'df\'b8\'f8\'b5\'c7\'b8\'e9 illiegalArgumentException\
+\
+2.\'b8\'de\'bc\'d2\'b5\'e5\
+void close() : \'b4\'dd\'b4\'c2 \'b8\'de\'bc\'d2\'b5\'e5\
+InetAddress getInetAddress()\
+int getPort()\
+=>\'c1\'a2\'bc\'d3\'c7\'d1 \'bb\'f3\'b4\'eb\'b9\'e6\'c0\'c7 \'c1\'d6\'bc\'d2\'bf\'cd \'c6\'f7\'c6\'ae\'b9\'f8\'c8\'a3\
+\
+InetAddress getLocalAddress()\
+int getLocalPort()\
+=>\'c0\'da\'bd\'c5\'c0\'c7 \'c1\'d6\'bc\'d2\'bf\'cd \'c6\'f7\'c6\'ae\'b9\'f8\'c8\'a3\
+\
+\
+InputStream getInputStream() : \'c0\'fc\'bc\'db\'b5\'c7\'be\'ee \'bf\'c2  \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'c0\'d0\'b1\'e2 \'c0\'a7\'c7\'d1 \'bd\'ba\'c6\'ae\'b8\'b2 \'b8\'ae\'c5\'cf\
+OutputStream getOutputStream() : \'c0\'fc\'bc\'db\'c0\'bb \'c7\'cf\'b1\'e2 \'c0\'a7\'c7\'d1 \'bd\'ba\'c6\'ae\'b8\'b2 \'b8\'ae\'c5\'cf\
+\
+ReceiveBufferSize : \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'c0\'d0\'be\'ee\'bf\'c0\'b1\'e2 \'c0\'a7\'c7\'d1 \'b9\'f6\'c6\'db\'c0\'c7 \'c5\'a9\'b1\'e2\
+SendBufferSize  : \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'c0\'fc\'bc\'db\'c7\'cf\'b1\'e2 \'c0\'a7\'c7\'d1 \'b9\'f6\'c6\'db\'c0\'c7 \'c5\'a9\'b1\'e2\
+SoTimeout : \'c1\'a2\'bc\'d3\'c0\'bb \'bd\'c3\'b5\'b5\'c7\'cf\'b4\'c2\'b5\'a5 \'bb\'e7\'bf\'eb\'c7\'d2 \'bc\'f6 \'c0\'d6\'b4\'c2 \'c3\'d6\'b4\'eb\'bd\'c3\'b0\'a3\
+\
+\
+3.StreamSocket\
+=>TCP \'c7\'c1\'b7\'ce\'c5\'e4\'c4\'dd\'c0\'bb \'c0\'cc\'bf\'eb\'c7\'cf\'b4\'c2 \'bf\'ac\'b0\'e1\'c7\'fc \'bc\'d2\'c4\'cf\
+1)\'c5\'ac\'b6\'f3\'c0\'cc\'be\'f0\'c6\'ae\'bf\'eb \'bc\'d2\'c4\'cf(\'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'bf\'e4\'c3\'bb)\
+Socket socket = new Socket(\'c1\'a2\'bc\'d3\'c7\'d2 \'bc\'ad\'b9\'f6 \'c1\'d6\'bc\'d2, \'c6\'f7\'c6\'ae\'b9\'f8\'c8\'a3)  \'b7\'ce \'bb\'fd\'bc\'ba\
+\
+\
+2)\'bc\'ad\'b9\'f6 \'bc\'d2\'c4\'cf(\'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'c1\'a6\'b0\'f8)\
+=>\'bb\'fd\'bc\'ba\'c0\'da\
+ServerSocket()\
+ServerSocket(int port) : port\'bf\'a1 \'c1\'a2\'bc\'d3\'c7\'d2 \'bc\'f6 \'c0\'d6\'b4\'c2 \'bc\'ad\'b9\'f6 \'bc\'d2\'c4\'cf\'c0\'bb \'bb\'fd\'bc\'ba\
+ServerSocket(int port, int backlog) : backlog\'b4\'c2 \'b5\'bf\'bd\'c3\'bf\'a1 \'bf\'ac\'b0\'e1\'c7\'d2 \'bc\'f6 \'c0\'d6\'b4\'c2 \'c5\'ac\'b6\'f3\'c0\'cc\'be\'f0\'c6\'ae\'c0\'c7 \'b0\'b3\'bc\'f6\
+\
+=>\'c5\'ac\'b6\'f3\'c0\'cc\'be\'f0\'c6\'ae\'c0\'c7 \'c1\'a2\'bc\'d3\'c0\'bb \'b4\'eb\'b1\'e2 \'c7\'cf\'b4\'c2 \'b8\'de\'bc\'d2\'b5\'e5\
+Socket accept() : \'bc\'ad\'b9\'f6\'b4\'c2 \'c5\'ac\'b6\'f3\'c0\'cc\'be\'f0\'c6\'ae\'b0\'a1 \'c1\'a2\'bc\'d3\'c7\'d2 \'b6\'a7\'b1\'ee\'c1\'f6 \'b4\'eb\'b1\'e2\'c7\'cf\'b0\'ed \'c5\'ac\'b6\'f3\'c0\'cc\'be\'f0\'c6\'ae\'b0\'a1 \'c1\'a2\'bc\'d3\'c0\'bb \'c7\'cf\'b8\'e9 \'c5\'ac\'b6\'f3\'c0\'cc\'be\'f0\'c6\'ae\'bf\'cd \'c5\'eb\'bd\'c5\'c7\'d2 \'bc\'f6 \'c0\'d6\'b4\'c2 Socket\'c0\'bb \'b8\'ae\'c5\'cf\
+\
+\
+3)\'bc\'ad\'b9\'f6\'bf\'cd \'c5\'ac\'b6\'f3\'c0\'cc\'be\'f0\'c6\'ae \'c5\'eb\'bd\'c5 \'b0\'fa\'c1\'a4\
+=>\'bc\'ad\'b9\'f6 \'bc\'d2\'c4\'cf\'c0\'bb \'bb\'fd\'bc\'ba\'c7\'cf\'b0\'ed \'bc\'ad\'b9\'f6\'b4\'c2 accept \'b8\'de\'bc\'d2\'b5\'e5\'b7\'ce \'b4\'eb\'b1\'e2\
+=>\'bc\'ad\'b9\'f6\'bf\'a1 \'c1\'a2\'bc\'d3\'c7\'cf\'b4\'c2 \'bc\'d2\'c4\'cf\'c0\'bb \'bb\'fd\'bc\'ba\'c7\'d8\'bc\'ad \'bc\'ad\'b9\'f6\'bf\'cd \'bf\'ac\'b0\'e1\
+=>\'bc\'d2\'c4\'cf\'c0\'c7 \'bd\'ba\'c6\'ae\'b8\'b2\'c0\'bb \'c0\'cc\'bf\'eb\'c7\'d8\'bc\'ad \'c5\'eb\'bd\'c5\'c0\'bb \'c7\'cf\'b8\'e9 \'b5\'cb\'b4\'cf\'b4\'d9.\
+\
+\
+\
+--\'c7\'c1\'b7\'ce\'b1\'d7\'b7\'a5 \'c0\'db\'bc\'ba \'b9\'d7 \'bd\'c7\'c7\'e0 \'b0\'fa\'c1\'a4\
+\'bc\'d2\'bd\'ba \'c4\'da\'b5\'e5 \'c0\'db\'bc\'ba(java - \'c0\'ce\'b0\'a3\'b0\'fa \'c4\'c4\'c6\'c4\'c0\'cf\'b7\'af\'b0\'a1 \'be\'cb\'be\'c6\'ba\'b8\'b4\'c2 \'c4\'da\'b5\'e5)->\'c4\'c4\'c6\'c4\'c0\'cf(.class - \'c4\'c4\'c6\'c4\'c0\'cf\'b7\'af\'b0\'a1 \'bf\'ee\'bf\'b5\'c3\'bc\'c1\'a6\'b3\'aa Virtual Machine\'c0\'cc \'c0\'cc\'c7\'d8\'c7\'d2 \'bc\'f6 \'c0\'d6\'b4\'c2 \'c4\'da\'b5\'e5\'b7\'ce \'ba\'af\'b0\'e6, \'c0\'cc \'b0\'fa\'c1\'a4\'bf\'a1\'bc\'ad \'bf\'a1\'b7\'af\'b0\'a1 \'b3\'aa\'b8\'e9 \'b9\'ae\'b9\'fd\'bf\'c0\'b7\'f9 - \'b8\'ed\'b7\'c9\'c0\'ba javac \'c6\'c4\'c0\'cf\'b8\'ed.java) ->\
+\'bd\'c7\'c7\'e0(run - build(\'bd\'c7\'c7\'e0 \'b0\'a1\'b4\'c9\'c7\'d1 \'c7\'c1\'b7\'ce\'b1\'d7\'b7\'a5\'c0\'bb \'b8\'b8\'b5\'e5\'b4\'c2 \'b0\'cd) ->load(\'bd\'c7\'c7\'e0\'c0\'bb \'c0\'a7\'c7\'d8\'bc\'ad \'c1\'d6\'b1\'e2\'be\'ef\'c0\'e5\'c4\'a1\'bf\'a1 \'c0\'fb\'c0\'e7) -> run(java main \'b8\'de\'bc\'d2\'b5\'e5\'b8\'a6 \'bc\'d2\'c0\'af\'c7\'d1 \'c5\'ac\'b7\'a1\'bd\'ba)\
+\
+\
+--UDPSocket\
+=>\'bc\'bc\'bc\'c7 \'bf\'ac\'b0\'e1 \'be\'f8\'c0\'cc \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'c0\'cf\'b9\'e6\'c0\'fb\'c0\'b8\'b7\'ce \'c0\'fc\'bc\'db\'c7\'cf\'b4\'c2 \'bc\'d2\'c4\'cf\
+=>\'b5\'a5\'c0\'cc\'c5\'cd\'b8\'b8 \'c0\'fc\'bc\'db\'c7\'cf\'b1\'e2 \'b6\'a7\'b9\'ae\'bf\'a1 \'c0\'fc\'bc\'db\'c8\'bf\'c0\'b2\'c0\'cc TCP \'b9\'e6\'bd\'c4\'ba\'b8\'b4\'d9 \'c1\'c1\'bd\'c0\'b4\'cf\'b4\'d9.\
+\'b9\'de\'b4\'c2 \'c2\'ca\'bf\'a1\'bc\'ad \'ba\'b8\'b3\'bb\'b4\'c2 \'c2\'ca\'bf\'a1\'b0\'d4 \'bc\'f6\'bd\'c5 \'bf\'a9\'ba\'ce\'b8\'a6 \'c0\'fc\'bc\'db\'c7\'d2 \'bc\'f6 \'be\'f8\'b1\'e2 \'b6\'a7\'b9\'ae\'bf\'a1 \'bd\'c5\'b7\'da\'c7\'d2 \'bc\'f6 \'be\'f8\'bd\'c0\'b4\'cf\'b4\'d9.\
+\'c1\'df\'bf\'e4\'c7\'cf\'c1\'f6 \'be\'ca\'c0\'ba \'b8\'de\'bc\'bc\'c1\'f6\'b8\'a6 \'b4\'eb\'b7\'ae\'c0\'b8\'b7\'ce \'c0\'fc\'bc\'db\'c7\'cf\'b4\'c2 \'bd\'c3\'c5\'db\'bf\'a1\'bc\'ad \'bb\'e7\'bf\'eb\
+Google\'c0\'c7 FCM(\'b1\'b8\'b1\'db\'c0\'c7 \'be\'c8\'b5\'e5\'b7\'ce\'c0\'cc\'b5\'e5 \'bc\'ad\'b9\'f6\'bf\'a1\'bc\'ad \'be\'c8\'b5\'e5\'b7\'ce\'c0\'cc\'b5\'e5 \'b1\'e2\'b1\'e2\'bf\'a1\'b0\'d4 \'b8\'de\'bc\'bc\'c1\'f6\'b8\'a6 \'c0\'fc\'bc\'db\'c7\'cf\'b4\'c2 \'b1\'e2\'bc\'fa) \'b0\'fa Apple\'c0\'c7 APNS(\'be\'d6\'c7\'c3\'c0\'c7 iOS \'bc\'ad\'b9\'f6\'bf\'a1\'bc\'ad iOS \'b1\'e2\'b1\'e2\'bf\'a1\'b0\'d4 \'b8\'de\'bc\'bc\'c1\'f6\'b8\'a6 \'c0\'fc\'bc\'db\'c7\'cf\'b4\'c2 \'b1\'e2\'bc\'fa) \'c0\'cc UDP Socket\'c0\'bb \'c0\'cc\'bf\'eb\'c7\'d5\'b4\'cf\'b4\'d9.\
+=>\'c5\'eb\'bd\'c5\'c0\'bb \'c7\'cf\'b1\'e2 \'c0\'a7\'c7\'d8\'bc\'ad\'b4\'c2 DatagramPacket(\'b5\'a5\'c0\'cc\'c5\'cd) \'b0\'fa DatagramSocket(\'bc\'db\'bc\'f6\'bd\'c5\'c0\'bb \'bc\'f6\'c7\'e0\'c7\'d2 \'bc\'d2\'c4\'cf)\'c5\'ac\'b7\'a1\'bd\'ba\'c0\'c7 \'b0\'b4\'c3\'bc\'b0\'a1 \'c7\'ca\'bf\'e4\
+\
+1.DatagramSocket\
+1)\'bb\'fd\'bc\'ba\'c0\'da\
+DatagramSocket() : \'ba\'b8\'b3\'bb\'b4\'c2 \'c2\'ca\'bf\'a1\'bc\'ad \'b8\'b8\'b5\'e5\'b4\'c2 \'bc\'d2\'c4\'cf\
+DatagramSocket(int  port) : \'b9\'de\'b4\'c2 \'c2\'ca\'bf\'a1\'bc\'ad \'b8\'b8\'b5\'e5\'b4\'c2 \'bc\'d2\'c4\'cf\
+DatagramSocket(int port, InetAddress addr) \
+\
+\
+2)\'b8\'de\'bc\'d2\'b5\'e5\
+void receive(DatagramPacket dp) : \'b9\'de\'b4\'c2 \'b8\'de\'bc\'d2\'b5\'e5 - DatagramPacket \'ba\'af\'bc\'f6\'b8\'b8 \'bf\'ac\'b0\'e1\'c7\'d8\'c1\'d6\'b8\'e9 \'be\'cb\'be\'c6\'bc\'ad \'b0\'b4\'c3\'bc\'b0\'a1 \'b4\'eb\'c0\'d4\'b5\'ca\
+void send(DatagramPacket dp) : \'ba\'b8\'b3\'bb\'b4\'c2 \'b8\'de\'bc\'d2\'b5\'e5 - DatagramPacket\'c0\'c7 \'b3\'bb\'bf\'eb\'c0\'bb \'c3\'a4\'bf\'f6\'bc\'ad \'c0\'fc\'bc\'db\
+\
+\
+2.DatagramPacket\
+=>\'c0\'fc\'bc\'db\'c7\'d2 \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'b8\'b8\'b5\'e5\'b4\'c2 \'c5\'ac\'b7\'a1\'bd\'ba\
+1)\'bb\'fd\'bc\'ba\'c0\'da\
+DatagramPacket(byte [] buf, int length) : \'c0\'fc\'bc\'db\'c0\'bb \'b9\'de\'b1\'e2 \'c0\'a7\'c7\'d1 \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'bb\'fd\'bc\'ba\
+DatagramPacket(byte [] buf, int length, InetAddress addr, int port) : \'ba\'b8\'b3\'bb\'b1\'e2 \'c0\'a7\'c7\'d1 \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'bb\'fd\'bc\'ba\
+\
+\
+2)\'b8\'de\'bc\'d2\'b5\'e5\
+byte [] getData() : \'b3\'bb\'bf\'eb\
+int getLength() : \'b1\'e6\'c0\'cc\
+\
+\
+\
+\
+\'be\'ee\'c7\'c3 \'b8\'de\'bc\'bc\'c1\'f6 \'ba\'b8\'b3\'bb\'b1\'e2 \
+apple : APNS\
+google : FCM\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+}
