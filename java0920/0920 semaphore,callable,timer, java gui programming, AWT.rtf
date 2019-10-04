@@ -1,0 +1,1740 @@
+{\rtf1\ansi\ansicpg949\cocoartf1671\cocoasubrtf600
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset129 AppleSDGothicNeo-Regular;\f2\fnil\fcharset0 Menlo-Bold;
+\f3\fnil\fcharset0 Menlo-Regular;\f4\fnil\fcharset0 Menlo-Italic;\f5\fnil\fcharset0 Menlo-BoldItalic;
+}
+{\colortbl;\red255\green255\blue255;\red127\green0\blue85;\red106\green62\blue62;\red63\green127\blue95;
+\red0\green0\blue192;\red100\green100\blue100;\red42\green0\blue255;}
+{\*\expandedcolortbl;;\csgenericrgb\c49804\c0\c33333;\csgenericrgb\c41569\c24314\c24314;\csgenericrgb\c24706\c49804\c37255;
+\csgenericrgb\c0\c0\c75294;\csgenericrgb\c39216\c39216\c39216;\csgenericrgb\c16471\c0\c100000;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww15760\viewh19400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs36 \cf0 ---Semapho
+\f1 re
+\f0 \
+=>
+\f1 \'b5\'bf\'bd\'c3\'bf\'a1 \'bb\'e7\'bf\'eb\'c7\'d2 \'bc\'f6 \'c0\'d6\'b4\'c2 \'bd\'ba\'b7\'b9\'b5\'e5\'c0\'c7 \'b0\'b3\'bc\'f6\'b8\'a6 \'bc\'b3\'c1\'a4\'c7\'cf\'b0\'ed \'bb\'f3\'c8\'a3\'b9\'e8\'c1\'a6\'b8\'a6 \'bc\'f6\'c7\'e0\'c7\'d8\'c1\'d6\'b4\'c2 \'c5\'ac\'b7\'a1\'bd\'ba\
+=>\'b0\'b4\'c3\'bc\'b8\'a6 \'bb\'fd\'bc\'ba\'c7\'d2 \'b6\'a7\'b4\'c2 \'b5\'bf\'bd\'c3\'bf\'a1 \'bd\'c7\'c7\'e0\'c7\'d2 \'bc\'f6 \'c0\'d6\'b4\'c2 \'bd\'ba\'b7\'b9\'b5\'e5\'c0\'c7 \'b0\'b3\'bc\'f6\'b8\'a6 \'bc\'b3\'c1\'a4\'c7\'d8\'bc\'ad \'bb\'fd\'bc\'ba\
+=>\'bd\'ba\'b7\'b9\'b5\'e5 \'c4\'da\'b5\'e5\'bf\'a1\'bc\'ad \'bc\'bc\'b8\'b6\'c6\'f7\'be\'ee \'b0\'b4\'c3\'bc\'b0\'a1 \'b0\'f8\'c0\'af\'c0\'da\'bf\'f8\'c0\'bb \'bf\'b5\'bf\'aa\'c0\'bb \'bd\'c7\'c7\'e0\'c7\'d2 \'b6\'a7 acquire()\'b8\'a6 \'c8\'a3\'c3\'e2\'c7\'d8\'bc\'ad \'c0\'da\'bf\'f8\'c0\'bb \'c7\'cf\'b3\'aa \'bb\'e7\'bf\'eb\'c7\'d1\'b4\'d9\'b0\'ed \'be\'cb\'b7\'c1\'c1\'d6\'b0\'ed \'b0\'f8\'c0\'af\'c0\'da\'bf\'f8\'c0\'bb \'bb\'e7\'bf\'eb\'c7\'cf\'b4\'c2 \'bf\'b5\'bf\'aa\'c0\'bb \'b9\'fe\'be\'ee\'b3\'af \'b6\'a7 release()\'b8\'a6 \'c8\'a3\'c3\'e2\'c7\'d8\'bc\'ad \'c0\'da\'bf\'f8 \'bb\'e7\'bf\'eb\'c0\'cc \'b3\'a1\'b3\'b5\'b4\'d9\'b0\'ed \'be\'cb\'b7\'c1\'c1\'d6\'b8\'e9 \'b5\'cb\'b4\'cf\'b4\'d9.\
+\
+\
+---\'b0\'b4\'c3\'bc \'bb\'e7\'c0\'cc\'c0\'c7 \'b5\'a5\'c0\'cc\'c5\'cd \'b0\'f8\'c0\'af\
+1.\'b5\'bf\'c0\'cf\'c7\'d1 \'c5\'ac\'b7\'a1\'bd\'ba\'b7\'ce\'ba\'ce\'c5\'cd \'bb\'fd\'bc\'ba\'b5\'c8 \'b0\'b4\'c3\'bc \'bb\'e7\'c0\'cc\'c0\'c7 \'b0\'f8\'c0\'af\
+=>\'c5\'ac\'b7\'a1\'bd\'ba \'be\'c8\'bf\'a1 static \'ba\'af\'bc\'f6\'b8\'a6 \'b8\'b8\'b5\'e9\'be\'ee\'bc\'ad \'bb\'e7\'bf\'eb\
+--\'b8\'de\'c0\'ce\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f2\b\fs24 \cf2 package
+\f3\b0 \cf0  semaphore;\
+\
+
+\f2\b \cf2 public
+\f3\b0 \cf0  
+\f2\b \cf2 class
+\f3\b0 \cf0  SemaphoreMain \{\
+\
+	
+\f2\b \cf2 public
+\f3\b0 \cf0  
+\f2\b \cf2 static
+\f3\b0 \cf0  
+\f2\b \cf2 void
+\f3\b0 \cf0  main(String[] \cf3 args\cf0 ) \{\
+		\cf4 //
+\f1 \'bd\'ba\'b7\'b9\'b5\'e5\'b8\'a6
+\f3  10
+\f1 \'b0\'b3
+\f3  
+\f1 \'b8\'b8\'b5\'e9\'be\'ee\'bc\'ad
+\f3  
+\f1 \'bd\'c7\'c7\'e0
+\f3 \cf0 \
+		
+\f2\b \cf2 for
+\f3\b0 \cf0 (
+\f2\b \cf2 int
+\f3\b0 \cf0  \cf3 i\cf0 =0;\cf3 i\cf0 <10;\cf3 i\cf0 =\cf3 i\cf0 +1) \{\
+			ThreadEx \cf3 th\cf0  = 
+\f2\b \cf2 new
+\f3\b0 \cf0  ThreadEx();\
+			\cf4 //
+\f1 \'bd\'ba\'b7\'b9\'b5\'e5\'b7\'ce
+\f3  
+\f1 \'bd\'c3\'c0\'db
+\f3 \cf0 \
+			\cf3 th\cf0 .start();\
+		\}\
+\
+	\}\
+\
+\}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f1\fs36 \cf0 \
+\
+\
+--\'c5\'ac\'b7\'a1\'bd\'ba\
+\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f2\b\fs24 \cf2 package
+\f3\b0 \cf0  semaphore;\
+\
+
+\f2\b \cf2 import
+\f3\b0 \cf0  java.util.concurrent.Semaphore;\
+\
+
+\f2\b \cf2 public
+\f3\b0 \cf0  
+\f2\b \cf2 class
+\f3\b0 \cf0  ThreadEx 
+\f2\b \cf2 extends
+\f3\b0 \cf0  Thread \{\
+	\cf4 //static 
+\f1 \'ba\'af\'bc\'f6\'b8\'a6
+\f3  
+\f1 \'b8\'b8\'b5\'e9\'b8\'e9
+\f3  
+\f1 \'b8\'f0\'b5\'e7
+\f3  
+\f1 \'b0\'b4\'c3\'bc\'b0\'a1
+\f3  
+\f1 \'b0\'f8\'c0\'af
+\f3 \cf0 \
+	\cf4 //Semaphore 
+\f1 \'b4\'c2
+\f3  
+\f1 \'b5\'bf\'bd\'c3\'bc\'ba
+\f3  
+\f1 \'c1\'a6\'be\'ee\'b8\'a6
+\f3  
+\f1 \'c0\'a7\'c7\'d1
+\f3  
+\f1 \'c5\'ac\'b7\'a1\'bd\'ba
+\f3 \cf0 \
+	
+\f2\b \cf2 private
+\f3\b0 \cf0  
+\f2\b \cf2 static
+\f3\b0 \cf0  Semaphore 
+\f4\i \cf5 semaphore
+\f3\i0 \cf0  = 
+\f2\b \cf2 new
+\f3\b0 \cf0  Semaphore(3);\
+	\
+	\cf4 //
+\f1 \'bd\'ba\'b7\'b9\'b5\'e5\'b7\'ce
+\f3  
+\f1 \'b5\'bf\'c0\'db\'c7\'d2
+\f3  
+\f1 \'b3\'bb\'bf\'eb\'c0\'bb
+\f3  
+\f1 \'b0\'a1\'c1\'f8
+\f3  
+\f1 \'b8\'de\'bc\'d2\'b5\'e5
+\f3 \cf0 \
+	\cf6 @Override\cf0 \
+	
+\f2\b \cf2 public
+\f3\b0 \cf0  
+\f2\b \cf2 void
+\f3\b0 \cf0  run() \{\
+		
+\f2\b \cf2 try
+\f3\b0 \cf0  \{\
+			\cf4 //
+\f1 \'b0\'f8\'c0\'af
+\f3  
+\f1 \'c0\'da\'bf\'f8\'c0\'bb
+\f3  1
+\f1 \'b0\'b3
+\f3  
+\f1 \'bb\'e7\'bf\'eb\'c7\'d1\'b4\'d9\'b0\'ed
+\f3  
+\f1 \'be\'cb\'b7\'c1\'c1\'d6\'b4\'c2
+\f3  
+\f1 \'b8\'de\'bc\'d2\'b5\'e5
+\f3 \cf0 \
+			
+\f4\i \cf5 semaphore
+\f3\i0 \cf0 .acquire();\
+		\} 
+\f2\b \cf2 catch
+\f3\b0 \cf0  (InterruptedException \cf3 e1\cf0 ) \{\
+			\cf3 e1\cf0 .printStackTrace();\
+		\}\
+		\cf4 //
+\f1 \'bd\'ba\'b7\'b9\'b5\'e5\'b7\'ce
+\f3  
+\f1 \'bc\'f6\'c7\'e0\'c7\'d2
+\f3  
+\f1 \'b3\'bb\'bf\'eb
+\f3 \cf0 \
+		\cf4 //
+\f1 \'c0\'da\'bd\'c5\'c0\'c7
+\f3  
+\f1 \'c0\'cc\'b8\'a7\'c0\'bb
+\f3  1
+\f1 \'c3\'ca\'b8\'b6\'b4\'d9
+\f3  5
+\f1 \'b9\'f8
+\f3  
+\f1 \'c3\'e2\'b7\'c1
+\f3 \cf0 \
+		
+\f2\b \cf2 for
+\f3\b0 \cf0 (
+\f2\b \cf2 int
+\f3\b0 \cf0  \cf3 i\cf0 =0;\cf3 i\cf0 <5;\cf3 i\cf0 =\cf3 i\cf0 +1) \{\
+			
+\f2\b \cf2 try
+\f3\b0 \cf0  \{\
+				Thread.
+\f4\i sleep
+\f3\i0 (1000);\
+				System.
+\f5\i\b \cf5 out
+\f3\i0\b0 \cf0 .printf(\cf7 "%s\\n"\cf0 , 
+\f2\b \cf2 this
+\f3\b0 \cf0 .getName());\
+			\}
+\f2\b \cf2 catch
+\f3\b0 \cf0 (Exception \cf3 e\cf0 ) \{\
+				System.
+\f5\i\b \cf5 out
+\f3\i0\b0 \cf0 .printf(\cf7 "%s\\n"\cf0 , \cf3 e\cf0 .getMessage());\
+			\}\
+		\}\
+		\cf4 //
+\f1 \'b0\'f8\'c0\'af\'c0\'da\'bf\'f8
+\f3  
+\f1 \'bb\'e7\'bf\'eb\'c0\'cc
+\f3  
+\f1 \'b3\'a1\'b3\'b5\'b4\'d9\'b0\'ed
+\f3  
+\f1 \'be\'cb\'b7\'c1\'c1\'d6\'b4\'c2
+\f3  
+\f1 \'b8\'de\'bc\'d2\'b5\'e5
+\f3 \cf0 \
+		\cf4 //release - 
+\f1 \'bb\'e7\'bf\'eb\'c0\'cc
+\f3  
+\f1 \'b3\'a1\'b3\'b5\'b4\'d9
+\f3  
+\f1 \'b6\'c7\'b4\'c2
+\f3  
+\f1 \'c0\'da\'bf\'f8\'c0\'bb
+\f3  
+\f1 \'c7\'d8\'c1\'a6
+\f3 \cf0 \
+		
+\f4\i \cf5 semaphore
+\f3\i0 \cf0 .release();\
+	\}\
+\}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f1\fs36 \cf0 \
+\
+\
+\
+2.\'bc\'ad\'b7\'ce \'b4\'d9\'b8\'a5 \'c5\'ac\'b7\'a1\'bd\'ba\'b7\'ce\'ba\'ce\'c5\'cd \'bb\'fd\'bc\'ba\'b5\'c8 \'b0\'b4\'c3\'bc \'bb\'e7\'c0\'cc\'c0\'c7 \'b0\'f8\'c0\'af\
+=>\'bf\'dc\'ba\'ce\'bf\'a1\'bc\'ad \'b0\'b4\'c3\'bc\'b8\'a6 \'bb\'fd\'bc\'ba\'c7\'d1 \'c8\'c4 \'bb\'fd\'bc\'ba\'c0\'da\'b3\'aa setter \'b8\'de\'bc\'d2\'b5\'e5\'b8\'a6 \'c0\'cc\'bf\'eb\'c7\'d8\'bc\'ad \'c1\'d6\'c0\'d4\'b9\'de\'be\'c6\'bc\'ad \'bb\'e7\'bf\'eb\'c7\'d5\'b4\'cf\'b4\'d9.\
+=>\'bb\'fd\'bc\'ba\'c0\'da\'b8\'a6 \'c0\'cc\'bf\'eb\'c7\'cf\'b8\'e9 \'b0\'b4\'c3\'bc\'b8\'a6 \'bb\'fd\'bc\'ba\'c7\'d1 \'c8\'c4 \'b9\'d9\'b7\'ce \'bb\'e7\'bf\'eb\'c0\'cc \'b0\'a1\'b4\'c9\'c7\'cf\'b0\'ed setter\'b8\'a6 \'c0\'cc\'bf\'eb\'c7\'cf\'b8\'e9 setter\'b8\'a6 \'c8\'a3\'c3\'e2\'c7\'d1 \'c8\'c4 \'ba\'ce\'c5\'cd \'bb\'e7\'bf\'eb\'c0\'cc \'b0\'a1\'b4\'c9\'c7\'d8\'c1\'fd\'b4\'cf\'b4\'d9.\
+\
+---\'b8\'de\'c0\'ce\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f2\b\fs24 \cf2 package
+\f3\b0 \cf0  semaphore;\
+\
+
+\f2\b \cf2 import
+\f3\b0 \cf0  java.util.concurrent.Semaphore;\
+\
+
+\f2\b \cf2 public
+\f3\b0 \cf0  
+\f2\b \cf2 class
+\f3\b0 \cf0  SemaphoreMain \{\
+\
+	
+\f2\b \cf2 public
+\f3\b0 \cf0  
+\f2\b \cf2 static
+\f3\b0 \cf0  
+\f2\b \cf2 void
+\f3\b0 \cf0  main(String[] \cf3 args\cf0 ) \{\
+		\cf4 //Semaphore 
+\f1 \'b0\'b4\'c3\'bc
+\f3  
+\f1 \'b8\'b8\'b5\'e9\'b1\'e2
+\f3 \cf0 \
+		Semaphore \cf3 semaphore\cf0  = 
+\f2\b \cf2 new
+\f3\b0 \cf0  Semaphore(5);\
+		\
+		\
+		\cf4 //
+\f1 \'bd\'ba\'b7\'b9\'b5\'e5\'b8\'a6
+\f3  10
+\f1 \'b0\'b3
+\f3  
+\f1 \'b8\'b8\'b5\'e9\'be\'ee\'bc\'ad
+\f3  
+\f1 \'bd\'c7\'c7\'e0
+\f3 \cf0 \
+		
+\f2\b \cf2 for
+\f3\b0 \cf0 (
+\f2\b \cf2 int
+\f3\b0 \cf0  \cf3 i\cf0 =0;\cf3 i\cf0 <10;\cf3 i\cf0 =\cf3 i\cf0 +1) \{\
+			ThreadEx \cf3 th\cf0  = 
+\f2\b \cf2 new
+\f3\b0 \cf0  ThreadEx(\cf3 semaphore\cf0 );\
+			\cf4 //
+\f1 \'bd\'ba\'b7\'b9\'b5\'e5\'b7\'ce
+\f3  
+\f1 \'bd\'c3\'c0\'db
+\f3 \cf0 \
+			\cf3 th\cf0 .start();\
+		\}\
+\
+	\}\
+\
+\}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f1\fs36 \cf0 \
+\
+---\'c5\'ac\'b7\'a1\'bd\'ba\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f2\b\fs24 \cf2 package
+\f3\b0 \cf0  semaphore;\
+\
+
+\f2\b \cf2 import
+\f3\b0 \cf0  java.util.concurrent.Semaphore;\
+\
+
+\f2\b \cf2 public
+\f3\b0 \cf0  
+\f2\b \cf2 class
+\f3\b0 \cf0  ThreadEx 
+\f2\b \cf2 extends
+\f3\b0 \cf0  Thread \{\
+	\cf4 //static 
+\f1 \'ba\'af\'bc\'f6\'b8\'a6
+\f3  
+\f1 \'b8\'b8\'b5\'e9\'b8\'e9
+\f3  
+\f1 \'b8\'f0\'b5\'e7
+\f3  
+\f1 \'b0\'b4\'c3\'bc\'b0\'a1
+\f3  
+\f1 \'b0\'f8\'c0\'af
+\f3 \cf0 \
+	\cf4 //Semaphore 
+\f1 \'b4\'c2
+\f3  
+\f1 \'b5\'bf\'bd\'c3\'bc\'ba
+\f3  
+\f1 \'c1\'a6\'be\'ee\'b8\'a6
+\f3  
+\f1 \'c0\'a7\'c7\'d1
+\f3  
+\f1 \'c5\'ac\'b7\'a1\'bd\'ba
+\f3 \cf0 \
+	\cf4 /*\cf0 \
+\cf4 	private static Semaphore semaphore = new Semaphore(3);\cf0 \
+\cf4 	*/\cf0 \
+	\
+	\cf4 //
+\f1 \'bf\'dc\'ba\'ce\'bf\'a1\'bc\'ad
+\f3  
+\f1 \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6
+\f3  
+\f1 \'c1\'d6\'c0\'d4\'b9\'de\'b1\'e2
+\f3  
+\f1 \'c0\'a7\'c7\'d1
+\f3  
+\f1 \'ba\'af\'bc\'f6
+\f3 \cf0 \
+	
+\f2\b \cf2 private
+\f3\b0 \cf0  Semaphore \cf5 semaphore\cf0 ;\
+	\
+	\cf4 //
+\f1 \'bf\'dc\'ba\'ce\'bf\'a1\'bc\'ad
+\f3  
+\f1 \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6
+\f3  
+\f1 \'b9\'de\'be\'c6\'bc\'ad
+\f3  
+\f1 \'b3\'bb\'ba\'ce
+\f3  
+\f1 \'ba\'af\'bc\'f6\'bf\'a1
+\f3  
+\f1 \'b0\'aa\'c0\'bb
+\f3  
+\f1 \'b4\'eb\'c0\'d4\'c7\'cf\'b4\'c2
+\f3  
+\f1 \'bb\'fd\'bc\'ba\'c0\'da
+\f3 \cf0 \
+	
+\f2\b \cf2 public
+\f3\b0 \cf0  ThreadEx(Semaphore \cf3 semaphore\cf0 ) \{\
+		
+\f2\b \cf2 this
+\f3\b0 \cf0 .\cf5 semaphore\cf0  = \cf3 semaphore\cf0 ;\
+	\}\
+	\
+	\
+	\
+	\
+	\
+	\cf4 //
+\f1 \'bd\'ba\'b7\'b9\'b5\'e5\'b7\'ce
+\f3  
+\f1 \'b5\'bf\'c0\'db\'c7\'d2
+\f3  
+\f1 \'b3\'bb\'bf\'eb\'c0\'bb
+\f3  
+\f1 \'b0\'a1\'c1\'f8
+\f3  
+\f1 \'b8\'de\'bc\'d2\'b5\'e5
+\f3 \cf0 \
+	\cf6 @Override\cf0 \
+	
+\f2\b \cf2 public
+\f3\b0 \cf0  
+\f2\b \cf2 void
+\f3\b0 \cf0  run() \{\
+		
+\f2\b \cf2 try
+\f3\b0 \cf0  \{\
+			\cf4 //
+\f1 \'b0\'f8\'c0\'af
+\f3  
+\f1 \'c0\'da\'bf\'f8\'c0\'bb
+\f3  1
+\f1 \'b0\'b3
+\f3  
+\f1 \'bb\'e7\'bf\'eb\'c7\'d1\'b4\'d9\'b0\'ed
+\f3  
+\f1 \'be\'cb\'b7\'c1\'c1\'d6\'b4\'c2
+\f3  
+\f1 \'b8\'de\'bc\'d2\'b5\'e5
+\f3 \cf0 \
+			\cf5 semaphore\cf0 .acquire();\
+		\} 
+\f2\b \cf2 catch
+\f3\b0 \cf0  (InterruptedException \cf3 e1\cf0 ) \{\
+			\cf3 e1\cf0 .printStackTrace();\
+		\}\
+		\cf4 //
+\f1 \'bd\'ba\'b7\'b9\'b5\'e5\'b7\'ce
+\f3  
+\f1 \'bc\'f6\'c7\'e0\'c7\'d2
+\f3  
+\f1 \'b3\'bb\'bf\'eb
+\f3 \cf0 \
+		\cf4 //
+\f1 \'c0\'da\'bd\'c5\'c0\'c7
+\f3  
+\f1 \'c0\'cc\'b8\'a7\'c0\'bb
+\f3  1
+\f1 \'c3\'ca\'b8\'b6\'b4\'d9
+\f3  5
+\f1 \'b9\'f8
+\f3  
+\f1 \'c3\'e2\'b7\'c1
+\f3 \cf0 \
+		
+\f2\b \cf2 for
+\f3\b0 \cf0 (
+\f2\b \cf2 int
+\f3\b0 \cf0  \cf3 i\cf0 =0;\cf3 i\cf0 <5;\cf3 i\cf0 =\cf3 i\cf0 +1) \{\
+			
+\f2\b \cf2 try
+\f3\b0 \cf0  \{\
+				Thread.
+\f4\i sleep
+\f3\i0 (1000);\
+				System.
+\f5\i\b \cf5 out
+\f3\i0\b0 \cf0 .printf(\cf7 "%s\\n"\cf0 , 
+\f2\b \cf2 this
+\f3\b0 \cf0 .getName());\
+			\}
+\f2\b \cf2 catch
+\f3\b0 \cf0 (Exception \cf3 e\cf0 ) \{\
+				System.
+\f5\i\b \cf5 out
+\f3\i0\b0 \cf0 .printf(\cf7 "%s\\n"\cf0 , \cf3 e\cf0 .getMessage());\
+			\}\
+		\}\
+		\cf4 //
+\f1 \'b0\'f8\'c0\'af\'c0\'da\'bf\'f8
+\f3  
+\f1 \'bb\'e7\'bf\'eb\'c0\'cc
+\f3  
+\f1 \'b3\'a1\'b3\'b5\'b4\'d9\'b0\'ed
+\f3  
+\f1 \'be\'cb\'b7\'c1\'c1\'d6\'b4\'c2
+\f3  
+\f1 \'b8\'de\'bc\'d2\'b5\'e5
+\f3 \cf0 \
+		\cf4 //release - 
+\f1 \'bb\'e7\'bf\'eb\'c0\'cc
+\f3  
+\f1 \'b3\'a1\'b3\'b5\'b4\'d9
+\f3  
+\f1 \'b6\'c7\'b4\'c2
+\f3  
+\f1 \'c0\'da\'bf\'f8\'c0\'bb
+\f3  
+\f1 \'c7\'d8\'c1\'a6
+\f3 \cf0 \
+		\cf5 semaphore\cf0 .release();\
+	\}\
+\}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f1\fs36 \cf0 \
+\
+\
+---Callable \'c0\'ce\'c5\'cd\'c6\'e4\'c0\'cc\'bd\'ba\
+=>1.5 \'bf\'a1\'bc\'ad \'c3\'df\'b0\'a1\'b5\'c8 \'bd\'ba\'b7\'b9\'b5\'e5 \'c0\'ce\'c5\'cd\'c6\'e4\'c0\'cc\'bd\'ba\
+=>Thread \'bf\'cd Runnable \'c0\'ce\'c5\'cd\'c6\'e4\'c0\'cc\'bd\'ba\'b8\'a6 \'c0\'cc\'bf\'eb\'c7\'d8\'bc\'ad \'bd\'ba\'b7\'b9\'b5\'e5\'b8\'a6 \'b8\'b8\'b5\'e9\'b8\'e9 public void run()\'c0\'bb \'c0\'e7\'c1\'a4\'c0\'c7\'c7\'cf\'b4\'c2\'b5\'a5 \'c0\'cc \'b8\'de\'bc\'d2\'b5\'e5\'b8\'a6 \'b8\'ae\'c5\'cf\'c5\'b8\'c0\'d4\'c0\'cc void \'c0\'d4\'b4\'cf\'b4\'d9.\
+\'bd\'ba\'b7\'b9\'b5\'e5\'b0\'a1 \'c0\'db\'be\'f7\'c0\'bb \'bf\'cf\'b7\'e1\'c7\'cf\'b0\'ed \'b8\'ae\'c5\'cf\'c7\'d2 \'bc\'f6 \'be\'f8\'bd\'c0\'b4\'cf\'b4\'d9.\
+\'bd\'ba\'b7\'b9\'b5\'e5\'bf\'a1\'bc\'ad \'c0\'db\'be\'f7 \'c7\'d1 \'b3\'bb\'bf\'aa\'c0\'bb \'b4\'d9\'b8\'a5 \'bd\'ba\'b7\'b9\'b5\'e5\'bf\'a1\'b0\'d4 \'c0\'fc\'b4\'de\'c7\'cf\'b0\'ed\'c0\'da \'c7\'cf\'b8\'e9 \'b0\'f8\'c0\'af \'ba\'af\'bc\'f6\'b8\'a6 \'b8\'b8\'b5\'e9\'be\'ee\'bc\'ad \'bb\'e7\'bf\'eb\'c7\'d8\'be\'df \'c7\'d5\'b4\'cf\'b4\'d9.\
+1.Callable \'c0\'ce\'c5\'cd\'c6\'e4\'c0\'cc\'bd\'ba\
+V call throws Exception() : \'bd\'ba\'b7\'b9\'b5\'e5\'b7\'ce \'bc\'f6\'c7\'e0\'c7\'d2 \'b3\'bb\'bf\'eb\'c0\'bb \'b0\'a1\'c1\'f6\'b4\'c2 \'b8\'de\'bc\'d2\'b5\'e5\
+\'b8\'ae\'c5\'cf\'c5\'b8\'c0\'d4\'c0\'ba generic\'c0\'cc \'c0\'fb\'bf\'eb\'b5\'c7\'be\'ee \'c0\'d6\'be\'ee\'bc\'ad \'b8\'de\'bc\'d2\'b5\'e5\'b8\'a6 \'b1\'b8\'c7\'f6\'c7\'d2 \'b6\'a7 \'bd\'c7\'c1\'a6 \'c0\'da\'b7\'e1\'c7\'fc\'c0\'bb \'bc\'b3\'c1\'a4\'c7\'d8\'c1\'d6\'b0\'ed \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'b8\'ae\'c5\'cf\
+\
+2.Callable \'c0\'ce\'c5\'cd\'c6\'e4\'c0\'cc\'bd\'ba\'b8\'a6 \'b1\'b8\'c7\'f6\'c7\'d1 \'b0\'b4\'c3\'bc\'b4\'c2 ThreadPool\'bf\'a1 \'b3\'d6\'be\'ee\'bc\'ad \'bd\'c7\'c7\'e0\'c7\'cf\'b0\'ed \'b0\'e1\'b0\'fa\'b4\'c2 Future<T> \'c0\'da\'b7\'e1\'c7\'fc\'c0\'b8\'b7\'ce \'b8\'ae\'c5\'cf\
+\
+3.Future<T>\
+1)T get() : \'bd\'ba\'b7\'b9\'b5\'e5\'c0\'c7 \'bc\'f6\'c7\'e0 \'b0\'e1\'b0\'fa\'b8\'a6 \'b0\'a1\'c1\'ae\'bf\'c0\'b4\'c2 \'b8\'de\'bc\'d2\'b5\'e5\
+\
+2)T get(long timeout, TimUnit unit) : \'c3\'b9\'b9\'f8\'c2\'b0 \'b8\'c5\'b0\'b3\'ba\'af\'bc\'f6\'b4\'c2 \'bd\'c3\'b0\'a3\'c0\'cc\'b0\'ed \'b5\'da\'c0\'c7 \'b8\'c5\'b0\'b3\'ba\'af\'bc\'f6\'b4\'c2 \'b4\'dc\'c0\'a7\
+\'c0\'cc \'bd\'c3\'b0\'a3 \'b5\'bf\'be\'c8 \'c0\'db\'be\'f7\'c0\'bb \'bc\'f6\'c7\'e0\'c7\'cf\'b0\'ed \'bd\'c3\'b0\'a3 \'b3\'bb\'bf\'a1 \'c0\'db\'be\'f7\'c0\'cc \'bf\'cf\'b7\'e1\'b5\'c7\'c1\'f6 \'be\'ca\'c0\'b8\'b8\'e9 TimeoutException\'c0\'bb \'b9\'df\'bb\'fd\'bd\'c3\'c5\'b5\'b4\'cf\'b4\'d9.\
+\'c0\'a5 \'bc\'ad\'b9\'f6\'bf\'a1 \'bf\'e4\'c3\'bb\'c0\'bb \'ba\'b8\'b3\'bb\'b8\'e9 \'c0\'cf\'c1\'a4\'bd\'c3\'b0\'a3 \'be\'c8\'bf\'a1 \'c0\'c0\'b4\'e4\'c0\'bb \'c7\'d2 \'bc\'f6 \'c0\'d6\'c0\'b8\'b8\'e9 \'c0\'c0\'b4\'e4\'c0\'bb \'c7\'cf\'c1\'f6\'b8\'b8 \'b1\'d7\'b7\'b8\'c1\'f6 \'be\'ca\'c0\'ba \'b0\'e6\'bf\'ec\'b4\'c2 \'c5\'b8\'c0\'d3\'be\'c6\'bf\'f4\'c0\'bb \'bd\'c3\'c5\'b5\'b4\'cf\'b4\'d9.\
+\'b8\'b8\'c0\'cf \'b9\'ab\'c1\'b6\'b0\'c7 \'bf\'e4\'c3\'bb\'c0\'bb \'c3\'b3\'b8\'ae\'c7\'cf\'b5\'b5\'b7\'cf \'c7\'cf\'b8\'e9 \'c0\'c0\'b4\'e4\'c0\'bb \'b4\'c0\'b8\'ae\'b0\'d4 \'c3\'b3\'b8\'ae\'c7\'cf\'b0\'c5\'b3\'aa \'c0\'e5\'be\'d6\'b0\'a1 \'b9\'df\'bb\'fd\'c7\'d1 \'b0\'e6\'bf\'ec \'b9\'ab\'c7\'d1 \'b7\'e7\'c7\'c1\'bf\'a1 \'ba\'fc\'c1\'fa \'bc\'f6 \'c0\'d6\'bd\'c0\'b4\'cf\'b4\'d9.\
+\
+3)boolean cancel() : \'c0\'db\'be\'f7\'c3\'eb\'bc\'d2\
+\
+4)boolean isCancelled() : \
+\
+5)boolean isDone() : \
+\
+\
+4.\'c0\'cc\'c0\'fc\'bf\'a1 \'c1\'a6\'b0\'f8\'c7\'cf\'b4\'f8 Thread, Runnable \'c0\'bb \'c0\'cc\'bf\'eb\'c7\'cf\'b4\'c2 \'b9\'e6\'bd\'c4\'c0\'bb \'c7\'cf\'c0\'a7 \'b7\'b9\'ba\'a7 \'bd\'ba\'b7\'b9\'b5\'f9 API\'b8\'a6 \'bb\'e7\'bf\'eb\'c7\'df\'b4\'d9\'b0\'ed \'c7\'cf\'b0\'ed \
+ExcutorService, Callable, Semaphore \'b5\'ee\'c0\'bb \'c0\'cc\'bf\'eb\'c7\'cf\'b4\'c2 \'b9\'e6\'bd\'c4\'c0\'bb \'bb\'f3\'c0\'a7 \'b7\'b9\'ba\'a7 \'bd\'ba\'b7\'b9\'b5\'f9 API\'b8\'a6 \'bb\'e7\'bf\'eb\'c7\'d1\'b4\'d9\'b0\'ed \'c7\'d5\'b4\'cf\'b4\'d9.\
+\'b1\'e2\'c1\'b8\'c0\'c7 \'c7\'c1\'b7\'ce\'b1\'d7\'b7\'a1\'b9\'d6\'c0\'ba \'b4\'eb\'ba\'ce\'ba\'d0 \'c7\'cf\'c0\'a7 \'b7\'b9\'ba\'a7 \'bd\'ba\'b7\'b9\'b5\'f9 API\'b8\'a6 \'b8\'b9\'c0\'cc \'bb\'e7\'bf\'eb\
+\
+\
+--main\
+\pard\pardeftab720\partightenfactor0
+
+\f2\b\fs24 \cf2 package
+\f3\b0 \cf0  highlevelthreading;\
+\
+
+\f2\b \cf2 import
+\f3\b0 \cf0  java.util.concurrent.ExecutorService;\
+
+\f2\b \cf2 import
+\f3\b0 \cf0  java.util.concurrent.Executors;\
+
+\f2\b \cf2 import
+\f3\b0 \cf0  java.util.concurrent.Future;\
+\
+
+\f2\b \cf2 public
+\f3\b0 \cf0  
+\f2\b \cf2 class
+\f3\b0 \cf0  CallMain \{\
+\
+	
+\f2\b \cf2 public
+\f3\b0 \cf0  
+\f2\b \cf2 static
+\f3\b0 \cf0  
+\f2\b \cf2 void
+\f3\b0 \cf0  main(String[] \cf3 args\cf0 ) \{\
+		\cf4 //
+\f1 \'bd\'ba\'b7\'b9\'b5\'e5
+\f3  
+\f1 \'c7\'ae\'c0\'bb
+\f3  
+\f1 \'bb\'fd\'bc\'ba
+\f3 \cf0 \
+		\cf4 //
+\f1 \'bd\'ba\'b7\'b9\'b5\'e5
+\f3  
+\f1 \'c7\'ae
+\f3  : 
+\f1 \'bd\'ba\'b7\'b9\'b5\'e5\'b8\'a6
+\f3  
+\f1 \'b9\'cc\'b8\'ae
+\f3  
+\f1 \'b8\'b8\'b5\'e9\'be\'ee
+\f3  
+\f1 \'b3\'f5\'b0\'ed
+\f3  
+\f1 \'bd\'ba\'b7\'b9\'b5\'e5\'b8\'a6
+\f3  
+\f1 \'bd\'c7\'c7\'e0\'c7\'cf\'b4\'c2
+\f3  
+\f1 \'b0\'b3\'b3\'e4
+\f3 \cf0 \
+		\cf4 //
+\f1 \'c7\'d1
+\f3  
+\f1 \'b9\'f8\'bf\'a1
+\f3  
+\f1 \'bd\'c7\'c7\'e0\'c7\'d2
+\f3  
+\f1 \'b0\'b3\'bc\'f6\'b8\'a6
+\f3  
+\f1 \'bc\'b3\'c1\'a4\'c7\'d8\'bc\'ad
+\f3  
+\f1 \'b0\'b4\'c3\'bc\'b8\'a6
+\f3  
+\f1 \'bb\'fd\'bc\'ba
+\f3 \cf0 \
+		\cf4 //
+\f1 \'bf\'ac\'bb\'ea\'c7\'cf\'b4\'c2
+\f3  
+\f1 \'c0\'db\'be\'f7\'c0\'cc
+\f3  
+\f1 \'c1\'d6\'b0\'a1
+\f3  
+\f1 \'b5\'c7\'b4\'c2
+\f3  
+\f1 \'bd\'ba\'b7\'b9\'b5\'e5\'b8\'a3\'b8\'a3
+\f3  
+\f1 \'b8\'b8\'b5\'e9
+\f3  
+\f1 \'b6\'a7\'b4\'c2
+\f3 \cf0 \
+		\cf4 //
+\f1 \'b5\'bf\'bd\'c3\'bf\'a1
+\f3  
+\f1 \'bc\'f6\'c7\'e0\'b5\'c7\'b4\'c2
+\f3  
+\f1 \'b0\'b3\'bc\'f6\'b8\'a3
+\f3  
+\f1 \'c4\'da\'be\'ee\'c0\'c7
+\f3  
+\f1 \'b0\'b3\'bc\'f6\'b7\'ce
+\f3  
+\f1 \'bc\'b3\'c1\'a4\'c7\'cf\'b4\'c2
+\f3  
+\f1 \'b0\'cd\'c0\'cc
+\f3  
+\f1 \'c1\'c1\'bd\'c0\'b4\'cf\'b4\'d9
+\f3 .\cf0 \
+		\cf4 //
+\f1 \'c4\'f5\'b5\'e5
+\f3  
+\f1 \'c4\'da\'be\'ee
+\f3  : 
+\f1 \'c1\'a6\'be\'ee\'c0\'e5\'c4\'a1\'b4\'c2
+\f3  
+\f1 \'c7\'cf\'b3\'aa\'c0\'ce\'b5\'a5
+\f3  
+\f1 \'bf\'ac\'bb\'ea\'c0\'e5\'c4\'a1\'b4\'c2
+\f3  4
+\f1 \'b0\'b3
+\f3 \cf0 \
+		Runtime.
+\f4\i getRuntime
+\f3\i0 ().availableProcessors();\
+		\
+		ExecutorService \cf3 service\cf0  = Executors.
+\f4\i newFixedThreadPool
+\f3\i0 (2);\
+		\cf4 //
+\f1 \'bd\'ba\'b7\'b9\'b5\'e5\'b8\'a6
+\f3  
+\f1 \'bb\'fd\'bc\'ba\'c7\'d8\'bc\'ad
+\f3  
+\f1 \'c7\'ae\'bf\'a1
+\f3  
+\f1 \'c3\'df\'b0\'a1
+\f3 \cf0 \
+		Future<Integer> \cf3 f1\cf0  = \cf3 service\cf0 .submit(
+\f2\b \cf2 new
+\f3\b0 \cf0  ThreadEx(10));\
+		Future<Integer> \cf3 f2\cf0  = \cf3 service\cf0 .submit(
+\f2\b \cf2 new
+\f3\b0 \cf0  ThreadEx(1000));\
+		Future<Integer> \cf3 f3\cf0  = \cf3 service\cf0 .submit(
+\f2\b \cf2 new
+\f3\b0 \cf0  ThreadEx(10000));\
+		Future<Integer> \cf3 f4\cf0  = \cf3 service\cf0 .submit(
+\f2\b \cf2 new
+\f3\b0 \cf0  ThreadEx(100000));\
+		\
+		
+\f2\b \cf2 try
+\f3\b0 \cf0  \{\
+			\cf4 //
+\f1 \'bd\'ba\'b7\'b9\'b5\'e5\'b8\'a6
+\f3  
+\f1 \'bd\'c7\'c7\'e0\'c7\'cf\'b0\'ed
+\f3  
+\f1 \'b0\'e1\'b0\'fa\'b8\'a6
+\f3  
+\f1 \'b0\'a1\'c1\'ae\'bf\'c0\'b1\'e2
+\f3 \cf0 \
+			\cf4 //
+\f1 \'b0\'e1\'b0\'fa\'b0\'a1
+\f3  
+\f1 \'bc\'f8\'bc\'ad\'b4\'eb\'b7\'ce
+\f3  
+\f1 \'be\'c8\'b3\'aa\'bf\'c3
+\f3  
+\f1 \'bc\'f6\'b5\'b5
+\f3  
+\f1 \'c0\'d6\'bd\'c0\'b4\'cf\'b4\'d9
+\f3 .\cf0 \
+			\cf4 //
+\f1 \'b8\'d5\'c0\'fa
+\f3  
+\f1 \'bf\'cf\'b7\'e1\'b5\'c8
+\f3  
+\f1 \'c0\'db\'be\'f7\'c0\'cc
+\f3  
+\f1 \'b8\'d5\'c0\'fa
+\f3  
+\f1 \'c3\'e2\'b7\'c2
+\f3 \cf0 \
+			System.
+\f5\i\b \cf5 out
+\f3\i0\b0 \cf0 .printf(\cf7 "f1:%d\\n"\cf0 , \cf3 f1\cf0 .get());\
+			System.
+\f5\i\b \cf5 out
+\f3\i0\b0 \cf0 .printf(\cf7 "f2:%d\\n"\cf0 , \cf3 f2\cf0 .get());\
+			System.
+\f5\i\b \cf5 out
+\f3\i0\b0 \cf0 .printf(\cf7 "f3:%d\\n"\cf0 , \cf3 f3\cf0 .get());\
+			System.
+\f5\i\b \cf5 out
+\f3\i0\b0 \cf0 .printf(\cf7 "f4:%d\\n"\cf0 , \cf3 f4\cf0 .get());\
+		\}
+\f2\b \cf2 catch
+\f3\b0 \cf0 (Exception \cf3 e\cf0 ) \{\
+			System.
+\f5\i\b \cf5 out
+\f3\i0\b0 \cf0 .printf(\cf7 "%s\\n"\cf0 , \cf3 e\cf0 .getMessage());\
+		\}\
+\
+	\}\
+\
+\}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f1\fs36 \cf0 \
+--class\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f2\b\fs24 \cf2 package
+\f3\b0 \cf0  highlevelthreading;\
+\
+
+\f2\b \cf2 import
+\f3\b0 \cf0  java.util.concurrent.Callable;\
+\
+\cf4 //
+\f1 \'bb\'fd\'bc\'ba\'c0\'da\'b0\'a1
+\f3  
+\f1 \'c1\'a4\'bc\'f6
+\f3  
+\f1 \'c7\'d1\'b0\'b3\'b8\'a6
+\f3  
+\f1 \'b4\'eb\'c0\'d4\'b9\'de\'b0\'ed
+\f3  1
+\f1 \'ba\'ce\'c5\'cd
+\f3  
+\f1 \'b1\'d7
+\f3  
+\f1 \'c1\'a4\'bc\'f6\'b1\'ee\'c1\'f6\'c0\'c7
+\f3  
+\f1 \'c7\'d5\'c0\'bb
+\f3 \cf0 \
+\cf4 //
+\f1 \'b0\'e8\'bb\'ea\'c7\'d1
+\f3  
+\f1 \'c8\'c4
+\f3  
+\f1 \'b8\'ae\'c5\'cf\'c7\'cf\'b4\'c2
+\f3  
+\f1 \'bd\'ba\'b7\'b9\'b5\'e5
+\f3 \cf0 \
+\
+
+\f2\b \cf2 public
+\f3\b0 \cf0  
+\f2\b \cf2 class
+\f3\b0 \cf0  ThreadEx 
+\f2\b \cf2 implements
+\f3\b0 \cf0  Callable<Integer> \{\
+	\
+	
+\f2\b \cf2 private
+\f3\b0 \cf0  
+\f2\b \cf2 int
+\f3\b0 \cf0  \cf5 n\cf0 ;\
+	\
+	\
+	
+\f2\b \cf2 public
+\f3\b0 \cf0  ThreadEx(Integer \cf3 n\cf0 ) \{\
+		\cf4 //
+\f1 \'b1\'e2\'ba\'bb\'c7\'fc\'b0\'fa
+\f3  Wrapper
+\f1 \'b4\'c2
+\f3  
+\f1 \'b9\'d9\'b7\'ce
+\f3  
+\f1 \'b4\'eb\'c0\'d4
+\f3  
+\f1 \'b0\'a1\'b4\'c9
+\f3 \cf0 \
+		\cf4 //Boxing & \cf4 \ul \ulc4 Unboxing\cf4 \ulnone  
+\f1 \'c0\'cc\'b6\'f3\'b0\'ed
+\f3  
+\f1 \'c7\'d5\'b4\'cf\'b4\'d9
+\f3 .\cf0 \
+		\cf4 //this.n = n.intValue()
+\f1 \'b0\'a1
+\f3  
+\f1 \'bc\'f6\'c7\'e0\'b5\'cb\'b4\'cf\'b4\'d9
+\f3 .\cf0 \
+		
+\f2\b \cf2 this
+\f3\b0 \cf0 .\cf5 n\cf0  = \cf3 n\cf0 ;\
+	\}\
+\
+\
+	\cf6 @Override\cf0 \
+	
+\f2\b \cf2 public
+\f3\b0 \cf0  Integer call() 
+\f2\b \cf2 throws
+\f3\b0 \cf0  Exception \{\
+		
+\f2\b \cf2 int
+\f3\b0 \cf0  \cf3 total\cf0  = 0;\
+		
+\f2\b \cf2 for
+\f3\b0 \cf0 (
+\f2\b \cf2 int
+\f3\b0 \cf0  \cf3 i\cf0 =1;\cf3 i\cf0 <\cf5 n\cf0 +1;\cf3 i\cf0 =\cf3 i\cf0 +1) \{\
+			\cf3 total\cf0 =\cf3 total\cf0 +\cf3 i\cf0 ;\
+		\}\
+		
+\f2\b \cf2 return
+\f3\b0 \cf0  \cf3 total\cf0 ;\
+	\}\
+\
+\}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f1\fs36 \cf0 \
+\
+\
+---Timer\
+=>\'b5\'a5\'b8\'f3 \'bd\'ba\'b7\'b9\'b5\'e5\'b7\'ce \'bd\'c7\'c7\'e0\'b5\'c7\'b4\'c2 \'c5\'d7\'bd\'ba\'c5\'a9\'b8\'a6 \'c7\'d1 \'b9\'f8 \'b6\'c7\'b4\'c2 \'c1\'a4\'b1\'e2\'c0\'fb\'c0\'b8\'b7\'ce \'b9\'dd\'ba\'b9\'c7\'d8\'bc\'ad \'bd\'c7\'c7\'e0\'c7\'d8\'c1\'d6\'b4\'c2 \'c5\'ac\'b7\'a1\'bd\'ba\
+1.\'bb\'fd\'bc\'ba\'c0\'da\
+Time() : \'b1\'e2\'ba\'bb \'bb\'fd\'bc\'ba\'c0\'da\
+Timer(boolean isDaemon) :\'b5\'a5\'b8\'f3 \'bf\'a9\'ba\'ce\'b8\'a6 \'bc\'b3\'c1\'a4\'c7\'cf\'b4\'c2 \'bb\'fd\'bc\'ba\'c0\'da\
+Timer(String name) : \'bd\'ba\'b7\'b9\'b5\'e5 \'c0\'cc\'b8\'a7\'c0\'bb \'b8\'b8\'b5\'e5\'b4\'c2 \'bb\'fd\'bc\'ba\'c0\'da\
+Timer(String name, boolean isDaemon) : \'bd\'ba\'b7\'b9\'b5\'e5 \'c0\'cc\'b8\'a7\'b0\'fa \'b5\'a5\'b8\'f3 \'bf\'a9\'ba\'ce\'b8\'a6 \'bc\'b3\'c1\'a4\'c7\'d2 \'bc\'f6 \'c0\'d6\'b4\'c2 \'bb\'fd\'bc\'ba\'c0\'da\
+\
+=>\'c0\'cc\'b8\'a7\'c0\'ba \'bb\'fd\'b7\'ab\'c7\'cf\'b8\'e9 Thread-0,1,2,...\'c7\'fc\'c5\'c2\'b7\'ce \'b8\'b8\'b5\'e9\'be\'ee \'c1\'fd\'b4\'cf\'b4\'d9.\
+\
+\
+2.\'bd\'ba\'c4\'c9\'c1\'ec\'b8\'b5 \'c7\'d8\'c1\'d6\'b4\'c2 \'b8\'de\'bc\'d2\'b5\'e5\
+void schedule(TimerTask task, Date date) : date \'bf\'a1 task \'b8\'a6 \'bc\'f6\'c7\'e0\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 void schedule(TimerTask task, Date date, long period) : date \'bf\'a1 task \'b8\'a6 \'bc\'f6\'c7\'e0\'c7\'cf\'b4\'c2\'b5\'a5 period\'b8\'a6 \'c1\'d6\'b1\'e2\'b7\'ce \'c7\'d8\'bc\'ad \'b0\'e8\'bc\'d3 \'bc\'f6\'c7\'e0\
+\
+void schedule(TimerTask task, long delay) : \'c7\'f6\'c0\'e7 \'bd\'c3\'b0\'a3\'bf\'a1 delay \'c8\'c4\'bf\'a1 task \'b8\'a6 \'bd\'c7\'c7\'e0\
+\
+void schedule(TimerTask task, long delay, long period) : delay \'c8\'c4\'bf\'a1 task \'b8\'a6 \'bc\'f6\'c7\'e0\'c7\'cf\'b4\'c2\'b5\'a5 period\'b8\'a6 \'c1\'d6\'b1\'e2\'b7\'ce \'c7\'d8\'bc\'ad \'b0\'e8\'bc\'d3 \'bc\'f6\'c7\'e0\
+\
+\
+3.\'c0\'db\'be\'f7\'c0\'bb \'c1\'df\'c1\'f6\
+void cancel()\
+\
+\
+4.TimerTask \'c5\'ac\'b7\'a1\'bd\'ba\
+=>Timer\'b0\'a1 \'bc\'f6\'c7\'e0\'c7\'d2 \'c0\'db\'be\'f7\'c0\'bb \'b8\'b8\'b5\'e9\'be\'ee \'c1\'d6\'b4\'c2 \'c5\'ac\'b7\'a1\'bd\'ba\
+=>run \'b8\'de\'bc\'d2\'b5\'e5\'bf\'a1 \'c0\'db\'be\'f7\'c7\'d2 \'b3\'bb\'bf\'eb\'c0\'bb \'b8\'b8\'b5\'e9\'be\'ee\'c1\'d6\'b8\'e9 \'b5\'cb\'b4\'cf\'b4\'d9.\
+\
+--\'b8\'de\'c0\'ce\'b0\'fa \'c5\'ac\'b7\'a1\'bd\'ba\'b8\'a6 \'b0\'b0\'c0\'cc \'bb\'e7\'bf\'eb\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f2\b\fs24 \cf2 package
+\f3\b0 \cf0  timer;\
+\
+
+\f2\b \cf2 import
+\f3\b0 \cf0  java.util.Calendar;\
+
+\f2\b \cf2 import
+\f3\b0 \cf0  java.util.Date;\
+
+\f2\b \cf2 import
+\f3\b0 \cf0  java.util.GregorianCalendar;\
+
+\f2\b \cf2 import
+\f3\b0 \cf0  java.util.Timer;\
+
+\f2\b \cf2 import
+\f3\b0 \cf0  java.util.TimerTask;\
+\
+\cf4 //
+\f1 \'c5\'b8\'c0\'cc\'b8\'d3
+\f3  
+\f1 \'c0\'db\'be\'f7\'c0\'bb
+\f3  
+\f1 \'c0\'a7\'c7\'d1
+\f3  
+\f1 \'c5\'ac\'b7\'a1\'bd\'ba-\'b8\'de\'c0\'ce\'bf\'a1 \'c5\'ac\'b7\'a1\'bd\'ba \'bb\'f0\'c0\'d4
+\f3 \cf0 \
+
+\f2\b \cf2 class
+\f3\b0 \cf0  TimerTaskEx 
+\f2\b \cf2 extends
+\f3\b0 \cf0  TimerTask\{\
+	\cf4 //
+\f1 \'c5\'b8\'c0\'cc\'b8\'d3\'b7\'ce
+\f3  
+\f1 \'b5\'bf\'c0\'db\'c7\'d2
+\f3  
+\f1 \'c0\'db\'be\'f7
+\f3 	\cf0 \
+	
+\f2\b \cf2 public
+\f3\b0 \cf0  
+\f2\b \cf2 void
+\f3\b0 \cf0  run() \{\
+		System.
+\f5\i\b \cf5 out
+\f3\i0\b0 \cf0 .printf(\cf7 "TimerTask!\\n"\cf0 );\
+	\}\
+\}\
+\
+
+\f2\b \cf2 public
+\f3\b0 \cf0  
+\f2\b \cf2 class
+\f3\b0 \cf0  TimerMain \{\
+\
+	
+\f2\b \cf2 public
+\f3\b0 \cf0  
+\f2\b \cf2 static
+\f3\b0 \cf0  
+\f2\b \cf2 void
+\f3\b0 \cf0  main(String[] \cf3 args\cf0 ) \{\
+		\cf4 //Date 
+\f1 \'b8\'b8\'b5\'e9\'b1\'e2
+\f3 \cf0 \
+		Calendar \cf3 cal\cf0  = 
+\f2\b \cf2 new
+\f3\b0 \cf0  GregorianCalendar(2019,8,20,11,15,0);\
+		Date \cf3 \ul \ulc3 date\cf0 \ulnone  = 
+\f2\b \cf2 new
+\f3\b0 \cf0  Date(\cf3 cal\cf0 .getTimeInMillis());\
+		\cf4 //Timer 
+\f1 \'b8\'b8\'b5\'e9\'b1\'e2
+\f3 \cf0 \
+		Timer \cf3 timer\cf0  = 
+\f2\b \cf2 new
+\f3\b0 \cf0  Timer();\
+		\cf4 //2019
+\f1 \'b3\'e2
+\f3  9
+\f1 \'bf\'f9
+\f3  20
+\f1 \'c0\'cf
+\f3  11
+\f1 \'bd\'c3
+\f3  15
+\f1 \'ba\'d0\'bf\'a1
+\f3  
+\f1 \'b5\'bf\'c0\'db\'c7\'cf\'b5\'b5\'b7\'cf
+\f3  
+\f1 \'bc\'b3\'c1\'a4
+\f3 \cf0 \
+		\cf4 //timer.schedule(new TimerTaskEx(), date);\cf0 \
+		\
+		\cf4 //5
+\f1 \'c3\'ca
+\f3  
+\f1 \'c8\'c4\'ba\'ce\'c5\'cd
+\f3  2
+\f1 \'c3\'ca\'b8\'b6\'b4\'d9
+\f3  
+\f1 \'c0\'db\'be\'f7\'c0\'bb
+\f3  
+\f1 \'bc\'f6\'c7\'e0
+\f3 \cf0 \
+		\cf3 timer\cf0 .schedule(
+\f2\b \cf2 new
+\f3\b0 \cf0  TimerTaskEx(), 5000, 2000);\
+		\
+		\
+		\cf4 //timer.cancel();\cf0 \
+\
+	\}\
+\
+\}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f1\fs36 \cf0 \
+\
+\
+---java gui(Graphic User Interface - Windows) progranning\
+1.AWT : \'bf\'ee\'bf\'b5\'c3\'bc\'c1\'a6\'c0\'c7 \'c0\'da\'bf\'f8\'c0\'bb \'b0\'a1\'c1\'f6\'b0\'ed GUI\
+=>\'bf\'ee\'bf\'b5\'c3\'bc\'c1\'a6\'c0\'c7 \'c0\'da\'bf\'f8\'c0\'bb \'c0\'cc\'bf\'eb\'c7\'cf\'b1\'e2 \'b6\'a7\'b9\'ae\'bf\'a1 \'c4\'c4\'c6\'f7\'b3\'cd\'c6\'ae\'b0\'a1 \'c1\'a6\'c7\'d1\'c0\'fb\
+=>\'bf\'ee\'bf\'b5\'c3\'bc\'c1\'a6\'c0\'c7 \'c0\'da\'bf\'f8\'c0\'bb \'c0\'cc\'bf\'eb\'c7\'cf\'b1\'e2 \'b6\'a7\'b9\'ae\'bf\'a1 \'b9\'ab\'b0\'cc\'bd\'c0\'b4\'cf\'b4\'d9.\
+=>\'bb\'e7\'bf\'eb\'c7\'cf\'b1\'e2 \'bd\'b1\'b0\'ed Swing \'c0\'cc\'b3\'aa Android \'c0\'c7 GUI \'c0\'c7 \'b1\'e2\'ba\'bb\
+\
+\
+2.Swing : JVM(java)\'c0\'cc \'b0\'a1\'c1\'f6\'b4\'c2 \'c0\'da\'bf\'f8\'c0\'bb \'b0\'a1\'c1\'f6\'b0\'ed GUI\
+=>AWT \'ba\'b8\'b4\'d9\'b4\'c2 \'b0\'a1\'ba\'b1\'b0\'ed \'c4\'c4\'c6\'f7\'b3\'cd\'c6\'ae\'b5\'b5 \'b8\'b9\'c0\'bd\
+=>\'b4\'eb\'ba\'ce\'ba\'d0 AWT \'c5\'ac\'b7\'a1\'bd\'ba\'b8\'a6 \'bb\'f3\'bc\'d3\'b9\'de\'be\'c6\'bc\'ad \'bb\'e7\'bf\'eb\
+\
+3.Java F/X\
+=>\'b0\'a1\'c0\'e5 \'c3\'d6\'b1\'d9\'bf\'a1 \'b5\'ee\'c0\'e5\'c7\'d1 GUI \'c7\'c1\'b7\'ce\'b1\'d7\'b7\'a1\'b9\'d6 \'b9\'e6\'bd\'c4\
+=>\'c4\'c4\'c6\'f7\'b3\'cd\'c6\'ae\'b8\'a6 \'c3\'df\'b0\'a1\'c7\'d8\'bc\'ad \'c7\'c1\'b7\'ce\'b1\'d7\'b7\'a1\'b9\'d6\'c0\'bb \'c7\'d5\'b4\'cf\'b4\'d9.\
+=>\'b5\'f0\'c0\'da\'c0\'ce\'c0\'bb \'c1\'c1\'b0\'d4 \'c7\'cf\'b1\'e2 \'c0\'a7\'c7\'d8\'bc\'ad CSS(Cascade Style Sheet - html\'bf\'a1 \'b5\'f0\'c0\'da\'c0\'ce\'a4\'b7\'b8\'a3 \'c0\'fb\'bf\'eb\'c7\'cf\'b1\'e2 \'c0\'a7\'c7\'d1 \'be\'f0\'be\'ee) \'c7\'fc\'c5\'c2\'c0\'c7 \'b5\'f0\'c0\'da\'c0\'ce \'c3\'df\'b0\'a1 \'b1\'e2\'b4\'c9\'c0\'cc \'c0\'d6\'c0\'bd\
+\
+\
+4.Android\
+=>\'c0\'cc\'ba\'a5\'c6\'ae \'c3\'b3\'b8\'ae\'b3\'aa \'bb\'e7\'bf\'eb\'c7\'cf\'b4\'c2 \'b9\'e6\'bd\'c4\'c0\'ba Swing \'b0\'fa \'c0\'af\'bb\'e7\
+=>\'c0\'a9\'b5\'b5\'bf\'ec \'c7\'c1\'b7\'ce\'b1\'d7\'b7\'a1\'b9\'d6\'bf\'a1\'bc\'ad\'b4\'c2 \'c4\'c4\'c6\'f7\'b3\'cd\'c6\'ae\'b6\'f3\'b4\'c2 \'c7\'a5\'c7\'f6\'c0\'bb \'bb\'e7\'bf\'eb\'c7\'cf\'b4\'c2\'b5\'a5 \'be\'c8\'b5\'e5\'b7\'ce\'c0\'cc\'b5\'e5\'bf\'a1\'bc\'ad\'b4\'c2 \'c0\'a7\'c1\'ac\'c0\'cc\'b3\'aa \'b7\'b9\'c0\'cc\'be\'c6\'bf\'f4 \'b5\'ee\'c0\'b8\'b7\'ce \'c8\'a3\'c4\'aa\'c7\'d5\'b4\'cf\'b4\'d9.\
+\
+\
+\
+---AWT\
+=>\'c3\'d6\'b1\'d9\'bf\'a1\'b4\'c2 \'b9\'ab\'b0\'cc\'b1\'e2 \'b6\'a7\'b9\'ae\'bf\'a1 AWT\'b8\'a6 \'c0\'cc\'bf\'eb\'c7\'d8\'bc\'ad GUI \'c7\'c1\'b7\'ce\'b1\'d7\'b7\'a1\'b9\'d6\'c0\'bb \'c0\'df \'c7\'cf\'c1\'f6 \'be\'ca\'bd\'c0\'b4\'cf\'b4\'d9.\
+=>\'bf\'e4\'c1\'f2\'c0\'ba \'b4\'eb\'ba\'ce\'ba\'d0 Swing\'c0\'cc\'b3\'aa F/X\'b8\'a6 \'c0\'cc\'bf\'eb\'c7\'d5\'b4\'cf\'b4\'d9.\
+=>Swing\'c0\'c7 \'c7\'c1\'b7\'ce\'b1\'d7\'b7\'a1\'b9\'d6 \'b9\'e6\'bd\'c4\'c0\'cc AWT\'bf\'a1\'bc\'ad \'b3\'d1\'be\'ee\'bf\'d4\'b1\'e2 \'b6\'a7\'b9\'ae\'bf\'a1 AWT\'b8\'a6 \'bb\'e7\'bf\'eb\'c7\'d2 \'c1\'d9 \'be\'cb\'b8\'e9 Swing\'c0\'cc \'c6\'ed\'c7\'d8\'c1\'fd\'b4\'cf\'b4\'d9.\
+=>\'c0\'da\'c1\'d6 \'bb\'e7\'bf\'eb\'c7\'cf\'b4\'c2 \'c6\'d0\'c5\'b0\'c1\'f6\'b4\'c2 java.awt, java.awt.event, java.awt,image \'b0\'a1 \'b8\'b9\'c0\'cc \'bb\'e7\'bf\'eb\'b5\'cb\'b4\'cf\'b4\'d9.\
+\
+1.Component\
+=>\'c8\'ad\'b8\'e9\'bf\'a1 \'b3\'aa\'c5\'b8\'b3\'aa\'b4\'c2 \'ba\'ce\'c7\'b0\
+\
+2.Container\
+=>\'b4\'d9\'b8\'a5 \'c4\'c4\'c6\'f7\'b3\'cd\'c6\'ae\'b5\'e9\'c0\'bb \'b9\'e8\'c4\'a1\'c7\'cf\'b1\'e2 \'c0\'a7\'c7\'d1 \'c4\'c4\'c6\'f7\'b3\'cd\'c6\'ae\
+\
+1)\'b5\'b6\'b8\'b3\'c0\'fb \'c4\'c1\'c5\'d7\'c0\'cc\'b3\'ca - \'c8\'a5\'c0\'da\'bc\'ad \'c3\'e2\'b7\'c2\'b5\'c9 \'bc\'f6 \'c0\'d6\'bd\'c0\'b4\'cf\'b4\'d9.\
+=>Frame : \'c0\'cf\'b9\'dd\'c0\'fb\'c0\'ce \'c0\'a9\'b5\'b5\'bf\'ec\
+=>Dialog : \'b8\'de\'b4\'ba\'b8\'a6 \'b0\'a1\'c1\'fa \'bc\'f6 \'be\'f8\'b4\'c2 \'b4\'eb\'c8\'b2\'bb\'f3\'c0\'da\
+=>Window : Frame\'b0\'fa Dialog \'c0\'c7 \'bb\'f3\'c0\'a7 \'c5\'ac\'b7\'a1\'bd\'ba\
+=>\'c8\'ad\'b8\'e9\'c0\'bb \'b8\'b8\'b5\'e9 \'b6\'a7\'b4\'c2 Frame \'c0\'cc\'b3\'aa Dialog \'b8\'a6 \'c0\'cc\'bf\'eb\
+\
+\
+2)\'c1\'be\'bc\'d3\'c0\'fb\'c0\'ce \'c4\'c1\'c5\'d7\'c0\'cc\'b3\'ca - \'c8\'a5\'c0\'da\'bc\'ad \'c3\'e2\'b7\'c2\'c0\'bb \'c7\'d2 \'bc\'f6 \'be\'f8\'b0\'ed Frame \'c0\'cc\'b3\'aa Dialog \'c0\'a7\'bf\'a1\'bc\'ad \'c3\'e2\'b7\'c2\'b5\'c7\'b8\'e7 \'c0\'da\'bd\'c5\'c0\'c7 \'c0\'a7\'bf\'a1 \'b3\'f5\'c0\'cf \'bc\'f6\'b5\'b5 \'c0\'d6\'bd\'c0\'b4\'cf\'b4\'d9.\
+=>Panel : \'bf\'a9\'b7\'af \'b0\'b3\'c0\'c7 \'c4\'c4\'c6\'f7\'b3\'cd\'c6\'ae\'b8\'a6 \'b9\'e8\'c4\'a1\'c7\'d2 \'bc\'f6 \'c0\'d6\'b4\'c2 \'c4\'c1\'c5\'d7\'c0\'cc\'b3\'ca\'c0\'ce\'b5\'a5 \'b5\'b6\'c0\'da\'c0\'fb\'c0\'b8\'b7\'ce\'b4\'c2 \'c3\'e2\'b7\'c2\'c0\'cc \'be\'c8\'b5\'ca\
+=>ScollPane : \'bd\'ba\'c5\'a9\'b7\'d1 \'b9\'d9\'b8\'a6 \'b0\'a1\'c1\'fa \'bc\'f6 \'c0\'d6\'b4\'c2 \'c4\'c1\'c5\'d7\'c0\'cc\'b3\'ca\'c0\'ce\'b5\'a5 \'b3\'bb\'ba\'ce\'bf\'a1 \'c4\'c4\'c6\'f7\'b3\'cd\'c6\'ae\'b4\'c2 1\'b0\'b3\'b8\'b8 \'b9\'e8\'c4\'a1 \'b0\'a1\'b4\'c9\
+\'c8\'ad\'b8\'e9\'ba\'b8\'b4\'d9 \'b4\'f5 \'c5\'ab \'c4\'c1\'c5\'d9\'c3\'f7\'b4\'c2 \'c3\'e2\'b7\'c2\'b5\'c9 \'bc\'f6 \'be\'f8\'bd\'c0\'b4\'cf\'b4\'d9.\
+\'c8\'ad\'b8\'e9\'ba\'b8\'b4\'d9 \'b4\'f5 \'c5\'ab \'c4\'c1\'c5\'d9\'c3\'f7\'b4\'c2 \'b9\'dd\'b5\'e5\'bd\'c3 ScrollPane \'c0\'a7\'bf\'a1 \'bf\'c3\'b7\'c1\'bc\'ad \'c3\'e2\'b7\'c2\'c7\'d8\'be\'df \'c7\'d5\'b4\'cf\'b4\'d9.\
+\'b8\'f0\'b5\'e7 GUI \'bd\'c3\'bd\'ba\'c5\'db\'c0\'cc \'b8\'f0\'b5\'ce \'b5\'bf\'c0\'cf\
+\
+3)\'c4\'c1\'c5\'d7\'c0\'cc\'b3\'ca \'b4\'d9\'b8\'a5 \'c4\'c4\'c6\'f7\'b3\'cd\'c6\'ae\'b8\'a6 \'b9\'e8\'c4\'a1\'c7\'cf\'b4\'c2 \'b8\'de\'bc\'d2\'b5\'e5\
+add(Component component)\
+\'b9\'dd\'b4\'eb\'b7\'ce \'bb\'e8\'c1\'a6\'c7\'cf\'b4\'c2 \'b8\'de\'bc\'d2\'b5\'e5\'b4\'c2 remove(Component component)\
+\
+4)Layout(\'b9\'e8\'c4\'a1\'b8\'f0\'b5\'e5) \'b0\'fc\'b7\'c3 \'b8\'de\'bc\'d2\'b5\'e5\
+=>setLayout, getLayout\
+\
+\
+\
+3.Frame\
+=>\'c7\'cf\'b3\'aa\'c0\'c7 \'c0\'c0\'bf\'eb\'c7\'c1\'b7\'ce\'b1\'d7\'b7\'a5 \'c3\'a2\'bf\'a1 \'c7\'d8\'b4\'e7\'c7\'cf\'b4\'c2 \'c4\'c1\'c5\'d7\'c0\'cc\'b3\'ca\
+=>\'bb\'fd\'bc\'ba\'c0\'da\
+Frame()\
+Frame(String title) : \'c3\'a2\'c0\'c7 \'c1\'a6\'b8\'f1\'c0\'bb \'bc\'b3\'c1\'a4\'c7\'cf\'b4\'c2 \'bb\'fd\'bc\'ba\'c0\'da\
+\
+\
+=>Frame\'c0\'ba \'b1\'e2\'ba\'bb\'c0\'fb\'c0\'b8\'b7\'ce \'c8\'ad\'b8\'e9\'bf\'a1 \'c3\'e2\'b7\'c2\'c0\'cc \'be\'c8\'b5\'cb\'b4\'cf\'b4\'d9.\
+setVisible(true)\'b8\'a6 \'c8\'a3\'c3\'e2\'c7\'d8\'bc\'ad \'c8\'ad\'b8\'e9\'bf\'a1 \'ba\'b8\'bf\'a9\'c1\'f6\'b5\'b5\'b7\'cf \'c7\'d8\'be\'df \'c7\'cf\'b0\'ed \'b1\'e2\'ba\'bb\'c0\'fb\'c0\'b8\'b7\'ce \'c5\'a9\'b1\'e2\'b0\'a1 \'b0\'a1\'b7\'ce0 \'bc\'bc\'b7\'ce0 \'c0\'b8\'b7\'ce \'b5\'c7\'be\'ee \'a4\'d3\'a4\'b7\'a4\'b6\'be\'ee\'bc\'ad setSize(\'b0\'a1\'b7\'ce\'c5\'a9\'b1\'e2, \'bc\'bc\'b7\'ce\'c5\'a9\'b1\'e2) \'b3\'aa setBounds\'b8\'a6 \'c8\'a3\'c3\'e2\'c7\'d8\'bc\'ad \'c5\'a9\'b1\'e2\'b8\'a6 \'bc\'b3\'c1\'a4\'c7\'d8\'be\'df \'c7\'d5\'b4\'cf\'b4\'d9.\
+\'c0\'a7\'c4\'a1\'b4\'c2 setLocation \'c0\'bb \'c0\'cc\'bf\'eb\'c7\'d8\'bc\'ad \'bc\'b3\'c1\'a4\'c7\'cf\'b4\'c2\'b5\'a5 setBounds\'b4\'c2 \'c0\'a7\'c4\'a1\'bf\'cd \'c5\'a9\'b1\'e2\'b8\'a6 \'b0\'b0\'c0\'cc \'bc\'b3\'c1\'a4\
+\
+\
+\
+=>Frame\'c0\'bb \'bb\'f3\'bc\'d3\'b9\'de\'b4\'c2 \'c5\'ac\'b7\'a1\'bd\'ba\'b8\'a6 \'b8\'b8\'b5\'e9\'b0\'ed \'bb\'fd\'bc\'ba\'c0\'da\'b8\'a6 \'c0\'e7\'c1\'a4\'c0\'c7\'c7\'d8\'bc\'ad \'c7\'ca\'bf\'e4\'c7\'d1 \'bf\'c9\'bc\'c7\'c0\'bb \'bc\'b3\'c1\'a4\
+\
+\
+\
+4.GUI \'c7\'c1\'b7\'ce\'b1\'d7\'b7\'a1\'b9\'d6\'bf\'a1\'bc\'ad \'c1\'d6\'c0\'c7 \'c7\'d2 \'c1\'a1 \
+=>\'c7\'cf\'b3\'aa\'c0\'c7 \'b8\'de\'bc\'d2\'b5\'e5 \'be\'c8\'bf\'a1\'bc\'ad UI\'b8\'a6 \'ba\'af\'b0\'e6\'c7\'cf\'b4\'c2 \'c4\'da\'b5\'e5\'b8\'a6 \'bf\'a9\'b7\'af\'b0\'b3 \'c0\'db\'bc\'ba\'c7\'cf\'b8\'e9 \'c7\'d1 \'b9\'f8\'bf\'a1 \'b8\'f0\'be\'c6\'bc\'ad \'c3\'b3\'b8\'ae\'c7\'d5\'b4\'cf\'b4\'d9.\
+=>\'c5\'d8\'bd\'ba\'c6\'ae\'b8\'a6 \'ba\'af\'b0\'e6\'c7\'cf\'b4\'c2 \'b9\'ae\'c0\'e5\'c0\'cc 10\'b0\'b3 \'c0\'d6\'b4\'d9\'b8\'e9 10\'b9\'f8 \'ba\'af\'b0\'e6\'c7\'cf\'b4\'c2 \'b0\'cd\'c0\'cc \'be\'c6\'b4\'cf\'b0\'ed \'b8\'f0\'be\'c6\'bc\'ad \'c7\'d1\'b9\'f8\'bf\'a1 \'c3\'b3\'b8\'ae\'c7\'d8\'b9\'f6\'b8\'ae\'b1\'e2 \'b6\'a7\'b9\'ae\'bf\'a1 1\'b9\'f8\'b8\'b8 \'bc\'f6\'c7\'e0\'c7\'cf\'b4\'c2 \'b0\'cd\'c3\'b3\'b7\'b3 \'ba\'b8\'c0\'cc\'b1\'e2\'b5\'b5 \'c7\'d5\'b4\'cf\'b4\'d9.\
+=>UI\'b8\'a6 \'ba\'af\'b0\'e6\'c7\'cf\'b4\'c2 \'b0\'cd\'c0\'ba \'bd\'ba\'b7\'b9\'b5\'e5\'b8\'a6 \'c0\'cc\'bf\'eb\'c7\'d8\'be\'df \'c7\'d5\'b4\'cf\'b4\'d9.\
+\
+\
+\
+5.Panel\
+=>\'c0\'a9\'b5\'b5\'bf\'ec \'c0\'a7\'bf\'a1 \'ba\'ce\'c2\'f8\'c7\'d8\'bc\'ad \'b4\'d9\'b8\'a5 \'c4\'c4\'c6\'f7\'b3\'cd\'c6\'ae\'b5\'e9\'c0\'bb \'c3\'e2\'b7\'c2\'c7\'d8\'c1\'d6\'b4\'c2 \'c4\'c1\'c5\'d7\'c0\'cc\'b3\'ca\
+=>\'bf\'a9\'b7\'af \'c4\'c4\'c6\'f7\'b3\'cd\'c6\'ae\'b5\'e9\'c0\'bb \'b9\'ad\'be\'ee\'c1\'d6\'b1\'e2 \'c0\'a7\'c7\'d1 \'c4\'c1\'c5\'d7\'c0\'cc\'b3\'ca \
+=>\'ba\'b8\'c5\'eb Frame \'c0\'a7\'bf\'a1 \'c4\'c4\'c6\'f7\'b3\'cd\'c6\'ae\'b5\'e9\'c0\'bb \'b9\'e8\'c4\'a1\'c7\'d2 \'b6\'a7 Panel \'c0\'bb \'ba\'ce\'c2\'f8\'c7\'cf\'b0\'ed Panel \'c0\'a7\'bf\'a1 \'c4\'c4\'c6\'f7\'b3\'cd\'c6\'ae\'b5\'e9\'c0\'bb \'ba\'ce\'c2\'f8\'c7\'cf\'b4\'c2 \'b0\'e6\'bf\'ec\'b0\'a1 \'b8\'b9\'bd\'c0\'b4\'cf\'b4\'d9.\
+\
+\
+6.Button\
+=>\'bb\'fd\'bc\'ba\'c0\'ba \'b9\'f6\'c6\'b0\'bf\'a1 \'ba\'b8\'bf\'a9\'c1\'fa \'b9\'ae\'c0\'da\'bf\'ad\'c0\'bb \'bb\'fd\'bc\'ba\'c0\'da\'bf\'a1 \'b4\'eb\'c0\'d4\'c7\'d8\'bc\'ad \'bb\'fd\'bc\'ba\
+\
+\
+7.CheckBox\
+=>\'c3\'bc\'c5\'a9 \'b9\'da\'bd\'ba \'bf\'b7\'bf\'a1 \'ba\'b8\'bf\'a9\'c1\'fa \'b9\'ae\'c0\'da\'bf\'ad\'c0\'bb \'bb\'fd\'bc\'ba\'c0\'da\'bf\'a1 \'b4\'eb\'c0\'d4\'c7\'d8\'bc\'ad \'bb\'fd\'bc\'ba\'c7\'cf\'b0\'ed \'c0\'cc \'b6\'a7 boolean \'c5\'b8\'c0\'d4\'c0\'b8\'b7\'ce \'c3\'bc\'c5\'a9 \'bf\'a9\'ba\'ce\'b8\'a6 \'bc\'b3\'c1\'a4\'c7\'cf\'b4\'c2 \'b0\'cd\'c0\'cc \'b0\'a1\'b4\'c9\
+=>\'b6\'f3\'b5\'f0\'bf\'c0 \'b9\'f6\'c6\'b0\'c0\'bb \'b8\'b8\'b5\'e9 \'b6\'a7\'b4\'c2 CheckBox(String label, CheckboxGroup group, boolean state)\'bb\'fd\'bc\'ba\'c0\'da\'b8\'a6 \'c0\'cc\'bf\'eb\
+CheckboxGroup\'c0\'cc \'b0\'b0\'c0\'b8\'b8\'e9 \'b5\'bf\'c0\'cf\'c7\'d1 \'b1\'d7\'b7\'ec\'c0\'c7 \'b6\'f3\'b5\'f0\'bf\'c0 \'b9\'f6\'c6\'b0\'c0\'cc \'b5\'cb\'b4\'cf\'b4\'d9.\
+=>\'c3\'bc\'c5\'a9\'b9\'da\'bd\'ba\'b4\'c2 \'c7\'ca\'bc\'f6 \'bc\'b1\'c5\'c3\'c0\'ba \'be\'c6\'b4\'cf\'b8\'e9\'bc\'ad \'bf\'a9\'b7\'af \'b0\'b3 \'bc\'b1\'c5\'c3\'c0\'cc \'b0\'a1\'b4\'c9\'c7\'cf\'b5\'b5\'b7\'cf \'c7\'d2 \'b6\'a7 \'bb\'e7\'bf\'eb\
+=>\'b6\'f3\'b5\'f0\'bf\'c0 \'b9\'f6\'c6\'b0\'c0\'ba \'b9\'dd\'b5\'e5\'bd\'c3 1\'b0\'b3\'b8\'b8 \'bc\'b1\'c5\'c3\'c7\'d8\'be\'df \'c7\'cf\'b4\'c2 \'b0\'e6\'bf\'ec\'bf\'a1 \'bb\'e7\'bf\'eb\
+=>\'bc\'b1\'c5\'c3\'c7\'d2 \'bc\'f6 \'c0\'d6\'b4\'c2 \'c7\'d7\'b8\'f1\'c0\'cc \'b8\'b9\'c0\'cc\'c1\'f6\'b8\'e9 ComboBox \'b3\'aa List \'b1\'b8\'c1\'b6\'b8\'a6 \'c0\'cc\'bf\'eb\
+\
+--main\
+\pard\pardeftab720\partightenfactor0
+
+\f2\b\fs24 \cf2 package
+\f3\b0 \cf0  awt;\
+\
+
+\f2\b \cf2 public
+\f3\b0 \cf0  
+\f2\b \cf2 class
+\f3\b0 \cf0  FrameMain \{\
+\
+	
+\f2\b \cf2 public
+\f3\b0 \cf0  
+\f2\b \cf2 static
+\f3\b0 \cf0  
+\f2\b \cf2 void
+\f3\b0 \cf0  main(String[] \cf3 args\cf0 ) \{\
+		\cf4 //new MyFrame();\cf0 \
+		
+\f2\b \cf2 new
+\f3\b0 \cf0  ButtonFrame();\
+\
+	\}\
+\
+\}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f1\fs36 \cf0 --class\
+\pard\pardeftab720\partightenfactor0
+
+\f2\b\fs24 \cf2 package
+\f3\b0 \cf0  awt;\
+\
+
+\f2\b \cf2 import
+\f3\b0 \cf0  java.awt.Button;\
+
+\f2\b \cf2 import
+\f3\b0 \cf0  java.awt.Checkbox;\
+
+\f2\b \cf2 import
+\f3\b0 \cf0  java.awt.CheckboxGroup;\
+
+\f2\b \cf2 import
+\f3\b0 \cf0  java.awt.Frame;\
+
+\f2\b \cf2 import
+\f3\b0 \cf0  java.awt.Panel;\
+\
+
+\f2\b \cf2 public
+\f3\b0 \cf0  
+\f2\b \cf2 class
+\f3\b0 \cf0  \ul ButtonFrame\ulnone  
+\f2\b \cf2 extends
+\f3\b0 \cf0  Frame \{\
+	\cf4 //
+\f1 \'c7\'d7\'bb\'f3
+\f3  
+\f1 \'c8\'ad\'b8\'e9\'bf\'a1
+\f3  
+\f1 \'ba\'b8\'bf\'a9\'c1\'f6\'b4\'c2
+\f3  
+\f1 \'b0\'b4\'c3\'bc
+\f3  
+\f1 \'c1\'df\'bf\'a1
+\f3  
+\f1 \'b0\'aa\'c0\'bb
+\f3  
+\f1 \'b0\'a1\'c1\'ae\'bf\'c0\'b0\'c5\'b3\'aa
+\f3  
+\f1 \'bc\'b3\'c1\'a4\'c7\'d8\'be\'df
+\f3  
+\f1 \'c7\'cf\'b4\'c2
+\f3 \cf0 \
+	\cf4 //
+\f1 \'c4\'c4\'c6\'f7\'b3\'cd\'c6\'ae\'b0\'a1
+\f3  
+\f1 \'c0\'d6\'c0\'b8\'b8\'e9
+\f3  
+\f1 \'c0\'ce\'bd\'ba\'c5\'cf\'bd\'ba
+\f3  
+\f1 \'ba\'af\'bc\'f6\'b7\'ce
+\f3  
+\f1 \'bb\'fd\'bc\'ba
+\f3 \cf0 \
+	\
+	\cf4 //
+\f1 \'c3\'bc\'c5\'a9\'b9\'da\'bd\'ba
+\f3  2
+\f1 \'b0\'b3
+\f3 , 
+\f1 \'b6\'f3\'b5\'f0\'bf\'c0
+\f3  
+\f1 \'b9\'f6\'c6\'b0
+\f3  2
+\f1 \'b0\'b3
+\f3 , 
+\f1 \'c0\'cf\'b9\'dd
+\f3  
+\f1 \'b9\'f6\'c6\'b0
+\f3  1
+\f1 \'b0\'b3
+\f3 \cf0 \
+	Checkbox \cf5 cbBaseball\cf0 , \cf5 cbSoccer\cf0 ;\
+	Checkbox \cf5 radioMan\cf0 , \cf5 radioWoman\cf0 ;\
+	Button \cf5 btn\cf0 ;\
+	\
+	
+\f2\b \cf2 public
+\f3\b0 \cf0  ButtonFrame() \{\
+		\cf5 cbBaseball\cf0  = 
+\f2\b \cf2 new
+\f3\b0 \cf0  Checkbox(\cf7 "
+\f1 \'be\'df\'b1\'b8
+\f3 "\cf0 );\
+		\cf5 cbSoccer\cf0  = 
+\f2\b \cf2 new
+\f3\b0 \cf0  Checkbox(\cf7 "
+\f1 \'c3\'e0\'b1\'b8
+\f3 "\cf0 );\
+		\
+		CheckboxGroup \cf3 gender\cf0  = 
+\f2\b \cf2 new
+\f3\b0 \cf0  CheckboxGroup();\
+		\cf5 radioMan\cf0  = 
+\f2\b \cf2 new
+\f3\b0 \cf0  Checkbox(\cf7 "
+\f1 \'b3\'b2\'c0\'da
+\f3 "\cf0 , \cf3 gender\cf0 , 
+\f2\b \cf2 true
+\f3\b0 \cf0 );\
+		\cf5 radioWoman\cf0  = 
+\f2\b \cf2 new
+\f3\b0 \cf0  Checkbox(\cf7 "
+\f1 \'bf\'a9\'c0\'da
+\f3 "\cf0 , \cf3 gender\cf0 , 
+\f2\b \cf2 false
+\f3\b0 \cf0 );\
+		\
+		\cf5 btn\cf0  = 
+\f2\b \cf2 new
+\f3\b0 \cf0  Button(\cf7 "Check!"\cf0 );\
+		\
+		\cf4 //
+\f1 \'c6\'d0\'b3\'ce\'c0\'bb
+\f3  
+\f1 \'bb\'fd\'bc\'ba\'c7\'d8\'bc\'ad
+\f3  
+\f1 \'c4\'c4\'c6\'f7\'b3\'cd\'c6\'ae\'b5\'e9\'c0\'bb
+\f3  
+\f1 \'c6\'d0\'b3\'ce\'bf\'a1
+\f3  
+\f1 \'ba\'ce\'c2\'f8
+\f3 \cf0 \
+		Panel \cf3 p\cf0  = 
+\f2\b \cf2 new
+\f3\b0 \cf0  Panel();\
+		\cf3 p\cf0 .add(\cf5 cbBaseball\cf0 );\
+		\cf3 p\cf0 .add(\cf5 cbSoccer\cf0 );\
+		\cf3 p\cf0 .add(\cf5 radioMan\cf0 );\
+		\cf3 p\cf0 .add(\cf5 radioWoman\cf0 );\
+		\cf3 p\cf0 .add(\cf5 btn\cf0 );\
+		\
+		\cf4 //
+\f1 \'c6\'d0\'b3\'ce\'c0\'bb
+\f3  
+\f1 \'c7\'c1\'b7\'b9\'c0\'d3\'bf\'a1
+\f3  
+\f1 \'ba\'ce\'c2\'f8
+\f3 \cf0 \
+		add(\cf3 p\cf0 );\
+		\
+		\cf4 //
+\f1 \'bf\'c9\'bc\'c7\'c0\'bb
+\f3  
+\f1 \'bc\'b3\'c1\'a4
+\f3 \cf0 \
+		setSize(300,300);\
+		setLocation(200,200);\
+		setVisible(
+\f2\b \cf2 true
+\f3\b0 \cf0 );\
+	\}\
+\
+\}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f1\fs36 \cf0 \
+\
+8.Choice\
+=>\'bf\'a9\'b7\'af\'b0\'b3\'c0\'c7 \'b8\'f1\'b7\'cf \'c1\'df\'bf\'a1\'bc\'ad \'c7\'cf\'b3\'aa\'b8\'a6 \'bc\'b1\'c5\'c3\'c7\'d2 \'bc\'f6 \'c0\'d6\'b5\'b5\'b7\'cf \'c7\'d8\'c1\'d6\'b4\'c2 \'c4\'c4\'c6\'f7\'b3\'cd\'c6\'ae\
+=>\'c7\'d7\'b8\'f1\'c0\'bb \'c3\'df\'b0\'a1\'c7\'cf\'b4\'c2 \'b0\'cd\'c0\'ba add \'b6\'c7\'b4\'c2 insert \'b8\'de\'bc\'d2\'b5\'e5\'b8\'a6 \'c0\'cc\'bf\'eb\
+=>\'b8\'ee \'b9\'f8\'c2\'b0 \'c7\'d7\'b8\'f1\'c0\'bb \'bc\'b1\'c5\'c3\'c7\'df\'b4\'c2\'c1\'f6\'c0\'ce\'b5\'a5 getSelectedIndex()\'b8\'a6 \'c0\'cc\'bf\'eb\
+=>\'c7\'d7\'b8\'f1\'c0\'bb \'b8\'b8\'b5\'e9 \'b6\'a7\'b4\'c2 \'b4\'eb\'ba\'ce\'ba\'d0\'c0\'c7 \'b0\'e6\'bf\'ec \'b9\'ae\'c0\'da\'bf\'ad \'b9\'e8\'bf\'ad\'c0\'cc\'b3\'aa List\'b8\'a6 \'b8\'b8\'b5\'e9\'be\'ee\'b5\'ce\'b0\'ed \'b9\'e8\'bf\'ad\'c0\'cc\'b3\'aa List\'bf\'a1\'bc\'ad \'c3\'df\'b0\'a1\
+=>\'b4\'d9\'b8\'a5 \'c7\'c1\'b7\'ce\'b1\'d7\'b7\'a1\'b9\'d6\'bf\'a1\'bc\'ad \'b8\'f1\'b7\'cf\'c0\'bb \'c3\'e2\'b7\'c2\'c7\'cf\'b4\'c2 \'b0\'cd\'c0\'bb \'b8\'b8\'b5\'e9 \'b6\'a7\'b4\'c2 \'b4\'eb\'ba\'ce\'ba\'d0\'c0\'cc \'c0\'cc\'b7\'b1 \'b9\'e6\'b9\'fd\'c0\'bb \'bc\'b1\'c5\'c3\'c7\'d5\'b4\'cf\'b4\'d9.\
+\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f2\b\fs24 \cf2 package
+\f3\b0 \cf0  awt;\
+\
+
+\f2\b \cf2 import
+\f3\b0 \cf0  java.awt.Button;\
+
+\f2\b \cf2 import
+\f3\b0 \cf0  java.awt.Checkbox;\
+
+\f2\b \cf2 import
+\f3\b0 \cf0  java.awt.CheckboxGroup;\
+
+\f2\b \cf2 import
+\f3\b0 \cf0  java.awt.Choice;\
+
+\f2\b \cf2 import
+\f3\b0 \cf0  java.awt.Frame;\
+
+\f2\b \cf2 import
+\f3\b0 \cf0  java.awt.Panel;\
+
+\f2\b \cf2 import
+\f3\b0 \cf0  java.util.ArrayList;\
+
+\f2\b \cf2 import
+\f3\b0 \cf0  java.util.List;\
+\
+
+\f2\b \cf2 public
+\f3\b0 \cf0  
+\f2\b \cf2 class
+\f3\b0 \cf0  \ul ButtonFrame\ulnone  
+\f2\b \cf2 extends
+\f3\b0 \cf0  Frame \{\
+	\cf4 //
+\f1 \'c7\'d7\'bb\'f3
+\f3  
+\f1 \'c8\'ad\'b8\'e9\'bf\'a1
+\f3  
+\f1 \'ba\'b8\'bf\'a9\'c1\'f6\'b4\'c2
+\f3  
+\f1 \'b0\'b4\'c3\'bc
+\f3  
+\f1 \'c1\'df\'bf\'a1
+\f3  
+\f1 \'b0\'aa\'c0\'bb
+\f3  
+\f1 \'b0\'a1\'c1\'ae\'bf\'c0\'b0\'c5\'b3\'aa
+\f3  
+\f1 \'bc\'b3\'c1\'a4\'c7\'d8\'be\'df
+\f3  
+\f1 \'c7\'cf\'b4\'c2
+\f3 \cf0 \
+	\cf4 //
+\f1 \'c4\'c4\'c6\'f7\'b3\'cd\'c6\'ae\'b0\'a1
+\f3  
+\f1 \'c0\'d6\'c0\'b8\'b8\'e9
+\f3  
+\f1 \'c0\'ce\'bd\'ba\'c5\'cf\'bd\'ba
+\f3  
+\f1 \'ba\'af\'bc\'f6\'b7\'ce
+\f3  
+\f1 \'bb\'fd\'bc\'ba
+\f3 \cf0 \
+	\
+	\cf4 //
+\f1 \'c3\'bc\'c5\'a9\'b9\'da\'bd\'ba
+\f3  2
+\f1 \'b0\'b3
+\f3 , 
+\f1 \'b6\'f3\'b5\'f0\'bf\'c0
+\f3  
+\f1 \'b9\'f6\'c6\'b0
+\f3  2
+\f1 \'b0\'b3
+\f3 , 
+\f1 \'c0\'cf\'b9\'dd
+\f3  
+\f1 \'b9\'f6\'c6\'b0
+\f3  1
+\f1 \'b0\'b3
+\f3 \cf0 \
+	Checkbox \cf5 cbBaseball\cf0 , \cf5 cbSoccer\cf0 ;\
+	Checkbox \cf5 radioMan\cf0 , \cf5 radioWoman\cf0 ;\
+	Button \cf5 btn\cf0 ;\
+	\
+	\cf4 //choice
+\f1 \'bf\'a1
+\f3  
+\f1 \'ba\'b8\'bf\'a9\'c1\'fa
+\f3  
+\f1 \'b5\'a5\'c0\'cc\'c5\'cd
+\f3  
+\f1 \'b8\'ae\'bd\'ba\'c6\'ae
+\f3 \cf0 \
+	List<String>\cf5 item\cf0 ;\
+	Choice \cf5 choice\cf0 ;\
+	\
+	
+\f2\b \cf2 public
+\f3\b0 \cf0  ButtonFrame() \{\
+		\cf5 cbBaseball\cf0  = 
+\f2\b \cf2 new
+\f3\b0 \cf0  Checkbox(\cf7 "
+\f1 \'be\'df\'b1\'b8
+\f3 "\cf0 );\
+		\cf5 cbSoccer\cf0  = 
+\f2\b \cf2 new
+\f3\b0 \cf0  Checkbox(\cf7 "
+\f1 \'c3\'e0\'b1\'b8
+\f3 "\cf0 );\
+		\
+		CheckboxGroup \cf3 gender\cf0  = 
+\f2\b \cf2 new
+\f3\b0 \cf0  CheckboxGroup();\
+		\cf5 radioMan\cf0  = 
+\f2\b \cf2 new
+\f3\b0 \cf0  Checkbox(\cf7 "
+\f1 \'b3\'b2\'c0\'da
+\f3 "\cf0 , \cf3 gender\cf0 , 
+\f2\b \cf2 true
+\f3\b0 \cf0 );\
+		\cf5 radioWoman\cf0  = 
+\f2\b \cf2 new
+\f3\b0 \cf0  Checkbox(\cf7 "
+\f1 \'bf\'a9\'c0\'da
+\f3 "\cf0 , \cf3 gender\cf0 , 
+\f2\b \cf2 false
+\f3\b0 \cf0 );\
+		\
+		\cf5 btn\cf0  = 
+\f2\b \cf2 new
+\f3\b0 \cf0  Button(\cf7 "Check!"\cf0 );\
+		\
+		\cf4 //
+\f1 \'c6\'d0\'b3\'ce\'c0\'bb
+\f3  
+\f1 \'bb\'fd\'bc\'ba\'c7\'d8\'bc\'ad
+\f3  
+\f1 \'c4\'c4\'c6\'f7\'b3\'cd\'c6\'ae\'b5\'e9\'c0\'bb
+\f3  
+\f1 \'c6\'d0\'b3\'ce\'bf\'a1
+\f3  
+\f1 \'ba\'ce\'c2\'f8
+\f3 \cf0 \
+		Panel \cf3 p\cf0  = 
+\f2\b \cf2 new
+\f3\b0 \cf0  Panel();\
+		\cf3 p\cf0 .add(\cf5 cbBaseball\cf0 );\
+		\cf3 p\cf0 .add(\cf5 cbSoccer\cf0 );\
+		\cf3 p\cf0 .add(\cf5 radioMan\cf0 );\
+		\cf3 p\cf0 .add(\cf5 radioWoman\cf0 );\
+		\cf3 p\cf0 .add(\cf5 btn\cf0 );\
+		\
+		\cf4 //
+\f1 \'b8\'ae\'bd\'ba\'c6\'ae\'b8\'a6
+\f3  
+\f1 \'bb\'fd\'bc\'ba\'c7\'cf\'b0\'ed
+\f3  
+\f1 \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6
+\f3  
+\f1 \'c3\'df\'b0\'a1
+\f3 \cf0 \
+		\cf5 item\cf0  = 
+\f2\b \cf2 new
+\f3\b0 \cf0  ArrayList<String>();\
+		\cf5 item\cf0 .add(\cf7 "
+\f1 \'c7\'c1\'b7\'ce\'b1\'d7\'b7\'a1\'b9\'d6
+\f3  
+\f1 \'be\'f0\'be\'ee
+\f3 "\cf0 );\
+		\cf5 item\cf0 .add(\cf7 "
+\f1 \'b5\'a5\'c0\'cc\'c5\'cd\'ba\'a3\'c0\'cc\'bd\'ba
+\f3 "\cf0 );\
+		\cf5 item\cf0 .add(\cf7 "
+\f1 \'c7\'c1\'b7\'b9\'c0\'d3\'bf\'f6\'c5\'a9
+\f3 "\cf0 );\
+		\cf5 item\cf0 .add(\cf7 "
+\f1 \'bf\'ee\'bf\'b5\'b1\'e2\'bc\'fa
+\f3 "\cf0 );\
+		\
+		\cf5 choice\cf0  = 
+\f2\b \cf2 new
+\f3\b0 \cf0  Choice();\
+		\cf4 //Choice
+\f1 \'bf\'a1
+\f3  
+\f1 \'b8\'ae\'bd\'ba\'c6\'ae\'c0\'c7
+\f3  
+\f1 \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6
+\f3  
+\f1 \'c3\'df\'b0\'a1
+\f3 \cf0 \
+		
+\f2\b \cf2 for
+\f3\b0 \cf0 (String \cf3 temp\cf0  : \cf5 item\cf0 ) \{\
+			\cf5 choice\cf0 .add(\cf3 temp\cf0 );\
+		\}\
+	\
+		\cf3 p\cf0 .add(\cf5 choice\cf0 );\
+		\
+		\cf4 //
+\f1 \'c6\'d0\'b3\'ce\'c0\'bb
+\f3  
+\f1 \'c7\'c1\'b7\'b9\'c0\'d3\'bf\'a1
+\f3  
+\f1 \'ba\'ce\'c2\'f8
+\f3 \cf0 \
+		add(\cf3 p\cf0 );\
+		\
+		\cf4 //
+\f1 \'bf\'c9\'bc\'c7\'c0\'bb
+\f3  
+\f1 \'bc\'b3\'c1\'a4
+\f3 \cf0 \
+		setSize(300,300);\
+		setLocation(200,200);\
+		setVisible(
+\f2\b \cf2 true
+\f3\b0 \cf0 );\
+	\}\
+\
+\}
+\f1\fs36 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\
+9.Label\
+=>\'c5\'d8\'bd\'ba\'c6\'ae\'b8\'a6 \'c3\'e2\'b7\'c2\'c7\'cf\'b1\'e2 \'c0\'a7\'c7\'d1 \'c4\'c4\'c6\'f7\'b3\'cd\'c6\'ae\
+=>\'c5\'d8\'bd\'ba\'c6\'ae \'bc\'b3\'c1\'a4\'c0\'ba setText\
+=>\'b8\'c2\'c3\'e3 \'bc\'b3\'c1\'a4\'c0\'ba setAlignment\'b8\'a6 \'c0\'cc\'bf\'eb\'c7\'cf\'b4\'c2\'b5\'a5 static final \'c7\'ca\'b5\'e5\'b8\'a6 \'c0\'cc\'bf\'eb\'c7\'d8\'bc\'ad \'bc\'b3\'c1\'a4\
+\
+\
+10.List\
+=>\'bf\'a9\'b7\'af \'b0\'b3\'c0\'c7 \'c7\'d7\'b8\'f1\'c0\'bb \'c3\'e2\'b7\'c2\'c7\'cf\'b0\'ed \'bf\'a9\'b7\'af \'b0\'b3\'c0\'c7 \'c7\'d7\'b8\'f1\'c0\'bb \'bc\'b1\'c5\'c3\'c7\'d2 \'bc\'f6 \'c0\'d6\'b5\'b5\'b7\'cf \'c7\'d8\'c1\'d6\'b4\'c2 \'c4\'c4\'c6\'f7\'b3\'cd\'c6\'ae\
+1)\'bb\'fd\'bc\'ba\'c0\'da\
+List(int row) : \'b8\'ee \'b0\'b3\'c0\'c7 \'c7\'e0\'c0\'bb \'c3\'e2\'b7\'c2\'c7\'d2 \'b0\'cd\'c0\'ce\'c1\'f6 \'bc\'b3\'c1\'a4\
+List(int row, boolean multiplemode) : \'bf\'a9\'b7\'af \'b0\'b3\'c0\'c7 \'c7\'e0\'c0\'bb \'bc\'b1\'c5\'c3\'c7\'d2 \'bc\'f6 \'c0\'d6\'b5\'b5\'b7\'cf \'c7\'d2 \'b0\'cd\'c0\'ce\'c1\'f6 \'bc\'b3\'c1\'a4\
+\
+2)\'b5\'a5\'c0\'cc\'c5\'cd \'c3\'df\'b0\'a1 \'b9\'d7 \'bb\'e8\'c1\'a6\'b4\'c2 Choice \'bf\'cd \'b0\'b0\'bd\'c0\'b4\'cf\'b4\'d9.\
+\
+\
+11.TextField\
+=>\'c7\'d1 \'c1\'d9\'c0\'c7 \'b9\'ae\'c0\'da\'bf\'ad\'c0\'bb \'c0\'d4\'b7\'c2\'b9\'de\'b1\'e2 \'c0\'a7\'c7\'d1 \'c4\'c4\'c6\'f7\'b3\'cd\'c6\'ae\
+1)\'bb\'fd\'bc\'ba\'c0\'da\
+TextField() \
+TextField(int columns) : \'c5\'a9\'b1\'e2 \'b0\'e1\'c1\'a4\
+TextField(String text) : \'c3\'ca\'b1\'e2 \'c5\'d8\'bd\'ba\'c6\'ae\
+TextField(String text, int columns) : \'c3\'ca\'b1\'e2 \'c5\'d8\'bd\'ba\'c6\'ae\'bf\'cd \'c5\'a9\'b1\'e2 \'bc\'b3\'c1\'a4\
+\
+\
+2)setEchoChar(char c) : \'c0\'d4\'b7\'c2\'c7\'df\'c0\'bb \'b6\'a7 \'ba\'b8\'bf\'a9\'c1\'f6\'b4\'c2 \'b9\'ae\'c0\'da\
+AWT\'bf\'a1\'bc\'ad\'b4\'c2 \'ba\'f1\'b9\'d0\'b9\'f8\'c8\'a3 \'c0\'d4\'b7\'c2\'b5\'b5\'b1\'b8\'b0\'a1 \'be\'f8\'be\'ee\'bc\'ad setEchoChar \'b8\'a6 \'c0\'cc\'bf\'eb\'c7\'d8\'bc\'ad \'ba\'f1\'b9\'d0\'b9\'f8\'c8\'a3 \'c0\'d4\'b7\'c2\'bb\'f3\'c0\'da\'b8\'a6 \'bb\'fd\'bc\'ba\
+\
+\
+3)TextArea\
+=>\'bf\'a9\'b7\'af \'c1\'d9\'c0\'c7 \'b9\'ae\'c0\'da\'bf\'ad\'c0\'bb \'c0\'d4\'b7\'c2\'b9\'de\'b1\'e2 \'c0\'a7\'c7\'d1 \'c4\'c4\'c6\'f7\'b3\'cd\'c6\'ae\
+1)\'bb\'fd\'bc\'ba\'c0\'da\
+TextArea(int rows, int columns) : \'c7\'e0 \'bc\'f6\'bf\'cd \'bf\'ad \'bc\'f6\'b8\'a6 \'bc\'b3\'c1\'a4\'c7\'d8\'bc\'ad \'bb\'fd\'bc\'ba\
+TextArea(String text, int rows, int columns, int scrollbars) : text \'b8\'a6 \'c3\'ca\'b1\'e2\'b0\'aa\'c0\'b8\'b7\'ce \'c7\'d8\'bc\'ad \'c7\'e0 \'bc\'f6\'bf\'cd \'bf\'ad \'bc\'f6\'b8\'a6 \'c1\'f6\'c1\'a4\'c7\'cf\'b0\'ed \'bd\'ba\'c5\'a9\'b7\'d1 \'b9\'d9 \'c7\'a5\'bd\'c3 \'bf\'a9\'ba\'ce \'bf\'c9\'bc\'c7\
+\'c1\'a4\'bc\'f6\'b7\'ce \'b5\'c7\'be\'ee\'c0\'d6\'c1\'f6\'b8\'b8 \'c0\'d4\'b7\'c2\'c0\'ba static final \'c7\'ca\'b5\'e5 \'c0\'cc\'bf\'eb\
+\
+\
+13.ScrollBar\
+=>\'b9\'d9\'b8\'a6 \'b8\'b8\'b5\'e9\'be\'ee\'bc\'ad \'b0\'aa\'c0\'bb \'bc\'b1\'c5\'c3\'c7\'d2 \'b8\'f1\'c0\'fb\'c0\'b8\'b7\'ce \'bb\'e7\'bf\'eb\'c7\'cf\'b4\'c2 \'c4\'c4\'c6\'f7\'b3\'cd\'c6\'ae\
+=>\'bb\'fd\'bc\'ba\'c0\'da\
+Scrollbar(int orientation) : \'b9\'e6\'c7\'e2 \'bc\'b3\'c1\'a4(VERTICAL, HORIZONTAL)\
+Scrollbar(int orientation, int value, int visible, int min, int max)\
+=>\'b9\'e6\'c7\'e2\'b0\'fa \'c7\'f6\'c0\'e7 \'bc\'b1\'c5\'c3\'b5\'c8 \'b0\'aa \'b1\'d7\'b8\'ae\'b0\'ed thumb\'c0\'c7 \'c5\'a9\'b1\'e2 \'b1\'d7\'b8\'ae\'b0\'ed \'c3\'d6\'bc\'d2\'b0\'aa \'b9\'d7 \'c3\'d6\'b4\'eb\'b0\'aa\'c0\'bb \'bc\'b3\'c1\'a4\
+\
+\'b9\'fc\'c0\'a7\'c0\'c7 \'b0\'aa\'c0\'bb \'bc\'b1\'c5\'c3\'c7\'d2 \'b6\'a7\'b4\'c2 0.0-1.0 \'b6\'c7\'b4\'c2 0-100 \'c0\'c7 \'c7\'fc\'c5\'c2\'b7\'ce \'c7\'cf\'b4\'c2 \'b0\'cd\'c0\'cc \'c1\'c1\'bd\'c0\'b4\'cf\'b4\'d9.\
+\'bb\'f6\'bb\'f3\'c0\'c7 \'bc\'b1\'c5\'c3 \'c6\'f8\'c0\'bb 0-255 \'c7\'fc\'c5\'c2\'c3\'b3\'b7\'b3 \'bd\'c7\'c1\'a6 \'b9\'fc\'c0\'a7\'b8\'a6 \'c1\'d6\'b4\'c2 \'b0\'cd\'c0\'ba \'c0\'af\'c1\'f6\'ba\'b8\'bc\'f6\'b0\'a1 \'be\'ee\'b7\'c1\'bf\'f6\'c1\'fa \'bc\'f6 \'c0\'d6\'bd\'c0\'b4\'cf\'b4\'d9.\
+\'bb\'f3\'b4\'eb\'c0\'fb\'c0\'ce \'ba\'f1\'c0\'b2\'c0\'bb \'c0\'cc\'bf\'eb\'c7\'cf\'b4\'c2 \'b0\'cd\'c0\'cc \'c0\'af\'c1\'f6\'ba\'b8\'bc\'f6\'bf\'a1\'b4\'c2 \'c0\'af\'b8\'ae\'c7\'d5\'b4\'cf\'b4\'d9.\
+\
+\'bd\'ba\'b8\'b6\'c6\'ae\'c6\'f9 \'be\'d6\'c7\'c3\'b8\'ae\'c4\'c9\'c0\'cc\'bc\'c7\'c0\'bb \'c1\'a6\'c0\'db\'c7\'d2 \'b6\'a7 \'b1\'db\'c0\'da \'c5\'a9\'b1\'e2\'b8\'a6 16pt(1pt \'b4\'c2 1/72 inch) \'c0\'c7 \'c0\'fd\'b4\'eb\'b0\'aa \'c7\'fc\'c5\'c2\'b7\'ce \'c1\'d6\'b0\'d4 \'b5\'c7\'b8\'e9 \'bd\'ba\'b8\'b6\'c6\'ae \'c6\'f9\'c0\'c7 \'c7\'fc\'c5\'c2\'bf\'a1 \'b5\'fb\'b6\'f3 \'b3\'ca\'b9\'ab \'c0\'db\'b0\'d4 \'ba\'b8\'c0\'cc\'b0\'c5\'b3\'aa \'c5\'a9\'b0\'d4 \'ba\'b8\'c0\'cf \'bc\'f6 \'c0\'d6\'bd\'c0\'b4\'cf\'b4\'d9.\
+\'c7\'c1\'b8\'b0\'c6\'ae\'b8\'a6 \'c7\'d2 \'b8\'f1\'c0\'fb\'c0\'b8\'b7\'ce \'b8\'b8\'b5\'e5\'b4\'c2 \'b0\'e6\'bf\'ec\'bf\'a1\'b4\'c2 \'c0\'fd\'b4\'eb\'b4\'dc\'c0\'a7\'b8\'a6 \'bb\'e7\'bf\'eb\'c7\'d5\'b4\'cf\'b4\'d9.\
+\'c0\'ce\'bc\'e2\'b4\'c2 \'b4\'eb\'ba\'ce\'ba\'d0 \'c1\'a4\'c7\'d8\'c1\'f8 \'c5\'a9\'b1\'e2\'c0\'c7 \'bf\'eb\'c1\'f6\'b8\'a6 \'bb\'e7\'bf\'eb\'c7\'cf\'b1\'e2 \'b6\'a7\'b9\'ae\'c0\'d4\'b4\'cf\'b4\'d9.\
+\
+\
+\
+14.ScrollPane\
+=>\'c8\'ad\'b8\'e9\'bf\'a1 \'c1\'f7\'c1\'a2 \'c3\'e2\'b7\'c2\'b5\'c7\'c1\'f6\'b4\'c2 \'be\'ca\'b0\'ed \'c4\'c4\'c6\'f7\'b3\'cd\'c6\'ae\'b8\'a6 \'b9\'e8\'c4\'a1\'c7\'d8\'bc\'ad \'bd\'ba\'c5\'a9\'b7\'d1 \'b9\'d9\'b8\'a6 \'c0\'cc\'bf\'eb\'c7\'d8\'bc\'ad \'c7\'f6\'c0\'e7 \'ba\'e4\'c0\'c7 \'c5\'a9\'b1\'e2\'ba\'b8\'b4\'d9 \'c5\'a9 \'c4\'c4\'c6\'f7\'b3\'cd\'c6\'ae\'b8\'a6 \'c3\'e2\'b7\'c2\'c7\'cf\'b1\'e2 \'c0\'a7\'c7\'d1 \'c4\'c1\'c5\'d7\'c0\'cc\'b3\'ca\'c0\'d4\'b4\'cf\'b4\'d9.\
+=>ScrollPane \'bf\'a1\'b4\'c2 \'c7\'cf\'b3\'aa\'c0\'c7 \'c4\'c4\'c6\'f7\'b3\'cd\'c6\'ae \'b9\'db\'bf\'a1\'b4\'c2 \'b9\'e8\'c4\'a1\'b8\'a6 \'b8\'f8\'c7\'d5\'b4\'cf\'b4\'d9.\
+\'bf\'a9\'b7\'af \'b0\'b3\'b8\'a6 \'bf\'c3\'b7\'c1\'b3\'f5\'b0\'ed \'bd\'cd\'c0\'b8\'b8\'e9 Panel\'c0\'bb \'b8\'b8\'b5\'e9\'be\'ee\'bc\'ad Panel\'bf\'a1 \'bf\'a9\'b7\'af \'b0\'b3\'b8\'a6 \'bf\'c3\'b7\'c1\'86\'ea\'b0\'ed Panel\'c0\'bb ScrollPane \'bf\'a1 \'bf\'c3\'b7\'c1\'be\'df \'c7\'d5\'b4\'cf\'b4\'d9.\
+\'b8\'f0\'b5\'e7 GUI \'c7\'c1\'b7\'ce\'b1\'d7\'b7\'a5\'c0\'c7 \'c3\'e2\'b7\'c2\'bf\'f8\'b8\'ae\'b4\'c2 \'b0\'b0\'bd\'c0\'b4\'cf\'b4\'d9.\
+\
+\
+15.Dialog(\'b4\'eb\'c8\'ad\'bb\'f3\'c0\'da)\
+1)\'b4\'eb\'c8\'ad\'bb\'f3\'c0\'da\'c0\'c7 \'c1\'be\'b7\'f9\
+=>Modal Dialog : \'b4\'eb\'c8\'ad\'bb\'f3\'c0\'da\'b0\'a1 \'c1\'a6\'be\'ee\'b1\'c7\'c0\'bb \'b0\'ae\'c0\'b8\'b8\'e9 \'b4\'d9\'b8\'a5 \'c0\'a9\'b5\'b5\'bf\'ec\'bf\'a1\'b0\'d4 \'c1\'a6\'be\'ee\'b1\'c7\'c0\'bb \'b3\'d1\'b0\'dc\'c1\'d6\'c1\'f6 \'be\'ca\'b4\'c2 \'b4\'eb\'c8\'ad\'bb\'f3\'c0\'da\
+\'c0\'cc \'b4\'eb\'c8\'ad\'bb\'f3\'c0\'da\'b0\'a1 \'bb\'e7\'b6\'f3\'c1\'f6\'b1\'e2 \'c0\'fc\'b1\'ee\'c1\'f6\'b4\'c2 \'b4\'d9\'b8\'a5 \'c0\'db\'be\'f7\'c0\'bb \'c7\'d2 \'bc\'f6 \'be\'f8\'c0\'bd\
+\'b4\'eb\'c7\'a5\'c0\'fb\'c0\'ce \'b4\'eb\'c8\'ad\'bb\'f3\'c0\'da\'b0\'a1 [\'c6\'c4\'c0\'cf]-[\'bf\'ad\'b1\'e2]\
+\
+\
+=>Modeless Dialog : \'b4\'eb\'c8\'ad\'bb\'f3\'c0\'da\'b0\'a1 \'c1\'a6\'be\'ee\'b1\'c7\'c0\'bb \'b0\'ae\'b0\'ed \'c0\'d6\'b4\'c2 \'bb\'f3\'c5\'c2\'bf\'a8\'bc\'ad \'b4\'d9\'b8\'a5 \'c0\'a9\'b5\'b5\'bf\'ec\'bf\'a1\'b0\'d4 \'c1\'a6\'be\'ee\'b1\'c7\'c0\'bb \'b3\'d1\'b0\'dc\'c1\'d9 \'bc\'f6 \'c0\'d6\'b4\'c2 \'b4\'eb\'c8\'ad\'bb\'f3\'c0\'da\
+\'c0\'cc \'b4\'eb\'c8\'ad\'bb\'f3\'c0\'da\'b4\'c2 \'c8\'ad\'b8\'e9\'bf\'a7\'be\'ee \'c1\'a6\'b0\'c5\'b5\'c7\'b1\'e2 \'c0\'fc\'c0\'cc\'b6\'f3\'b5\'b5 \'b4\'d9\'b8\'a5 \'c0\'db\'be\'f7\'c0\'bb \'c7\'d2 \'bc\'f6 \'c0\'d6\'c0\'bd\
+\'b4\'eb\'c7\'a5\'c0\'fb\'c0\'ce \'b4\'eb\'c8\'ad\'bb\'f3\'c0\'da\'b0\'a1 [\'c6\'ed\'c1\'fd]-[\'c3\'a3\'b1\'e2]\
+[\'c0\'fb\'bf\'eb]\'c0\'cc\'b6\'f3\'b4\'c2 \'b9\'f6\'c6\'b0\'c0\'cc \'c0\'d6\'b4\'c2 \'b4\'eb\'c8\'ad\'bb\'f3\'c0\'da\'b4\'c2 \'b1\'e2\'ba\'bb\'c0\'fb\'c0\'b8\'b7\'ce \'c0\'fc\'ba\'ce Modeless\
+[\'c8\'ae\'c0\'ce]\'c0\'ba \'b4\'eb\'c8\'ad\'bb\'f3\'c0\'da\'b8\'a6 \'b4\'dd\'b0\'ed \'bc\'b1\'c5\'c3\'c7\'d1 \'b3\'bb\'bf\'eb\'c0\'bb \'b9\'dd\'bf\'b5\
+[\'c0\'fb\'bf\'eb]\'c0\'ba \'b4\'eb\'c8\'ad\'bb\'f3\'c0\'da\'b8\'a6 \'b4\'dd\'c1\'f6 \'be\'ca\'b0\'ed \'bc\'b1\'c5\'c3\'c7\'d1 \'b3\'bb\'bf\'eb\'c0\'bb \'b9\'dd\'bf\'b5\
+\
+=>MS=Windows\'b4\'c2 Madal\'c0\'bb \'b8\'b9\'c0\'cc \'bb\'e7\'bf\'eb\'c7\'cf\'b0\'ed Mac Os X \'c0\'ba Modeless\'b8\'a6 \'b8\'b9\'c0\'cc \'bb\'e7\'bf\'eb\'c7\'d5\'b4\'cf\'b4\'d9.\
+\
+\
+\
+2)\'b4\'eb\'c8\'ad\'bb\'f3\'c0\'da\'b0\'a1 Frame(Window)\'bf\'cd \'b4\'d9\'b8\'a5 \'c1\'a1\'c0\'ba \'b4\'eb\'c8\'ad\'bb\'f3\'c0\'da\'b4\'c2 \'c0\'da\'bd\'c5\'c0\'cc \'bc\'d2\'b8\'ea\'b5\'c7\'be\'fa\'c0\'bb \'b6\'a7 \'c1\'a6\'be\'ee\'b1\'c7\'c0\'bb \'b0\'ae\'c0\'bb \'ba\'ce\'b8\'f0 \'c0\'a9\'b5\'b5\'bf\'ec\'b8\'a6 \'b0\'a1\'c1\'f6\'b0\'ed \'b8\'b8\'b5\'ec\'b4\'cf\'b4\'d9.\
+awt\'bf\'a1\'bc\'ad\'b4\'c2 \'b4\'eb\'c8\'ad\'bb\'f3\'c0\'da\'b0\'a1 \'b8\'de\'b4\'ba\'b8\'a6 \'b0\'a1\'c1\'fa \'bc\'f6 \'be\'f8\'bd\'c0\'b4\'cf\'b4\'d9.\
+\
+\
+3)\'bb\'fd\'bc\'ba\'c0\'da\
+Dialog(Dialog owner \'b6\'c7\'b4\'c2 Frame owner)\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 Dialog(Dialog owner \'b6\'c7\'b4\'c2 Frame owner, String title)\
+Dialog(Dialog owner \'b6\'c7\'b4\'c2 Frame owner, String title, boolean modal)\
+\
+\
+\
+4)\'b4\'eb\'c8\'ad\'bb\'f3\'c0\'da\'b8\'a6 \'b8\'b8\'b5\'e9 \'b6\'a7 Modal \'bf\'a9\'ba\'ce\'b8\'a6 \'b0\'ed\'b9\'ce\'c7\'d8\'be\'df \'c7\'d5\'b4\'cf\'b4\'d9.\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\
+\
+16.Canvas\
+=>\'bb\'e7\'b0\'a2\'c0\'c7 \'bf\'b5\'bf\'aa\'b8\'b8\'c0\'bb \'b0\'a1\'c1\'f8 \'c4\'c4\'c6\'f7\'b3\'cd\'c6\'ae\
+=>\'b5\'e5\'b7\'ce\'c0\'ae\'c0\'bb \'c7\'cf\'b4\'c2 \'bf\'eb\'b5\'b5\'b7\'ce \'b8\'b9\'c0\'cc \'c0\'cc\'bf\'eb\'c7\'d5\'b4\'cf\'b4\'d9.\
+\
+\
+17.\'b8\'de\'b4\'ba\
+1)MenuBar : Frame\'bf\'a1 \'ba\'ce\'c2\'f8\'c7\'cf\'b4\'c2 \'b8\'de\'b4\'ba\'c7\'a5\'bd\'c3\'c1\'d9\
+2)Menu : \'c7\'cf\'c0\'a7 \'b8\'de\'b4\'ba\'b8\'a6 \'b0\'a1\'c1\'fa \'bc\'f6 \'c0\'d6\'b4\'c2 \'b8\'de\'b4\'ba\
+3)MenuItem : \'c5\'ac\'b8\'af\'c7\'df\'c0\'bb \'b6\'a7 \'b5\'bf\'c0\'db\'c7\'cf\'b4\'c2 \'b8\'de\'b4\'ba \'c7\'d7\'b8\'f1\
+4)CheckboxMenuItem : \'c3\'bc\'c5\'a9\'b9\'da\'bd\'ba\'b0\'a1 \'c0\'d6\'b4\'c2 \'b8\'de\'b4\'ba \'c7\'d7\'b8\'f1\
+5)PopupMenu : floating \'b8\'de\'b4\'ba, \'c8\'ad\'b8\'e9\'bf\'a1 \'b6\'b0\'b4\'d9\'b4\'cf\'b4\'c2 \'b8\'de\'b4\'ba\
+\
+\
+=>MenuBar \'b8\'b8 Frame\'bf\'a1 setMenuBar \'b8\'de\'bc\'d2\'b5\'e5\'b8\'a6 \'c0\'cc\'bf\'eb\'c7\'d8\'bc\'ad \'ba\'d9\'c0\'cc\'b0\'ed \'b3\'aa\'b8\'d3\'c1\'f6\'b4\'c2 add\'b7\'ce \'ba\'ce\'c2\'f8\
+=>Windows\'bf\'a1\'bc\'ad\'b4\'c2 \'c1\'f7\'c1\'a2 \'ba\'ce\'c2\'f8\'c7\'d1 \'b8\'de\'b4\'ba\'b8\'b8 \'b8\'b8\'b5\'e9\'be\'ee\'c1\'f6\'b4\'c2\'b5\'a5 Mac\'bf\'a1\'bc\'ad\'b4\'c2 Mac\'c0\'cc \'b1\'e2\'ba\'bb\'b8\'de\'b4\'ba 1\'b0\'b3\'b8\'a6 \'b8\'b8\'b5\'e9\'be\'ee\'c1\'dd\'b4\'cf\'b4\'d9.\
+=>\'b8\'de\'b4\'ba\'b8\'a6 \'b8\'b8\'b5\'e5\'b4\'c2 \'ba\'ce\'ba\'d0\'c0\'ba \'be\'ee\'b4\'c0 \'bf\'ee\'bf\'b5\'c3\'bc\'c1\'a6\'bf\'a1\'bc\'ad \'b5\'bf\'c0\'db\'bd\'c3\'c5\'b0\'b4\'c2\'b3\'c4\'bf\'a1 \'b5\'fb\'b6\'f3\'bc\'ad \'b4\'d9\'b8\'a3\'b0\'d4 \'ba\'b8\'c0\'d4\'b4\'cf\'b4\'d9.\
+\
+\
+18.CommonDialog(\'b0\'f8\'c5\'eb \'b4\'eb\'c8\'ad\'bb\'f3\'c0\'da)\
+=>\'c0\'da\'c1\'d6 \'bb\'e7\'bf\'eb\'c7\'cf\'b4\'c2 \'b1\'e2\'b4\'c9\'c0\'c7 \'b4\'eb\'c8\'ad\'bb\'f3\'c0\'da\'b8\'a6 \'b9\'cc\'b8\'ae \'b8\'b8\'b5\'e9\'be\'ee \'b5\'d0 \'b0\'cd\
+=>AWT\'bf\'a1\'bc\'ad\'b4\'c2 \'c6\'c4\'c0\'cf \'b0\'f8\'c5\'eb \'b4\'eb\'c8\'ad\'bb\'f3\'c0\'da\'b8\'b8 \'c1\'b8\'c0\'e7\'c7\'cf\'b4\'c2\'b5\'a5 Swing\'bf\'a1\'b4\'c2 Color \'b4\'eb\'c8\'ad\'bb\'f3\'c0\'da\'b0\'a1 \'c3\'df\'b0\'a1\'b5\'c7\'be\'ee \'c0\'d6\'bd\'c0\'b4\'cf\'b4\'d9.\
+=>FileDialog \'c5\'ac\'b7\'a1\'bd\'ba\'b8\'a6 \'c0\'cc\'bf\'eb\'c7\'cf\'b8\'e9 \'c6\'c4\'c0\'cf \'bf\'ad\'b1\'e2\'b3\'aa \'c6\'c4\'c0\'cf \'c0\'fa\'c0\'e5\'c0\'ba \'ba\'b0\'b5\'b5\'b7\'ce \'b4\'eb\'c8\'ad\'bb\'f3\'c0\'da\'b8\'a6 \'b1\'b8\'c7\'f6\'c7\'d2 \'c7\'ca\'bf\'e4\'b0\'a1 \'be\'f8\'bd\'c0\'b4\'cf\'b4\'d9.\
+=>\'b8\'b8\'b5\'e9 \'b6\'a7 \'c3\'b9\'b9\'f8\'c2\'b0 \'bf\'c9\'bc\'c7\'c0\'ba \'c5\'b8\'c0\'cc\'c6\'b2\'c0\'cc\'b0\'ed \'b5\'ce\'b9\'f8\'c2\'b0 \'bf\'c9\'bc\'ca\'c0\'bb LOAD \'b5\'ee\'c0\'c7 \'bf\'c9\'bc\'c7\'c0\'bb \'c0\'cc\'bf\'eb\'c7\'d8\'bc\'ad \'b4\'eb\'c8\'ad\'bb\'f3\'c0\'da\'b8\'a6 \'bb\'fd\'bc\'ba\
+=>\'bf\'ad\'b1\'e2 \'b4\'eb\'c8\'ad\'bb\'f3\'c0\'da\'c0\'c7 \'b0\'e6\'bf\'ec getDirectory()\'b8\'a6 \'c8\'a3\'c3\'e2\'c7\'cf\'b8\'e9 \'bc\'b1\'c5\'c3\'c7\'d1 \'c6\'c4\'c0\'cf\'c0\'c7 \'b5\'f0\'b7\'ba\'c5\'e4\'b8\'ae\'b0\'a1 \'b1\'d7\'b8\'ae\'b0\'ed getFile() \'c0\'cc\'b8\'e9 \'c6\'c4\'c0\'cf\'c0\'c7 \'c0\'cc\'b8\'a7\'c0\'cc \'b8\'ae\'c5\'cf\'b5\'cb\'b4\'cf\'b4\'d9.\
+\'c0\'cc \'ba\'ce\'ba\'d0\'b5\'b5 Windows \'bf\'cd Mac \'c0\'cc \'b0\'f8\'c0\'af\'c7\'cf\'b1\'e2 \'c8\'fb\'b5\'e7 \'ba\'ce\'ba\'d0\'c0\'d4\'b4\'cf\'b4\'d9.\
+Windows \'bf\'cd \'b4\'d9\'b8\'a5 \'bf\'ee\'bf\'b5\'c3\'bc\'c1\'a6\'b4\'c2 \'c6\'c4\'c0\'cf \'bd\'c3\'bd\'ba\'c5\'db\'c0\'cc \'b4\'d9\'b8\'a3\'b0\'ed \'b5\'f0\'b7\'ba\'c5\'e4\'b8\'ae \'b1\'e2\'c8\'a3\'b0\'a1 \'b4\'d9\'b8\'a8\'b4\'cf\'b4\'d9.\
+Windows\'b4\'c2 \'b5\'e5\'b6\'f3\'c0\'cc\'ba\'ea\'c0\'cc\'b8\'a7:\\\\\'b5\'f0\'b7\'ba\'c5\'e4\'b8\'ae \'b0\'e6\'b7\'ce \\\'c6\'c4\'c0\'cf\'b0\'e6\'b7\'ce \'c0\'c7 \'c7\'fc\'c5\'c2\'b7\'ce \'b1\'b8\'bc\'ba\
+\'b3\'aa\'b8\'d3\'c1\'f6 \'bf\'ee\'bf\'b5\'c3\'bc\'c1\'a6\'b4\'c2 / \'b7\'ce \'bd\'c3\'c0\'db\'c7\'cf\'b0\'ed \'b5\'e5\'b6\'f3\'c0\'cc\'ba\'ea\'c0\'cc\'b8\'a7\'c0\'cc \'c7\'a5\'bd\'c3\'b5\'c7\'c1\'f6 \'be\'ca\'bd\'c0\'b4\'cf\'b4\'d9.\
+=>\'c6\'c4\'c0\'cc\'bd\'e3\'c0\'cc\'b3\'aa \'c0\'da\'b9\'d9\'b8\'a6 \'c0\'cc\'bf\'eb\'c7\'d8\'bc\'ad \'c7\'c3\'b7\'a7\'c6\'fb\'bf\'a1 \'bb\'f3\'b0\'fc\'be\'f8\'c0\'cc \'c7\'d1\'b9\'f8\'b8\'b8 \'c0\'db\'bc\'ba\'c7\'d8\'bc\'ad \'b5\'b9\'be\'c6\'b0\'a1\'b4\'c2 \'c7\'c1\'b7\'ce\'b1\'d7\'b7\'a5\'c0\'bb \'b8\'b8\'b5\'e9 \'bc\'f6 \'c0\'d6\'b4\'d9\'b0\'ed\'b4\'c2 \'c7\'cf\'c1\'f6\'b8\'b8 \'bd\'c7\'c1\'a6\'b7\'ce\'b4\'c2 \'c6\'c4\'c0\'cf\'b0\'e6\'b7\'ce \'b9\'ae\'c1\'a6\'b3\'aa \'b8\'de\'b4\'ba \'b9\'ae\'c1\'a6\'b5\'e9 \'b6\'a7\'b9\'ae\'bf\'a1 \'b5\'fb\'b7\'ce \'c0\'db\'bc\'ba\'c7\'d8\'be\'df \'c7\'d5\'b4\'cf\'b4\'d9.\
+=>/Users/\'b0\'e8\'c1\'a4/\'bb\'e7\'bf\'eb\'c0\'da \'b5\'f0\'b7\'ba\'c5\'e4\'b8\'ae\
+\
+\
+---Layout\
+=>\'c4\'c4\'c6\'f7\'b3\'cd\'c6\'ae\'b8\'a6 \'b9\'e8\'c4\'a1\'c7\'cf\'b4\'c2 \'b9\'e6\'b9\'fd\
+=>Frame \'c0\'cc\'b3\'aa Panel \'bf\'a1\'bc\'ad setLayout(Layout \'b0\'b4\'c3\'bc) \'c0\'bb \'c8\'a3\'c3\'e2\'c7\'d8\'bc\'ad \'bc\'b3\'c1\'a4\
+\
+1.FlowLayout\
+=>Panel \'c0\'c7 \'b1\'e2\'ba\'bb\'c0\'fb\'c0\'ce Layout \'c0\'b8\'b7\'ce \'bc\'f6\'c6\'f2 \'b9\'e6\'c7\'e2\'c0\'b8\'b7\'ce \'bc\'f8\'bc\'ad\'b4\'eb\'b7\'ce \'b9\'e8\'c4\'a1\'c7\'cf\'b0\'ed \'b4\'f5 \'c0\'cc\'bb\'f3 \'b0\'f8\'b0\'a3\'c0\'cc \'be\'f8\'c0\'b8\'b8\'e9 \'be\'c6\'b7\'a1\'bf\'a1 \'b9\'e8\'c4\'a1\
+=>\'c0\'cc \'b9\'e6\'bd\'c4\'c0\'ba \'c8\'ad\'b8\'e9\'c0\'c7 \'c5\'a9\'b1\'e2\'b0\'a1 \'ba\'af\'b0\'e6\'b5\'c7\'b8\'e9 \'b9\'e8\'c4\'a1\'b0\'a1 \'ba\'af\'b0\'e6\'b5\'cb\'b4\'cf\'b4\'d9.\
+=>\'c0\'cc \'b7\'b9\'c0\'cc\'be\'c6\'bf\'f4\'c0\'bb \'bb\'e7\'bf\'eb\'c7\'cf\'b4\'c2 \'b0\'e6\'bf\'ec\'b4\'c2 \'c5\'a9\'b1\'e2 \'ba\'af\'b0\'e6\'c0\'bb \'b8\'f8\'c7\'cf\'b5\'b5\'b7\'cf \'c7\'d5\'b4\'cf\'b4\'d9.\
+\
+\
+2.BorderLayout\
+=>Frame \'c0\'c7 \'b1\'e2\'ba\'bb\'c0\'fb\'c0\'ce Layout\'c0\'b8\'b7\'ce \'c8\'ad\'b8\'e9\'c0\'bb 5\'b5\'ee\'ba\'d0 \'c7\'d8\'bc\'ad \'b9\'e8\'c4\'a1\
+\'bb\'f3, \'c7\'cf , \'c1\'c2, \'bf\'ec \'b0\'a1\'bf\'ee\'b5\'a5\'b7\'ce \'ba\'d0\'c7\'d2\
+=>\'c7\'cf\'b3\'aa\'c0\'c7 \'bf\'b5\'bf\'aa\'bf\'a1 \'c7\'cf\'b3\'aa\'c0\'c7 \'c4\'c4\'c6\'f7\'b3\'cd\'c6\'ae\'b8\'b8 \'b9\'e8\'c4\'a1\'b0\'a1 \'b5\'c7\'b0\'ed \'c0\'cc \'c4\'c4\'c6\'f7\'b3\'cd\'c6\'ae\'b0\'a1 \'bf\'b5\'bf\'aa\'c0\'bb \'c0\'fc\'ba\'ce \'c2\'f7\'c1\'f6\'c7\'d5\'b4\'cf\'b4\'d9.\
+=>\'c0\'cc \'b7\'b9\'c0\'cc\'be\'c6\'bf\'f4\'bf\'a1 \'b9\'e8\'c4\'a1\'c7\'d2 \'b6\'a7\'b4\'c2 .add("\'c0\'a7\'c4\'a1", Component component) \'b8\'a6 \'c8\'a3\'c3\'e2\
+\'c0\'a7\'c4\'a1\'b8\'a6 \'c0\'fb\'c1\'f6 \'be\'ca\'c0\'b8\'b8\'e9 \'b0\'a1\'bf\'ee\'b5\'a5 \'b9\'e8\'c4\'a1\'b0\'a1 \'b5\'cb\'b4\'cf\'b4\'d9.\
+West, East, South, North, Center \'b7\'ce \'c0\'a7\'c4\'a1\'b8\'a6 \'bc\'b3\'c1\'a4 - \'b4\'eb\'bc\'d2\'b9\'ae\'c0\'da \'b1\'b8\'ba\'d0\
+=>\'b9\'e8\'c4\'a1\'b5\'c7\'c1\'f6 \'be\'ca\'c0\'ba \'bf\'b5\'bf\'aa\'c0\'ba \'c0\'fc\'ba\'ce Center\'b7\'ce \'b0\'a3\'c1\'d6\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+}
