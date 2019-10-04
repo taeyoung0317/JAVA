@@ -1,0 +1,390 @@
+{\rtf1\ansi\ansicpg949\cocoartf1671\cocoasubrtf600
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset129 AppleSDGothicNeo-Regular;}
+{\colortbl;\red255\green255\blue255;\red251\green0\blue7;}
+{\*\expandedcolortbl;;\cssrgb\c100000\c12195\c0;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww15760\viewh19400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs36 \cf0 ---
+\f1 ByteStream\
+=>\'b9\'d9\'c0\'cc\'c6\'ae \'b4\'dc\'c0\'a7\'b7\'ce \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'c0\'d0\'b0\'ed \'be\'b2\'b4\'c2 \'bd\'ba\'c6\'ae\'b8\'b2\
+=>\'c5\'d8\'bd\'ba\'c6\'ae \'c0\'d4\'c3\'e2\'b7\'c2\'bf\'a1\'b4\'c2 \'c1\'b6\'b1\'dd \'be\'ee\'b7\'c6\'bd\'c0\'b4\'cf\'b4\'d9.\
+1.InputStream & OutputStream\
+=>\'b9\'d9\'c0\'cc\'c6\'ae \'b4\'dc\'c0\'a7 \'c0\'d4\'c3\'e2\'b7\'c2\'c0\'bb \'c0\'a7\'c7\'d1 \'b8\'de\'bc\'d2\'b5\'e5\'b8\'a6 \'bc\'b1\'be\'f0\'c7\'d8\'b3\'f5\'c0\'ba \'c3\'df\'bb\'f3 \'c5\'ac\'b7\'a1\'bd\'ba\
+\
+\
+2.FileInputStream & FileOutputStream\
+=>\'c6\'c4\'c0\'cf\'bf\'a1 \'b9\'d9\'c0\'cc\'c6\'ae \'b4\'dc\'c0\'a7\'b7\'ce \'c0\'d4\'c3\'e2\'b7\'c2\'c7\'cf\'b1\'e2 \'c0\'a7\'c7\'d1 \'bd\'ba\'c6\'ae\'b8\'b2\
+=>\'bb\'fd\'bc\'ba\'c0\'da\'b4\'c2 \'c6\'c4\'c0\'cf\'c0\'c7 \'b0\'e6\'b7\'ce\'b8\'a6 \'b9\'ae\'c0\'da\'bf\'ad\'b7\'ce \'b9\'de\'b0\'c5\'b3\'aa File \'b0\'b4\'c3\'bc\'b7\'ce \'b9\'de\'b4\'c2 \'c7\'fc\'c5\'c2\'b7\'ce \'b8\'b8\'b5\'e9\'be\'ee\'c1\'ae \'c0\'d6\'bd\'c0\'b4\'cf\'b4\'d9.\
+=>\'b1\'e2\'b7\'cf\'c0\'bb \'c7\'cf\'b4\'c2 \'bd\'ba\'c6\'ae\'b8\'b2\'c0\'ba \'c0\'d4\'b7\'c2\'c7\'cf\'b4\'c2 \'bd\'ba\'c6\'ae\'b8\'b2\'ba\'b8\'b4\'d9 \'b8\'c5\'b0\'b3\'ba\'af\'bc\'f6\'b0\'a1 \'c7\'cf\'b3\'aa \'b8\'b9\'c0\'ba \'bb\'fd\'bc\'ba\'c0\'da\'b0\'a1 \'c1\'b8\'c0\'e7\'c7\'cf\'b4\'c2\'b5\'a5 \'c0\'cc \'b8\'c5\'b0\'b3\'ba\'af\'bc\'f6\'b4\'c2 \'c3\'df\'b0\'a1 \'b8\'f0\'b5\'e5\'b8\'a6 \'bc\'b3\'c1\'a4\'c7\'cf\'b4\'c2 boolean \'ba\'af\'bc\'f6\'c0\'d4\'b4\'cf\'b4\'d9.\
+true \'b8\'a6 \'b4\'eb\'c0\'d4\'c7\'cf\'b8\'e9 \'b1\'e2\'c1\'b8 \'b3\'bb\'bf\'eb\'bf\'a1 \'c3\'df\'b0\'a1\'c7\'cf\'b4\'c2 \'b0\'cd\'c0\'cc\'b0\'ed \'b8\'c5\'b0\'b3\'ba\'af\'bc\'f6\'b8\'a6 \'b4\'eb\'c0\'d4\'c7\'cf\'c1\'f6 \'be\'ca\'b0\'c5\'b3\'aa false\'b8\'a6 \'b4\'eb\'c0\'d4\'c7\'cf\'b8\'e9 \'c6\'c4\'c0\'cf\'c0\'bb \'bb\'f5\'b7\'ce \'b8\'b8\'b5\'e9\'be\'ee\'bc\'ad \'b1\'e2\'b7\'cf\'c7\'cf\'b0\'d4 \'b5\'cb\'b4\'cf\'b4\'d9.\
+=>\'c6\'c4\'c0\'cf\'c0\'c7 \'b0\'e6\'b7\'ce\'b8\'a6 \'b9\'de\'be\'c6\'bc\'ad \'bb\'fd\'bc\'ba\'c7\'cf\'b4\'c2 \'b8\'de\'bc\'d2\'b5\'e5\'b5\'e9\'c0\'ba \'bf\'b9\'bf\'dc\'c3\'b3\'b8\'ae\'b8\'a6 \'b0\'ad\'c1\'a6\'c7\'d5\'b4\'cf\'b4\'d9.\
+\'c6\'c4\'c0\'cf\'c0\'c7 \'b0\'e6\'b7\'ce\'b0\'a1 \'c0\'df\'b8\'f8\'b5\'c7\'be\'fa\'c0\'bb \'b6\'a7 \'b6\'c7\'b4\'c2 \'c6\'c4\'c0\'cf\'c0\'cc \'be\'f8\'c0\'bb \'b6\'a7 \'c3\'b3\'b8\'ae\'b8\'a6 \'c0\'a7\'c7\'d1 \'bf\'b9\'bf\'dc\'c3\'b3\'b8\'ae\'b8\'a6 \'b0\'ad\'c1\'a6\'c7\'d5\'b4\'cf\'b4\'d9.\
+=>\'c6\'c4\'c0\'cf, \'b5\'a5\'c0\'cc\'c5\'cd\'ba\'a3\'c0\'cc\'bd\'ba, \'b3\'d7\'c6\'ae\'bf\'f6\'c5\'a9 \'c0\'da\'bf\'f8\'c0\'ba \'bb\'e7\'bf\'eb\'c0\'bb \'c7\'cf\'b0\'ed \'b3\'aa\'b8\'e9 \'b9\'dd\'b5\'e5\'bd\'c3 close()\'b8\'a6 \'c8\'a3\'c3\'e2\'c7\'cf\'b5\'b5\'b7\'cf \'c7\'d5\'b4\'cf\'b4\'d9.\
+\'c0\'cc \'b6\'a7 close()\'b8\'a6 \'c0\'da\'b5\'bf\'c0\'b8\'b7\'ce \'c7\'d8\'c1\'a6\'c7\'cf\'b5\'b5\'b7\'cf \'c7\'cf\'b0\'ed\'c0\'da \'c7\'cf\'b8\'e9 try()\'c0\'c7  () \'be\'c8\'bf\'a1\'bc\'ad \'bb\'fd\'bc\'ba\'c7\'cf\'b8\'e9 close()\'b8\'a6 \'c8\'a3\'c3\'e2\'c7\'cf\'c1\'f6 \'be\'ca\'be\'c6\'b5\'b5 \'c0\'da\'b5\'bf\'c0\'b8\'b7\'ce close()\'b8\'a6 \'c8\'a3\'c3\'e2\'c7\'d8 \'c1\'dd\'b4\'cf\'b4\'d9.\
+\
+\
+\
+3.\'b9\'ae\'c0\'da\'bf\'ad\'b0\'fa byte[] \'bb\'e7\'c0\'cc\'c0\'c7 \'ba\'af\'c8\'af\
+1)\'b9\'ae\'c0\'da\'bf\'ad\'c0\'bb bte[]\'b7\'ce \'ba\'af\'c8\'af\
+byte [] getBytes() : \'b1\'e2\'ba\'bb \'c0\'ce\'c4\'da\'b5\'f9 \'b9\'e6\'bd\'c4\'c0\'b8\'b7\'ce \'ba\'af\'c8\'af\'c7\'d8\'bc\'ad \'b8\'ae\'c5\'cf\
+byte [] getBytes("\'c0\'ce\'c4\'da\'b5\'f9 \'b9\'e6\'bd\'c4") : \'bc\'b3\'c1\'a4\'c7\'d1 \'c0\'ce\'c4\'da\'b5\'f9 \'b9\'e6\'bd\'c4\'c0\'b8\'b7\'ce \'ba\'af\'c8\'af\'c7\'d8\'bc\'ad \'b8\'ae\'c5\'cf\
+\
+\
+2)byte \'b9\'e8\'bf\'ad\'c0\'bb \'b0\'a1\'c1\'f6\'b0\'ed \'b9\'ae\'c0\'da\'bf\'ad \'b8\'b8\'b5\'e9\'b1\'e2\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 new String(byte\'b9\'e8\'bf\'ad)
+\f0 \
+
+\f1 new String(byte\'b9\'e8\'bf\'ad, \'bd\'c3\'c0\'db\'c0\'a7\'c4\'a1, \'b0\'b3\'bc\'f6)
+\f0 \
+
+\f1 new String(byte\'b9\'e8\'bf\'ad, "\'c0\'ce\'c4\'da\'b5\'f9\'b9\'e6\'bd\'c4")
+\f0 \
+
+\f1 new String(byte\'b9\'e8\'bf\'ad, \'bd\'c3\'c0\'db\'c0\'a7\'c4\'a1, \'b0\'b3\'bc\'f6, "\'c0\'ce\'c4\'da\'b5\'f9\'b9\'e6\'bd\'c4")
+\f0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\
+4.
+\f1 utf-8\
+\'c7\'d1\'b1\'db - 3byte\
+\'b1\'d7 \'c0\'cc\'bf\'dc \'b9\'ae\'c0\'da - 1byte\
+\
+=>ms949(cp949), euc-kr, utf-8\'c0\'bb \'c1\'a6\'bf\'dc\'c7\'cf\'b0\'ed\'b4\'c2 \'c7\'d1\'b1\'db\'c0\'bb \'c7\'a5\'c7\'f6\'c7\'d2 \'bc\'f6 \'be\'f8\'bd\'c0\'b4\'cf\'b4\'d9.\
+=>mysql \'b0\'b0\'c0\'ba \'b5\'a5\'c0\'cc\'c5\'cd\'ba\'a3\'c0\'cc\'bd\'ba\'b4\'c2 \'bc\'b3\'c1\'a4\'be\'f8\'c0\'cc \'b1\'d7\'b3\'c9 \'bc\'b3\'c4\'a1\'c7\'cf\'b8\'e9 iso-latin1\'c0\'cc\'b6\'f3\'b4\'c2  \'c0\'ce\'c4\'da\'b5\'f9\'c0\'b8\'b7\'ce \'bc\'b3\'c4\'a1\'b5\'cb\'b4\'cf\'b4\'d9.\
+\'c0\'cc \'b0\'e6\'bf\'ec\'bf\'a1\'b4\'c2 \'c7\'d1\'b1\'db\'c0\'bb \'c0\'fa\'c0\'e5\'c7\'d2 \'bc\'f6 \'be\'f8\'b0\'d4 \'b5\'cb\'b4\'cf\'b4\'d9.\
+\
+\
+\
+--\'c0\'cc\'ba\'a5\'c6\'ae \'b6\'f3\'bf\'ec\'c6\'c3(Event Routing)\
+=>\'bf\'a9\'b7\'af \'b0\'b4\'c3\'bc\'c0\'c7 \'c0\'cc\'ba\'a5\'c6\'ae\'b8\'a6 \'c7\'cf\'b3\'aa\'c0\'c7 \'b0\'b4\'c3\'bc\'b8\'a6 \'c0\'cc\'bf\'eb\'c7\'d8\'bc\'ad \'c3\'b3\'b8\'ae\'c7\'cf\'b4\'c2 \'b9\'e6\'bd\'c4\
+=>\'b6\'f3\'bf\'ec\'c6\'c3\'c0\'ba \'c3\'d6\'c0\'fb\'c0\'c7 \'b0\'e6\'b7\'ce\'b8\'a6 \'c3\'a3\'be\'c6\'c1\'d6\'b4\'c2 \'b0\'cd\
+=>\'bf\'a9\'b7\'af \'b0\'b4\'c3\'bc\'c0\'c7 \'c0\'cc\'ba\'a5\'c6\'ae\'b8\'a6 \'c7\'cf\'b3\'aa\'c0\'c7 \'b0\'b4\'c3\'bc\'bf\'a1\'bc\'ad \'c3\'a3\'be\'c6\'bc\'ad \'bc\'f6\'c7\'e0\'c7\'d1\'b4\'d9\'b0\'ed \'c7\'d8\'bc\'ad \'c0\'cc\'ba\'a5\'c6\'ae \'b6\'f3\'bf\'ec\'c6\'c3\'c0\'cc\'b6\'f3\'b0\'ed \'c7\'d5\'b4\'cf\'b4\'d9.\
+\'c0\'cc\'ba\'a5\'c6\'ae \'b6\'f3\'bf\'ec\'c6\'c3\'c0\'bb \'c7\'d2 \'b6\'a7 \'be\'cb\'be\'c6\'be\'df \'c7\'cf\'b4\'c2 \'b0\'cd\'c0\'ba \'c0\'cc\'ba\'a5\'c6\'ae \'c3\'b3\'b8\'ae \'b8\'de\'bc\'d2\'b5\'e5\'c0\'c7 \'c3\'b9\'b9\'f8\'c2\'b0 \'b8\'c5\'b0\'b3\'ba\'af\'bc\'f6\'b8\'a6 \'c8\'ae\'c0\'ce\'c7\'cf\'b8\'e9 \'be\'ee\'b6\'b2 \'b0\'b4\'c3\'bc\'bf\'a1\'b0\'d4 \'c0\'cc\'ba\'a5\'c6\'ae\'b0\'a1 \'b9\'df\'bb\'fd\'c7\'df\'b4\'c2\'c1\'f6 \'be\'cb \'bc\'f6 \'c0\'d6\'bd\'c0\'b4\'cf\'b4\'d9.\
+Java\'c0\'c7 \'b0\'e6\'bf\'ec\'b4\'c2 \'c3\'b9\'b9\'f8\'c2\'b0 \'b8\'c5\'b0\'b3\'ba\'af\'bc\'f6\'c0\'c7 getSource()\'b8\'a6 \'c8\'a3\'c3\'e2\'c7\'cf\'b8\'e9 \'c0\'cc\'ba\'a5\'c6\'ae\'b0\'a1 \'b9\'df\'bb\'fd\'c7\'d1 \'b0\'b4\'c3\'bc\'c0\'c7 \'c2\'fc\'c1\'b6\'b0\'a1 \'c0\'fc\'b4\'de\'b5\'cb\'b4\'cf\'b4\'d9.\
+Android\'b3\'aa iOS\'bf\'a1\'bc\'ad\'b4\'c2 \'c3\'b9\'b9\'f8\'c2\'b0 \'b8\'c5\'b0\'b3\'ba\'af\'bc\'f6\'b0\'a1 \'c0\'cc\'ba\'a5\'c6\'ae\'b0\'a1 \'b9\'df\'bb\'fd\'c7\'d1 \'b0\'b4\'c3\'bc\'c0\'c7 \'c2\'fc\'c1\'b6\
+\
+\
+\
+--\'c0\'d4\'c3\'e2\'b7\'c2\'bf\'a1 \'b9\'f6\'c6\'db \'bb\'e7\'bf\'eb\
+=>Buffer\'b4\'c2 \'c0\'d3\'bd\'c3 \'b1\'e2\'be\'ef \'c0\'e5\'c4\'a1\
+=>\'c6\'c4\'c0\'cf\'c0\'cc\'b3\'aa \'b3\'d7\'c6\'ae\'bf\'f6\'c5\'a9\'bf\'a1 \'c0\'d4\'c3\'e2\'b7\'c2\'c0\'bb \'c7\'cf\'b0\'d4 \'b5\'c7\'b8\'e9 \'bd\'c7\'c1\'a6\'b7\'ce\'b4\'c2 \'bf\'ee\'bf\'b5\'c3\'bc\'c1\'a6\'c0\'c7 native method\'b8\'a6 \'c8\'a3\'c3\'e2\'c7\'d8\'bc\'ad \'c0\'db\'be\'f7\'c0\'bb \'bc\'f6\'c7\'e0\
+=>\'bf\'a9\'b7\'af \'b9\'f8\'bf\'a1 \'b0\'c9\'c4\'a3 \'c0\'d4\'c3\'e2\'b7\'c2\'c0\'bb \'c7\'cf\'b0\'d4 \'b5\'c7\'b8\'e9 native method\'b0\'a1 \'b3\'ca\'b9\'ab \'c8\'a3\'c3\'e2\'b5\'c7\'b0\'d4 \'b5\'c7\'bc\'ad \'bf\'ee\'bf\'b5\'c3\'bc\'c1\'a6\'bf\'a1 \'b0\'fa\'ba\'ce\'c7\'cf\'b0\'a1 \'b0\'c9\'b8\'ae\'b0\'c5\'b3\'aa \'bf\'ee\'bf\'b5\'c3\'bc\'c1\'a6\'bf\'a1\'bc\'ad \'c7\'f6\'c0\'e7 \'c7\'c1\'b7\'ce\'b1\'d7\'b7\'a5\'c0\'bb \'c1\'df\'c1\'f6 \'bd\'c3\'c4\'d1\'b9\'f6\'b8\'b1 \'bc\'f6 \'c0\'d6\'bd\'c0\'b4\'cf\'b4\'d9.\
+=>\'c0\'d4\'c3\'e2\'b7\'c2\'c0\'bb \'c7\'d2 \'b6\'a7 \'b9\'f6\'c6\'db\'b8\'a6 \'c0\'cc\'bf\'eb\'c7\'cf\'b8\'e9 \'c0\'d4\'c3\'e2\'b7\'c2 \'b3\'bb\'bf\'eb\'c0\'bb \'b9\'f6\'c6\'db\'bf\'a1 \'b8\'f0\'be\'c6\'b5\'ce\'be\'fa\'b4\'d9\'b0\'a1 \'bf\'ee\'bf\'b5\'c3\'bc\'c1\'a6\'b0\'a1 \'bd\'ac\'b4\'c2 \'bd\'c3\'b0\'a3\'c0\'cc \'bb\'fd\'b1\'e2\'b8\'e9 \'c7\'d1\'b2\'a8\'b9\'f8\'bf\'a1 \'c3\'b3\'b8\'ae\'c7\'d8 \'b4\'de\'b6\'f3\'b0\'ed \'c7\'d2 \'bc\'f6 \'c0\'d6\'bd\'c0\'b4\'cf\'b4\'d9.\
+=>\'b9\'d9\'c0\'cc\'c6\'ae \'b4\'dc\'c0\'a7 \'c0\'d4\'b7\'c2\'c0\'bb \'b9\'de\'c0\'bb \'b6\'a7\'b4\'c2 BufferedInputStream\'c0\'bb \'c0\'cc\'bf\'eb\'c7\'d2 \'bc\'f6 \'c0\'d6\'b0\'ed \'c3\'e2\'b7\'c2\'c0\'bb \'c7\'d2 \'b6\'a7\'b4\'c2 BufferedOutputStream\'c0\'bb \'bb\'e7\'bf\'eb\'c7\'d2 \'bc\'f6 \'c0\'d6\'b4\'c2 \'bb\'e7\'bf\'eb\'c7\'cf\'b1\'e2 \'c6\'ed\'b8\'ae\'c7\'d1 \'b8\'de\'bc\'d2\'b5\'e5\'b8\'a6 \'bc\'d2\'c0\'af\'c7\'d1 PrintStream\'c0\'bb \'b4\'f5 \'b8\'b9\'c0\'cc \'bb\'e7\'bf\'eb\'c7\'d5\'b4\'cf\'b4\'d9.\
+\'c0\'da\'b9\'d9\'bf\'a1\'bc\'ad \'c7\'a5\'c1\'d8 \'c3\'e2\'b7\'c2 \'bd\'ba\'c6\'ae\'b8\'b2\'c0\'bb \'c1\'a6\'b0\'f8\'c7\'cf\'b4\'c2\'b5\'a5 \'c0\'cc \'c7\'a5\'c1\'d8 \'c3\'e2\'b7\'c2 \'bd\'c3\'c6\'ae\'b8\'b2\'c0\'cc System.out\'c0\'d4\'b4\'cf\'b4\'d9.\
+\'b9\'f6\'c6\'db \'b4\'dc\'c0\'a7\'b7\'ce \'c0\'d4\'b7\'c2\'b9\'de\'b4\'c2 \'bd\'ba\'c6\'ae\'b8\'b2\'b5\'b5 \'c1\'a6\'b0\'f8\'c7\'cf\'b4\'c2\'b5\'a5 \'c0\'cc \'c7\'a5\'c1\'d8 \'c0\'d4\'b7\'c2 \'bd\'ba\'c6\'ae\'b8\'b2\'c0\'cc System.in\'c0\'d4\'b4\'cf\'b4\'d9.\
+=>\'c0\'cc \'c5\'ac\'b7\'a1\'bd\'ba\'c0\'c7 \'bb\'fd\'bc\'ba\'c0\'da\'b5\'e9\'c0\'ba \'b4\'d9\'b8\'a5 InputStream \'b0\'fa OutputStream \'c0\'bb \'b8\'c5\'b0\'b3\'ba\'af\'bc\'f6\'b7\'ce \'b9\'de\'be\'c6\'bc\'ad \'bb\'fd\'bc\'ba\'c7\'d5\'b4\'cf\'b4\'d9.\
+\'c0\'d4\'c3\'e2\'b7\'c2\'c7\'cf\'b4\'c2 \'b8\'de\'bc\'d2\'b5\'e5\'b4\'c2 \'b4\'d9\'b8\'a5 ByteStream\'b0\'fa \'b5\'bf\'c0\'cf\'c7\'cf\'b0\'ed PrintStream\'c0\'ba \'c3\'e2\'b7\'c2\'c7\'d2 \'b6\'a7 write \'b4\'eb\'bd\'c5\'bf\'a1 print\'b8\'de\'bc\'d2\'b5\'e5\'b8\'a6 \'bb\'e7\'bf\'eb\'c7\'d2 \'bc\'f6 \'c0\'d6\'bd\'c0\'b4\'cf\'b4\'d9.\
+print \'b4\'c2 \'b9\'f6\'c6\'db\'bf\'a1 \'b8\'f0\'be\'c6\'bc\'ad \'c7\'d1\'b2\'a8\'b9\'f8\'bf\'a1 \'c3\'e2\'b7\'c2\'c7\'cf\'b0\'ed println\'c0\'ba \'b9\'d9\'b7\'ce \'c3\'e2\'b7\'c2\'c7\'cf\'b0\'ed \'c1\'d9 \'b9\'d9\'b2\'de\'c0\'bb \'c7\'d8\'c1\'dd\'b4\'cf\'b4\'d9.\
+pirntf\'b4\'c2 \'bc\'ad\'bd\'c4\'bf\'a1 \'b8\'c2\'c3\'e7\'bc\'ad \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'b9\'f6\'c6\'db\'bf\'a1 \'c3\'e2\'b7\'c2\'c7\'cf\'b4\'c2 \'bf\'aa\'c7\'d2\'c0\'bb \'bc\'f6\'c7\'e0\'c7\'d5\'b4\'cf\'b4\'d9.\
+\
+\
+--\'b3\'d7\'c6\'ae\'bf\'f6\'c5\'a9\'bf\'a1\'bc\'ad \'c6\'c4\'c0\'cf\'c0\'bb \'c0\'fc\'bc\'db\'c7\'d2 \'b6\'a7\'b4\'c2 PrintStream(\'bc\'db\'bd\'c5)\'c0\'cc\'b3\'aa BufferedInputStream(\'bc\'f6\'bd\'c5)\'c0\'bb \'c0\'cc\'bf\'eb\'c7\'d5\'b4\'cf\'b4\'d9.\
+\
+\
+--DataInputStream & DataOutputStream\
+=>\'b1\'e2\'ba\'bb\'c7\'fc\'c0\'c7 \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'bc\'db\'bc\'f6\'bd\'c5 \'c7\'cf\'b0\'ed\'c0\'da \'c7\'d2 \'b6\'a7 \'bb\'e7\'bf\'eb\'c7\'cf\'b4\'c2 \'c5\'ac\'b7\'a1\'bd\'ba\
+=>InputStream \'b0\'fa OutputStream \'bf\'a1\'b4\'c2 \'b9\'d9\'c0\'cc\'c6\'ae \'b4\'dc\'c0\'a7\'b7\'ce \'c0\'fc\'bc\'db\'c7\'cf\'b0\'ed \'c0\'d0\'b4\'c2 \'b8\'de\'bc\'d2\'b5\'e5\'b8\'b8 \'b8\'b8\'b5\'e9\'be\'ee\'c1\'ae \'c0\'d6\'bd\'c0\'b4\'cf\'b4\'d9.\
+\'c1\'a4\'bc\'f6\'b3\'aa \'bd\'c7\'bc\'f6\'c3\'b3\'b7\'b3 byte\'b7\'ce \'ba\'af\'b0\'e6\'c7\'d2 \'bc\'f6 \'be\'f8\'b4\'c2 \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'c0\'d0\'b0\'ed \'be\'b5 \'bc\'f6\'b0\'a1 \'be\'f8\'be\'ee\'bc\'ad \'b8\'b8\'b5\'e7 \'c5\'ac\'b7\'a1\'bd\'ba\
+=>\'bd\'c7\'c1\'a6 \'bb\'e7\'bf\'eb\'c0\'ba \'c0\'df \'be\'c8\'c7\'cf\'b4\'c2\'b5\'a5 \'c1\'a4\'bc\'f6\'b3\'aa \'bd\'c7\'bc\'f6\'b8\'a6 \'c0\'fc\'bc\'db\'c7\'d8\'be\'df \'c7\'d2 \'b6\'a7 \'b9\'ae\'c0\'da\'bf\'ad\'b7\'ce \'b8\'b8\'b5\'e9\'be\'ee\'bc\'ad \'c0\'fc\'bc\'db\'c7\'d1 \'c8\'c4 \'b4\'d9\'bd\'c3 \'b9\'ae\'c0\'da\'bf\'ad\'b7\'ce \'c0\'d0\'be\'ee\'b3\'bb\'b8\'e9 \'c1\'a4\'bc\'f6\'b3\'aa \'bd\'c7\'bc\'f6\'b8\'a6 \'c0\'d0\'b0\'ed \'be\'b5 \'bc\'f6 \'c0\'d6\'b1\'e2 \'b6\'a7\'b9\'ae\'bf\'a1 \'b4\'eb\'ba\'ce\'ba\'d0\'c0\'ba \'c0\'df \'bb\'e7\'bf\'eb\'c7\'cf\'c1\'f6 \'be\'ca\'c0\'bd\
+
+\f0 =>
+\f1 \'c0\'fc\'bc\'db\'c7\'cf\'b4\'c2
+\f0  
+\f1 \'ba\'ce\'ba\'d0\'c0\'ba
+\f0  PrintStream
+\f1 \'c0\'bb
+\f0  
+\f1 \'c0\'cc\'bf\'eb\'c7\'cf\'b8\'e9
+\f0  
+\f1 \'b0\'a1\'b4\'c9\'c7\'d5\'b4\'cf\'b4\'d9
+\f0 .\
+\
+\
+\
+--Character Stream\
+=>
+\f1 \'b9\'ae\'c0\'da
+\f0  
+\f1 \'b4\'dc\'c0\'a7\'b7\'ce
+\f0  
+\f1 \'c0\'fc\'bc\'db\'c7\'cf\'b1\'e2
+\f0  
+\f1 \'c0\'a7\'c7\'d1
+\f0  
+\f1 \'bd\'ba\'c6\'ae\'b8\'b2
+\f0 \
+=>
+\f1 \'b9\'d9\'c0\'cc\'c6\'ae
+\f0  
+\f1 \'b4\'dc\'c0\'a7\'b7\'ce
+\f0  
+\f1 \'c0\'fc\'bc\'db\'c0\'bb
+\f0  
+\f1 \'c7\'d8\'bc\'ad
+\f0  
+\f1 \'b9\'ae\'c0\'da\'b7\'ce \'ba\'af\'c8\'af\'c7\'cf\'b4\'c2 \'c7\'fc\'c5\'c2\'b7\'ce \'b9\'ae\'c0\'da \'c0\'fc\'bc\'db\'c0\'bb \'c3\'b3\'b8\'ae\'c7\'cf\'b4\'d9\'ba\'b8\'b8\'e9 \'c0\'ce\'c4\'da\'b5\'f9 \'b9\'e6\'bd\'c4\'bf\'a1 \'b5\'fb\'b6\'f3\'bc\'ad \'b9\'ae\'c0\'da\'b0\'a1 \'c1\'a6\'b4\'eb\'b7\'ce \'c3\'b3\'b8\'ae\'b5\'c7\'c1\'f6 \'be\'ca\'b4\'c2 \'b0\'e6\'bf\'ec\'b0\'a1 \'b9\'df\'bb\'fd\'c7\'d8\'bc\'ad \'b9\'ae\'c0\'da \'b4\'dc\'c0\'a7\'b7\'ce \'c0\'fc\'bc\'db\'c7\'d2 \'bc\'f6 \'c0\'d6\'b4\'c2 \'bd\'ba\'c6\'ae\'b8\'b2\'c0\'cc \'c7\'ca\'bf\'e4\
+\
+1.Reader\
+=>\'b9\'ae\'c0\'da \'b4\'dc\'c0\'a7\'b7\'ce \'c0\'d0\'b1\'e2 \'c0\'a7\'c7\'d1 \'b8\'de\'bc\'d2\'b5\'e5\'b8\'a6 \'bc\'d2\'c0\'af\'c7\'d1 \'c3\'df\'bb\'f3 \'c5\'ac\'b7\'a1\'bd\'ba\
+void close() : \'b4\'dd\'be\'c6\'c1\'d6\'b4\'c2 \'b8\'de\'bc\'d2\'b5\'e5\
+int read() : \'c7\'d2 \'b1\'db\'c0\'da\'b8\'a6 \'c0\'d0\'be\'ee\'bc\'ad \'c1\'a4\'bc\'f6\'b7\'ce \'b8\'ae\'c5\'cf\'c7\'cf\'b0\'ed \'c0\'d0\'c0\'ba \'b5\'a5\'c0\'cc\'c5\'cd\'b0\'a1 \'be\'f8\'c0\'b8\'b8\'e9 \'c0\'bd\'bc\'f6(-1)\'b8\'a6 \'b8\'ae\'c5\'cf\
+int read(char [] buf) : buf\'c0\'c7 \'c5\'a9\'b1\'e2 \'b8\'b8\'c5\'ad \'c0\'d0\'be\'ee\'bc\'ad buf\'bf\'a1 \'c0\'fa\'c0\'e5\'c7\'cf\'b0\'ed \'c0\'d0\'c0\'ba \'b0\'b3\'bc\'f6\'b8\'a6 \'b8\'ae\'c5\'cf \'c0\'d0\'c0\'ba \'b5\'a5\'c0\'cc\'c5\'cd\'b0\'a1 \'be\'f8\'c0\'b8\'b8\'e9 -1\'c0\'bb \'b8\'ae\'c5\'cf\
+int read(char [] buf, int off, int len) : off\'ba\'ce\'c5\'cd buf \'b8\'b8\'c5\'ad \'c0\'d0\'be\'ee\'bc\'ad buf\'bf\'a1 \'c0\'fa\'c0\'e5\'c7\'cf\'b0\'ed \'c0\'d0\'c0\'ba \'b0\'b3\'bc\'f6\'b8\'a6 \'b8\'ae\'c5\'cf\'c7\'cf\'b0\'ed \'c0\'d0\'c0\'ba \'b5\'a5\'c0\'cc\'c5\'cd\'b0\'a1 \'be\'f8\'c0\'b8\'b8\'e9 -1 \'c0\'bb \'b8\'ae\'c5\'cf\
+\
+\'c0\'d0\'c0\'ba \'b3\'bb\'bf\'eb\'c0\'c7 \'c5\'a9\'b1\'e2\'b8\'a6 \'be\'cc\'c1\'f6 \'b8\'f8\'c7\'d2 \'b6\'a7 \'ba\'d0\'c7\'d2\'c7\'d8\'bc\'ad \'c0\'d0\'b4\'c2 \'b7\'ce\'c1\'f7\
+while(true)\{\
+	int r = ?.read();\
+	if(r<=0)\{\
+		break;\
+	\}\
+	\'c0\'d0\'c0\'ba \'b5\'a5\'c0\'cc\'c5\'cd \'c3\'b3\'b8\'ae\
+\}\
+\
+long skip(long n) : n \'b8\'b8\'c5\'ad \'b0\'c7\'b3\'ca\'b6\'d9\'b0\'ed \'b1\'d7 \'c0\'a7\'c4\'a1\'b8\'a6 \'b8\'ae\'c5\'cf\
+\
+\
+2.Writer\
+=>\'b9\'ae\'c0\'da \'b4\'dc\'c0\'a7\'b7\'ce \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'b1\'e2\'b7\'cf\'c7\'cf\'b1\'e2 \'c0\'a7\'c7\'d1 \'b8\'de\'bc\'d2\'b5\'e5\'b8\'a6 \'bc\'d2\'c0\'af\'c7\'d1 \'c3\'df\'bb\'f3 \'c5\'ac\'b7\'a1\'bd\'ba\
+
+\f0 void close() : 
+\f1 \'b4\'dd\'be\'c6\'c1\'d6\'b4\'c2
+\f0  
+\f1 \'b8\'de\'bc\'d2\'b5\'e5
+\f0 \
+\
+
+\f1 void write(String str) : \'b9\'ae\'c0\'da\'bf\'ad\'c0\'bb \'b9\'f6\'c6\'db\'bf\'a1 \'b1\'e2\'b7\'cf\
+void write(String str, int offset, int length) : \'b9\'ae\'c0\'da\'bf\'ad\'bf\'a1\'bc\'ad offset\'ba\'ce\'c5\'cd length\'b1\'ee\'c1\'f6 \'b1\'e2\'b7\'cf\
+\
+\
+void flush() : \'b9\'f6\'c6\'db\'c0\'c7 \'b3\'bb\'bf\'eb\'c0\'bb \'b1\'e2\'b7\'cf\
+\
+\
+\
+3.FileReader & FileWriter\
+1)FileReader : \'c6\'c4\'c0\'cf\'bf\'a1 \'b9\'ae\'c0\'da\'bf\'ad\'c0\'bb \'c0\'d0\'be\'ee\'bf\'c0\'b1\'e2 \'c0\'a7\'c7\'d1 \'bd\'ba\'c6\'ae\'b8\'b2\
+=>\'bb\'fd\'bc\'ba\'c7\'d2 \'b6\'a7 \'c6\'c4\'c0\'cf\'c0\'bb \'b0\'e6\'b7\'ce\'b8\'a6 \'b9\'ae\'c0\'da\'bf\'ad\'c0\'cc\'b3\'aa File \'b0\'b4\'c3\'bc\'b7\'ce \'b4\'eb\'c0\'d4\
+=>\'c6\'c4\'c0\'cf\'c0\'cc \'c1\'b8\'c0\'e7\'c7\'cf\'c1\'f6 \'be\'ca\'c0\'b8\'b8\'e9 FileNotFoundException\'c0\'cc \'b9\'df\'bb\'fd\
+\
+\
+2)FileWriter : \'c6\'c4\'c0\'cf\'bf\'a1 \'b9\'ae\'c0\'da\'bf\'ad\'c0\'bb \'b1\'e2\'b7\'cf\'c7\'cf\'b1\'e2 \'c0\'a7\'c7\'d1 \'bd\'ba\'c6\'ae\'b8\'b2\
+=>\'bb\'fd\'bc\'ba\'c7\'d2 \'b6\'a7 \'c6\'c4\'c0\'cf\'c0\'c7 \'b0\'e6\'b7\'ce\'b8\'a6 \'b9\'ae\'c0\'da\'bf\'ad\'c0\'cc\'b3\'aa File \'b0\'b4\'c3\'bc\'b7\'ce \'b4\'eb\'c0\'d4\'c7\'cf\'b0\'ed \'c1\'b8\'c0\'e7\'c7\'cf\'b4\'c2 \'b0\'e6\'bf\'ec \'c3\'df\'b0\'a1\'c7\'d2 \'b0\'cd\'c0\'ce\'c1\'f6\'b8\'a6 \'bc\'b3\'c1\'a4\'c7\'cf\'b4\'c2 \'bf\'c9\'bc\'c7\'c0\'cc \'c0\'d6\'bd\'c0\'b4\'cf\'b4\'d9.\
+=>\'c6\'c4\'c0\'cf\'c0\'cc \'c1\'b8\'c0\'e7\'c7\'cf\'c1\'f6 \'be\'ca\'c0\'b8\'b8\'e9 \'c6\'c4\'c0\'cf\'c0\'bb \'bb\'fd\'bc\'ba\'c7\'cf\'b1\'e2 \'b6\'a7\'b9\'ae\'bf\'a1 \'c6\'c4\'c0\'cf\'c0\'c7 \'b0\'e6\'b7\'ce\'b8\'a6 \'c0\'df\'b8\'f8 \'c0\'d4\'b7\'c2\'c7\'d1 \'b0\'e6\'bf\'ec IOException\'c0\'cc \'b9\'df\'bb\'fd\'c7\'d5\'b4\'cf\'b4\'d9.\
+ \
+\
+\
+4.BufferedReader & PrintWriter\
+1)BufferedReader\
+=>\'b9\'f6\'c6\'db\'b8\'a6 \'c0\'cc\'bf\'eb\'c7\'d8\'bc\'ad \'b9\'ae\'c0\'da\'bf\'ad\'c0\'bb \'c0\'d0\'be\'ee\'bf\'c0\'b4\'c2 \'bd\'ba\'c6\'ae\'b8\'b2\
+=>\'b8\'c5\'b0\'b3\'ba\'af\'bc\'f6\'b7\'ce \'b4\'d9\'b8\'a5 \'c0\'d4\'b7\'c2 \'bd\'ba\'c6\'ae\'b8\'b2\'c0\'bb \'b9\'de\'be\'c6\'bc\'ad \'bb\'fd\'bc\'ba\
+
+\f0 =>
+\f1 \'c1\'d9
+\f0  
+\f1 \'b4\'dc\'c0\'a7\'b7\'ce \'c0\'d0\'b4\'c2 readLine \'c0\'cc\'b6\'f3\'b4\'c2 \'b8\'de\'bc\'d2\'b5\'e5\'b0\'a1 \'c3\'df\'b0\'a1\'b5\'c7\'be\'ee \'c0\'d6\'bd\'c0\'b4\'cf\'b4\'d9.\
+readLine\'c0\'ba \'c7\'d1 \'c1\'d9\'c0\'bb \'c0\'d0\'b0\'ed \'b1\'d7 \'b3\'bb\'bf\'eb\'c0\'bb String\'c0\'b8\'b7\'ce \'b8\'ae\'c5\'cf\'c7\'cf\'b4\'c2\'b5\'a5 \'c0\'d0\'c0\'ba\'b0\'d4 \'be\'f8\'c0\'b8\'b8\'e9 null\'c0\'bb \'b8\'ae\'c5\'cf\
+\
+StringBuilder sb= new StringBuilder();\
+While(true)\{\
+	String line = br.readLine();\
+	if(line == null)\{\
+		break;\
+	\}\
+	sb.append(line+"\\n");\
+\}\
+//\'c0\'d0\'c0\'ba \'b3\'bb\'bf\'eb\'c0\'ba sb.toString();\
+
+\f0 \
+\
+\
+2)PrintWriter\
+=>
+\f1 \'b9\'f6\'c6\'db\'b8\'a6
+\f0  
+\f1 \'c0\'cc\'bf\'eb\'c7\'d8\'bc\'ad
+\f0  
+\f1 \'b3\'bb\'bf\'eb\'c0\'bb
+\f0  
+\f1 \'b1\'e2\'b7\'cf\'c7\'cf\'b4\'c2
+\f0  
+\f1 \'b9\'ae\'c0\'da
+\f0  
+\f1 \'bd\'ba\'c6\'ae\'b8\'b2
+\f0 \
+=>BufferedWriter 
+\f1 \'b4\'eb\'bd\'c5\'bf\'a1
+\f0  
+\f1 \'bb\'e7\'bf\'eb\'c7\'cf\'b4\'c2
+\f0  
+\f1 \'c0\'cc\'c0\'af\'b4\'c2 print \'b8\'de\'bc\'d2\'b5\'e5\'b8\'a6 \'b0\'a1\'c1\'f6\'b0\'ed \'c0\'d6\'be\'ee\'bc\'ad \'bb\'e7\'bf\'eb\'c7\'cf\'b1\'e2 \'c6\'ed\'b8\'ae\'c7\'cf\'b1\'e2 \'b6\'a7\'b9\'ae\
+=>File, File\'b0\'fa encoding \'b9\'e6\'bd\'c4, OutputStream, String fileName, Writer\'c0\'c7 \'c7\'cf\'c0\'a7 \'c5\'ac\'b7\'a1\'bd\'ba \'b0\'b4\'c3\'bc \'b5\'ee\'c0\'bb \'b0\'a1\'c1\'f6\'b0\'ed \'bb\'fd\'bc\'ba\
+=>\'b1\'e2\'b7\'cf\'c0\'ba write \'bf\'cd print \'b8\'de\'bc\'d2\'b5\'e5\'b8\'a6 \'c0\'cc\'bf\'eb\'c7\'cf\'b0\'ed \'b9\'f6\'c6\'db\'c0\'c7 \'b3\'bb\'bf\'eb\'c0\'bb \'ba\'f1\'bf\'ec\'b4\'c2 \'b0\'cd\'c0\'ba flush() \'c0\'d4\'b4\'cf\'b4\'d9.
+\f0 \
+\
+\
+\
+---
+\f1 \'c0\'a5 \'bc\'ad\'b9\'f6\'c0\'c7 \'b7\'ce\'b1\'d7 \'c6\'c4\'c0\'cf\'c0\'bb \'c0\'d0\'be\'ee\'bc\'ad \'c6\'ae\'b7\'a1\'c7\'c8\'c0\'c7 \'c7\'d5\'b0\'e8 \'b1\'b8\'c7\'cf\'b1\'e2\
+1.\'bc\'ad\'b9\'f6\'c0\'c7 \'b7\'ce\'b1\'d7 \'c6\'c4\'c0\'cf\'c0\'bb \'c0\'d0\'c0\'bb \'bc\'f6 \'c0\'d6\'be\'ee\'be\'df \'c7\'d5\'b4\'cf\'b4\'d9.\
+BufferedReader br = new BufferedReader(new FileReader("\'c6\'c4\'c0\'cf\'b0\'e6\'b7\'ce"));\
+\
+\
+while(true)\{\
+	String line = br.readLine();\
+	if(line == null)\{\
+		break;\
+	\}\
+	//line \'c0\'cc \'c7\'d1 \'c1\'d9\'c0\'c7 \'b9\'ae\'c0\'da\'bf\'ad\
+\}\
+\
+2.String \'c0\'c7 \'ba\'d0\'c7\'d2\'c0\'bb \'c0\'a7\'c7\'d1 \'b8\'de\'bc\'d2\'b5\'e5\
+1)\'c6\'af\'bc\'f6\'c7\'d1 \'b1\'e2\'c8\'a3\'b7\'ce \'ba\'d0\'c7\'d2\'c7\'cf\'b4\'c2 \'b8\'de\'bc\'d2\'b5\'e5\
+String [] split("\'ba\'d0\'c7\'d2\'c7\'d2 \'b1\'e2\'c8\'a3") : \'b1\'e2\'c8\'a3 \'b4\'dc\'c0\'a7\'b7\'ce \'ba\'d0\'c7\'d2\'c7\'d8\'bc\'ad \'b9\'e8\'bf\'ad\'b7\'ce \'b8\'ae\'c5\'cf\
+\
+\
+2)\'c0\'a7\'c4\'a1\'b8\'a6 \'b1\'e2\'c1\'d8\'c0\'b8\'b7\'ce \'ba\'d0\'c7\'d2\'c7\'cf\'b4\'c2 \'b8\'de\'bc\'d2\'b5\'e5\
+String subString(int start) : start\'ba\'ce\'c5\'cd \'c0\'fc\'ba\'ce \'ba\'d0\'c7\'d2\
+String subString(int start, int end+1) : start \'ba\'ce\'c5\'cd end\'b1\'ee\'c1\'f6\'b8\'b8 \'ba\'d0\'c7\'d2\'c7\'d8\'bc\'ad \'b8\'ae\'c5\'cf\
+=>subString \'c0\'bb \'ba\'bc \'b6\'a7\'b4\'c2 \'b5\'ce\'b9\'f8\'c2\'b0 \'b8\'c5\'b0\'b3\'ba\'af\'bc\'f6\'b8\'a6 \'c8\'ae\'c0\'ce\'c7\'cf\'b4\'c2 \'bd\'c0\'b0\'fc\'c0\'bb \'b0\'ae\'b5\'b5\'b7\'cf \'c7\'cf\'bc\'bc\'bf\'e4\
+\'be\'ee\'b6\'b2 \'be\'f0\'be\'ee\'b4\'c2 \'b5\'ce\'b9\'f8\'c2\'b0 \'b8\'c5\'b0\'b3\'ba\'af\'bc\'f6\'b0\'a1 \'c0\'a7\'c4\'a1\'b0\'a1 \'be\'c6\'b4\'cf\'b0\'ed \'b0\'b3\'bc\'f6\'c0\'ce \'b0\'e6\'bf\'ec\'b0\'a1 \'c0\'d6\'bd\'c0\'b4\'cf\'b4\'d9.\
+\
+\
+3)\'b9\'ae\'c0\'da\'bf\'ad\'c0\'bb \'c1\'a4\'bc\'f6\'b7\'ce \'ba\'af\'b0\'e6\'c7\'d8\'c1\'d6\'b4\'c2 \'b8\'de\'bc\'d2\'b5\'e5\
+Integer.parseInt(String str) : str\'c0\'bb \'c1\'a4\'bc\'f6\'b7\'ce \'ba\'af\'b0\'e6\'c7\'d8\'bc\'ad \'b8\'ae\'c5\'cf\'c7\'cf\'b4\'c2\'b5\'a5 \'ba\'af\'b0\'e6\'bf\'a1 \'bd\'c7\'c6\'d0\'c7\'cf\'b8\'e9 NumberFormatException\'c0\'cc \'b9\'df\'bb\'fd\'c7\'d5\'b4\'cf\'b4\'d9.\
+\
+
+\f0 \
+
+\f1 \'b7\'ce\'b1\'d7\'bf\'a1\'bc\'ad \'c3\'b9\'b9\'f8\'c2\'b0 \'b5\'a5\'c0\'cc\'c5\'cd\'b4\'c2 \'c1\'a2\'bc\'d3\'c7\'d1 \'c5\'ac\'b6\'f3\'c0\'cc\'be\'f0\'c6\'ae\'c0\'c7 IP \'c0\'d4\'b4\'cf\'b4\'d9.\
+\'c1\'a2\'bc\'d3\'c7\'d1 \'c5\'ac\'b6\'f3\'c0\'cc\'be\'f0\'c6\'ae\'b5\'e9\'c0\'bb \'c1\'df\'ba\'b9\'be\'f8\'c0\'cc \'c3\'e2\'b7\'c2\'c7\'cf\'b0\'ed \'b8\'ee \'b0\'b3\'c0\'c7 IP\'bf\'a1\'bc\'ad \'c1\'a2\'bc\'d3\'c7\'df\'b4\'c2\'c1\'f6 \'c3\'e2\'b7\'c2\
+\
+\
+\
+\cf2 --Serializable : \'b9\'dd\'b5\'e5\'bd\'c3 \'b1\'e2\'be\'ef\
+\cf0 =>\'b0\'b4\'c3\'bc \'c1\'f7\'b7\'c4\'c8\'ad\'b7\'ce \'b9\'f8\'bf\'aa\'c0\'bb \'c7\'cf\'b4\'c2\'b5\'a5 \'bb\'e7\'bf\'eb\'c0\'da\'c1\'a4\'c0\'c7 \'c5\'ac\'b7\'a1\'bd\'ba\'c0\'c7 \'b0\'b4\'c3\'bc\'b8\'a6 \'c6\'c4\'c0\'cf\'c0\'cc\'b3\'aa \'b3\'d7\'c6\'ae\'bf\'f6\'c5\'a9\'c0\'c7 \'bd\'ba\'c6\'ae\'b8\'b2\'bf\'a1 \'c0\'fc\'bc\'db\'c0\'bb \'c7\'d2 \'bc\'f6 \'c0\'d6\'b5\'b5\'b7\'cf \'c7\'d8\'c1\'d6\'b4\'c2 \'c0\'ce\'c5\'cd\'c6\'e4\'c0\'cc\'bd\'ba\
+=>\'b8\'f0\'b5\'e7 \'c0\'ce\'c5\'cd\'c6\'e4\'c0\'cc\'bd\'ba\'b4\'c2 \'c3\'df\'bb\'f3 \'b8\'de\'bc\'d2\'b5\'e5\'b8\'a6 \'bc\'d2\'c0\'af\'c7\'cf\'b0\'ed \'c0\'d6\'be\'ee\'bc\'ad \'c0\'ce\'c5\'cd\'c6\'e4\'c0\'cc\'bd\'ba\'b8\'a6 implements\'c7\'cf\'b8\'e9 \'be\'ee\'b6\'b2 \'b8\'de\'bc\'d2\'b5\'e5\'b8\'a6 \'bf\'c0\'b9\'f6\'b6\'f3\'c0\'cc\'b5\'f9\'c0\'bb \'c7\'d8\'be\'df \'c7\'cf\'b4\'c2\'b5\'a5 Serializable \'b8\'b8\'c0\'ba implements \'b8\'b8 \'c7\'cf\'b8\'e9 \'b1\'b8\'c7\'f6\'c0\'cc \'b5\'cb\'b4\'cf\'b4\'d9.\
+=>\'c0\'cc \'c0\'ce\'c5\'cd\'c6\'e4\'c0\'cc\'bd\'ba\'b0\'a1 \'b1\'b8\'c7\'f6\'b5\'c8 \'c5\'ac\'b7\'a1\'bd\'ba\'c0\'c7 \'b0\'b4\'c3\'bc\'b4\'c2 \'b0\'b4\'c3\'bc \'c0\'da\'c3\'bc\'b8\'a6 \'bd\'ba\'c6\'ae\'b8\'b2\'bf\'a1 \'bb\'e7\'bf\'eb\'c7\'d2 \'bc\'f6 \'c0\'d6\'bd\'c0\'b4\'cf\'b4\'d9.\
+=>\'c0\'c0\'bf\'eb \'c7\'c1\'b7\'ce\'b1\'d7\'b7\'a5\'c0\'bb \'b8\'b8\'b5\'e9 \'b6\'a7\'b3\'aa \'c5\'eb\'bd\'c5\'c0\'bb \'c7\'d2 \'b6\'a7 \'c0\'cc \'b1\'e2\'b4\'c9\'c0\'bb \'bb\'e7\'bf\'eb\
+=>\'be\'c8\'b5\'e5\'b7\'ce\'c0\'cc\'b5\'e5 \'b0\'b0\'c0\'ba \'b0\'e6\'bf\'ec\'b4\'c2 \'c0\'ce\'c5\'cd\'c6\'e4\'c0\'cc\'bd\'ba\'b0\'a1 \'b1\'b8\'c7\'f6\'b5\'c7\'c1\'f6 \'be\'ca\'c0\'ba \'b0\'b4\'c3\'bc\'b4\'c2 \'c8\'ad\'b8\'e9\'b3\'a2\'b8\'ae \'c1\'d6\'b0\'ed\'b9\'de\'c0\'bb \'bc\'f6 \'be\'f8\'bd\'c0\'b4\'cf\'b4\'d9.\
+\
+\
+--ObjectInputStream & objectOutputStream\
+=>Serializable \'c0\'ce\'c5\'cd\'c6\'e4\'c0\'cc\'bd\'ba\'b8\'a6 \'b1\'b8\'c7\'f6\'c7\'d1 \'b0\'b4\'c3\'bc\'b8\'a6 \'c0\'d0\'b0\'ed \'be\'b2\'b1\'e2 \'c0\'a7\'c7\'d1 \'bd\'ba\'c6\'ae\'b8\'b2\
+=>\'b0\'b4\'c3\'bc \'bb\'fd\'bc\'ba\'c0\'ba \'b4\'d9\'b8\'a5 InputStream \'c0\'cc\'b3\'aa OutputStream\'c0\'bb \'b8\'c5\'b0\'b3\'ba\'af\'bc\'f6\'b7\'ce \'b9\'de\'be\'c6\'bc\'ad \'bb\'fd\'bc\'ba\
+=>\'c0\'d0\'b4\'c2 \'b8\'de\'bc\'d2\'b5\'e5\'b4\'c2 Object readObject()\'b8\'de\'bc\'d2\'b5\'e5\'b8\'a6 \'c0\'cc\'bf\'eb\'c7\'d8\'bc\'ad 1\'b0\'b3\'c0\'c7 \'b0\'b4\'c3\'bc\'b8\'a6 \'c0\'d0\'be\'ee\'bf\'c0\'b4\'c2\'b5\'a5 \'b8\'ae\'c5\'cf \'c5\'b8\'c0\'d4\'c0\'cc Object \'c0\'d4\'b4\'cf\'b4\'d9.\
+\'c3\'e2\'b7\'c2\'c0\'bb \'c7\'d2 \'b6\'a7\'b8\'a6 \'c1\'a6\'bf\'dc\'c7\'cf\'b0\'ed\'b4\'c2 \'b1\'e2\'b7\'cf\'c7\'d2 \'b6\'a7 \'bb\'e7\'bf\'eb\'c7\'d1 \'c0\'da\'b7\'e1\'c7\'fc\'c0\'b8\'b7\'ce \'c7\'fc \'ba\'af\'c8\'af\'c7\'d8\'bc\'ad \'bb\'e7\'bf\'eb\'c7\'d8\'be\'df \'c7\'d5\'b4\'cf\'b4\'d9. \
+=>\'b1\'e2\'b7\'cf\'c0\'bb \'c7\'cf\'b4\'c2 \'b8\'de\'bc\'d2\'b5\'e5\'b4\'c2 void writeObject(Serializable Object) \'b8\'de\'bc\'d2\'b5\'e5\'b8\'a3\'b8\'a3 \'c0\'cc\'bf\'eb\'c7\'d5\'b4\'cf\'b4\'d9.\
+Serializable \'c0\'ce\'c5\'cd\'c6\'e4\'c0\'cc\'bd\'ba\'b8\'a6 \'b1\'b8\'c7\'f6\'c7\'cf\'c1\'f6 \'be\'ca\'c0\'ba \'c5\'ac\'b7\'a1\'bd\'ba\'c0\'c7 \'b0\'b4\'c3\'bc\'b8\'a6 \'b4\'eb\'c0\'d4\'c7\'cf\'b8\'e9 CastException\'c0\'cc \'b9\'df\'bb\'fd\'c7\'d5\'b4\'cf\'b4\'d9,\
+Serializable \'b7\'ce \'c7\'fc \'ba\'af\'c8\'af\'c7\'d2 \'bc\'f6 \'be\'f8\'b4\'d9\'b4\'c2 \'bf\'b9\'bf\'dc\'c0\'d4\'b4\'cf\'b4\'d9.\
+=>\'c0\'cc \'c5\'ac\'b7\'a1\'bd\'ba\'b8\'a6 \'c0\'cc\'bf\'eb\'c7\'d8\'bc\'ad \'b1\'e2\'b7\'cf\'c0\'bb \'c7\'cf\'b0\'d4 \'b5\'c7\'b8\'e9 \'bf\'f8\'b7\'a1\'c0\'c7 \'c5\'ac\'b7\'a1\'bd\'ba\'b0\'a1 \'be\'f8\'c0\'b8\'b8\'e9 \'c1\'a6\'b4\'eb\'b7\'ce \'c0\'d0\'be\'ee\'b3\'bb\'c1\'f6\'b8\'a6 \'b8\'f8\'c7\'d5\'b4\'cf\'b4\'d9.\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+--\'bf\'ac\'bd\'c0\'b9\'ae\'c1\'a6 - Map\'c0\'bb \'c0\'cc\'bf\'eb\'c7\'cf\'b8\'e9 \'c1\'b6\'b1\'dd \'bd\'b1\'b0\'d4 \'c7\'d2 \'bc\'f6 \'c0\'d6\'bd\'c0\'b4\'cf\'b4\'d9.\
+\'b0\'a2 IP\'ba\'b0 \'c1\'a2\'bc\'d3 \'c8\'bd\'bc\'f6 \'c3\'e2\'b7\'c2\'c7\'cf\'b1\'e2\
+\'b0\'a2 IP\'ba\'b0 \'c6\'ae\'b7\'a1\'c7\'c8\'c0\'c7 \'c7\'d5\'b0\'e8 \'c3\'e2\'b7\'c2\'c7\'cf\'b1\'e2\
+
+\f0 \
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+}
