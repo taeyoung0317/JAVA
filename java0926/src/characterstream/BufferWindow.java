@@ -21,6 +21,7 @@ public class BufferWindow extends JFrame {
 		
 		
 		setBounds(100,100,300,300);
+		pack();
 		setTitle("로그파일 트래픽의 합계구하기");
 		this.setDefaultCloseOperation(EXIT_ON_CLOSE);
 		setVisible(true);
