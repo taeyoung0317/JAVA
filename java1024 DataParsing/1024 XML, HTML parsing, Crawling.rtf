@@ -1,0 +1,1087 @@
+{\rtf1\ansi\ansicpg949\cocoartf1671\cocoasubrtf600
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset129 AppleSDGothicNeo-Regular;\f2\fnil\fcharset0 Menlo-Bold;
+\f3\fnil\fcharset0 Menlo-Regular;\f4\fnil\fcharset0 Menlo-BoldItalic;\f5\fnil\fcharset0 Menlo-Italic;
+}
+{\colortbl;\red255\green255\blue255;\red127\green0\blue85;\red106\green62\blue62;\red63\green127\blue95;
+\red42\green0\blue255;\red0\green0\blue192;\red0\green128\blue128;\red63\green127\blue127;\red63\green95\blue191;
+}
+{\*\expandedcolortbl;;\csgenericrgb\c49804\c0\c33333;\csgenericrgb\c41569\c24314\c24314;\csgenericrgb\c24706\c49804\c37255;
+\csgenericrgb\c16471\c0\c100000;\csgenericrgb\c0\c0\c75294;\csgenericrgb\c0\c50196\c50196;\csgenericrgb\c24706\c49804\c49804;\csgenericrgb\c24706\c37255\c74902;
+}
+\paperw11900\paperh16840\margl1440\margr1440\vieww19540\viewh25460\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs36 \cf0 **XML Parsing\
+1.XML(eXtensible Markup Language)\
+=>
+\f1 \'c5\'c2\'b1\'d7\'c0\'c7
+\f0  
+\f1 \'b1\'e2\'b4\'c9\'c0\'bb
+\f0  
+\f1 \'b0\'b3\'b9\'df\'c0\'da\'b3\'aa \'bb\'e7\'bf\'eb\'c0\'da\'b0\'a1 \'c7\'d8\'bc\'ae\'c7\'d2 \'bc\'f6 \'c0\'d6\'b4\'c2 \'b8\'b6\'c5\'a9\'be\'f7 \'be\'f0\'be\'ee\
+=>HTML\'c0\'ba \'c5\'c2\'b1\'d7\'c0\'c7 \'b1\'e2\'b4\'c9\'c0\'bb \'ba\'ea\'b6\'f3\'bf\'ec\'c0\'fa\'b0\'a1 \'c7\'d8\'bc\'ae\'c7\'cf\'b1\'e2 \'b6\'a7\'b9\'ae\'bf\'a1 \'ba\'ea\'b6\'f3\'bf\'ec\'c0\'fa\'b8\'b6\'b4\'d9 \'c7\'d8\'bc\'ae\'b5\'b5 \'b4\'d9\'b8\'a3\'b0\'ed \'bf\'f8\'c7\'cf\'b4\'c2 \'c7\'fc\'c5\'c2\'b7\'ce \'c7\'d8\'bc\'ae\'c7\'d2 \'bc\'f6 \'be\'f8\'bd\'c0\'b4\'cf\'b4\'d9.\
+=>XML\'c0\'ba RSS(Rich Site Summary \'b6\'c7\'b4\'c2 Really Simple Syndication)\'bf\'a1 \'c1\'d6\'b7\'ce \'c0\'cc\'bf\'eb\
+RSS\'b4\'c2 \'c0\'da\'c1\'d6 \'ba\'af\'b0\'e6\'b5\'c7\'b4\'c2 \'b3\'bb\'bf\'eb\'c0\'bb \'c1\'a6\'b0\'f8\'c7\'cf\'b1\'e2 \'c0\'a7\'c7\'d8\'bc\'ad \'bb\'e7\'bf\'eb\'b5\'c7\'b4\'c2 \'c0\'a5 \'c7\'c7\'b5\'e5 \'c6\'f7\'b8\'cb\
+\'c0\'cc\'c0\'fc\'c0\'c7 \'c0\'a5\'c0\'ba \'bc\'ad\'b9\'f6\'bf\'a1\'bc\'ad HTML\'c0\'bb \'b8\'b8\'b5\'e9\'be\'ee\'bc\'ad \'c1\'a6\'b0\'f8\'c0\'bb \'c7\'df\'bd\'c0\'b4\'cf\'b4\'d9.\
+\'c0\'da\'c1\'d6 \'ba\'af\'b0\'e6\'b5\'c7\'b4\'c2 \'b3\'bb\'bf\'eb\'c0\'bb \'c8\'ad\'b8\'e9\'bf\'a1\'bc\'ad \'c3\'e2\'b7\'c2\'c7\'cf\'b7\'c1\'b8\'e9 HTML\'c0\'bb \'b0\'e8\'bc\'d3\'c7\'d8\'bc\'ad \'bc\'f6\'c1\'a4\'c7\'d8\'be\'df \'c7\'df\'bd\'c0\'b4\'cf\'b4\'d9.\
+\'c0\'da\'c1\'d6 \'ba\'af\'b0\'e6\'b5\'c7\'b4\'c2 \'b3\'bb\'bf\'eb\'c0\'ba HTML\'b7\'ce \'c1\'a6\'b0\'f8\'b5\'c7\'b4\'c2 \'b0\'cd\'c0\'cc \'be\'c6\'b4\'cf\'b0\'ed XML\'b7\'ce \'c1\'a6\'b0\'f8\'c0\'bb \'c7\'d8\'bc\'ad \'c8\'ad\'b8\'e9\'c0\'bb \'ba\'b8\'b4\'c2 \'c2\'ca\'bf\'a1\'bc\'ad \'bf\'f8\'c7\'cf\'b4\'c2 \'b3\'bb\'bf\'eb\'b8\'b8 \'c3\'df\'c3\'e2\'c7\'d8\'bc\'ad \'ba\'bc \'bc\'f6 \'c0\'d6\'b5\'b5\'b7\'cf \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'c1\'a6\'b0\'f8\'c7\'cf\'b1\'e2 \'bd\'c3\'c0\'db\'c7\'df\'bd\'c0\'b4\'cf\'b4\'d9.\
+\'c0\'cc\'b7\'af\'c7\'d1 \'bc\'ad\'ba\'f1\'bd\'ba\'b8\'a6 RSS\'b6\'f3\'b0\'ed \'c7\'df\'b0\'ed \'c0\'cc \'b6\'a7 \'bb\'e7\'bf\'eb\'c7\'d1 \'b5\'a5\'c0\'cc\'c5\'cd \'c6\'f7\'b8\'cb\'c0\'cc XML\'c0\'d4\'b4\'cf\'b4\'d9.\
+=>\'b4\'eb\'b4\'d9\'bc\'f6 IDE(\'c5\'eb\'c7\'d5\'b0\'b3\'b9\'df\'c8\'af\'b0\'e6)\'c0\'c7 \'bc\'b3\'c1\'a4 \'c6\'f7\'b8\'cb\'c0\'b8\'b7\'ce XML\'c0\'bb \'bb\'e7\'bf\'eb\'c7\'df\'bd\'c0\'b4\'cf\'b4\'d9.\
+=>\'c3\'d6\'b1\'d9\'bf\'a1\'b4\'c2 \'b0\'e6\'b7\'ae\'c0\'c7 JSON \'c7\'fc\'bd\'c4\'c0\'b8\'b7\'ce \'b8\'b9\'c0\'cc \'ba\'af\'b0\'e6\'b5\'c7\'b4\'c2 \'c3\'df\'bc\'bc\'c0\'d4\'b4\'cf\'b4\'d9.\
+\
+\
+2.csv & json & xml \'ba\'f1\'b1\'b3\
+=>\'b9\'f8\'c8\'a3\'bf\'cd \'c0\'cc\'b8\'a7\'b0\'fa \'b3\'aa\'c0\'cc\'b8\'a6 \'c7\'a5\'c7\'f6\'c7\'cf\'b1\'e2\
+\
+1)csv\
+num,name,age\
+1,\'b9\'ae,28\
+2,\'b1\'e8,27\
+=>csv\'b4\'c2 , \'bf\'cd Enter \'b6\'c7\'b4\'c2 \'b0\'f8\'b9\'e9\'c0\'bb \'c0\'cc\'bf\'eb\'c7\'d8\'bc\'ad \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'b1\'b8\'ba\'d0\
+=>csv\'b4\'c2 \'bf\'eb\'b7\'ae\'c0\'cc \'c0\'db\'b1\'e2 \'b6\'a7\'b9\'ae\'bf\'a1 \'ba\'af\'c7\'cf\'c1\'f6 \'be\'ca\'b4\'c2 \'b8\'b9\'c0\'ba \'be\'e7\'c0\'c7 \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'c1\'a6\'b0\'f8\'c7\'d2 \'b6\'a7 \'c1\'d6\'b7\'ce \'c0\'cc\'bf\'eb\
+\
+\
+2)json\
+[\{"num":1,"name":"\'b9\'ae","age":28\},\{"num":2,"name":"\'b1\'e8","age":27\}]\
+=>json\'c0\'ba []  \{\}  :  ,  \'b7\'ce \'b8\'f0\'b5\'e7 \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'c7\'a5\'c7\'f6\
+=>\'bd\'c7\'bd\'c3\'b0\'a3\'c0\'b8\'b7\'ce \'ba\'af\'c7\'cf\'b4\'c2 \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'c1\'a6\'b0\'f8\'c7\'cf\'b0\'ed\'c0\'da \'c7\'d2 \'b6\'a7 \'c1\'d6\'b7\'ce \'c0\'cc\'bf\'eb\
+\
+\
+3)xml\
+<persons>\
+	<boxer num="1">\
+		<name>\'b9\'ae</name>\
+		<age>28</age>\
+	</boxer>\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 	<boxer num="2">\
+		<name>\'b1\'e8</name>\
+		<age>27</age>\
+	</boxer>\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 </persons>\
+=>\'b0\'aa\'c0\'ba \'c5\'c2\'b1\'d7 \'be\'c8\'bf\'a1 \'bc\'d3\'bc\'ba\'c0\'bb \'b8\'b8\'b5\'e9\'be\'ee\'bc\'ad \'bc\'b3\'c1\'a4\'c7\'d2 \'bc\'f6 \'c0\'d6\'b0\'ed \'bc\'ad\'ba\'ea \'c5\'c2\'b1\'d7\'b8\'a6 \'b8\'b8\'b5\'e9\'be\'ee\'bc\'ad \'c5\'c2\'b1\'d7 \'be\'c8\'bf\'a1 \'b0\'aa\'c0\'bb \'bc\'b3\'c1\'a4\'c7\'d2 \'bc\'f6 \'c0\'d6\'bd\'c0\'b4\'cf\'b4\'d9.\
+\'bc\'d3\'bc\'ba\'bf\'a1\'b4\'c2 \'b9\'dd\'b5\'e5\'bd\'c3 \'b9\'ae\'c0\'da\'bf\'ad \'c7\'fc\'c5\'c2\'b7\'ce \'c7\'a5\'c7\'f6\'c7\'d8\'be\'df \'c7\'cf\'b0\'ed 128\'c0\'da \'c0\'cc\'bb\'f3\'c0\'ba \'be\'c8\'b5\'ca\
+=>\'bf\'eb\'b7\'ae\'c0\'ba \'c1\'a6\'c0\'cf \'c5\'a9\'c1\'f6\'b8\'b8 \'bb\'e7\'b6\'f7\'c0\'cc \'be\'cb\'be\'c6\'ba\'b8\'b1\'e2 \'bd\'b1\'bd\'c0\'b4\'cf\'b4\'d9.\
+csv\'b4\'c2 \'b0\'b3\'b9\'df\'c0\'da\'b0\'a1 \'c1\'f7\'c1\'a2 \'c6\'c4\'bd\'cc\'c7\'d8\'be\'df \'c7\'cf\'b4\'c2 \'b0\'e6\'bf\'ec\'b0\'a1 \'b8\'b9\'c1\'f6\'b8\'b8 xml\'b0\'fa json\'c0\'ba \'b6\'f3\'c0\'cc\'ba\'ea\'b7\'af\'b8\'ae\'b0\'a1 \'c1\'a6\'b0\'f8\'b5\'c7\'be\'ee\'bc\'ad \'bd\'b1\'b0\'d4 \'c6\'c4\'bd\'cc\'c7\'d2 \'bc\'f6 \'c0\'d6\'bd\'c0\'b4\'cf\'b4\'d9.\
+xml\'c0\'ba \'bf\'b9\'c0\'fc\'ba\'ce\'c5\'cd \'bb\'e7\'bf\'eb\'c0\'cc \'b5\'c7\'be\'ee\'bf\'d4\'b1\'e2 \'b6\'a7\'b9\'ae\'bf\'a1 \'b4\'eb\'b4\'d9\'bc\'f6\'c0\'c7 \'be\'f0\'be\'ee\'b0\'a1 \'ba\'b0\'b5\'b5\'c0\'c7 \'b6\'f3\'c0\'cc\'ba\'ea\'b7\'af\'b8\'ae \'be\'f8\'c0\'cc \'c6\'c4\'bd\'cc\'c0\'cc \'b0\'a1\'b4\'c9\'c7\'cf\'c1\'f6\'b8\'b8 json\'c0\'ba \'b4\'eb\'ba\'ce\'ba\'d0 \'ba\'b0\'b5\'b5\'c0\'c7 \'b6\'f3\'c0\'cc\'ba\'ea\'b7\'af\'b8\'ae\'b8\'a6 \'c0\'cc\'bf\'eb\'c7\'d8\'be\'df \'c7\'d5\'b4\'cf\'b4\'d9.\
+=>\'be\'c6\'c1\'f7 \'bf\'ec\'b8\'ae\'b3\'aa\'b6\'f3\'b4\'c2 \'b0\'f8\'b0\'f8\'b1\'e2\'b0\'fc Open API\'b0\'a1 XML\'b7\'ce \'b8\'b9\'c0\'cc \'c1\'a6\'b0\'f8\'b5\'cb\'b4\'cf\'b4\'d9.\
+\
+\
+\
+3.XML Parsing \'b9\'e6\'b9\'fd\
+1)DOM(Document Object Model) Parser\
+=>\'c0\'fc\'c3\'bc \'b3\'bb\'bf\'eb\'c0\'bb \'b8\'de\'b8\'f0\'b8\'ae\'bf\'a1 \'c6\'ee\'c3\'c4\'b5\'ce\'b0\'ed \'bf\'f8\'c7\'d1\'b4\'c2 \'c7\'d7\'b8\'f1\'c0\'bb \'c3\'a3\'be\'c6\'b0\'a1\'b4\'c2 \'b9\'e6\'bd\'c4\
+=>\'b8\'de\'b8\'f0\'b8\'ae \'bb\'e7\'bf\'eb\'b7\'ae\'c0\'cc \'b8\'b9\'c1\'f6\'b8\'b8 \'bc\'d3\'b5\'b5\'b0\'a1 \'ba\'fc\'b8\'a7\
+\
+\
+2)SAX(Simple API for XML) Parser\
+=>\'c7\'cf\'b3\'aa\'c7\'cf\'b3\'aa\'c0\'c7 \'c5\'c2\'b1\'d7\'b8\'a6 \'c0\'d0\'be\'ee \'b0\'a1\'b8\'e9\'bc\'ad \'bf\'f8\'c7\'cf\'b4\'c2 \'c7\'d7\'b8\'f1\'c0\'bb \'c3\'df\'c3\'e2\'c7\'cf\'b4\'c2 \'b9\'e6\'bd\'c4\
+=>\'b8\'de\'b8\'f0\'b8\'ae \'bb\'e7\'bf\'eb\'b7\'ae\'c0\'cc \'c0\'fb\'c1\'f6\'b8\'b8 \'bc\'d3\'b5\'b5\'b4\'c2 DOM Parser \'ba\'b8\'b4\'d9\'b4\'c2 \'b4\'c0\'b8\'b2\
+\
+\
+3)2\'b0\'b3\'c0\'c7 \'c6\'c4\'bd\'cc \'b9\'e6\'b9\'fd \'b8\'f0\'b5\'ce \'be\'cb\'b0\'ed\'b8\'ae\'c1\'f2\'c0\'ba \'b8\'f0\'b5\'e7 \'be\'f0\'be\'ee\'bf\'a1\'bc\'ad \'b0\'b0\'c0\'bd\
+\
+\
+\
+4.DOM Parsing\
+1)DocumentBuilderFactory \'b0\'b4\'c3\'bc\'b8\'a6 \'bb\'fd\'bc\'ba - newInstance \'b6\'f3\'b4\'c2 static \'b8\'de\'bc\'d2\'b5\'e5\'b8\'a6 \'c0\'cc\'bf\'eb\
+\
+2)DocumentBuilderFactory \'b0\'b4\'c3\'bc\'b8\'a6 \'c0\'cc\'bf\'eb\'c7\'d8\'bc\'ad DoocumentBuilder \'b0\'b4\'c3\'bc\'b8\'a6 \'bb\'fd\'bc\'ba - newDocumentBuilder \'b6\'f3\'b4\'c2 \'b8\'de\'bc\'d2\'b5\'e5\'b8\'a6 \'c8\'a3\'c3\'e2\'c7\'d8\'bc\'ad \'bb\'fd\'bc\'ba\
+\
+3)DocumentBuilder \'b0\'b4\'c3\'bc\'b8\'a6 \'b0\'a1\'c1\'f6\'b0\'ed \'c6\'c4\'bd\'cc\'c7\'d2 \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'c0\'cc\'bf\'eb\'c7\'d8\'bc\'ad Document \'b0\'b4\'c3\'bc\'b8\'a6 \'bb\'fd\'bc\'ba\
+=>\'b8\'de\'b8\'f0\'b8\'ae\'bf\'a1 \'b8\'f0\'b5\'e7 \'b3\'bb\'bf\'eb\'c0\'bb \'c6\'ee\'c3\'c4 \'b3\'bf\
+parse(InputStream is)\
+parse(String uri)\
+parse(File file)\
+=>\'c0\'a7 3\'b0\'b3\'c0\'c7 \'b8\'de\'bc\'d2\'b5\'e5\'b4\'c2 Document \'b0\'b4\'c3\'bc\'b8\'a6 \'b8\'ae\'c5\'cf\'c7\'d5\'b4\'cf\'b4\'d9.\
+\
+4)Document \'b0\'b4\'c3\'bc\'bf\'a1\'bc\'ad \'b7\'e7\'c6\'ae \'c3\'a3\'b1\'e2\
+getDocumentElement() \'b8\'de\'bc\'d2\'b5\'e5\'b8\'a6 \'c8\'a3\'c3\'e2\'c7\'cf\'b8\'e9 Element \'b0\'b4\'c3\'bc\'b8\'a6 \'b8\'ae\'c5\'cf\'c7\'cf\'b4\'c2\'b5\'a5 \'c0\'cc \'b0\'b4\'c3\'bc\'b0\'a1 Root \'c5\'c2\'b1\'d7\'c0\'d4\'b4\'cf\'b4\'d9.\
+=>4\'b9\'f8\'b1\'ee\'c1\'f6\'b4\'c2 \'b0\'a1\'c1\'ae\'bf\'c0\'b4\'c2 \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'b8 \'b4\'d9\'b8\'a3\'c1\'f6 \'c7\'d7\'bb\'f3 \'b5\'bf\'c0\'cf\'c7\'cf\'b0\'d4 \'bc\'f6\'c7\'e0\
+\
+5)Root \'b7\'ce\'ba\'ce\'c5\'cd \'bf\'f8\'c7\'cf\'b4\'c2 \'c5\'c2\'b1\'d7 \'c3\'a3\'b1\'e2\
+getElementsByTagName(String tag) : tag\'b8\'a6 \'c3\'a3\'be\'c6\'bc\'ad NodeList \'c5\'b8\'c0\'d4\'c0\'b8\'b7\'ce \'b8\'ae\'c5\'cf\
+=>\'c5\'c2\'b1\'d7\'b4\'c2 \'b5\'bf\'c0\'cf\'c7\'d1 \'b0\'aa\'c0\'bb \'b0\'a1\'c1\'fa \'bc\'f6 \'c0\'d6\'b1\'e2 \'b6\'a7\'b9\'ae\'bf\'a1 Collection\'c0\'c7 \'c7\'fc\'c5\'c2\'b7\'ce \'b8\'ae\'c5\'cf\
+=>tag, class, selector, name\'b4\'c2 \'c1\'df\'ba\'b9\'c0\'cc \'b0\'a1\'b4\'c9\
+=>id, xpath\'b4\'c2 \'c1\'df\'ba\'b9\'c0\'cc \'ba\'d2\'b0\'a1\'b4\'c9\
+\
+6)NodeList\'b4\'c2 Node\'c0\'c7 \'b8\'f0\'c0\'d3\
+=>getLength() : Node\'c0\'c7 \'b0\'b3\'bc\'f6 \'b8\'ae\'c5\'cf\
+=>item(int index) : index \'b9\'f8\'c2\'b0\'bf\'a1 \'c7\'d8\'b4\'e7\'c7\'cf\'b4\'c2 Node\'b8\'a6 \'b8\'ae\'c5\'cf\
+\
+7)Node\
+=>getFirstChild() : \'c3\'b9\'b9\'f8\'c2\'b0 \'c0\'da\'bd\'c4 \'b3\'eb\'b5\'e5\'b8\'a6 \'c3\'a3\'b4\'c2 \'b8\'de\'bc\'d2\'b5\'e5\
+=>getNodeValue() : \'c5\'c2\'b1\'d7 \'be\'c8\'c0\'c7 \'c5\'d8\'bd\'ba\'c6\'ae\'b8\'a6 \'b8\'ae\'c5\'cf\
+=>getAttribute() : \'c5\'c2\'b1\'d7 \'be\'c8\'c0\'c7 \'bc\'d3\'bc\'ba\'c0\'c7 \'b0\'aa\'c0\'bb NamedNodeMap\'c0\'bb \'b8\'ae\'c5\'cf\
+\
+\
+\
+5.\'c7\'d1\'b0\'dc\'b7\'b9 \'bd\'c5\'b9\'ae\'bb\'e7\'c0\'c7 \'c0\'fc\'c3\'bc \'b1\'e2\'bb\'e7 XML\'c0\'bb \'b0\'a1\'c1\'ae\'bf\'cd\'bc\'ad \'c5\'b8\'c0\'cc\'c6\'b2\'b8\'b8 \'c3\'e2\'b7\'c2\
+1)\'c7\'d1\'b0\'dc\'b7\'b9 \'bd\'c5\'b9\'ae\'bb\'e7 \'c0\'fc\'c3\'bc\'b1\'e2\'bb\'e7 XML\'c0\'c7 URL\
+http://www.hani.co.kr/rss/\
+\
+2)main \'b8\'de\'bc\'d2\'b5\'e5\'b8\'a6 \'b8\'b8\'b5\'e9\'be\'ee\'bc\'ad \'c0\'db\'bc\'ba\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f2\b\fs24 \cf2 package
+\f3\b0 \cf0  xml;\
+\
+
+\f2\b \cf2 import
+\f3\b0 \cf0  java.io.BufferedReader;\
+
+\f2\b \cf2 import
+\f3\b0 \cf0  java.io.ByteArrayInputStream;\
+
+\f2\b \cf2 import
+\f3\b0 \cf0  java.io.InputStream;\
+
+\f2\b \cf2 import
+\f3\b0 \cf0  java.io.InputStreamReader;\
+
+\f2\b \cf2 import
+\f3\b0 \cf0  java.net.HttpURLConnection;\
+
+\f2\b \cf2 import
+\f3\b0 \cf0  java.net.URL;\
+\
+
+\f2\b \cf2 import
+\f3\b0 \cf0  javax.xml.parsers.DocumentBuilder;\
+
+\f2\b \cf2 import
+\f3\b0 \cf0  javax.xml.parsers.DocumentBuilderFactory;\
+\
+
+\f2\b \cf2 import
+\f3\b0 \cf0  org.w3c.dom.Document;\
+
+\f2\b \cf2 import
+\f3\b0 \cf0  org.w3c.dom.Element;\
+
+\f2\b \cf2 import
+\f3\b0 \cf0  org.w3c.dom.Node;\
+
+\f2\b \cf2 import
+\f3\b0 \cf0  org.w3c.dom.NodeList;\
+\
+
+\f2\b \cf2 public
+\f3\b0 \cf0  
+\f2\b \cf2 class
+\f3\b0 \cf0  XMLParsing \{\
+\
+	
+\f2\b \cf2 public
+\f3\b0 \cf0  
+\f2\b \cf2 static
+\f3\b0 \cf0  
+\f2\b \cf2 void
+\f3\b0 \cf0  main(String[] \cf3 args\cf0 ) \{\
+		\cf4 //
+\f1 \'b4\'d9\'bf\'ee\'b7\'ce\'b5\'e5
+\f3  
+\f1 \'b9\'de\'c0\'ba
+\f3  
+\f1 \'b9\'ae\'c0\'da\'bf\'ad\'c0\'bb
+\f3  
+\f1 \'c0\'fa\'c0\'e5\'c7\'d2
+\f3  
+\f1 \'ba\'af\'bc\'f6
+\f3 \cf0 \
+		String \cf3 xml\cf0  = 
+\f2\b \cf2 null
+\f3\b0 \cf0 ;\
+		
+\f2\b \cf2 try
+\f3\b0 \cf0  \{\
+			\cf4 //
+\f1 \'b4\'d9\'bf\'ee\'b7\'ce\'b5\'e5
+\f3  
+\f1 \'b9\'de\'c0\'bb
+\f3  
+\f1 \'c1\'d6\'bc\'d2
+\f3  
+\f1 \'bb\'fd\'bc\'ba
+\f3 \cf0 \
+			\cf4 //
+\f1 \'c7\'d1\'b1\'db\'c0\'cc
+\f3  
+\f1 \'c6\'f7\'c7\'d4\'b5\'c8
+\f3  
+\f1 \'b0\'e6\'bf\'ec\'b4\'c2
+\f3  
+\f1 \'c7\'d1\'b1\'db\'c0\'ba
+\f3  
+\f1 \'c0\'ce\'c4\'da\'b5\'f9\'c7\'d8\'be\'df
+\f3  
+\f1 \'c7\'d5\'b4\'cf\'b4\'d9
+\f3 .\cf0 \
+			\cf4 //URLEncoder.encode(
+\f1 \'c7\'d1\'b1\'db
+\f3 , "utf8")\cf0 \
+			String \cf3 addr\cf0  = \cf5 "http://www.hani.co.kr/rss/"\cf0 ;\
+			\cf4 //URL
+\f1 \'b7\'ce
+\f3  
+\f1 \'bb\'fd\'bc\'ba
+\f3 \cf0 \
+			URL \cf3 url\cf0  = 
+\f2\b \cf2 new
+\f3\b0 \cf0  URL(\cf3 addr\cf0 );\
+			\cf4 //
+\f1 \'bf\'ac\'b0\'e1\'c7\'cf\'b1\'e2
+\f3 \cf0 \
+			HttpURLConnection \cf3 con\cf0  = (HttpURLConnection) \cf3 url\cf0 .openConnection();\
+			\cf3 con\cf0 .setConnectTimeout(30000);\
+			\cf4 //
+\f1 \'b5\'a5\'c0\'cc\'c5\'cd
+\f3  
+\f1 \'c0\'d0\'b1\'e2
+\f3 \cf0 \
+			BufferedReader \cf3 br\cf0  = 
+\f2\b \cf2 new
+\f3\b0 \cf0  BufferedReader(
+\f2\b \cf2 new
+\f3\b0 \cf0  InputStreamReader(\cf3 con\cf0 .getInputStream()));\
+			\
+			StringBuilder \cf3 sb\cf0  = 
+\f2\b \cf2 new
+\f3\b0 \cf0  StringBuilder();\
+			\
+			
+\f2\b \cf2 while
+\f3\b0 \cf0 (
+\f2\b \cf2 true
+\f3\b0 \cf0 ) \{\
+				String \cf3 line\cf0  = \cf3 br\cf0 .readLine();\
+				
+\f2\b \cf2 if
+\f3\b0 \cf0 (\cf3 line\cf0 ==
+\f2\b \cf2 null
+\f3\b0 \cf0 ) \{\
+					
+\f2\b \cf2 break
+\f3\b0 \cf0 ;\
+				\}\
+				\cf3 sb\cf0 .append(\cf3 line\cf0 +\cf5 "\\n"\cf0 );\
+			\}\
+			\cf3 xml\cf0 =\cf3 sb\cf0 .toString();\
+			\cf3 br\cf0 .close();\
+			\cf3 con\cf0 .disconnect();\
+			\cf4 //System.out.printf("%s\\n", \ul xml\ulnone );\cf0 \
+			\
+		\}
+\f2\b \cf2 catch
+\f3\b0 \cf0 (Exception \cf3 e\cf0 ) \{\
+			System.
+\f4\i\b \cf6 out
+\f3\i0\b0 \cf0 .printf(\cf5 "
+\f1 \'b4\'d9\'bf\'ee\'b7\'ce\'b5\'e5
+\f3  
+\f1 \'bf\'b9\'bf\'dc
+\f3 :%s\\n"\cf0 , \cf3 e\cf0 .getMessage());\
+			\cf3 e\cf0 .printStackTrace();\
+		\}\
+		\
+		
+\f2\b \cf2 try
+\f3\b0 \cf0  \{\
+			DocumentBuilderFactory \cf3 factory\cf0  = DocumentBuilderFactory.
+\f5\i newInstance
+\f3\i0 ();\
+			DocumentBuilder \cf3 documentBuilder\cf0  = \cf3 factory\cf0 .newDocumentBuilder();\
+			\cf4 //
+\f1 \'b9\'ae\'c0\'da\'bf\'ad\'c0\'bb
+\f3  
+\f1 \'bd\'ba\'c6\'ae\'b8\'b2\'c0\'b8\'b7\'ce
+\f3  
+\f1 \'ba\'af\'c8\'af\'c7\'cf\'b1\'e2
+\f3 \cf0 \
+			InputStream \cf3 is\cf0  = 
+\f2\b \cf2 new
+\f3\b0 \cf0  ByteArrayInputStream(\cf3 xml\cf0 .getBytes());\
+			\cf4 //
+\f1 \'b8\'de\'b8\'f0\'b8\'ae\'bf\'a1
+\f3  
+\f1 \'c6\'ee\'c4\'a1\'b1\'e2
+\f3 \cf0 \
+			Document \cf3 document\cf0  = \cf3 documentBuilder\cf0 .parse(\cf3 is\cf0 );\
+			\cf4 //
+\f1 \'b7\'e7\'c6\'ae
+\f3  
+\f1 \'c3\'a3\'be\'c6\'bf\'c0\'b1\'e2
+\f3 \cf0 \
+			Element \cf3 root\cf0  = \cf3 document\cf0 .getDocumentElement();\
+			\cf4 //title 
+\f1 \'c5\'c2\'b1\'d7\'b8\'a6
+\f3  
+\f1 \'c3\'a3\'be\'c6\'bf\'c0\'b1\'e2
+\f3 \cf0 \
+			NodeList \cf3 titles\cf0  = \cf3 root\cf0 .getElementsByTagName(\cf5 "title"\cf0 );\
+			
+\f2\b \cf2 for
+\f3\b0 \cf0 (
+\f2\b \cf2 int
+\f3\b0 \cf0  \cf3 i\cf0 =0;\cf3 i\cf0 <\cf3 titles\cf0 .getLength();\cf3 i\cf0 =\cf3 i\cf0 +1) \{\
+				
+\f2\b \cf2 if
+\f3\b0 \cf0 (\cf3 i\cf0 ==0)
+\f2\b \cf2 continue
+\f3\b0 \cf0 ;\
+				Node \cf3 node\cf0  = \cf3 titles\cf0 .item(\cf3 i\cf0 );\
+				Node \cf3 title\cf0  = \cf3 node\cf0 .getFirstChild();\
+				System.
+\f4\i\b \cf6 out
+\f3\i0\b0 \cf0 .printf(\cf5 "%s\\n"\cf0 , \cf3 title\cf0 .getNodeValue());\
+			\}\
+			\
+		\}
+\f2\b \cf2 catch
+\f3\b0 \cf0 (Exception \cf3 e\cf0 ) \{\
+			System.
+\f4\i\b \cf6 out
+\f3\i0\b0 \cf0 .printf(\cf5 "xml
+\f1 \'c6\'c4\'bd\'cc
+\f3  
+\f1 \'bf\'b9\'bf\'dc
+\f3 :%s\\n"\cf0 ,\cf3 e\cf0 .getMessage());\
+			\cf3 e\cf0 .printStackTrace();\
+		\}\
+	\}\
+\
+\}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f1\fs36 \cf0 \
+\
+\
+6.\'b1\'e2\'bb\'f3\'c3\'bb \'b3\'af\'be\'be API\'bf\'a1\'bc\'ad \'bf\'f8\'c7\'cf\'b4\'c2 \'c1\'a4\'ba\'b8\'b8\'a6 \'c3\'df\'c3\'e2\
+\'be\'c6\'b7\'a1 \'c1\'d6\'bc\'d2\'bf\'a1\'bc\'ad \'c7\'e2\'c8\'c4 \'c0\'cf\'c1\'d6\'c0\'cf \'b3\'af\'be\'be\'b8\'a6 \'b0\'a1\'c1\'ae\'bf\'c2 \'c8\'c4 \'b5\'b5\'bd\'c3\'c0\'cc\'b8\'a7, \'b3\'af\'c2\'a5, \'b3\'af\'be\'be\'b8\'a6 \'c3\'e2\'b7\'c2\'c7\'cf\'b1\'e2\
+http://www.weather.go.kr/weather/forecast/mid-term-xml.jsp?stnld=109\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f2\b\fs24 \cf2 package
+\f3\b0 \cf0  xml;\
+\
+
+\f2\b \cf2 import
+\f3\b0 \cf0  java.io.BufferedReader;\
+
+\f2\b \cf2 import
+\f3\b0 \cf0  java.io.ByteArrayInputStream;\
+
+\f2\b \cf2 import
+\f3\b0 \cf0  java.io.InputStream;\
+
+\f2\b \cf2 import
+\f3\b0 \cf0  java.io.InputStreamReader;\
+
+\f2\b \cf2 import
+\f3\b0 \cf0  java.net.HttpURLConnection;\
+
+\f2\b \cf2 import
+\f3\b0 \cf0  java.net.URL;\
+
+\f2\b \cf2 import
+\f3\b0 \cf0  java.util.ArrayList;\
+
+\f2\b \cf2 import
+\f3\b0 \cf0  java.util.List;\
+\
+
+\f2\b \cf2 import
+\f3\b0 \cf0  javax.xml.parsers.DocumentBuilder;\
+
+\f2\b \cf2 import
+\f3\b0 \cf0  javax.xml.parsers.DocumentBuilderFactory;\
+\
+
+\f2\b \cf2 import
+\f3\b0 \cf0  org.w3c.dom.Document;\
+
+\f2\b \cf2 import
+\f3\b0 \cf0  org.w3c.dom.Element;\
+
+\f2\b \cf2 import
+\f3\b0 \cf0  org.w3c.dom.Node;\
+
+\f2\b \cf2 import
+\f3\b0 \cf0  org.w3c.dom.NodeList;\
+\
+
+\f2\b \cf2 public
+\f3\b0 \cf0  
+\f2\b \cf2 class
+\f3\b0 \cf0  KMAXMLParsing \{\
+\
+	
+\f2\b \cf2 public
+\f3\b0 \cf0  
+\f2\b \cf2 static
+\f3\b0 \cf0  
+\f2\b \cf2 void
+\f3\b0 \cf0  main(String[] \cf3 args\cf0 ) \{\
+		\cf4 //
+\f1 \'b1\'e2\'bb\'f3\'c3\'bb
+\f3  
+\f1 \'b3\'af\'be\'be
+\f3  
+\f1 \'b5\'a5\'c0\'cc\'c5\'cd
+\f3  
+\f1 \'b0\'a1\'c1\'ae\'bf\'c0\'b1\'e2
+\f3 \cf0 \
+		String \cf3 xml\cf0  = 
+\f2\b \cf2 null
+\f3\b0 \cf0 ;\
+		
+\f2\b \cf2 try
+\f3\b0 \cf0  \{\
+			\cf4 //
+\f1 \'c1\'d6\'bc\'d2
+\f3  
+\f1 \'b8\'b8\'b5\'e9\'b1\'e2
+\f3 \cf0 \
+			String \cf3 addr\cf0  = \cf5 "http://www.weather.go.kr/weather/forecast/mid-term-xml.jsp?stnld=109"\cf0 ;\
+			URL \cf3 url\cf0  = 
+\f2\b \cf2 new
+\f3\b0 \cf0  URL(\cf3 addr\cf0 );\
+			\cf4 //
+\f1 \'bf\'ac\'b0\'e1
+\f3 \cf0 \
+			HttpURLConnection \cf3 con\cf0  = (HttpURLConnection) \cf3 url\cf0 .openConnection();\
+			\cf3 con\cf0 .setConnectTimeout(30000);\
+			\cf4 //
+\f1 \'b5\'a5\'c0\'cc\'c5\'cd
+\f3  
+\f1 \'c0\'d0\'be\'ee\'bc\'ad
+\f3  
+\f1 \'c0\'fa\'c0\'e5\'c7\'cf\'b1\'e2
+\f3 \cf0 \
+			BufferedReader \cf3 br\cf0  = 
+\f2\b \cf2 new
+\f3\b0 \cf0  BufferedReader(
+\f2\b \cf2 new
+\f3\b0 \cf0  InputStreamReader(\cf3 con\cf0 .getInputStream()));\
+			\cf4 //
+\f1 \'c7\'d1
+\f3  
+\f1 \'c1\'d9\'be\'bf
+\f3  
+\f1 \'c0\'d0\'be\'ee\'bc\'ad
+\f3  StringBuilder
+\f1 \'bf\'a1
+\f3  
+\f1 \'c0\'fa\'c0\'e5
+\f3 \cf0 \
+			StringBuilder \cf3 sb\cf0  = 
+\f2\b \cf2 new
+\f3\b0 \cf0  StringBuilder();\
+			
+\f2\b \cf2 while
+\f3\b0 \cf0 (
+\f2\b \cf2 true
+\f3\b0 \cf0 ) \{\
+				String \cf3 line\cf0  = \cf3 br\cf0 .readLine();\
+				
+\f2\b \cf2 if
+\f3\b0 \cf0 (\cf3 line\cf0 ==
+\f2\b \cf2 null
+\f3\b0 \cf0 ) \{\
+					
+\f2\b \cf2 break
+\f3\b0 \cf0 ;\
+				\}\
+				\cf3 sb\cf0 .append(\cf3 line\cf0 +\cf5 "\\n"\cf0 );\
+			\}\
+			\cf4 //
+\f1 \'b5\'a5\'c0\'cc\'c5\'cd
+\f3  
+\f1 \'bf\'c5\'b1\'e2\'b1\'e2
+\f3 \cf0 \
+			\cf3 xml\cf0  = \cf3 sb\cf0 .toString();\
+			\cf4 //System.out.printf("%s\\n", \ul xml\ulnone );\cf0 \
+			\cf4 //
+\f1 \'bf\'ac\'b0\'e1\'b2\'f7\'b1\'e2
+\f3 \cf0 \
+			\cf3 br\cf0 .close();\
+			\cf3 con\cf0 .disconnect();\
+			\
+		\}
+\f2\b \cf2 catch
+\f3\b0 \cf0 (Exception \cf3 e\cf0 ) \{\
+			System.
+\f4\i\b \cf6 out
+\f3\i0\b0 \cf0 .printf(\cf5 "
+\f1 \'b4\'d9\'bf\'ee\'b7\'ce\'b5\'e5
+\f3  
+\f1 \'bf\'b9\'bf\'dc
+\f3 :%s\\n"\cf0 , \cf3 e\cf0 .getMessage());\
+			\cf3 e\cf0 .printStackTrace();\
+		\}\
+		\
+		
+\f2\b \cf2 try
+\f3\b0 \cf0  \{\
+			\cf4 //
+\f1 \'c6\'c4\'bd\'cc\'c0\'bb
+\f3  
+\f1 \'bc\'f6\'c7\'e0\'c7\'d2
+\f3  
+\f1 \'b0\'b4\'c3\'bc
+\f3  
+\f1 \'bb\'fd\'bc\'ba
+\f3 \cf0 \
+			DocumentBuilderFactory \cf3 factory\cf0  = DocumentBuilderFactory.
+\f5\i newInstance
+\f3\i0 ();\
+			DocumentBuilder \cf3 documentBuilder\cf0  = \cf3 factory\cf0 .newDocumentBuilder();\
+			\cf4 //
+\f1 \'c6\'c4\'bd\'cc\'c0\'bb
+\f3  
+\f1 \'bc\'f6\'c7\'e0\'c7\'d2
+\f3  
+\f1 \'b5\'a5\'c0\'cc\'c5\'cd
+\f3  
+\f1 \'b8\'b8\'b5\'e9\'b1\'e2
+\f3 \cf0 \
+			InputStream \cf3 is\cf0  = 
+\f2\b \cf2 new
+\f3\b0 \cf0  ByteArrayInputStream(\cf3 xml\cf0 .getBytes());\
+			\cf4 //
+\f1 \'b8\'de\'b8\'f0\'b8\'ae\'bf\'a1
+\f3  
+\f1 \'c0\'fc\'ba\'ce
+\f3  
+\f1 \'c6\'ee\'c4\'a1\'b1\'e2
+\f3 \cf0 \
+			Document \cf3 document\cf0  = \cf3 documentBuilder\cf0 .parse(\cf3 is\cf0 );\
+			\cf4 //
+\f1 \'b7\'e7\'c6\'ae
+\f3  
+\f1 \'c3\'a3\'b1\'e2
+\f3 \cf0 \
+			Element \cf3 element\cf0  = \cf3 document\cf0 .getDocumentElement();\
+			\cf4 //city 
+\f1 \'c5\'c2\'b1\'d7\'c0\'c7
+\f3  
+\f1 \'b3\'bb\'bf\'eb\'c0\'bb
+\f3  
+\f1 \'c3\'a3\'be\'c6\'bc\'ad
+\f3  List
+\f1 \'bf\'a1
+\f3  
+\f1 \'c0\'fa\'c0\'e5
+\f3 \cf0 \
+			List<String>\cf3 cities\cf0  = 
+\f2\b \cf2 new
+\f3\b0 \cf0  ArrayList<>();\
+			\cf4 //city 
+\f1 \'c5\'c2\'b1\'d7
+\f3  
+\f1 \'c0\'fc\'ba\'ce
+\f3  
+\f1 \'b0\'a1\'c1\'ae\'bf\'c0\'b1\'e2
+\f3 \cf0 \
+			NodeList \cf3 cityList\cf0  = \cf3 element\cf0 .getElementsByTagName(\cf5 "city"\cf0 );\
+			
+\f2\b \cf2 for
+\f3\b0 \cf0 (
+\f2\b \cf2 int
+\f3\b0 \cf0  \cf3 i\cf0 =0;\cf3 i\cf0 <\cf3 cityList\cf0 .getLength();\cf3 i\cf0 =\cf3 i\cf0 +1) \{\
+				Node \cf3 item\cf0  = \cf3 cityList\cf0 .item(\cf3 i\cf0 );\
+				Node \cf3 city\cf0  = \cf3 item\cf0 .getFirstChild();\
+				\cf3 cities\cf0 .add(\cf3 city\cf0 .getNodeValue());\
+			\}\
+			\
+			\cf4 //
+\f1 \'b3\'af\'c2\'a5\'b8\'a6
+\f3  
+\f1 \'b0\'a1\'c1\'ae\'bf\'cd\'bc\'ad
+\f3  
+\f1 \'c0\'fc\'ba\'ce
+\f3  
+\f1 \'c0\'fa\'c0\'e5\'c7\'cf\'b1\'e2
+\f3 \cf0 \
+			List<String>\cf3 dateList\cf0  = 
+\f2\b \cf2 new
+\f3\b0 \cf0  ArrayList<>();\
+			\cf4 //tmEf 
+\f1 \'c5\'c2\'b1\'d7\'c0\'c7
+\f3  
+\f1 \'b0\'aa
+\f3  
+\f1 \'b0\'a1\'c1\'ae\'bf\'c0\'b1\'e2
+\f3 \cf0 \
+			NodeList \cf3 tmef\cf0  = \cf3 element\cf0 .getElementsByTagName(\cf5 "tmEf"\cf0 );\
+			
+\f2\b \cf2 for
+\f3\b0 \cf0 (
+\f2\b \cf2 int
+\f3\b0 \cf0  \cf3 i\cf0 =0;\cf3 i\cf0 <\cf3 tmef\cf0 .getLength();\cf3 i\cf0 =\cf3 i\cf0 +1) \{\
+				Node \cf3 item\cf0  = \cf3 tmef\cf0 .item(\cf3 i\cf0 );\
+				Node \cf3 t\cf0  = \cf3 item\cf0 .getFirstChild();\
+				\cf3 dateList\cf0 .add(\cf3 t\cf0 .getNodeValue());\
+			\}\
+			\
+			\cf4 //\ul wf\ulnone  
+\f1 \'c5\'c2\'b1\'d7\'c0\'c7
+\f3  
+\f1 \'b0\'aa
+\f3  
+\f1 \'c0\'fa\'c0\'e5\'c7\'cf\'b1\'e2
+\f3 \cf0 \
+			List<String>\cf3 weatherList\cf0  = 
+\f2\b \cf2 new
+\f3\b0 \cf0  ArrayList<>();\
+			NodeList \cf3 wfList\cf0  = \cf3 element\cf0 .getElementsByTagName(\cf5 "wf"\cf0 );\
+			
+\f2\b \cf2 for
+\f3\b0 \cf0 (
+\f2\b \cf2 int
+\f3\b0 \cf0  \cf3 i\cf0 =0;\cf3 i\cf0 <\cf3 wfList\cf0 .getLength();\cf3 i\cf0 =\cf3 i\cf0 +1) \{\
+				\cf4 //
+\f1 \'c3\'b9\'b9\'f8\'c2\'b0
+\f3  
+\f1 \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6
+\f3  
+\f1 \'bb\'e7\'bf\'eb\'c7\'cf\'c1\'f6
+\f3  
+\f1 \'be\'ca\'b1\'e2
+\f3  
+\f1 \'c0\'a7\'c7\'d8\'bc\'ad
+\f3  \cf0 \
+				\cf4 //
+\f1 \'c3\'b9\'b9\'f8\'c2\'b0
+\f3  
+\f1 \'b5\'a5\'c0\'cc\'c5\'cd\'c0\'ce
+\f3  
+\f1 \'b0\'e6\'bf\'ec\'b4\'c2
+\f3  
+\f1 \'b4\'d9\'c0\'bd\'c0\'b8\'b7\'ce
+\f3  
+\f1 \'b3\'d1\'b1\'e2\'b1\'e2
+\f3 \cf0 \
+				
+\f2\b \cf2 if
+\f3\b0 \cf0 (\cf3 i\cf0 ==0) \{\
+					
+\f2\b \cf2 continue
+\f3\b0 \cf0 ;\
+				\}\
+				Node \cf3 item\cf0  = \cf3 wfList\cf0 .item(\cf3 i\cf0 );\
+				Node \cf3 wf\cf0  = \cf3 item\cf0 .getFirstChild();\
+				\cf3 weatherList\cf0 .add(\cf3 wf\cf0 .getNodeValue());\
+			\}\
+			
+\f2\b \cf2 int
+\f3\b0 \cf0  \cf3 i\cf0  = 0;\
+			
+\f2\b \cf2 for
+\f3\b0 \cf0 (String \cf3 city\cf0  : \cf3 cities\cf0 ) \{\
+				System.
+\f4\i\b \cf6 out
+\f3\i0\b0 \cf0 .printf(\cf5 "%s\\n"\cf0 , \cf3 city\cf0 );\
+				
+\f2\b \cf2 for
+\f3\b0 \cf0 (
+\f2\b \cf2 int
+\f3\b0 \cf0  \cf3 j\cf0 =0;\cf3 j\cf0 <6;\cf3 j\cf0 =\cf3 j\cf0 +1) \{\
+					System.
+\f4\i\b \cf6 out
+\f3\i0\b0 \cf0 .printf(\cf5 "\\t
+\f1 \'b3\'af\'c2\'a5
+\f3 :%s 
+\f1 \'b3\'af\'be\'be
+\f3 :%s\\n"\cf0 , \cf3 dateList\cf0 .get(\cf3 i\cf0 *6+\cf3 j\cf0 ),\cf3 weatherList\cf0 .get(\cf3 i\cf0 *6+\cf3 j\cf0 ));\
+				\}\
+				\
+				\cf3 i\cf0 =\cf3 i\cf0 +1;\
+			\}\
+			\
+		\}
+\f2\b \cf2 catch
+\f3\b0 \cf0 (Exception \cf3 e\cf0 ) \{\
+			System.
+\f4\i\b \cf6 out
+\f3\i0\b0 \cf0 .printf(\cf5 "XML Parsing 
+\f1 \'bf\'b9\'bf\'dc
+\f3 :%s\\n"\cf0 , \cf3 e\cf0 .getMessage());\
+			\cf3 e\cf0 .printStackTrace();\
+		\}\
+	\}\
+\
+\}\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f1\fs36 \cf0 \
+\
+\
+\
+**HTML Parsing\
+=>HTML\'c0\'ba \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'c0\'a7\'c7\'d1 \'b0\'cd\'c0\'cc \'be\'c6\'b4\'cf\'b0\'ed \'ba\'ea\'b6\'f3\'bf\'ec\'c0\'fa\'bf\'a1 \'c3\'e2\'b7\'c2\'c0\'bb \'c7\'cf\'b1\'e2 \'c0\'a7\'c7\'d8\'bc\'ad \'b8\'b8\'b5\'e7 MarkUp Language \'c0\'d4\'b4\'cf\'b4\'d9.\
+\'c5\'c2\'b1\'d7\'c0\'c7 \'c7\'d8\'bc\'ae\'c0\'bb \'ba\'ea\'b6\'f3\'bf\'ec\'c0\'fa\'b0\'a1 \'c7\'d8\'bc\'ad \'c8\'ad\'b8\'e9\'c0\'bb \'c3\'e2\'b7\'c2\'c7\'d5\'b4\'cf\'b4\'d9.\
+\'b5\'bf\'c0\'cf\'c7\'d1 HTML \'c0\'cc\'b4\'f5\'b6\'f3\'b5\'b5 \'c7\'d8\'bc\'ae\'c7\'cf\'b4\'c2 \'ba\'ea\'b6\'f3\'bf\'ec\'c0\'fa\'bf\'a1 \'b5\'fb\'b6\'f3\'bc\'ad \'b4\'d9\'b8\'a3\'b0\'d4 \'ba\'b8\'c0\'d4\'b4\'cf\'b4\'d9.\
+\'bf\'f8\'b7\'a1\'b4\'c2 HTML \'c6\'c4\'bd\'cc\'c0\'bb \'c7\'cf\'b4\'c2 \'c0\'cc\'c0\'af\'b4\'c2 \'ba\'ea\'b6\'f3\'bf\'ec\'c0\'fa\'b8\'a6 \'b8\'b8\'b5\'e9\'b1\'e2 \'c0\'a7\'c7\'d8\'bc\'ad \'c0\'d4\'b4\'cf\'b4\'d9.\
+=>\'bc\'ad\'ba\'f1\'bd\'ba\'b8\'a6 \'c1\'a6\'b0\'f8\'c7\'cf\'b4\'c2 \'b0\'f7\'bf\'a1\'bc\'ad HTML\'b7\'ce \'c8\'ad\'b8\'e9\'bf\'a1 \'ba\'b8\'bf\'a9\'c1\'d6\'b1\'e2\'b4\'c2 \'c7\'cf\'b4\'c2\'b5\'a5 Open API\'b7\'ce \'c1\'a6\'b0\'f8\'c7\'cf\'c1\'f6 \'be\'ca\'b4\'c2 \'b0\'e6\'bf\'ec\'bf\'a1 HTML\'b7\'ce \'ba\'b8\'bf\'a9\'c1\'f8 \'c8\'ad\'b8\'e9\'bf\'a1\'bc\'ad \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'c3\'a3\'be\'c6\'bc\'ad \'bb\'e7\'bf\'eb\'c7\'cf\'b1\'e2 \'c0\'a7\'c7\'d8\'bc\'ad HTML \'c6\'c4\'bd\'cc\'c0\'bb \'c7\'d5\'b4\'cf\'b4\'d9.\
+HTML\'c0\'bb \'bc\'f6\'c1\'fd\'c7\'cf\'b4\'c2 \'b0\'cd\'c0\'bb \'bd\'ba\'c5\'a9\'b7\'a1\'c7\'ce\'c0\'cc\'b6\'f3\'b0\'ed \'c7\'cf\'b0\'ed \'bf\'f8\'c7\'cf\'b4\'c2 \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'b8 \'c3\'df\'c3\'e2\'c7\'cf\'b4\'c2 \'b0\'cd\'c0\'bb \'c6\'c4\'bd\'cc\'c0\'cc\'b6\'f3\'b0\'ed \'c7\'cf\'b4\'c2\'b5\'a5 2\'b0\'a1\'c1\'f6 \'b5\'bf\'c0\'db\'c0\'bb \'c7\'d5\'c3\'c4\'bc\'ad \'c3\'d6\'b1\'d9\'bf\'a1\'b4\'c2 Crawling(\'c5\'a9\'b7\'d1\'b8\'b5)\'c0\'cc\'b6\'f3\'b0\'ed \'c7\'d5\'b4\'cf\'b4\'d9.\
+\
+1.\'c6\'c4\'bd\'cc\'c0\'ba jsoup \'b6\'f3\'c0\'cc\'ba\'ea\'b7\'af\'b8\'ae\'b8\'a6 \'bb\'e7\'bf\'eb\
+\
+2.HttpURLConnection\'c0\'ba \'c1\'a4\'c0\'fb\'c0\'ce \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'b8 \'b0\'a1\'c1\'ae\'bf\'c3 \'bc\'f6 \'c0\'d6\'bd\'c0\'b4\'cf\'b4\'d9.\
+\'b5\'bf\'c0\'fb\'c0\'b8\'b7\'ce \'bb\'fd\'bc\'ba\'b5\'c8 \'b5\'a5\'c0\'cc\'c5\'cd\'b4\'c2 HttpURLConnection\'c0\'b8\'b7\'ce \'b0\'a1\'c1\'ae\'bf\'c3 \'bc\'f6 \'be\'f8\'bd\'c0\'b4\'cf\'b4\'d9.\
+\'b5\'bf\'c0\'fb\'c0\'b8\'b7\'ce \'bb\'fd\'bc\'ba\'b5\'c7\'b4\'c2 \'b5\'a5\'c0\'cc\'c5\'cd\'b4\'c2 Selenium\'c0\'bb \'c0\'cc\'bf\'eb\'c7\'d8\'be\'df \'c7\'d5\'b4\'cf\'b4\'d9.\
+\'b5\'bf\'c0\'fb\'c0\'b8\'b7\'ce \'bb\'fd\'bc\'ba\'b5\'c7\'b4\'c2 \'b5\'a5\'c0\'cc\'c5\'cd\'b4\'c2 ajax(\'c0\'da\'b9\'d9\'bd\'ba\'c5\'a9\'b8\'b3\'c6\'ae\'b8\'a6 \'c0\'cc\'bf\'eb\'c7\'d8\'bc\'ad \'ba\'f1\'b5\'bf\'b1\'e2\'c0\'fb\'c0\'b8\'b7\'ce \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'b9\'de\'be\'c6\'bf\'c0\'b4\'c2 \'b1\'e2\'bc\'fa)\'b7\'ce \'b0\'a1\'c1\'ae\'bf\'c0\'b4\'c2 \'b5\'a5\'c0\'cc\'c5\'cd\'c0\'cc\'b0\'ed \'b4\'d9\'b8\'a5 \'c7\'cf\'b3\'aa\'b4\'c2 \'be\'ee\'b6\'b2 \'b5\'bf\'c0\'db\'c0\'bb \'bc\'f6\'c7\'e0(\'b7\'ce\'b1\'d7\'c0\'ce\'c0\'bb \'c7\'d8\'be\'df \'ba\'b8\'bf\'a9\'c1\'f6\'b4\'c2 \'b5\'a5\'c0\'cc\'c5\'cd)\'c7\'d8\'be\'df\'b8\'b8 \'ba\'b8\'bf\'a9\'c1\'f6\'b4\'c2 \'b5\'a5\'c0\'cc\'c5\'cd\'b0\'a1 \'c0\'d6\'bd\'c0\'b4\'cf\'b4\'d9.\
+\
+3.HTML\'bf\'a1\'bc\'ad \'bb\'e7\'bf\'eb\'c7\'cf\'b4\'c2 \'bc\'d3\'bc\'ba\
+1)id : \'c0\'da\'b9\'d9\'bd\'ba\'c5\'a9\'b8\'b3\'c6\'ae\'bf\'a1\'bc\'ad \'c5\'c2\'b1\'d7\'b8\'a6 \'b1\'b8\'ba\'b0\'c7\'d8\'bc\'ad \'bb\'e7\'bf\'eb\'c7\'cf\'b1\'e2 \'c0\'a7\'c7\'d8\'bc\'ad \'bc\'b3\'c1\'a4\'c7\'cf\'b4\'c2 \'bc\'d3\'bc\'ba\
+=>\'c6\'e4\'c0\'cc\'c1\'f6 \'b3\'bb\'bf\'a1\'bc\'ad \'c0\'af\'c0\'cf\'b9\'ab\'c0\'cc\
+\
+2)class : \'c5\'c2\'b1\'d7\'b5\'e9\'bf\'a1 \'b5\'bf\'c0\'cf\'c7\'d1 \'b5\'f0\'c0\'da\'c0\'cc\'c0\'bb \'c0\'fb\'bf\'eb\'c7\'cf\'b1\'e2 \'c0\'a7\'c7\'d8\'bc\'ad \'b8\'b8\'b5\'e7 \'b1\'d7\'b7\'ec\'be\'c6\'c0\'cc\'b5\'f0\
+=>\'c6\'e4\'c0\'cc\'c1\'f6 \'b3\'bb\'bf\'a1\'bc\'ad \'b5\'bf\'c0\'cf\'c7\'d1 \'c0\'cc\'b8\'a7\'c0\'bb \'bf\'a9\'b7\'af \'b9\'f8 \'bb\'e7\'bf\'eb \'b0\'a1\'b4\'c9\
+\
+3)tag : \'ba\'ea\'b6\'f3\'bf\'ec\'c0\'fa\'b0\'a1 \'c7\'d8\'bc\'ae\'c7\'d8\'bc\'ad \'c3\'e2\'b7\'c2\'c7\'cf\'b5\'b5\'b7\'cf \'c7\'d8\'c1\'d6\'b4\'c2 \'b8\'ed\'b7\'c9\'be\'ee \
+=>\'c6\'e4\'c0\'cc\'c1\'f6 \'b3\'bb\'bf\'a1\'bc\'ad \'b5\'bf\'c0\'cf\'c7\'d1 \'c0\'cc\'b8\'a7\'c0\'bb \'bf\'a9\'b7\'af \'b9\'f8 \'bb\'e7\'bf\'eb \'b0\'a1\'b4\'c9\
+\
+4)name : \'c5\'ac\'b6\'f3\'c0\'cc\'be\'f0\'c6\'ae\'bf\'a1\'bc\'ad \'bc\'ad\'b9\'f6\'bf\'a1\'b0\'d4 \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'b3\'d1\'b0\'dc\'c1\'d9 \'b6\'a7 \'bb\'e7\'bf\'eb\'c7\'cf\'b4\'c2 \'c0\'cc\'b8\'a7\
+=>\'c6\'e4\'c0\'cc\'c1\'f6 \'b3\'bb\'bf\'a1\'bc\'ad \'b5\'bf\'c0\'cf\'c7\'d1 \'c0\'cc\'b8\'a7\'c0\'bb \'bf\'a9\'b7\'af \'b9\'f8 \'bb\'e7\'bf\'eb \'b0\'a1\'b4\'c9\
+\
+5)selector(\'bc\'b1\'c5\'c3\'c0\'da) : \'c0\'da\'b9\'d9\'bd\'ba\'c5\'a9\'b8\'b3\'c6\'ae\'b3\'aa CSS\'bf\'a1\'bc\'ad \'c5\'c2\'b1\'d7\'b8\'a6 \'bc\'b1\'c5\'c3\'c7\'cf\'b1\'e2 \'c0\'a7\'c7\'d1 \'b9\'ae\'b9\'fd\
+=>\'c6\'e4\'c0\'cc\'c1\'f6 \'b3\'bb\'bf\'a1\'bc\'ad \'b5\'bf\'c0\'cf\'c7\'d1 \'bc\'b1\'c5\'c3\'c0\'da\'b0\'a1 \'b3\'aa\'bf\'c3 \'bc\'f6 \'c0\'d6\'c0\'bd\
+\
+6)xpath : \'b9\'ae\'bc\'ad\'c0\'c7 \'b1\'b8\'c1\'b6\'b8\'a6 \'c5\'eb\'c7\'d8\'bc\'ad \'c6\'af\'c1\'a4 \'b0\'e6\'b7\'ce\'bf\'a1 \'c1\'a2\'b1\'d9\'c7\'d2 \'bc\'f6 \'c0\'d6\'b5\'b5\'b7\'cf \'c7\'cf\'b1\'e2 \'c0\'a7\'c7\'d1 \'be\'f0\'be\'ee\
+=>\'b0\'b3\'b9\'df\'c0\'da\'b0\'a1 \'c1\'f7\'c1\'a2 \'bc\'b3\'c1\'a4\'c7\'cf\'c1\'f6\'b4\'c2 \'be\'ca\'bd\'c0\'b4\'cf\'b4\'d9.\
+\
+\
+4.\'c5\'a9\'b7\'d2\'c0\'c7 \'b0\'cb\'bb\'e7(\'b0\'b3\'b9\'df\'c0\'da \'b5\'b5\'b1\'b8)\'b8\'a6 \'c0\'cc\'bf\'eb\'c7\'d8\'bc\'ad \'bf\'f8\'c7\'cf\'b4\'c2 \'c5\'c2\'b1\'d7\'b8\'a6 \'bc\'b1\'c5\'c3\'c7\'d2 \'bc\'f6 \'c0\'d6\'be\'ee\'be\'df \'c7\'d5\'b4\'cf\'b4\'d9.\
+\
+\
+5.Maven\'c0\'bb \'c0\'cc\'bf\'eb\'c7\'d8\'bc\'ad jsoup \'b6\'f3\'c0\'cc\'ba\'ea\'b7\'af\'b8\'ae\'b8\'a6 \'bb\'e7\'bf\'eb\'c7\'d2 \'bc\'f6 \'c0\'d6\'b5\'b5\'b7\'cf \'bc\'b3\'c1\'a4\'c7\'cf\'b1\'e2\
+=>Maven\'c0\'cc\'b3\'aa gradle\'c0\'bb \'bb\'e7\'bf\'eb\'c7\'cf\'c1\'f6 \'be\'ca\'b4\'c2 java Application\'bf\'a1\'bc\'ad \'bf\'dc\'ba\'ce \'b6\'f3\'c0\'cc\'ba\'ea\'b7\'af\'b8\'ae\'b8\'a6 \'bb\'e7\'bf\'eb\'c7\'cf\'b0\'ed\'c0\'da \'c7\'cf\'b8\'e9 \'bf\'dc\'ba\'ce \'b6\'f3\'c0\'cc\'ba\'ea\'b7\'af\'b8\'ae\'b8\'a6 \'b4\'d9\'bf\'ee\'b7\'ce\'b5\'e5 \'b9\'de\'be\'c6\'bc\'ad \'c7\'c1\'b7\'ce\'c1\'a7\'c6\'ae\'c0\'c7 build path\'bf\'a1 \'c1\'f7\'c1\'a2 \'c3\'df\'b0\'a1\'b8\'a6 \'c7\'d8\'be\'df \'c7\'d5\'b4\'cf\'b4\'d9.\
+\'b6\'f3\'c0\'cc\'ba\'ea\'b7\'af\'b8\'ae\'b3\'a2\'b8\'ae \'c0\'c7\'c1\'b8\'c7\'cf\'b4\'c2 \'b0\'e6\'bf\'ec \'c1\'f7\'c1\'a2 \'b1\'d7 \'b6\'f3\'c0\'cc\'ba\'ea\'b7\'af\'b8\'ae\'b8\'a6 \'b4\'d9\'bf\'ee\'b7\'ce\'b5\'e5 \'b9\'de\'be\'c6\'bc\'ad \'c3\'df\'b0\'a1\'c7\'d8 \'c1\'d6\'be\'ee\'be\'df \'c7\'d5\'b4\'cf\'b4\'d9.\
+\
+=>maven\'c0\'cc\'b3\'aa gradle\'c0\'bb \'bb\'e7\'bf\'eb\'c7\'cf\'b4\'c2 \'c7\'c1\'b7\'ce\'c1\'a7\'c6\'ae\'bf\'a1\'bc\'ad\'b4\'c2 \'c7\'c1\'b7\'ce\'c1\'a7\'c6\'ae \'b0\'fc\'b8\'ae \'c6\'c4\'c0\'cf(maven - porm.xml, gradle - build.gradle)\'bf\'a1 \'c0\'c7\'c1\'b8\'bc\'ba\'c0\'bb \'bc\'b3\'c1\'a4\'c7\'cf\'b8\'e9 \'b4\'d9\'bf\'ee\'b7\'ce\'b5\'e5 \'b9\'de\'be\'c6\'bc\'ad build path\'bf\'a1 \'c3\'df\'b0\'a1\'c7\'d8\'c1\'d6\'b0\'ed \'c0\'da\'bd\'c5\'c0\'cc \'bb\'e7\'bf\'eb\'c7\'cf\'b4\'c2 \'b4\'d9\'b8\'a5 \'b6\'f3\'c0\'cc\'ba\'ea\'b7\'af\'b8\'ae\'b4\'c2 \'c0\'da\'b5\'bf\'c0\'b8\'b7\'ce \'c3\'df\'b0\'a1\'c7\'d8\'c1\'dd\'b4\'cf\'b4\'d9.\
+\
+\
+\
+1)\'c7\'f6\'c0\'e7 \'c7\'c1\'b7\'ce\'c1\'a7\'c6\'ae\'b8\'a6 maven \'c7\'c1\'b7\'ce\'c1\'a7\'c6\'ae\'b7\'ce \'ba\'af\'c8\'af\
+\'c7\'c1\'b7\'ce\'c1\'a7\'c6\'ae\'b8\'a6 \'bc\'b1\'c5\'c3\'c7\'cf\'b0\'ed \'b8\'b6\'bf\'ec\'bd\'ba \'bf\'c0\'b8\'a5\'c2\'ca\'c0\'bb \'c5\'ac\'b8\'af\'c7\'d1 \'c8\'c4 [configure]-[Convert to Maven Project]\
+=>porm.xml \'c6\'c4\'c0\'cf\'c0\'cc \'bb\'fd\'b1\'e2\'b4\'c2\'c1\'f6 \'c8\'ae\'c0\'ce\
+=>porm.xml \'c6\'c4\'c0\'cf\'bf\'a1\'bc\'ad plug-in\'ba\'ce\'ba\'d0\'bf\'a1 \'bf\'c0\'b7\'f9\'b0\'a1 \'bb\'fd\'b1\'e2\'b8\'e9 build \'c5\'c2\'b1\'d7 \'be\'c6\'b7\'a1\'bf\'a1 \'be\'c6\'b7\'a1 \'c5\'c2\'b1\'d7\'b8\'a6 \'c3\'df\'b0\'a1\
+\
+\
+\'c7\'c1\'b7\'ce\'c1\'a7\'c6\'ae\'b8\'a6 \'bc\'b1\'c5\'c3\'c7\'cf\'b0\'ed \'b8\'b6\'bf\'ec\'bd\'ba \'bf\'c0\'b8\'a5\'c2\'ca\'c0\'bb \'c5\'ac\'b8\'af\'c7\'cf\'b0\'ed [Run As]-[maven install]\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \'c7\'c1\'b7\'ce\'c1\'a7\'c6\'ae\'b8\'a6 \'bc\'b1\'c5\'c3\'c7\'cf\'b0\'ed \'b8\'b6\'bf\'ec\'bd\'ba \'bf\'c0\'b8\'a5\'c2\'ca\'c0\'bb \'c5\'ac\'b8\'af\'c7\'cf\'b0\'ed [Refresh]\
+\'c7\'c1\'b7\'ce\'c1\'a7\'c6\'ae\'b8\'a6 \'bc\'b1\'c5\'c3\'c7\'cf\'b0\'ed \'b8\'b6\'bf\'ec\'bd\'ba \'bf\'c0\'b8\'a5\'c2\'ca\'c0\'bb \'c5\'ac\'b8\'af\'c7\'cf\'b0\'ed [Maven]-[Update Project]\
+\
+2)mvnrepository \'bf\'a1\'bc\'ad joup \'b0\'cb\'bb\'f6\
+\
+3)porm.xml \'c6\'c4\'c0\'cf\'c0\'c7 dependencies \'c5\'c2\'b1\'d7 \'be\'c8\'bf\'a1 \'c3\'df\'b0\'a1\
+=>dependencies \'c5\'c2\'b1\'d7\'b0\'a1 \'be\'f8\'c0\'b8\'b8\'e9 \'c3\'df\'b0\'a1\'c7\'cf\'b0\'ed \'bb\'f0\'c0\'d4\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f3\fs24 \cf0 	\cf7 <\cf8 dependencies\cf7 >\cf0 \
+		\cf9 <!-- https://mvnrepository.com/artifact/org.jsoup/jsoup -->\cf0 \
+		\cf7 <\cf8 dependency\cf7 >\cf0 \
+			\cf7 <\cf8 groupId\cf7 >\cf0 org.jsoup\cf7 </\cf8 groupId\cf7 >\cf0 \
+			\cf7 <\cf8 artifactId\cf7 >\cf0 jsoup\cf7 </\cf8 artifactId\cf7 >\cf0 \
+			\cf7 <\cf8 version\cf7 >\cf0 1.11.3\cf7 </\cf8 version\cf7 >\cf0 \
+		\cf7 </\cf8 dependency\cf7 >\cf0 \
+\
+	\cf7 </\cf8 dependencies\cf7 >
+\f1\fs36 \cf0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\
+\
+6.jsoup \'b6\'f3\'c0\'cc\'ba\'ea\'b7\'af\'b8\'ae\
+=>html \'c6\'c4\'bd\'cc\'c0\'bb \'bc\'f6\'c7\'e0\'c7\'d8\'c1\'d6\'b4\'c2 \'b6\'f3\'c0\'cc\'ba\'ea\'b7\'af\'b8\'ae\
+1)HTML \'c6\'c4\'bd\'cc\'c0\'bb \'c0\'a7\'c7\'d8\'bc\'ad html \'b9\'ae\'c0\'da\'bf\'ad\'c0\'bb \'b0\'a1\'c1\'f6\'b0\'ed Document \'bb\'fd\'bc\'ba\
+Document ? = Jsoup.parse(HTML \'b9\'ae\'c0\'da\'bf\'ad);\
+\
+2)\'c6\'c4\'bd\'cc\'c0\'bb \'c0\'a7\'c7\'d8\'bc\'ad \'bf\'f8\'c7\'cf\'b4\'c2 \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'c3\'a3\'be\'c6\'c1\'d6\'b4\'c2 API\
+Element getElementById(String id) : id \'b0\'a1\'c1\'f6\'b0\'ed \'c3\'a3\'be\'c6\'bf\'c0\'b4\'c2 \'b8\'de\'bc\'d2\'b5\'e5\
+Element getElementByTag(String tag) : tag \'b0\'a1\'c1\'f6\'b0\'ed \'c3\'a3\'be\'c6\'bf\'c0\'b4\'c2 \'b8\'de\'bc\'d2\'b5\'e5\
+Element getElementByClass(Stirng class) : class \'c0\'cc\'b8\'a7\'c0\'bb \'b0\'a1\'c1\'f6\'b0\'ed \'c3\'a3\'be\'c6\'bf\'c0\'b4\'c2 \'b8\'de\'bc\'d2\'b5\'e5\
+Element select(String selector) : css\'c0\'c7 \'bc\'b1\'c5\'c3\'c0\'da\'b8\'a6 \'c0\'cc\'bf\'eb\'c7\'d8\'bc\'ad \'c3\'a3\'be\'c6\'bf\'c0\'b4\'c2 \'b8\'de\'bc\'d2\'b5\'e5\
+\
+3)Element \'b4\'c2 Element\'c0\'c7 \'c1\'fd\'c7\'d5\'c0\'b8\'b7\'ce get(int index)\'c0\'bb \'c8\'a3\'c3\'e2\'c7\'cf\'b8\'e9 Element 1\'b0\'b3\'b8\'a6 \'b8\'ae\'c5\'cf\
+\
+4)Element\'bf\'a1\'bc\'ad \'c5\'c2\'b1\'d7 \'be\'c8\'c0\'c7 \'b0\'aa\'c0\'bb \'c3\'df\'c3\'e2\'c7\'d2 \'b6\'a7\'b4\'c2 text()\
+\
+\
+\
+7.www.hani.co.kr \'bf\'a1\'bc\'ad \'b8\'de\'c0\'ce \'b1\'e2\'bb\'e7 \'c1\'a6\'b8\'f1\'c0\'bb \'c3\'a3\'be\'c6\'bf\'c0\'b1\'e2\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f2\b\fs24 \cf2 package
+\f3\b0 \cf0  html;\
+\
+
+\f2\b \cf2 import
+\f3\b0 \cf0  java.io.BufferedReader;\
+
+\f2\b \cf2 import
+\f3\b0 \cf0  java.io.InputStreamReader;\
+
+\f2\b \cf2 import
+\f3\b0 \cf0  java.net.HttpURLConnection;\
+
+\f2\b \cf2 import
+\f3\b0 \cf0  java.net.URL;\
+\
+
+\f2\b \cf2 import
+\f3\b0 \cf0  org.jsoup.Jsoup;\
+
+\f2\b \cf2 import
+\f3\b0 \cf0  org.jsoup.nodes.Document;\
+
+\f2\b \cf2 import
+\f3\b0 \cf0  org.jsoup.nodes.Element;\
+
+\f2\b \cf2 import
+\f3\b0 \cf0  org.jsoup.select.Elements;\
+\
+
+\f2\b \cf2 public
+\f3\b0 \cf0  
+\f2\b \cf2 class
+\f3\b0 \cf0  HTMLParsing \{\
+\
+	
+\f2\b \cf2 public
+\f3\b0 \cf0  
+\f2\b \cf2 static
+\f3\b0 \cf0  
+\f2\b \cf2 void
+\f3\b0 \cf0  main(String[] \cf3 args\cf0 ) \{\
+		\
+		\cf4 //hani.co.kr 
+\f1 \'c0\'c7
+\f3  \ul html\ulnone  
+\f1 \'b9\'de\'be\'c6\'bf\'c0\'b1\'e2
+\f3 \cf0 \
+		String \cf3 html\cf0  = 
+\f2\b \cf2 null
+\f3\b0 \cf0 ;\
+		\
+		
+\f2\b \cf2 try
+\f3\b0 \cf0  \{\
+			String \cf3 addr\cf0  = \cf5 "http://www.hani.co.kr/"\cf0 ;\
+			URL \cf3 url\cf0  = 
+\f2\b \cf2 new
+\f3\b0 \cf0  URL(\cf3 addr\cf0 );\
+			HttpURLConnection \cf3 con\cf0  = (HttpURLConnection) \cf3 url\cf0 .openConnection();\
+			\cf3 con\cf0 .setConnectTimeout(30000);\
+			\
+			BufferedReader \cf3 br\cf0  = 
+\f2\b \cf2 new
+\f3\b0 \cf0  BufferedReader(
+\f2\b \cf2 new
+\f3\b0 \cf0  InputStreamReader(\cf3 con\cf0 .getInputStream()));\
+			StringBuilder \cf3 sb\cf0  = 
+\f2\b \cf2 new
+\f3\b0 \cf0  StringBuilder();\
+			
+\f2\b \cf2 while
+\f3\b0 \cf0 (
+\f2\b \cf2 true
+\f3\b0 \cf0 ) \{\
+				String \cf3 line\cf0  = \cf3 br\cf0 .readLine();\
+				
+\f2\b \cf2 if
+\f3\b0 \cf0 (\cf3 line\cf0 ==
+\f2\b \cf2 null
+\f3\b0 \cf0 ) \{\
+					
+\f2\b \cf2 break
+\f3\b0 \cf0 ;\
+				\}\
+				\cf3 sb\cf0 .append(\cf3 line\cf0 +\cf5 "\\n"\cf0 );\
+			\}\
+			\
+			\cf3 html\cf0  = \cf3 sb\cf0 .toString();\
+			\cf3 br\cf0 .close();\
+			\cf3 con\cf0 .disconnect();\
+			\
+			\cf4 //System.out.printf("%s\\n", \ul html\ulnone );\cf0 \
+			\
+		\}
+\f2\b \cf2 catch
+\f3\b0 \cf0 (Exception \cf3 e\cf0 ) \{\
+			System.
+\f4\i\b \cf6 out
+\f3\i0\b0 \cf0 .printf(\cf5 "
+\f1 \'b4\'d9\'bf\'ee\'b7\'ce\'b5\'e5
+\f3  
+\f1 \'bf\'b9\'bf\'dc
+\f3 :%s\\n"\cf0 , \cf3 e\cf0 .getMessage());\
+			\cf3 e\cf0 .printStackTrace();\
+		\}\
+		\
+		\cf4 //HTML 
+\f1 \'c6\'c4\'bd\'cc\'c0\'bb
+\f3  
+\f1 \'bc\'f6\'c7\'e0\'c7\'cf\'b4\'c2
+\f3  
+\f1 \'ba\'ce\'ba\'d0
+\f3 \cf0 \
+		
+\f2\b \cf2 try
+\f3\b0 \cf0  \{\
+			\cf4 //HTML 
+\f1 \'b9\'ae\'c0\'da\'bf\'ad\'c0\'bb
+\f3  
+\f1 \'c6\'c4\'bd\'c7\'c7\'d2
+\f3  
+\f1 \'bc\'f6
+\f3  
+\f1 \'c0\'d6\'b5\'b5\'b7\'cf
+\f3  DOM
+\f1 \'c0\'b8\'b7\'ce
+\f3  
+\f1 \'bb\'fd\'bc\'ba
+\f3 \cf0 \
+			Document \cf3 document\cf0  = Jsoup.
+\f5\i parse
+\f3\i0 (\cf3 html\cf0 );\
+			\cf4 //
+\f1 \'c5\'c2\'b1\'d7\'b7\'ce
+\f3  
+\f1 \'b0\'a1\'c1\'ae\'bf\'c0\'b1\'e2
+\f3 \cf0 \
+			\cf4 /*\cf0 \
+\cf4 			Elements elements = document.getElementsByTag("a");\cf0 \
+\cf4 			for(\ul int\ulnone  i=0;i<elements.size();i=i+1) \{\cf0 \
+\cf4 				Element element = elements.get(i);\cf0 \
+\cf4 				System.out.printf("%s\\n", element.text());\cf0 \
+\cf4 			\}\cf0 \
+\cf4 			*/\cf0 \
+			\
+			\cf4 //selector
+\f1 \'b7\'ce
+\f3  
+\f1 \'b0\'a1\'c1\'ae\'bf\'c0\'b1\'e2
+\f3 \cf0 \
+			Elements \cf3 elements\cf0  = \cf3 document\cf0 .select(\cf5 "#main-top > div.main-top > div.main-top-article > h4 > a"\cf0 );\
+			
+\f2\b \cf2 for
+\f3\b0 \cf0 (
+\f2\b \cf2 int
+\f3\b0 \cf0  \cf3 i\cf0 =0;\cf3 i\cf0 <\cf3 elements\cf0 .size();\cf3 i\cf0 =\cf3 i\cf0 +1) \{\
+				Element \cf3 element\cf0  = \cf3 elements\cf0 .get(\cf3 i\cf0 );\
+				\cf4 //
+\f1 \'c5\'c2\'b1\'d7
+\f3  
+\f1 \'be\'c8\'c0\'c7
+\f3  
+\f1 \'b9\'ae\'c0\'da\'bf\'ad\'c0\'bb
+\f3  
+\f1 \'c3\'a3\'be\'c6\'bf\'c0\'b1\'e2
+\f3 \cf0 \
+				System.
+\f4\i\b \cf6 out
+\f3\i0\b0 \cf0 .printf(\cf5 "%s\\n"\cf0 ,\cf3 element\cf0 .text());\
+				\cf4 //
+\f1 \'c5\'c2\'b1\'d7
+\f3  
+\f1 \'be\'c8\'c0\'c7
+\f3  
+\f1 \'bc\'d3\'bc\'ba\'b0\'aa\'c0\'bb
+\f3  
+\f1 \'c3\'a3\'be\'c6\'bf\'c0\'b1\'e2
+\f3 \cf0 \
+				System.
+\f4\i\b \cf6 out
+\f3\i0\b0 \cf0 .printf(\cf5 "%s\\n"\cf0 ,\cf3 element\cf0 .attr(\cf5 "href"\cf0 ));\
+			\}\
+			\
+		\}
+\f2\b \cf2 catch
+\f3\b0 \cf0 (Exception \cf3 e\cf0 ) \{\
+			System.
+\f4\i\b \cf6 out
+\f3\i0\b0 \cf0 .printf(\cf5 "HTML 
+\f1 \'c6\'c4\'bd\'cc
+\f3  
+\f1 \'bf\'b9\'bf\'dc
+\f3 :%s\\n"\cf0 , \cf3 e\cf0 .getMessage());\
+			\cf3 e\cf0 .printStackTrace();\
+		\}\
+		\
+	\}\
+\
+\}\
+\
+\
+\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f1\fs36 \cf0 8.donga.com\'bf\'a1\'bc\'ad \'b0\'cb\'bb\'f6\'c0\'bb \'bc\'f6\'c7\'e0\'c7\'d1 \'c8\'c4 \'b1\'e2\'bb\'e7\'c0\'c7 \'b3\'bb\'bf\'eb\'c0\'bb \'c7\'cf\'b3\'aa\'c0\'c7 \'c5\'d8\'bd\'ba\'c6\'ae \'c6\'c4\'c0\'cf\'bf\'a1 \'c0\'db\'bc\'ba\'c7\'cf\'b1\'e2\
+1)URL \'c7\'fc\'bd\'c4 \'c8\'ae\'c0\'ce\
+=>query \'c0\'c7 \'b0\'aa\'c0\'cc \'b0\'cb\'bb\'f6\'be\'ee\
+=>p\'b0\'a1 \'c6\'e4\'c0\'cc\'c1\'f6 \'b9\'f8\'c8\'a3\'c0\'ce\'b5\'a5 1, 16, 31, 46 .. \'c0\'c7 \'c7\'fc\'c5\'c2\'b7\'ce \'c1\'f5\'b0\'a1\
+\
+\pard\pardeftab720\sl280\partightenfactor0
+\cf0 http://www.donga.com/news/search?p=1&query=%EB%AC%B8%ED%83%9C%EC%98%81&check_news=1&more=1&sorting=1&search_date=1&v1=&v2=&range=1\
+\
+http://www.donga.com/news/search?p=31&query=%EB%AC%B8%ED%83%9C%EC%98%81&check_news=1&more=1&sorting=1&search_date=1&v1=&v2=&range=1\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\
+2)\'c0\'ce\'c4\'da\'b5\'f9 \'b9\'e6\'bd\'c4 \'c8\'ae\'c0\'ce\
+=>\'c0\'da\'bd\'c5\'c0\'c7 \'bd\'c3\'bd\'ba\'c5\'db\'c0\'c7 \'c0\'ce\'c4\'da\'b5\'f9\'b0\'fa \'b4\'d9\'b8\'a3\'b8\'e9 InputStreamReader \'b8\'a6 \'b8\'b8\'b5\'e9 \'b6\'a7 \'c0\'ce\'c4\'da\'b5\'f9 \'b9\'e6\'bd\'c4\'c0\'bb \'c3\'df\'b0\'a1\'b7\'ce \'bc\'b3\'c1\'a4\
+=>\'c1\'f7\'c1\'a2 \'bc\'b3\'c1\'a4\'c7\'cf\'b1\'e2 \'b0\'ef\'b6\'f5\'c7\'d1 \'b0\'e6\'bf\'ec\'bf\'a1\'b4\'c2 \
+String headerType = HttpURLConnection\'b0\'b4\'c3\'bc.getConnectionType();\
+headerType\'bf\'a1 EUC-KR\'c0\'cc \'c6\'f7\'c7\'d4\'b5\'c7\'be\'ee \'c0\'d6\'c0\'b8\'b8\'e9 EUC-KR\'b7\'ce \'bc\'b3\'c1\'a4\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+}
