@@ -1,0 +1,955 @@
+{\rtf1\ansi\ansicpg949\cocoartf1671\cocoasubrtf600
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset129 AppleSDGothicNeo-Regular;\f2\fnil\fcharset0 Menlo-Regular;
+\f3\fnil\fcharset0 Menlo-Bold;\f4\fnil\fcharset0 Menlo-Italic;\f5\fnil\fcharset0 Menlo-BoldItalic;
+}
+{\colortbl;\red255\green255\blue255;\red0\green128\blue128;\red63\green127\blue127;\red63\green95\blue191;
+\red127\green0\blue85;\red106\green62\blue62;\red63\green127\blue95;\red42\green0\blue255;\red0\green0\blue192;
+\red100\green100\blue100;}
+{\*\expandedcolortbl;;\csgenericrgb\c0\c50196\c50196;\csgenericrgb\c24706\c49804\c49804;\csgenericrgb\c24706\c37255\c74902;
+\csgenericrgb\c49804\c0\c33333;\csgenericrgb\c41569\c24314\c24314;\csgenericrgb\c24706\c49804\c37255;\csgenericrgb\c16471\c0\c100000;\csgenericrgb\c0\c0\c75294;
+\csgenericrgb\c39216\c39216\c39216;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww19540\viewh25460\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs36 \cf0 **
+\f1 Selenium\
+=>\'c0\'a5 \'be\'db\'c0\'bb \'c5\'d7\'bd\'ba\'c6\'ae\'c7\'cf\'b1\'e2 \'c0\'a7\'c7\'d1 \'c7\'c1\'b7\'b9\'c0\'d3\'bf\'f6\'c5\'a9\
+=>\'c7\'c1\'b7\'ce\'b1\'d7\'b7\'a1\'b9\'d6 \'be\'f0\'be\'ee\'bf\'a1\'bc\'ad \'c1\'a6\'b0\'f8\'c7\'cf\'b4\'c2 \'c0\'a5\'c0\'c7 \'b3\'bb\'bf\'eb\'c0\'bb \'b0\'a1\'c1\'ae\'bf\'c0\'b4\'c2 \'c5\'ac\'b7\'a1\'bd\'ba\'b3\'aa \'c7\'d4\'bc\'f6\'b5\'e9\'c0\'ba \'c1\'a4\'c0\'fb\'c0\'b8\'b7\'ce \'c0\'a5\'c0\'c7 \'b3\'bb\'bf\'eb\'c0\'bb \'b0\'a1\'c1\'ae\'bf\'c9\'b4\'cf\'b4\'d9.\
+\'c3\'b3\'c0\'bd \'c1\'a2\'bc\'d3\'c7\'d2 \'b6\'a7 \'c3\'e2\'b7\'c2\'b5\'c7\'b4\'c2 \'b3\'bb\'bf\'eb\'b8\'b8 \'b0\'a1\'c1\'ae\'bf\'c3 \'bc\'f6 \'c0\'d6\'bd\'c0\'b4\'cf\'b4\'d9.\
+\'b5\'fb\'b6\'f3\'bc\'ad \'b7\'ce\'b1\'d7\'c0\'ce\'c0\'bb \'c7\'d8\'be\'df \'ba\'b8\'bf\'a9\'c1\'f6\'b4\'c2 \'b5\'a5\'c0\'cc\'c5\'cd\'b3\'aa ajax \'c3\'b3\'b7\'b3 \'be\'ee\'b6\'b2 \'c0\'cc\'ba\'a5\'c6\'ae\'b8\'a6 \'bc\'f6\'c7\'e0\'c7\'d8\'bc\'ad \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'b0\'a1\'c1\'ae\'bf\'c0\'b4\'c2 \'b0\'e6\'bf\'ec\'bf\'a1\'b4\'c2 \'b3\'bb\'bf\'eb\'c0\'bb \'b0\'a1\'c1\'ae\'bf\'c3 \'bc\'f6\'b0\'a1 \'be\'f8\'bd\'c0\'b4\'cf\'b4\'d9.\
+\
+=>selenium\'c0\'ba WebDriver \'b6\'f3\'b4\'c2 API\'b8\'a6 \'c0\'cc\'bf\'eb\'c7\'d8\'bc\'ad \'ba\'ea\'b6\'f3\'bf\'ec\'c0\'fa\'b8\'a6 \'c1\'f7\'c1\'a2 \'b1\'b8\'b5\'bf\'bd\'c3\'c4\'d1\'c1\'dd\'b4\'cf\'b4\'d9.\
+\'c5\'a9\'b7\'d2, \'c6\'c4\'c0\'cc\'be\'ee\'c6\'f8\'bd\'ba, IE, \'bf\'c0\'c6\'e4\'b6\'f3, \'c6\'d2\'c5\'d2(\'c0\'cf\'b9\'dd \'ba\'ea\'b6\'f3\'bf\'ec\'c0\'fa\'b0\'a1 \'be\'c6\'b4\'cf\'b0\'ed \'b8\'de\'b8\'f0\'b8\'ae \'ba\'ea\'b6\'f3\'bf\'ec\'c0\'fa) \'b5\'ee\'c0\'c7 \'ba\'ea\'b6\'f3\'bf\'ec\'c0\'fa\'b8\'a6 \'c1\'a6\'be\'ee\'c7\'d2 \'bc\'f6 \'c0\'d6\'bd\'c0\'b4\'cf\'b4\'d9.\
+\'c6\'af\'c1\'a4 \'bf\'e4\'bc\'d2\'bf\'a1\'b0\'d4 \'c0\'da\'b9\'d9\'bd\'ba\'c5\'a9\'b8\'b3\'c6\'ae \'c0\'cc\'ba\'a5\'c6\'ae(\'c0\'d4\'b7\'c2, \'c5\'ac\'b8\'af, submit \'b5\'ee)\'b8\'a6 \'b9\'df\'bb\'fd\'bd\'c3\'c5\'b3 \'bc\'f6 \'c0\'d6\'bd\'c0\'b4\'cf\'b4\'d9.\
+\
+1.\'bb\'e7\'bf\'eb \'c1\'d8\'ba\'f1\
+1)selenium \'b6\'f3\'c0\'cc\'ba\'ea\'b7\'af\'b8\'ae\'b8\'a6 \'b4\'d9\'bf\'ee\'b7\'ce\'b5\'e5\
+=>\'c1\'f7\'c1\'a2 \'b4\'d9\'bf\'ee\'b7\'ce\'b5\'e5 : http://www.seleniumhq.org \'bf\'a1\'bc\'ad \'b4\'d9\'bf\'ee\'b7\'ce\'b5\'e5\
+=>maven\'c0\'bb \'c0\'cc\'bf\'eb\'c7\'d8\'bc\'ad \'bc\'b3\'c1\'a4 \'b0\'a1\'b4\'c9\
+\
+2)\'c1\'a6\'be\'ee\'c7\'d2 \'ba\'ea\'b6\'f3\'bf\'ec\'c0\'fa\'c0\'c7 \'b5\'e5\'b6\'f3\'c0\'cc\'b9\'f6\'b8\'a6 \'b4\'d9\'bf\'ee\'b7\'ce\'b5\'e5\
+=>\'c1\'f7\'c1\'a2 \'b4\'d9\'bf\'ee\'b7\'ce\'b5\'e5\
+=>\'c5\'a9\'b7\'d2\'c0\'c7 \'b0\'e6\'bf\'ec\'b4\'c2 http://sites.google.com/a/chromium.org/chromedriver/downloads\'bf\'a1\'bc\'ad \'c0\'da\'bd\'c5\'c0\'c7 \'b9\'f6\'c0\'fc\'bf\'a1 \'b8\'c2\'b4\'c2 \'b5\'e5\'b6\'f3\'c0\'cc\'b9\'f6 \'b4\'d9\'bf\'ee\'b7\'ce\'b5\'e5\
+\
+\
+2.\'ba\'ea\'b6\'f3\'bf\'ec\'c0\'fa\'b8\'a6 \'bd\'c7\'c7\'e0\'bd\'c3\'c4\'d1 \'bb\'e7\'c0\'cc\'c6\'ae \'c1\'a2\'bc\'d3\
+=>\'bb\'e7\'bf\'eb\'c7\'d2 \'b5\'e5\'b6\'f3\'c0\'cc\'b9\'f6\'bf\'cd \'b5\'e5\'b6\'f3\'c0\'cc\'b9\'f6 \'c6\'c4\'c0\'cf\'c0\'c7 \'c0\'a7\'c4\'a1\'b8\'a6 \'c7\'c1\'b7\'ce\'c6\'db\'c6\'bc\'b7\'ce \'bc\'b3\'c1\'a4\
+System.setProperty(\'bb\'e7\'bf\'eb\'c7\'d2\'b5\'e5\'b6\'f3\'c0\'cc\'b9\'f6 \'c0\'cc\'b8\'a7, \'b5\'e5\'b6\'f3\'c0\'cc\'b9\'f6 \'c6\'c4\'c0\'cf \'c0\'a7\'c4\'a1 \'bc\'b3\'c1\'a4);\
+=>\'c5\'a9\'b7\'d2 \'b5\'e5\'b6\'f3\'c0\'cc\'b9\'f6\'b8\'a6 c:\\\'b5\'e5\'b6\'f3\'c0\'cc\'ba\'ea\'bf\'a1 \'c0\'a7\'c4\'a1\'bd\'c3\'c5\'b2 \'b0\'e6\'bf\'ec\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 System.setProperty("webdriver.chrome.driver", "c:\\chromedriver.exe");\
+\
+=>WebDriver \'b0\'b4\'c3\'bc\'b8\'a6 \'bb\'fd\'bc\'ba\'c7\'d8\'bc\'ad \'c1\'a2\'bc\'d3\
+WebDriver driver = new ChromeDriver(); //\'c5\'a9\'b7\'d2 \'bd\'c7\'c7\'e0\
+driver.get(String url); // url\'bf\'a1 \'c1\'a2\'bc\'d3\
+driver.getPageSource(); //html\'c0\'bb \'b8\'ae\'c5\'cf\
+\
+\
+3.http://www.naver.com \'c0\'c7 html \'c4\'da\'b5\'e5\'b8\'a6 Selenium\'c0\'bb \'c0\'cc\'bf\'eb\'c7\'d8\'bc\'ad \'b0\'a1\'c1\'ae\'bf\'c0\'b1\'e2\
+1)\'c0\'da\'bd\'c5\'c0\'c7 \'c5\'a9\'b7\'d2 \'c1\'a4\'ba\'b8\'b8\'a6 \'c8\'ae\'c0\'ce\'c7\'cf\'b1\'e2\
+=>\'c5\'a9\'b7\'d2\'c0\'bb \'bd\'c7\'c7\'e0\'bd\'c3\'c5\'b0\'b0\'ed \'bf\'c0\'b8\'a5\'c2\'ca\'c0\'c7 ... \'c0\'bb \'b4\'a9\'b8\'a3\'b0\'ed [\'b5\'b5\'bf\'f2\'b8\'bb]-[Chrome \'c1\'a4\'ba\'b8]\'b8\'a6 \'bd\'c7\'c7\'e0\
+\'b9\'f6\'c0\'fc 78.0.3904.70 \
+=>\'b5\'e5\'b6\'f3\'c0\'cc\'b9\'f6 \'b9\'f6\'c0\'fc\'c0\'cc \'b8\'c2\'c1\'f6 \'be\'ca\'c0\'b8\'b8\'e9 \'c5\'a9\'b7\'d2\'c0\'cc \'bd\'c7\'c7\'e0\'c0\'cc \'be\'c8\'b5\'cb\'b4\'cf\'b4\'d9.\
+\
+2)\'b9\'f6\'c0\'fc\'bf\'a1 \'b8\'c2\'b4\'c2 \'c5\'a9\'b7\'d2 \'b5\'e5\'b6\'f3\'c0\'cc\'b9\'f6\'b8\'a6 \'b4\'d9\'bf\'ee\'b7\'ce\'b5\'e5\
+=>www.google.com.\'bf\'a1\'bc\'ad \'c5\'a9\'b7\'d2 \'b5\'e5\'b6\'f3\'c0\'cc\'b9\'f6\'b8\'a6 \'b0\'cb\'bb\'f6 \'c7\'d8\'b5\'b5 \'b5\'c7\'b0\'ed https://chromedriver.chromium.org/downloads\
+=>mac \'c0\'c7 \'b0\'e6\'bf\'ec\'b4\'c2 brew install chromedriver \'b7\'ce\'b5\'b5 \'bc\'b3\'c4\'a1 \'b0\'a1\'b4\'c9\
+\
+3)java application \'c0\'bb \'bb\'fd\'bc\'ba\
+\
+4)maven project \'b7\'ce \'ba\'af\'c8\'af\
+\
+5)porm.xml \'c6\'c4\'c0\'cf\'bf\'a1 selenium\'c0\'bb \'bb\'e7\'bf\'eb\'c7\'d2 \'bc\'f6 \'c0\'d6\'b5\'b5\'b7\'cf dependency\'b8\'a6 \'c3\'df\'b0\'a1\
+\pard\pardeftab720\partightenfactor0
+
+\f2\fs24 \cf0 	\cf2 <\cf3 dependencies\cf2 >\cf0 \
+		\cf4 <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->\cf0 \
+		\cf2 <\cf3 dependency\cf2 >\cf0 \
+			\cf2 <\cf3 groupId\cf2 >\cf0 org.seleniumhq.selenium\cf2 </\cf3 groupId\cf2 >\cf0 \
+			\cf2 <\cf3 artifactId\cf2 >\cf0 selenium-java\cf2 </\cf3 artifactId\cf2 >\cf0 \
+			\cf2 <\cf3 version\cf2 >\cf0 3.141.59\cf2 </\cf3 version\cf2 >\cf0 \
+		\cf2 </\cf3 dependency\cf2 >\cf0 \
+	\cf2 </\cf3 dependencies\cf2 >
+\f1\fs36 \cf0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\
+\pard\pardeftab720\partightenfactor0
+
+\f3\b\fs24 \cf5 package
+\f2\b0 \cf0  selenium;\
+\
+
+\f3\b \cf5 import
+\f2\b0 \cf0  org.openqa.selenium.WebDriver;\
+
+\f3\b \cf5 import
+\f2\b0 \cf0  org.openqa.selenium.chrome.ChromeDriver;\
+\
+
+\f3\b \cf5 public
+\f2\b0 \cf0  
+\f3\b \cf5 class
+\f2\b0 \cf0  NaverHTML \{\
+\
+	
+\f3\b \cf5 public
+\f2\b0 \cf0  
+\f3\b \cf5 static
+\f2\b0 \cf0  
+\f3\b \cf5 void
+\f2\b0 \cf0  main(String[] \cf6 args\cf0 ) \{\
+		
+\f3\b \cf5 try
+\f2\b0 \cf0  \{\
+			\cf7 //
+\f1 \'b5\'e5\'b6\'f3\'c0\'cc\'b9\'f6
+\f2  
+\f1 \'c0\'a7\'c4\'a1
+\f2  
+\f1 \'b5\'ee\'b7\'cf
+\f2 \cf0 \
+			System.
+\f4\i setProperty
+\f2\i0 (\cf8 "webdriver.chrome.driver"\cf0 , \cf8 "/Users/503main/Downloads/chromedriver"\cf0 );\
+			\cf7 //
+\f1 \'c5\'a9\'b7\'d2
+\f2  
+\f1 \'bd\'c7\'c7\'e0
+\f2 \cf0 \
+			WebDriver \cf6 driver\cf0  = 
+\f3\b \cf5 new
+\f2\b0 \cf0  ChromeDriver();\
+			\cf7 //
+\f1 \'bb\'e7\'c0\'cc\'c6\'ae
+\f2  
+\f1 \'c1\'a2\'bc\'d3
+\f2 \cf0 \
+			\cf6 driver\cf0 .get(\cf8 "http://www.naver.com"\cf0 );\
+			\cf7 //\ul html
+\f1 \ulnone \'c0\'bb
+\f2  
+\f1 \'b0\'a1\'c1\'ae\'bf\'cd\'bc\'ad
+\f2  
+\f1 \'c3\'e2\'b7\'c2
+\f2 \cf0 \
+			System.
+\f5\i\b \cf9 out
+\f2\i0\b0 \cf0 .printf(\cf8 "%s\\n"\cf0 , \cf6 driver\cf0 .getPageSource());\
+			\
+			\
+		\}
+\f3\b \cf5 catch
+\f2\b0 \cf0 (Exception \cf6 e\cf0 ) \{\
+			System.
+\f5\i\b \cf9 out
+\f2\i0\b0 \cf0 .printf(\cf8 "
+\f1 \'c5\'a9\'b7\'d2
+\f2  
+\f1 \'bd\'c7\'c7\'e0
+\f2  
+\f1 \'bf\'b9\'bf\'dc
+\f2 :%s\\n"\cf0 , \cf6 e\cf0 .getMessage());\
+			\cf6 e\cf0 .printStackTrace();\
+		\}\
+	\}\
+\
+\}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f1\fs36 \cf0 \
+\
+\
+4.WebDriver \'c0\'c7 \'b8\'de\'bc\'d2\'b5\'e5\
+1)get(String url) : url\'bf\'a1 \'c1\'a2\'bc\'d3\
+\
+2)close() : \'ba\'ea\'b6\'f3\'bf\'ec\'c0\'fa \'c1\'be\'b7\'e1\
+\
+3)getPageSource() : \'c1\'a2\'bc\'d3\'c7\'d1 URL \'c0\'c7 html\'c0\'bb \'b9\'ae\'c0\'da\'bf\'ad\'b7\'ce \'b8\'ae\'c5\'cf\
+\
+4)\'bf\'f8\'c7\'cf\'b4\'c2 Element \'c3\'a3\'b1\'e2\
+=>1\'b0\'b3\'c0\'c7 Element \'c3\'a3\'be\'c6\'bf\'c0\'b4\'c2 \'b8\'de\'bc\'d2\'b5\'e5\
+findElement(By.id \'b6\'c7\'b4\'c2 By.xpath(id \'b6\'c7\'b4\'c2 xpath))\
+\
+=>Element\'c0\'c7 List\'b8\'a6 \'c3\'a3\'be\'c6\'bf\'c0\'b4\'c2 \'b8\'de\'bc\'d2\'b5\'e5\
+findElements(By.name \'b6\'c7\'b4\'c2 class \'b6\'c7\'b4\'c2 tagName(name \'c0\'cc\'b3\'aa class \'b6\'c7\'b4\'c2 tagName))\
+\
+=>Element \'b8\'a6 \'c3\'a3\'c0\'ba \'c8\'c4 sedKeys(String value)\'b8\'a6 \'c8\'a3\'c3\'e2\'c7\'cf\'b8\'e9 \'b0\'aa\'c0\'cc \'b4\'eb\'c0\'d4\'b5\'cb\'b4\'cf\'b4\'d9.\
+click()\'c0\'cc\'b3\'aa submit()\'c0\'bb \'c8\'a3\'c3\'e2\'c7\'cf\'b8\'e9 \'b9\'f6\'c6\'b0\'c0\'bb \'b4\'a9\'b8\'a3\'b0\'c5\'b3\'aa \'c6\'fb\'c0\'c7 \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'c0\'fc\'bc\'db\'c7\'d5\'b4\'cf\'b4\'d9.\
+\
+5)frame : \'c7\'cf\'b3\'aa\'c0\'c7 \'c6\'e4\'c0\'cc\'c1\'f6\'b8\'a6 \'bf\'b5\'bf\'aa\'ba\'b0\'b7\'ce \'b1\'b8\'ba\'d0\'c7\'d8\'bc\'ad \'b4\'d9\'b8\'a5 \'b3\'bb\'bf\'eb\'c0\'bb \'c3\'e2\'b7\'c2\'c7\'cf\'b1\'e2 \'c0\'a7\'c7\'d1 \'bf\'b5\'bf\'aa\
+\'c7\'c1\'b7\'b9\'c0\'d3 \'c0\'fc\'c8\'af : switchTo.frame(frame Element)\
+\
+6)\'c5\'a9\'b7\'d2 \'c3\'a2\'c0\'bb \'c8\'ad\'b8\'e9\'bf\'a1 \'c3\'e2\'b7\'c2\'c7\'cf\'c1\'f6 \'be\'ca\'b0\'ed \'c1\'a6\'be\'ee\'c7\'cf\'b1\'e2\
+ChromeOptions options = new ChromeOptions();\
+options.addArguments("headless");\
+new ChromeDriver(options) \'b7\'ce \'bb\'fd\'bc\'ba\'c7\'cf\'b8\'e9 \'c5\'a9\'b7\'d2\'c0\'bb \'c8\'ad\'b8\'e9\'bf\'a1 \'c3\'e2\'b7\'c2\'c7\'cf\'c1\'f6 \'be\'ca\'b0\'ed \'c0\'db\'be\'f7\
+\
+\
+5.Naver \'c4\'ab\'c6\'e4\'bf\'a1 \'c1\'a2\'bc\'d3\'c7\'d8\'bc\'ad \'b7\'ce\'b1\'d7\'c0\'ce \'c8\'c4 \'b1\'db\'c0\'db\'bc\'ba\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f3\b\fs24 \cf5 package
+\f2\b0 \cf0  selenium;\
+\
+
+\f3\b \cf5 import
+\f2\b0 \cf0  org.openqa.selenium.By;\
+
+\f3\b \cf5 import
+\f2\b0 \cf0  \ul org.openqa.selenium.By.ByXPath\ulnone ;\
+
+\f3\b \cf5 import
+\f2\b0 \cf0  org.openqa.selenium.WebDriver;\
+
+\f3\b \cf5 import
+\f2\b0 \cf0  org.openqa.selenium.chrome.ChromeDriver;\
+\
+
+\f3\b \cf5 public
+\f2\b0 \cf0  
+\f3\b \cf5 class
+\f2\b0 \cf0  NaverLogin \{\
+\
+	
+\f3\b \cf5 public
+\f2\b0 \cf0  
+\f3\b \cf5 static
+\f2\b0 \cf0  
+\f3\b \cf5 void
+\f2\b0 \cf0  main(String[] \cf6 args\cf0 ) \{\
+		
+\f3\b \cf5 try
+\f2\b0 \cf0  \{\
+			\cf7 //
+\f1 \'b5\'e5\'b6\'f3\'c0\'cc\'b9\'f6
+\f2  
+\f1 \'c0\'a7\'c4\'a1
+\f2  
+\f1 \'b5\'ee\'b7\'cf
+\f2 \cf0 \
+			System.
+\f4\i setProperty
+\f2\i0 (\cf8 "webdriver.chrome.driver"\cf0 , \cf8 "/Users/503main/Downloads/chromedriver"\cf0 );\
+			\cf7 //
+\f1 \'c5\'a9\'b7\'d2
+\f2  
+\f1 \'bd\'c7\'c7\'e0
+\f2 \cf0 \
+			WebDriver \cf6 driver\cf0  = 
+\f3\b \cf5 new
+\f2\b0 \cf0  ChromeDriver();\
+			\cf7 //
+\f1 \'bb\'e7\'c0\'cc\'c6\'ae
+\f2  
+\f1 \'c1\'a2\'bc\'d3
+\f2 \cf0 \
+			\cf6 driver\cf0 .get(\cf8 "https://nid.naver.com/nidlogin.login?mode=form&url=https%3A%2F%2Fwww.naver.com"\cf0 );\
+			\
+			Thread.
+\f4\i sleep
+\f2\i0 (1000);\
+			\
+			\cf7 //id 
+\f1 \'b6\'f5\'bf\'a1
+\f2  
+\f1 \'c0\'d4\'b7\'c2\'c7\'cf\'b1\'e2
+\f2 \cf0 \
+			\cf6 driver\cf0 .findElement(By.
+\f4\i xpath
+\f2\i0 (\cf8 "//*[@id=\\"id\\"]"\cf0 )).sendKeys(\cf8 "rororl238"\cf0 );\
+			\cf7 //
+\f1 \'ba\'f1\'b9\'d0\'b9\'f8\'c8\'a3
+\f2  
+\f1 \'b6\'f5\'bf\'a1
+\f2  
+\f1 \'c0\'d4\'b7\'c2\'c7\'cf\'b1\'e2
+\f2 \cf0 \
+			\cf6 driver\cf0 .findElement(By.
+\f4\i xpath
+\f2\i0 (\cf8 "//*[@id=\\"pw\\"]"\cf0 )).sendKeys(\cf8 "11"\cf0 );\
+			\
+			Thread.
+\f4\i sleep
+\f2\i0 (1000);\
+			\
+			\cf7 //
+\f1 \'b7\'ce\'b1\'d7\'c0\'ce
+\f2  
+\f1 \'b9\'f6\'c6\'b0\'c0\'bb
+\f2  
+\f1 \'c5\'ac\'b8\'af
+\f2 \cf0 \
+			\cf6 driver\cf0 .findElement(By.
+\f4\i xpath
+\f2\i0 (\cf8 "//*[@id=\\"frmNIDLogin\\"]/fieldset/input"\cf0 )).click();\
+			\
+			\cf7 //
+\f1 \'c4\'ab\'c6\'e4\'bf\'a1
+\f2  
+\f1 \'c1\'a2\'bc\'d3
+\f2 \cf0 \
+			Thread.
+\f4\i sleep
+\f2\i0 (1000);\
+			\cf6 driver\cf0 .get(\cf8 "
+\f1 \'c4\'ab\'c6\'e4\'c1\'d6\'bc\'d2
+\f2 "\cf0 );\
+			\
+			Thread.
+\f4\i sleep
+\f2\i0 (1000);\
+			\cf7 //
+\f1 \'c7\'c1\'b7\'b9\'c0\'d3
+\f2  
+\f1 \'c0\'fc\'c8\'af
+\f2  - 
+\f1 \'c4\'da\'b5\'e5\'b0\'a1
+\f2  
+\f1 \'c7\'c1\'b7\'b9\'c0\'d3
+\f2  
+\f1 \'c5\'c2\'b1\'d7\'c0\'cf\'b6\'a7
+\f2 \cf0 \
+			\cf6 driver\cf0 .switchTo().frame(\cf6 driver\cf0 .findElement(By.
+\f4\i id
+\f2\i0 (\cf8 "down"\cf0 )));\
+			Thread.
+\f4\i sleep
+\f2\i0 (1000);\
+			\cf6 driver\cf0 .findElement(By.
+\f4\i xpath
+\f2\i0 (\cf8 "
+\f1 \'b1\'e2\'b7\'cf
+\f2  
+\f1 \'c1\'f6\'c1\'a1
+\f2 "\cf0 )).sendKeys(\cf8 "
+\f1 \'c0\'d4\'b7\'c2
+\f2  
+\f1 \'b3\'bb\'bf\'eb
+\f2 "\cf0 );\
+			\cf6 driver\cf0 .findElement(By.
+\f4\i xpath
+\f2\i0 (\cf8 "
+\f1 \'c5\'ac\'b8\'af\'c1\'f6\'c1\'a1
+\f2 "\cf0 )).click();\
+			\
+			\
+		\}
+\f3\b \cf5 catch
+\f2\b0 \cf0 (Exception \cf6 e\cf0 ) \{\
+			System.
+\f5\i\b \cf9 out
+\f2\i0\b0 \cf0 .printf(\cf8 "%s\\n"\cf0 ,\cf6 e\cf0 .getMessage());\
+			\cf6 e\cf0 .printStackTrace();\
+		\}\
+	\}\
+\
+\}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f1\fs36 \cf0 \
+\
+6.Selenium\'c0\'ba \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'bc\'f6\'c1\'fd\'c7\'cf\'b1\'e2 \'c0\'a7\'c7\'d8\'bc\'ad \'bb\'e7\'bf\'eb\'c7\'cf\'b4\'c2 \'b5\'b5\'b1\'b8\'c0\'cc\'c1\'f6 html\'c6\'c4\'bd\'cc\'c0\'bb \'c0\'a7\'c7\'d1 \'b0\'cd\'c0\'cc \'be\'c6\'b4\'d5\'b4\'cf\'b4\'d9.\
+html \'c6\'c4\'bd\'cc\'c0\'ba Jsoup \'b0\'a1\'c1\'f6\'b0\'ed \'c7\'d5\'b4\'cf\'b4\'d9.\
+\
+\
+\
+**java Swing \'c0\'cc\'b3\'aa AWT\'bf\'a1\'bc\'ad\'c0\'c7 \'b1\'d7\'b7\'a1\'c7\'c8 \'c3\'e2\'b7\'c2\
+1.GC(Graphic Context)\
+=>\'c1\'d9\'bf\'a9\'bc\'ad Context \'b6\'f3\'b0\'ed\'b5\'b5 \'c7\'d5\'b4\'cf\'b4\'d9.\
+=>\'be\'c8\'b5\'e5\'b7\'ce\'c0\'cc\'b5\'e5\'bf\'a1\'bc\'ad\'b4\'c2 \'c8\'ad\'b8\'e9\'bf\'a1 \'c3\'e2\'b7\'c2\'c7\'cf\'b4\'c2 \'b0\'b4\'c3\'bc\'b8\'a6 \'b8\'b8\'b5\'e9 \'b6\'a7 Context\'b0\'a1 \'b8\'c5\'b0\'b3\'ba\'af\'bc\'f6\'b7\'ce \'b4\'eb\'c0\'d4\'b5\'c7\'be\'ee\'be\'df \'c7\'d5\'b4\'cf\'b4\'d9.\
+=>\'c8\'ad\'b8\'e9 \'c3\'e2\'b7\'c2\'c0\'bb \'c7\'cf\'b7\'c1\'b8\'e9 \'c3\'e2\'b7\'c2\'c7\'d2 \'b6\'a7\'c0\'c7 \'bb\'f6\'bb\'f3, \'bc\'b1, \'b5\'ce\'b2\'b2, \'c6\'f9\'c6\'ae \'b5\'ee\'c0\'bb \'bc\'b3\'c1\'a4\'c7\'d8\'be\'df \'c7\'cf\'b4\'c2\'b5\'a5 \'c0\'cc\'b7\'af\'c7\'d1 \'c1\'a4\'ba\'b8\'b8\'a6 \'c3\'e2\'b7\'c2\'c7\'d2 \'b4\'eb\'b8\'b6\'b4\'d9 \'bc\'b3\'c1\'a4\'c7\'d2 \'bc\'f6 \'be\'f8\'be\'ee\'bc\'ad \'c3\'e2\'b7\'c2\'c7\'cf\'b1\'e2 \'c0\'fc\'bf\'a1 \'c0\'cc\'b7\'af\'c7\'d1 \'bc\'b3\'c1\'a4\'b5\'e9\'c0\'bb \'c0\'fa\'c0\'e5\'c7\'d8 \'b3\'f5\'b0\'ed \'c0\'e7\'bb\'e7\'bf\'eb\'c7\'d2 \'bc\'f6 \'c0\'d6\'b5\'b5\'b7\'cf \'c7\'d8\'c1\'d6\'b4\'c2 \'b0\'b4\'c3\'bc\
+\
+2.paint(Graphics g)\
+=>\'c8\'ad\'b8\'e9\'bf\'a1 \'c3\'e2\'b7\'c2\'b5\'c7\'b4\'c2 \'b0\'b4\'c3\'bc\'b0\'a1 \'c8\'ad\'b8\'e9\'bf\'a1 \'c3\'e2\'b7\'c2\'b5\'c7\'b1\'e2 \'c1\'f7\'c0\'fc\'c0\'cc\'b3\'aa \'b0\'a1\'b7\'c1\'c1\'b3\'b4\'d9\'b0\'a1 \'b4\'d9\'bd\'c3 \'ba\'b8\'bf\'a9\'c1\'fa \'b6\'a7 \'c8\'a3\'c3\'e2\'b5\'c7\'b4\'c2 \'b8\'de\'bc\'d2\'b5\'e5\
+=>\'b8\'c5\'b0\'b3\'ba\'af\'bc\'f6\'b7\'ce \'c0\'fc\'b4\'de\'b5\'c7\'b4\'c2 Graphics \'b0\'b4\'c3\'bc\'b8\'a6 \'b0\'a1\'c1\'f6\'b0\'ed \'b1\'d7\'b7\'a1\'c7\'c8\'c0\'bb \'c3\'e2\'b7\'c2\'c7\'d5\'b4\'cf\'b4\'d9.\
+=>\'b8\'de\'bc\'d2\'b5\'e5 \'c0\'cc\'b8\'a7\'b0\'fa \'c5\'ac\'b7\'a1\'bd\'ba \'c0\'cc\'b8\'a7\'c0\'cc \'b4\'d9\'b8\'a6 \'bb\'d3\'c0\'cc\'c1\'f6 VC++(MicrosoftFoundationClass)\'b3\'aa VC#, HTML5\'c0\'c7  Canvas\'b5\'ee\'bf\'a1\'bc\'ad \'b1\'d7\'b7\'a1\'c7\'c8\'c0\'bb \'c3\'e2\'b7\'c2\'c7\'d2 \'b6\'a7\'b5\'b5 \'b5\'bf\'c0\'cf\'c7\'d5\'b4\'cf\'b4\'d9.\
+=>paint \'b8\'de\'bc\'d2\'b5\'e5\'b8\'a6 \'b0\'ad\'c1\'a6\'b7\'ce \'c8\'a3\'c3\'e2\'c7\'d2. \'b6\'a7\'b4\'c2 repaint \'b8\'de\'bc\'d2\'b5\'e5\'b3\'aa paintComponent\'b8\'de\'bc\'d2\'b5\'e5\'b8\'a6 \'c0\'cc\'bf\'eb\'c7\'d8\'bc\'ad \'b0\'a1\'b4\'c9\
+=>\'b1\'d7\'b8\'b2\'c0\'bb \'b1\'d7\'b8\'b1 \'b6\'a7\'b4\'c2 JFrame \'c0\'a7\'bf\'a1 \'b1\'d7\'b7\'c1\'b5\'b5 \'b5\'c7\'c1\'f6\'b8\'b8 JPanel\'c0\'cc\'b3\'aa Canvas\'b8\'a6 \'b9\'e8\'c4\'a1\'c7\'cf\'b0\'ed \'c0\'cc \'c0\'a7\'bf\'a1 \'b1\'d7\'b8\'b2\'c0\'bb \'b1\'d7\'b8\'ae\'b4\'c2 \'b0\'e6\'bf\'ec\'b0\'a1 \'b8\'b9\'bd\'c0\'b4\'cf\'b4\'d9.\
+\
+3.\'b1\'d7\'b8\'ae\'b4\'c2 \'b8\'de\'bc\'d2\'b5\'e5 : Graphics \'b0\'b4\'c3\'bc \'bc\'d2\'c0\'af\
+drawString(String str, int x, int y)\
+drawLine(int x1, int y1, int x2, int y2)\
+drawRect(int x, int y, int width, int height)\
+drawArc(int x, int y, int width, int height, int startAngle, int arcAngle)\
+drawImage(Image img, int dx1, int dy1, int dx2, int dy2, int sx1, int sy1, int sx2, int sy2, ImageObserver observer)\
+=>\'bf\'f8\'ba\'bb\'bf\'a1\'bc\'ad \'b5\'da\'c0\'c7 4\'b0\'b3 \'bc\'fd\'c0\'da\'bf\'a1 \'c7\'d8\'b4\'e7\'c7\'cf\'b4\'c2 \'c5\'a9\'b1\'e2\'b8\'a6 \'c0\'df\'b6\'f3\'bc\'ad \'be\'d5\'c0\'c7 4\'c0\'c7 \'bc\'fd\'c0\'da\'bf\'a1 \'c3\'e2\'b7\'c2\
+\
+4.\'bc\'b3\'c1\'a4\'c7\'cf\'b4\'c2 \'b8\'de\'bc\'d2\'b5\'e5\
+setFont\
+setColor\
+\
+\
+5.\'bd\'ba\'c0\'ae\'c0\'c7 \'c7\'c1\'b7\'b9\'c0\'d3\'bf\'a1 \'b1\'d7\'b7\'a1\'c7\'c8 \'c3\'e2\'b7\'c2\'c7\'cf\'b1\'e2\
+1)JFrame\'c0\'b8\'b7\'ce \'ba\'ce\'c5\'cd \'bb\'f3\'bc\'d3\'b9\'de\'b4\'c2 \'c5\'ac\'b7\'a1\'bd\'ba\'b8\'a6 \'bb\'fd\'bc\'ba\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f3\b\fs24 \cf5 package
+\f2\b0 \cf0  Graphic;\
+\
+
+\f3\b \cf5 import
+\f2\b0 \cf0  java.awt.Color;\
+
+\f3\b \cf5 import
+\f2\b0 \cf0  java.awt.Graphics;\
+\
+
+\f3\b \cf5 import
+\f2\b0 \cf0  javax.swing.JFrame;\
+\
+
+\f3\b \cf5 public
+\f2\b0 \cf0  
+\f3\b \cf5 class
+\f2\b0 \cf0  \ul MyFrame\ulnone  
+\f3\b \cf5 extends
+\f2\b0 \cf0  JFrame \{\
+	\
+	
+\f3\b \cf5 public
+\f2\b0 \cf0  MyFrame() \{\
+		\
+		\
+		setBounds(200,200,300,300);\
+		setTitle(\cf8 "Graphic!"\cf0 );\
+		
+\f3\b \cf5 this
+\f2\b0 \cf0 .setDefaultCloseOperation(
+\f5\i\b \cf9 EXIT_ON_CLOSE
+\f2\i0\b0 \cf0 );\
+		setVisible(
+\f3\b \cf5 true
+\f2\b0 \cf0 );\
+	\}\
+	\
+	\cf7 //
+\f1 \'c8\'ad\'b8\'e9\'bf\'a1
+\f2  
+\f1 \'c3\'e2\'b7\'c2\'b5\'c9
+\f2  
+\f1 \'b6\'a7
+\f2  
+\f1 \'c8\'a3\'c3\'e2\'b5\'c7\'b4\'c2
+\f2  
+\f1 \'b8\'de\'bc\'d2\'b5\'e5
+\f2 \cf0 \
+	\cf10 @Override\cf0 \
+	
+\f3\b \cf5 public
+\f2\b0 \cf0  
+\f3\b \cf5 void
+\f2\b0 \cf0  paint(Graphics \cf6 g\cf0 ) \{\
+		\cf6 g\cf0 .setColor(Color.
+\f5\i\b \cf9 orange
+\f2\i0\b0 \cf0 );\
+		\cf6 g\cf0 .drawString(\cf8 "
+\f1 \'be\'c8\'b3\'e7\'c7\'cf\'bc\'bc\'bf\'e4
+\f2 "\cf0 , 100, 50);\
+		\cf6 g\cf0 .setColor(Color.
+\f5\i\b \cf9 green
+\f2\i0\b0 \cf0 );\
+		\cf6 g\cf0 .drawRect(125, 125, 50, 50);\
+	\}\
+\
+\}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f1\fs36 \cf0 \
+2)main \'b8\'de\'bc\'d2\'b5\'e5\'b8\'a6 \'bc\'d2\'c0\'af\'c7\'d1 \'c5\'ac\'b7\'a1\'bd\'ba\'b8\'a6 \'bb\'fd\'bc\'ba\'c7\'d8\'bc\'ad \'c4\'da\'b5\'e5 \'c3\'df\'b0\'a1\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f3\b\fs24 \cf5 package
+\f2\b0 \cf0  Graphic;\
+\
+
+\f3\b \cf5 public
+\f2\b0 \cf0  
+\f3\b \cf5 class
+\f2\b0 \cf0  Main \{\
+\
+	
+\f3\b \cf5 public
+\f2\b0 \cf0  
+\f3\b \cf5 static
+\f2\b0 \cf0  
+\f3\b \cf5 void
+\f2\b0 \cf0  main(String[] \cf6 args\cf0 ) \{\
+		
+\f3\b \cf5 new
+\f2\b0 \cf0  MyFrame();\
+	\}\
+\
+\}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f1\fs36 \cf0 \
+\
+6.\'b9\'f6\'c6\'b0\'c0\'bb \'b4\'ad\'b7\'af\'bc\'ad \'bb\'f6\'bb\'f3 \'ba\'af\'b0\'e6\
+1)JPanel \'c0\'bb \'bb\'f3\'bc\'d3\'b9\'de\'b4\'c2 \'c5\'ac\'b7\'a1\'bd\'ba\'b8\'a6 \'bb\'fd\'bc\'ba\'c7\'cf\'b0\'ed paint \'b8\'de\'bc\'d2\'b5\'e5\'b8\'a6 \'c0\'e7\'c1\'a4\'c0\'c7\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f3\b\fs24 \cf5 package
+\f2\b0 \cf0  Graphic;\
+\
+
+\f3\b \cf5 import
+\f2\b0 \cf0  java.awt.Color;\
+
+\f3\b \cf5 import
+\f2\b0 \cf0  java.awt.Graphics;\
+\
+
+\f3\b \cf5 import
+\f2\b0 \cf0  javax.swing.JPanel;\
+\
+
+\f3\b \cf5 public
+\f2\b0 \cf0  
+\f3\b \cf5 class
+\f2\b0 \cf0  \ul MyPanel\ulnone  
+\f3\b \cf5 extends
+\f2\b0 \cf0  JPanel \{\
+	\
+	
+\f3\b \cf5 public
+\f2\b0 \cf0  Color \cf9 color\cf0  = 
+\f3\b \cf5 new
+\f2\b0 \cf0  Color(100,100,100);\
+	
+\f3\b \cf5 public
+\f2\b0 \cf0  
+\f3\b \cf5 void
+\f2\b0 \cf0  onPaint(Graphics \cf6 g\cf0 ) \{\
+		\cf6 g\cf0 .setColor(Color.
+\f5\i\b \cf9 BLUE
+\f2\i0\b0 \cf0 );\
+		\cf6 g\cf0 .drawString(\cf8 "
+\f1 \'bb\'f6\'bb\'f3\'ba\'af\'b0\'e6
+\f2 "\cf0 , 130, 130);\
+	\}\
+	\
+\}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f1\fs36 \cf0 \
+\
+2)JFrame \'c0\'b8\'b7\'ce \'bb\'f3\'bc\'d3\'b9\'de\'b4\'c2 \'c5\'ac\'b7\'a1\'bd\'ba\'b8\'a6 \'bb\'fd\'bc\'ba\'c7\'cf\'b0\'ed \'c0\'db\'bc\'ba\
+\
+\
+3)main \'b8\'de\'bc\'d2\'b5\'e5\'bf\'a1 \'c0\'db\'bc\'ba\'c7\'d8\'bc\'ad \'c8\'ad\'b8\'e9 \'c3\'e2\'b7\'c2\
+\
+\
+\
+7.Font\
+=>\'b1\'db\'b2\'c3\'c0\'bb \'bc\'b3\'c1\'a4\'c7\'cf\'b1\'e2 \'c0\'a7\'c7\'d1 \'c5\'ac\'b7\'a1\'bd\'ba\
+=>Font\'b8\'a6 \'b8\'b8\'b5\'e9\'be\'ee\'bc\'ad Graphics \'b0\'b4\'c3\'bc\'bf\'a1 \'bc\'b3\'c1\'a4\'c7\'cf\'b8\'e9 \'c0\'cc\'c8\'c4\'bf\'a1 \'c3\'e2\'b7\'c2\'b5\'c7\'b4\'c2 \'b8\'f0\'b5\'e7 \'b9\'ae\'c0\'da\'bf\'ad\'bf\'a1 \'c0\'fb\'bf\'eb\
+Font(String \'b1\'db\'b2\'c3, int style, int size)\
+sytle\'c0\'ba Font\'c0\'c7 static field\'b8\'a6 \'c0\'cc\'bf\'eb\'c7\'d8\'bc\'ad \'bc\'b3\'c1\'a4\
+Font.BOLD, Font.ITALIC, Font.PLAIN\
+\'bf\'c9\'bc\'c7\'c0\'bb \'b8\'b8\'b5\'e9 \'b6\'a7 \'c0\'cf\'b7\'c3\'b9\'f8\'c8\'a3 \'c7\'fc\'c5\'c2\'b8\'e9 \'c7\'cf\'b3\'aa\'b8\'b8 \'bc\'b1\'c5\'c3\'c7\'d8\'bc\'ad \'c0\'fb\'bf\'eb\'c7\'d8\'be\'df \'c7\'cf\'b0\'ed 2\'c0\'c7 \'c1\'f6\'bc\'f6\'bd\'c2 \'c7\'fc\'c5\'c2\'b8\'e9 \'bf\'a9\'b7\'af\'b0\'b3\'b8\'a6 \'b0\'b0\'c0\'cc \'c0\'fb\'bf\'eb\'c7\'d2 \'bc\'f6 \'c0\'d6\'bd\'c0\'b4\'cf\'b4\'d9.\
+\'bf\'a9\'b7\'af \'b0\'b3\'b8\'a6 \'b0\'b0\'c0\'cc \'c0\'fb\'bf\'eb\'c7\'d2  \'b6\'a7\'b4\'c2  | \'b7\'ce \'b9\'ad\'be\'ee\'c1\'d6\'b8\'e9 \'b5\'cb\'b4\'cf\'b4\'d9.\
+\
+\
+8.Graphics2D\
+=>Graphics \'b0\'b4\'c3\'bc\'b8\'a6 Graphics2D \'b7\'ce \'ba\'af\'c8\'af\'c0\'bb \'c7\'d8\'bc\'ad \'bb\'e7\'bf\'eb\'c7\'cf\'b8\'e9 draw \'b3\'aa fill \'b8\'de\'bc\'d2\'b5\'e5\'b8\'a6 \'c0\'cc\'bf\'eb\'c7\'d8\'bc\'ad ?2D.Double(\'c1\'c2\'c7\'a5) \'c7\'fc\'c5\'c2\'b7\'ce \'b8\'b8\'b5\'e9\'be\'ee\'c1\'f8 \'b0\'b4\'c3\'bc\'b8\'a6 \'b0\'a1\'c1\'f6\'b0\'ed \'b1\'d7\'b8\'b2\'c0\'bb \'c3\'e2\'b7\'c2\'c7\'d2 \'bc\'f6 \'c0\'d6\'bd\'c0\'b4\'cf\'b4\'d9.\
+\
+\
+9.Frame \'bf\'a1 \'b1\'d7\'b8\'ae\'c1\'f6 \'be\'ca\'b0\'ed Panel\'bf\'a1 \'b1\'d7\'b8\'ae\'b4\'c2 \'c0\'cc\'c0\'af\'b4\'c2 Frame\'bf\'a1 \'b1\'d7\'b8\'ae\'b0\'d4 \'b5\'c7\'b8\'e9 Frame\'bf\'a1 \'c0\'d6\'b4\'c2 \'b4\'d9\'b8\'a5 \'b0\'cd\'b5\'b5 \'b4\'d9\'bd\'c3 \'b1\'d7\'b7\'c1\'c1\'ae\'be\'df \'c7\'cf\'b1\'e2 \'b6\'a7\'b9\'ae\'bf\'a1 Panel\'bf\'a1 \'b1\'d7\'b8\'b2\'c0\'bb \'b1\'d7\'b7\'c1\'bc\'ad \'b4\'d9\'bd\'c3 \'c3\'e2\'b7\'c2\'c7\'cf\'b0\'ed\'c0\'da \'c7\'d2 \'b6\'a7 Panel\'b8\'b8 \'b4\'d9\'bd\'c3 \'c3\'e2\'b7\'c2\'c7\'cf\'b1\'e2 \'c0\'a7\'c7\'d8\'bc\'ad \'c0\'d4\'b4\'cf\'b4\'d9.\
+\
+\
+10.Graphics2D\'b8\'a6 \'c0\'cc\'bf\'eb\'c7\'d1 \'c3\'e2\'b7\'c2\
+1)\'b1\'d7\'b8\'b2\'c0\'bb \'b1\'d7\'b8\'b1 JPanel\'b7\'ce \'ba\'ce\'c5\'cd \'bb\'f3\'bc\'d3\'b9\'de\'b4\'c2 \'c5\'ac\'b7\'a1\'bd\'ba\'b8\'a6 \'b8\'b8\'b5\'e9\'b0\'ed paint\'b8\'de\'bc\'d2\'b5\'e5\'b8\'a6 \'c0\'e7\'c1\'a4\'c0\'c7 \
+\
+\pard\pardeftab720\partightenfactor0
+
+\f3\b\fs24 \cf5 package
+\f2\b0 \cf0  Graphic;\
+\
+
+\f3\b \cf5 import
+\f2\b0 \cf0  java.awt.Graphics;\
+\
+
+\f3\b \cf5 import
+\f2\b0 \cf0  javax.swing.JPanel;\
+\
+
+\f3\b \cf5 public
+\f2\b0 \cf0  
+\f3\b \cf5 class
+\f2\b0 \cf0  \ul G2DPanel\ulnone  
+\f3\b \cf5 extends
+\f2\b0 \cf0  JPanel \{\
+	\
+	\cf7 //
+\f1 \'c8\'ad\'b8\'e9\'bf\'a1
+\f2  
+\f1 \'ba\'b8\'bf\'a9\'c1\'fa
+\f2  
+\f1 \'b6\'a7\'b3\'aa
+\f2  repaint 
+\f1 \'b8\'de\'bc\'d2\'b5\'e5\'b8\'a6
+\f2  
+\f1 \'c8\'a3\'c3\'e2\'c7\'cf\'b8\'e9
+\f2  
+\f1 \'c8\'ad\'b8\'e9\'bf\'a1
+\f2  
+\f1 \'c3\'e2\'b7\'c2\'b5\'c7\'b4\'c2
+\f2  
+\f1 \'b8\'de\'bc\'d2\'b5\'e5
+\f2 \cf0 \
+	\cf10 @Override\cf0 \
+	
+\f3\b \cf5 public
+\f2\b0 \cf0  
+\f3\b \cf5 void
+\f2\b0 \cf0  paint(Graphics \cf6 g\cf0 ) \{\
+		\
+		\cf7 //
+\f1 \'b1\'d7\'b8\'b2
+\f2  
+\f1 \'b1\'d7\'b8\'ae\'b1\'e2
+\f2 \cf0 \
+		\cf6 g\cf0 .fillRect(125, 125, 100, 100);\
+				\
+		\
+	\}\
+\
+\}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f1\fs36 \cf0 \
+\
+2)Panel \'b8\'a6 \'bb\'e7\'bf\'eb\'c7\'d2 Frame \'b8\'b8\'b5\'e9\'b1\'e2\
+\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f3\b\fs24 \cf5 package
+\f2\b0 \cf0  Graphic;\
+\
+
+\f3\b \cf5 import
+\f2\b0 \cf0  javax.swing.JFrame;\
+\
+
+\f3\b \cf5 public
+\f2\b0 \cf0  
+\f3\b \cf5 class
+\f2\b0 \cf0  \ul G2DFrame\ulnone  
+\f3\b \cf5 extends
+\f2\b0 \cf0  JFrame \{\
+	\
+	
+\f3\b \cf5 public
+\f2\b0 \cf0  G2DFrame() \{\
+		\
+		G2DPanel \cf6 panel\cf0  = 
+\f3\b \cf5 new
+\f2\b0 \cf0  G2DPanel();\
+		add(\cf8 "Center"\cf0 ,\cf6 panel\cf0 );\
+		\
+		setBounds(200,200,300,300);\
+		setTitle(\cf8 "Graphics2D"\cf0 );\
+		
+\f3\b \cf5 this
+\f2\b0 \cf0 .setDefaultCloseOperation(
+\f5\i\b \cf9 EXIT_ON_CLOSE
+\f2\i0\b0 \cf0 );\
+		setVisible(
+\f3\b \cf5 true
+\f2\b0 \cf0 );\
+		\
+	\}\
+\
+\}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f1\fs36 \cf0 \
+3)main \'b8\'de\'bc\'d2\'b5\'e5\'bf\'a1\'bc\'ad frame\'c0\'bb \'bb\'fd\'bc\'ba\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f3\b\fs24 \cf5 package
+\f2\b0 \cf0  Graphic;\
+\
+
+\f3\b \cf5 public
+\f2\b0 \cf0  
+\f3\b \cf5 class
+\f2\b0 \cf0  Main \{\
+\
+	
+\f3\b \cf5 public
+\f2\b0 \cf0  
+\f3\b \cf5 static
+\f2\b0 \cf0  
+\f3\b \cf5 void
+\f2\b0 \cf0  main(String[] \cf6 args\cf0 ) \{\
+		\cf7 //new MyFrame();\cf0 \
+		\cf7 //new ColorFrame();\cf0 \
+		
+\f3\b \cf5 new
+\f2\b0 \cf0  G2DFrame();\
+	\}\
+\
+\}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f1\fs36 \cf0 \
+\
+=>\'bd\'c7\'c7\'e0\'c7\'d8\'bc\'ad \'c8\'ae\'c0\'ce\
+\
+\
+4)Panel\'c0\'c7 paint \'b8\'de\'bc\'d2\'b5\'e5\'b8\'a6 \'bc\'f6\'c1\'a4\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f3\b\fs24 \cf5 package
+\f2\b0 \cf0  Graphic;\
+\
+
+\f3\b \cf5 import
+\f2\b0 \cf0  java.awt.Color;\
+
+\f3\b \cf5 import
+\f2\b0 \cf0  java.awt.Graphics;\
+
+\f3\b \cf5 import
+\f2\b0 \cf0  java.awt.Graphics2D;\
+
+\f3\b \cf5 import
+\f2\b0 \cf0  java.awt.geom.Ellipse2D;\
+
+\f3\b \cf5 import
+\f2\b0 \cf0  java.awt.geom.Rectangle2D;\
+\
+
+\f3\b \cf5 import
+\f2\b0 \cf0  javax.swing.JPanel;\
+\
+
+\f3\b \cf5 public
+\f2\b0 \cf0  
+\f3\b \cf5 class
+\f2\b0 \cf0  \ul G2DPanel\ulnone  
+\f3\b \cf5 extends
+\f2\b0 \cf0  JPanel \{\
+	\
+	\cf7 //
+\f1 \'c8\'ad\'b8\'e9\'bf\'a1
+\f2  
+\f1 \'ba\'b8\'bf\'a9\'c1\'fa
+\f2  
+\f1 \'b6\'a7\'b3\'aa
+\f2  repaint 
+\f1 \'b8\'de\'bc\'d2\'b5\'e5\'b8\'a6
+\f2  
+\f1 \'c8\'a3\'c3\'e2\'c7\'cf\'b8\'e9
+\f2  
+\f1 \'c8\'ad\'b8\'e9\'bf\'a1
+\f2  
+\f1 \'c3\'e2\'b7\'c2\'b5\'c7\'b4\'c2
+\f2  
+\f1 \'b8\'de\'bc\'d2\'b5\'e5
+\f2 \cf0 \
+	\cf10 @Override\cf0  \cf7 //
+\f1 \'bb\'f3\'c0\'a7
+\f2  
+\f1 \'c5\'ac\'b7\'a1\'bd\'ba\'bf\'a1
+\f2  
+\f1 \'c0\'d6\'b4\'c2
+\f2  
+\f1 \'b8\'de\'bc\'d2\'b5\'e5\'b8\'a6
+\f2  
+\f1 \'c0\'e7\'c1\'a4\'c0\'c7
+\f2  
+\f1 \'c7\'d1\'b4\'d9\'b4\'c2
+\f2  
+\f1 \'be\'ee\'b3\'eb\'c5\'d7\'c0\'cc\'bc\'c7
+\f2 \cf0 \
+	\cf7 //
+\f1 \'bb\'f3\'c0\'a7
+\f2  
+\f1 \'c5\'ac\'b7\'a1\'bd\'ba\'bf\'a1
+\f2  
+\f1 \'b8\'de\'bc\'d2\'b5\'e5\'b0\'a1
+\f2  
+\f1 \'c1\'b8\'c0\'e7\'c7\'cf\'c1\'f6
+\f2  
+\f1 \'be\'ca\'c0\'b8\'b8\'e9
+\f2  
+\f1 \'c4\'c4\'c6\'c4\'c0\'cf
+\f2  
+\f1 \'bf\'a1\'b7\'af
+\f2  
+\f1 \'b9\'df\'bb\'fd
+\f2 \cf0 \
+	
+\f3\b \cf5 public
+\f2\b0 \cf0  
+\f3\b \cf5 void
+\f2\b0 \cf0  paint(Graphics \cf6 g\cf0 ) \{\
+		\
+		\cf7 //
+\f1 \'b1\'d7\'b8\'b2
+\f2  
+\f1 \'b1\'d7\'b8\'ae\'b1\'e2
+\f2 \cf0 \
+		\cf6 g\cf0 .fillRect(125, 125, 50, 50);\
+		\cf7 //
+\f1 \'b1\'d7\'b7\'a1\'c7\'c8\'bd\'ba
+\f2  
+\f1 \'b0\'b4\'c3\'bc
+\f2  
+\f1 \'ba\'af\'c8\'af
+\f2 \cf0 \
+		Graphics2D \cf6 g2\cf0  = (Graphics2D)\cf6 g\cf0 ;\
+		\cf7 //
+\f1 \'bb\'f6\'bb\'f3
+\f2  
+\f1 \'bc\'b3\'c1\'a4
+\f2  - fill
+\f1 \'c0\'ba
+\f2  
+\f1 \'c3\'a4\'bf\'ec\'b1\'e2
+\f2  
+\f1 \'c8\'bf\'b0\'fa
+\f2 \cf0 \
+		\cf6 g2\cf0 .setColor(Color.
+\f5\i\b \cf9 green
+\f2\i0\b0 \cf0 );\
+		\cf6 g2\cf0 .fill(
+\f3\b \cf5 new
+\f2\b0 \cf0  Rectangle2D.Double(200,200,80,80));\
+		\cf7 //
+\f1 \'bb\'f6\'bb\'f3
+\f2  
+\f1 \'bc\'b3\'c1\'a4
+\f2  - draw
+\f1 \'b4\'c2
+\f2  
+\f1 \'c5\'d7\'b5\'ce\'b8\'ae
+\f2  
+\f1 \'c8\'bf\'b0\'fa
+\f2 (
+\f1 \'c3\'a4\'bf\'ec\'b1\'e2
+\f2  
+\f1 \'be\'f8\'c0\'bd
+\f2  
+\f1 \'bc\'b1\'bb\'f6\'b8\'b8
+\f2 )\cf0 \
+		\cf6 g2\cf0 .setColor(Color.
+\f5\i\b \cf9 blue
+\f2\i0\b0 \cf0 );\
+		\cf6 g2\cf0 .draw(
+\f3\b \cf5 new
+\f2\b0 \cf0  Ellipse2D.Double(200,200,30,30));\
+		\
+		\
+	\}\
+\
+\}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f1\fs36 \cf0 \
+\
+\
+5)Graphics2D\'b8\'a6 \'c0\'cc\'bf\'eb\'c7\'cf\'b8\'e9 \'b8\'e9\'c0\'cc\'b3\'aa \'bc\'b1\'bf\'a1 \'b1\'d7\'b6\'f3\'b5\'a5\'c0\'cc\'bc\'c7\'c0\'bb \'bc\'b3\'c1\'a4\'c7\'d2 \'bc\'f6 \'c0\'d6\'b0\'ed \'bc\'b1 \'b8\'f0\'be\'e7\'b5\'b5 \'ba\'af\'b0\'e6\'b0\'a1\'b4\'c9\
+Graphics2D\'b0\'b4\'c3\'bc.setPaint(new GraidentPaint(int s1, int s2, Color, int e1, int e2, Color, \'b9\'dd\'ba\'b9\'bf\'a9\'ba\'ce)\'b8\'a6 \'c0\'cc\'bf\'eb\'c7\'cf\'b8\'e9 \'b1\'d7\'b6\'f3\'c0\'cc\'b5\'a5\'c0\'cc\'bc\'c7\'c0\'bb \'bb\'e7\'bf\'eb\
+\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 6)Graphics2D\'b0\'b4\'c3\'bc.setStroke(\'bc\'b1\'b8\'f0\'be\'e7)\'b8\'a6 \'c0\'cc\'bf\'eb\'c7\'cf\'b8\'e9 \'bc\'b1 \'b8\'f0\'be\'e7\'c0\'bb \'ba\'af\'b0\'e6\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\
+\
+\
+11.Image \'b0\'b4\'c3\'bc\
+1)Image \'b0\'b4\'c3\'bc \'b8\'b8\'b5\'e9\'b1\'e2\
+=>Toolkit\'b0\'b4\'c3\'bc.getImage(String imagePath\
+=>Toolkit \'c5\'ac\'b7\'a1\'bd\'ba\'c0\'c7 \'b0\'b4\'c3\'bc\'b4\'c2 static getDefaultToolkit()\'c0\'bb \'c8\'a3\'c3\'e2\'c7\'d8\'bc\'ad \'bb\'fd\'bc\'ba\
+\'c0\'da\'bd\'c5\'c0\'c7 static \'b8\'de\'bc\'d2\'b5\'e5\'b8\'a6 \'c8\'a3\'c3\'e2\'c7\'d8\'bc\'ad \'b0\'b4\'c3\'bc\'b8\'a6 \'bb\'fd\'bc\'ba\'c7\'cf\'b4\'c2 \'b0\'e6\'bf\'ec\'b4\'c2 \'c7\'cf\'b3\'aa\'b4\'c2 Singleton \'c6\'d0\'c5\'cf\'c0\'b8\'b7\'ce \'b5\'f0\'c0\'da\'c0\'ce\'b5\'c7\'be\'ee \'c0\'d6\'b4\'c2 \'b0\'e6\'bf\'ec\'c0\'cc\'b0\'ed \'c3\'df\'bb\'f3\'c5\'ac\'b7\'a1\'bd\'ba \'c0\'ce \'b0\'e6\'bf\'ec\'b4\'c2 \'c3\'df\'bb\'f3\'b8\'de\'bc\'d2\'b5\'e5\'b8\'a6 \'c0\'fc\'ba\'ce \'b8\'b8\'b5\'e9\'be\'ee\'bc\'ad \'b8\'ae\'c5\'cf\'c7\'d8\'c1\'d6\'b1\'e2 \'c0\'a7\'c7\'d8\'bc\'ad\'c0\'d4\'b4\'cf\'b4\'d9.\
+Singleton\'c0\'b8\'b7\'ce \'b5\'f0\'c0\'da\'c0\'ce \'b5\'c8 \'b0\'e6\'bf\'ec\'b4\'c2 Runtime\'c5\'ac\'b7\'a1\'bd\'ba\'c0\'cc\'b0\'ed \'c3\'df\'bb\'f3\'b8\'de\'bc\'d2\'b5\'e5\'b8\'a6 \'b8\'f0\'b5\'ce \'c0\'e7\'c1\'a4\'c0\'c7\'c7\'d8\'bc\'ad \'c1\'d6\'b4\'c2 \'b0\'e6\'bf\'ec\'b4\'c2 Calendar \'c5\'ac\'b7\'a1\'bd\'ba\
+\
+\
+2)\'c3\'e2\'b7\'c2\
+Graphics \'b0\'b4\'c3\'bc\'c0\'c7 drawImage \'b8\'de\'bc\'d2\'b5\'e5 \'c0\'cc\'bf\'eb\
+drawImage(Image\'b0\'b4\'c3\'bc, x\'c1\'c2\'c7\'a5, y\'c1\'c2\'c7\'a5, ImageObserver imageObjeserver) : \'bf\'f8\'ba\'bb\'c0\'bb x,y\'c1\'c2\'c7\'a5\'bf\'a1 \'b1\'d7\'b4\'eb\'b7\'ce \'c3\'e2\'b7\'c2\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 drawImage(Image\'b0\'b4\'c3\'bc, x\'c1\'c2\'c7\'a5, y\'c1\'c2\'c7\'a5, \'b0\'a1\'b7\'ce\'c5\'a9\'b1\'e2, \'bc\'bc\'b7\'ce\'c5\'a9\'b1\'e2, ImageObserver imageObjeserver) : \'bf\'f8\'ba\'bb\'c0\'bb x,y\'c1\'c2\'c7\'a5\'bf\'a1 \'c5\'a9\'b1\'e2\'bf\'a1 \'b8\'c2\'c3\'df\'be\'ee\'bc\'ad \'c3\'e2\'b7\'c2\
+\
+drawImage(Image\'b0\'b4\'c3\'bc,dx1\'c1\'c2\'c7\'a5, dy1\'c1\'c2\'c7\'a5, dx2\'c1\'c2\'c7\'a5, dy2\'c1\'c2\'c7\'a5, sx1\'c1\'c2\'c7\'a5, sy1\'c1\'c2\'c7\'a5, sx2\'c1\'c2\'c7\'a5, sy2\'c1\'c2\'c7\'a5, ImageObserver imageObjeserver)\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 =>s\'b7\'ce \'bd\'c3\'c0\'db\'c7\'cf\'b4\'c2 \'c1\'c2\'c7\'a5\'b4\'c2 Source(\'bf\'f8\'ba\'bb)\'c0\'c7 \'c1\'c2\'c7\'a5\'c0\'cc\'b0\'ed d\'b7\'ce \'bd\'c3\'c0\'db\'c7\'cf\'b4\'c2 \'c1\'c2\'c7\'a5\'b4\'c2 Destination(\'c3\'e2\'b7\'c2\'c7\'d2 \'b0\'f7)\'c0\'c7 \'c1\'c2\'c7\'a5\'c0\'d4\'b4\'cf\'b4\'d9.\
+\'bf\'f8\'ba\'bb\'bf\'a1\'bc\'ad \'c1\'c2\'c7\'a5\'b8\'b8\'c5\'ad \'c0\'df\'b6\'f3\'b3\'bb\'bc\'adDestination\'c0\'c7 \'c1\'c2\'c7\'a5\'bf\'a1 \'c3\'e2\'b7\'c2\'c7\'cf\'b4\'c2 \'b8\'de\'bc\'d2\'b5\'e5\
+\
+=>ImagaObserver \'be\'d5\'bf\'a1 Color bgColor\'b8\'a6 \'c3\'df\'b0\'a1\'c7\'d2 \'bc\'f6 \'c0\'d6\'b4\'c2\'b5\'a5 \'c0\'cc \'bb\'f6\'bb\'f3\'c0\'ba png \'c6\'c4\'c0\'cf\'c0\'c7 \'b0\'e6\'bf\'ec \'c5\'f5\'b8\'ed\'c7\'d1 \'bf\'b5\'bf\'aa\'c0\'cc \'c0\'d6\'c0\'bb \'b6\'a7 \'b1\'d7 \'bf\'b5\'bf\'aa\'bf\'a1 \'c3\'e2\'b7\'c2\'c7\'d2 \'bb\'f6\'bb\'f3\'c0\'d4\'b4\'cf\'b4\'d9.\
+\
+\
+3)\'c0\'cc\'b9\'cc\'c1\'f6 \'c3\'e2\'b7\'c2\
+=>JPanel\'c0\'c7 paint \'b8\'de\'bc\'d2\'b5\'e5 \'bc\'f6\'c1\'a4\
+\
+\
+\
+\
+12.Clipping\
+=>\'bf\'f8\'c7\'cf\'b4\'c2 \'bf\'b5\'bf\'aa\'b8\'b8 \'c3\'e2\'b7\'c2\'c7\'cf\'b5\'b5\'b7\'cf \'c7\'cf\'b4\'c2 \'b0\'cd\
+=>setClip(int x, int y , int w, int h)\'b8\'a6 \'c8\'a3\'c3\'e2\'c7\'cf\'b8\'e9 x,y \'c1\'c2\'c7\'a5\'ba\'ce\'c5\'cd w,h \'b8\'b8\'c5\'ad\'b8\'b8 \'c3\'e2\'b7\'c2 \
+=>clipRect(int x, int y , int w, int h)\'b8\'a6 \'b1\'e2\'c1\'b8 \'bf\'b5\'bf\'aa\'bf\'a1 \'b1\'b3\'c1\'fd\'c7\'d5\'c0\'bb \'c7\'d8\'bc\'ad \'b1\'d7 \'b1\'b3\'c1\'fd\'c7\'d5 \'b8\'b8\'c5\'ad\'b8\'b8 \'c3\'e2\'b7\'c2\
+\
+=>Panel\'c0\'c7 paint \'b8\'de\'bc\'d2\'b5\'e5 \'bc\'f6\'c1\'a4\
+\
+\
+\
+**\'b8\'b6\'bf\'ec\'bd\'ba\'b7\'ce \'b5\'e5\'b7\'a1\'b1\'d7\'c7\'d8\'bc\'ad \'bc\'b1 \'b1\'d7\'b8\'ae\'b1\'e2\
+1.\'b8\'b6\'bf\'ec\'bd\'ba\'b7\'ce \'b5\'e5\'b7\'a1\'b1\'d7\'c7\'d8\'bc\'ad \'bc\'b1\'c0\'bb \'b1\'d7\'b8\'b1 \'c6\'d0\'b3\'ce \'bb\'fd\'bc\'ba\
+\
+\
+2.\'c6\'d0\'b3\'ce\'c0\'bb \'c6\'f7\'c7\'d4\'c7\'d1 \'c7\'c1\'b7\'b9\'c0\'d3 \'bb\'fd\'bc\'ba\
+\
+\
+3.main \'b8\'de\'bc\'d2\'b5\'e5\'bf\'a1\'bc\'ad \'c7\'c1\'b7\'b9\'c0\'d3\'c0\'bb \'c8\'a3\'c3\'e2\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+**\'b1\'d7\'b7\'a1\'c7\'c8 \'c3\'e2\'b7\'c2\
+=>\'b1\'d7\'b7\'a1\'c7\'c8 \'c3\'e2\'b7\'c2\'c0\'bb \'c0\'cf\'b9\'dd \'c7\'c1\'b7\'ce\'b1\'d7\'b7\'a1\'b9\'d6 \'be\'f0\'be\'ee\'c0\'c7 API\'b8\'a6 \'bb\'e7\'bf\'eb\'c7\'cf\'b0\'d4 \'b5\'c7\'b8\'e9 \'bf\'ee\'bf\'b5\'c3\'bc\'c1\'a6\'bf\'a1\'b0\'d4 \'b8\'ed\'b7\'c9\'be\'ee\'b8\'a6 \'c0\'fc\'b4\'de\'c0\'bb \'c7\'d8\'bc\'ad \'bf\'ee\'bf\'b5\'c3\'bc\'c1\'a6\'b0\'a1 \'c7\'cf\'b5\'e5\'bf\'fe\'be\'ee\'b8\'a6 \'c0\'cc\'bf\'eb\'c7\'d8\'bc\'ad \'c3\'e2\'b7\'c2\'c7\'d5\'b4\'cf\'b4\'d9.\
+=>\'c0\'cc \'b6\'a7 \'b1\'d7\'b7\'a1\'c7\'c8 \'c3\'e2\'b7\'c2\'c0\'bb \'ba\'fc\'b8\'a3\'b0\'d4 \'c7\'cf\'b1\'e2 \'c0\'a7\'c7\'d8\'bc\'ad \'bb\'e7\'bf\'eb\'c7\'cf\'b4\'c2 \'b1\'e2\'bc\'fa\'b7\'ce MS\'b4\'c2 Direct X\'c0\'cc\'b0\'ed \'b1\'d7 \'c0\'cc\'bf\'dc\'c0\'c7 \'c1\'f8\'bf\'b5\'c0\'ba Open GL \'b1\'d7\'b8\'ae\'b0\'ed \
+\'bd\'ba\'b8\'b6\'c6\'ae \'c6\'f9\'c0\'ba Open GL ES \'c0\'a5\'bf\'a1\'bc\'ad\'b4\'c2 Web GL \'b1\'e2\'bc\'fa\'c0\'bb \'c0\'cc\'bf\'eb\'c7\'d5\'b4\'cf\'b4\'d9.\
+\'c0\'cc \'b1\'e2\'bc\'fa\'b5\'e9\'c0\'ba \'bf\'ee\'bf\'b5\'c3\'bc\'c1\'a6\'c0\'c7 \'b8\'ed\'b7\'c9\'be\'ee\'b7\'ce \'b1\'d7\'b7\'a1\'c7\'c8\'c0\'bb \'c3\'e2\'b7\'c2\
+iOS\'b4\'c2 \'c0\'da\'c3\'bc \'c1\'a6\'c0\'db\'c7\'d1 SpriteKit\'c0\'bb \'c0\'cc\'bf\'eb\'c7\'cf\'b4\'c2 \'b0\'cd\'c0\'cc \'c3\'e2\'b7\'c2\'bc\'d3\'b5\'b5\'b0\'a1 \'ba\'fc\'b8\'a8\'b4\'cf\'b4\'d9.\
+=>\'b1\'d7\'b7\'a1\'c7\'c8 \'b0\'a1\'bc\'d3 \'b1\'e2\'bc\'fa\'c0\'bb \'bb\'e7\'bf\'eb\'c7\'cf\'b4\'c2 \'b0\'cd\'c0\'cc \'be\'ee\'b7\'c1\'bf\'f6\'bc\'ad(\'bd\'ba\'b7\'b9\'b5\'e5\'b8\'a6 \'bb\'e7\'bf\'eb\'c7\'d8\'bc\'ad \'c0\'db\'be\'f7) \'bd\'b1\'b0\'d4 \'b1\'b8\'c7\'f6\'c7\'d8\'c1\'d6\'b4\'c2 API(\'b1\'d7\'b7\'a1\'c7\'c8 \'bf\'a3\'c1\'f8)\'b8\'a6 \'bb\'e7\'bf\'eb\'c7\'cf\'b4\'c2 \'b0\'e6\'bf\'ec\'b0\'a1 \'b8\'b9\'bd\'c0\'b4\'cf\'b4\'d9.\
+=>\'c0\'cc\'b7\'af\'c7\'d1 \'b1\'d7\'b7\'a1\'c7\'c8 \'bf\'a3\'c1\'f8\'c0\'b8\'b7\'ce \'c0\'af\'b8\'ed\'c7\'d1 \'b0\'cd\'c0\'cc Unity(C#), Unreal(C++)\
+=>SpriteImage : \'bf\'a9\'b7\'af \'b0\'b3\'c0\'c7 \'b1\'d7\'b8\'b2\'c0\'bb \'b8\'f0\'be\'c6\'bc\'ad \'c7\'cf\'b3\'aa\'b7\'ce \'b8\'b8\'b5\'e7 image\
+\'ba\'f1\'bd\'c1\'c7\'d1 \'bf\'eb\'b5\'b5\'b7\'ce \'bb\'e7\'bf\'eb\'b5\'c7\'b4\'c2 \'c0\'cc\'b9\'cc\'c1\'f6\'b5\'e9\'c0\'ba \'c7\'cf\'b3\'aa\'b7\'ce \'b9\'ad\'be\'ee\'bc\'ad \'ba\'d0\'c7\'d2\'c7\'d8\'bc\'ad \'c3\'e2\'b7\'c2\'c7\'cf\'b4\'c2 \'b0\'cd\'c0\'cc \'c1\'c1\'bd\'c0\'b4\'cf\'b4\'d9.\
+\
+\
+\
+\
+\
+\
+\
+\
+}
